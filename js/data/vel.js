@@ -38,7 +38,7 @@ function problem341(){
 
 	question = {
 		'type': 'single',
-		'id': 341,
+		'id': '041',
 		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
 		'options': {
 			'A': speed,
@@ -47,7 +47,7 @@ function problem341(){
 			'D': speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': 34
+		'author-id': '04'
 	}
 	
 	return question;
