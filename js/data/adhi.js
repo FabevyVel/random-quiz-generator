@@ -1056,7 +1056,8 @@ function problem0121(){
 		    p=(100*s)/(r*t);
 		   
 			question = {};
-					
+			
+			
 	  question = {
 			'type': 'single',
 			'id': '0121',
@@ -1071,4 +1072,92 @@ function problem0121(){
 			'author-id': '01'
 		}
 		return question;	
+}
+
+function problem0122(){
+	var inputData = [{
+		'current_bill':35,
+		'deducted': 150
+		},
+		{
+		'current_bill':50,
+		'deducted': 200
+		},
+		{
+		'current_bill':60,
+		'deducted': 180
+		},
+		{
+		'current_bill':90,
+		'deducted': 300
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		current_bill= inputData[randomIndex]['current_bill'],
+		deducted = inputData[randomIndex]['deducted'],
+		bill,
+		question = {};
+	
+	
+	to_pay=deducted-current_bill;
+	bill=(deducted/to_pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0122',
+		'question': 'If' + current_bill + '% of an current bill is deducted then rs' + deducted + 'is still to be paid .How much was the original bill',
+		'options': {
+			'A': bill,
+			'B': bill + parseInt(Math.random()*10),
+			'C': bill + parseInt(Math.random()*10),
+			'D': bill - parseFloat(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '01'
+	}
+	
+	return question;
+}
+
+function problem0122(){
+	var inputData = [{
+		'current_bill':35,
+		'deducted': 150
+		},
+		{
+		'current_bill':50,
+		'deducted': 200
+		},
+		{
+		'current_bill':60,
+		'deducted': 180
+		},
+		{
+		'current_bill':90,
+		'deducted': 300
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		current_bill= inputData[randomIndex]['current_bill'],
+		deducted = inputData[randomIndex]['deducted'],
+		bill,
+		question = {};
+	
+	
+	to_pay=deducted-current_bill;
+	bill=(deducted/to_pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0122',
+		'question': 'If' + current_bill + '% of an current bill is deducted then rs' + deducted + 'is still to be paid .How much was the original bill',
+		'options': {
+			'A': bill,
+			'B': bill + parseInt(Math.random()*10),
+			'C': bill + parseInt(Math.random()*10),
+			'D': bill - parseFloat(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '01'
+	}
+	
+	return question;	
 }
