@@ -1019,5 +1019,3 @@ function problem0120(){
 	return question;
 }
 
-
-
