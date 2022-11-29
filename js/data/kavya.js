@@ -1388,6 +1388,126 @@ function problem0527(){
 	return question;
 }
 
+function problem0528(){
+	var inputData = [{
+		'typist':6,
+		'pages': 600,
+		'hours': 5,
+		},
+		{
+		'typist':2,
+		'pages': 700,
+		'hours': 5,
+		},
+		{
+		'typist':4,
+		'pages': 800,
+		'hours': 4,
+		},
+		{
+		'typist':2,
+		'pages': 900,
+		'hours': 9,
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		typist= inputData[randomIndex]['typist'],
+		pages = inputData[randomIndex]['pages'],
+		hours = inputData[randomIndex]['hours'],
+		count,
+		total,
+		question = {};
+	
+	
+	count=pages/typist;
+	total=count/hours;
+
+	question = {
+		'type': 'single',
+		'id': '0528',
+		'question': + typist + " " +'typists can type'+ " " + pages + 'pages in ' + hours + 
+					'hours.Find the average number of pages typed by each typist in an hour.',
+		'options': {
+			'A': total - parseInt(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0529(){
+	var inputData = [{
+		'salaryA': 2000,
+		'salaryB': 6658,
+		'salaryC': 4590,
+		'salaryD': 2765,
+		'average': 3579
+		},
+		{
+		'salaryA': 6435,
+		'salaryB': 6927,
+		'salaryC': 6855,
+		'salaryD': 7230,
+		'average': 6500
+		},
+		{
+		'salaryA': 5439,
+		'salaryB': 3967,
+		'salaryC': 4865,
+		'salaryD': 1505,
+		'average': 5432
+		},
+		{
+		'salaryA': 9075,
+		'salaryB': 7634,
+		'salaryC': 5423,
+		'salaryD': 9809,
+		'average': 5000
+		},
+		{
+		'salaryA': 6543,
+		'salaryB': 6789,
+		'salaryC': 9087,
+		'salaryD': 6790,
+		'average': 7000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		salaryA= inputData[randomIndex]['salaryA'],
+		salaryB= inputData[randomIndex]['salaryB'],
+		salaryC= inputData[randomIndex]['salaryC'],
+		salaryD= inputData[randomIndex]['salaryD'],
+		average= inputData[randomIndex]['average'],
+		total= inputData[randomIndex]['total'],
+		salary= inputData[randomIndex]['salary'],
+		finalSalary,
+		question = {};
+
+	var total = parseInt(salaryA+salaryB+salaryC+salaryD),
+	    salary = parseInt(average*5),
+	    finalSalary = parseInt(salary - total);
+
+	question = {
+		'type': 'single',
+		'id': '0529',
+		'question': 'Mohan gets a salary of '+ salaryA +', '+salaryB+ ', '+salaryC+','+salaryD+ ' for 4 months. How much salary he must have in the fifth month?',
+		'options': {
+			'A': finalSalary,
+			'B': finalSalary - parseInt(Math.random()*10),
+			'C': finalSalary + parseInt(Math.random()*10),
+			'D': finalSalary - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '05'
+	}
+	
+	return question;
+}
+
 
 
 

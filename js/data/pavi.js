@@ -1226,7 +1226,7 @@ function problem0824(){
 	return question;
 	
 }
-function problem10825(){
+function problem0825(){
 	var inputData = [{
 		'diagonal': 60
 		},
@@ -1258,7 +1258,7 @@ function problem10825(){
 			'A': areaSquare - parseInt(Math.random()*10),
 			'B': areaSquare - parseInt(Math.random()*10),
 			'C': areaSquare,
-			'D': areaSquare + parseInt(Math.random()*10),
+			'D': areaSquare + parseInt(Math.random()*10)
 		},
 		'answer': 'C',
 		'author-id': '0825'
@@ -1268,3 +1268,49 @@ function problem10825(){
 	
 }
 
+function problem0826(){
+	var inputData = [{
+		'trueinput': 60,
+		'falseinput': 10
+		},
+		{
+		'trueinput': 20,
+		'falseinput': 20
+		},
+		{
+		'trueinput': 30,
+		'falseinput': 20
+		},
+		{
+		'trueinput': 40,
+		'falseinput': 40
+		},
+		{
+		'trueinput': 20,
+		'falseinput': 10
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		trueinput=inputData[randomIndex]['trueinput'],
+		falseinput=inputData[randomIndex]['falseinput'],
+	    errorpercentage,
+		trueinput=parseInt(trueinput),
+		falseinput=parseInt(falseinput),
+		errorpercentage=(trueinput - falseinput)/trueinput,
+		errorpercentage=errorpercentage*100,
+		
+		question = {
+		'type': 'single',
+		'id': '0826',
+		'question': 'A student multiplied a number by ' + falseinput + 'instead of '+trueinput+  'what is the percentage error in the calculation?',
+		'options': {
+			'A': errorpercentage + parseInt(Math.random()*10),
+			'B': errorpercentage - parseInt(Math.random()*10),
+			'C': errorpercentage,
+			'D': errorpercentage - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '0826'
+	}
+	
+	return question;
+}

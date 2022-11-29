@@ -1488,6 +1488,109 @@ function problem1128(){
 	return question;
 	
 }
+function problem1129(){
+	var inputData = [{
+		'principal': 600,
+		'interest': 67,
+		'years': 1990
+		},
+		{
+		'principal': 8000,
+		'interest': 140,
+		'years': 1780
+		},
+		{
+		'principal': 5580,
+		'interest': 670,
+		'years': 1670
+		},
+		{
+		'principal': 8900,
+		'interest': 450,
+		'years': 1870
+		},
+		{
+		'principal': 7600,
+		'interest': 9050,
+		'years': 1990
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		principal= inputData[randomIndex]['principal'],
+		interest = inputData[randomIndex]['interest'],
+		years = inputData[randomIndex]['years'],
+		amount,
+		question = {};
+	
+	principal=parseInt(principal);
+	interest=parseInt(interest);
+	years=parseInt(years);
+	amount=(principal*interest*years)/100;
+
+	question = {
+		'type': 'single',
+		'id': '1129',
+		'question': ' If Ramesh borrows '+ principal +' from Mahesh at rate of interest '+ interest +
+						'S.I, at the end of' + years + 'years how much interest Suresh has to pay along with principal amount?',
+		'options': {
+			'A': amount,
+			'B': amount - parseFloat(Math.random()*10),
+			'C': amount + parseFloat(Math.random()*10),
+			'D': amount - parseFloat(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '11'
+	}
+	
+	return question;
+}
+function problem1130(){
+	var inputData = [{
+		'profit': 87,
+		'costprice': 450
+		},
+		{
+		'profit': 34,
+		'costprice': 890
+		},
+		{
+		'profit': 90,
+		'costprice': 345
+		},
+		{
+		'profit': 34,
+		'costprice': 560
+		},
+		{
+		'profit': 56,
+		'costprice': 897
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		profit= inputData[randomIndex]['profit'],
+		costprice= inputData[randomIndex]['costprice'],
+		sellingprice,
+		question = {};
+
+	profit=parseInt(profit);
+	costprice=parseInt(costprice);
+	sellingprice=(((100/profit)/100)*costprice)
+
+	question = {
+		'type': 'single',
+		'id': '1130',
+		'question': 'A shopkeeper bought a watch for rs'  + costprice + 'at what price should he sell the watch to earn a profit of'+profit,
+		'options': {
+			'A': sellingprice-parseInt(Math.random()*10),
+			'B': sellingprice,
+			'C': sellingprice+parseInt(Math.random()*10),
+			'D': sellingprice-parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 
 
 
