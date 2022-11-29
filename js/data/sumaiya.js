@@ -5,55 +5,6 @@ function getRandomNumber(max){
 }
 
 
-/*function proble238(){
-	var inputData = [{
-		'distance': 10,
-		'time': 60
-		},
-		{
-		'distance': 10,
-		'time': 90
-		},
-		{
-		'distance': 10,
-		'time': 60
-		},
-		{
-		'distance': 10,
-		'time': 60
-		},
-		{
-		'distance': 10,
-		'time': 60
-		}],
-		randomIndex = getRandomNumber(inputData.length),
-		distance= inputData[randomIndex]['distance'],
-		time = inputData[randomIndex]['time'],
-		speed,
-		question = {};
-
-	distance=parseInt(distance);
-	time=parseInt(time*60);
-	speed=((distance/time)*(18/5));
-
-	question = {
-		'type': 'single',
-		'id': '248',
-		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
-		'options': {
-			'A': speed,
-			'B': speed - parseInt(Math.random()*10),
-			'C': speed + parseInt(Math.random()*10),
-			'D': speed - parseInt(Math.random()*10)
-		},
-		'answer': 'A',
-		'author-id': '12'
-	}
-	
-	return question;
-	
-}*/
-
 function problem121(){
 	var inputData = [{
 		'd1':240,
@@ -974,4 +925,55 @@ var inputData = [{
 	
 	return question;
 
+}
+
+function problem1221(){
+	var inputData = [{
+	
+		'population1': 54500,
+		'population2': 58500
+		},
+		{
+		'population1': 54500,
+		'population2': 56500
+		},
+		{
+		'population1': 54500,
+		'population2': 57500
+		},
+		{
+		'population1': 54500,
+		'population2': 55500
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		population1= inputData[randomIndex]['population1'],
+		population2 = inputData[randomIndex]['population2'],
+		population,
+		percentageincrease,
+		question = {};
+
+	population1=parseInt(population1);
+	population2=parseInt(population2);
+	
+	population=(population1-population2);
+	
+	percentageincrease =((population/population1)*100);
+	
+
+	question = {
+		'type': 'single',
+		'id': '1221',
+		'question': 'The population of a town is increased from '+ population1 +' to '+ population2 +'  in one year. What is the percentage increase in the population?',
+		'options': {
+			'A': percentageincrease,
+			'B': percentageincrease - parseInt(Math.random()*10), 
+			'C': percentageincrease + parseInt(Math.random()*10),
+			'D': percentageincrease - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '12'
+	}
+	
+	return question;
+	
 }
