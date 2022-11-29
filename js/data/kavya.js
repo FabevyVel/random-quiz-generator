@@ -1040,3 +1040,51 @@ function problem0520(){
 	return question;
 }
 
+function problem0521(){
+	var inputData = [{
+		'distance': 100,
+		'time': 9
+		},
+		{
+		'distance': 100,
+			'time': 6
+		},
+		{
+		'distance': 100,
+		'time': 3
+		},
+		{
+		'distance': 100,
+		'time': 12
+		},
+		{
+		'distance': 100,
+		'time': 15
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		distance= inputData[randomIndex]['distance'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+
+	distance=parseInt(distance);
+	time=parseInt(time*60);
+	speed=((distance/time)*(18/5));
+
+	question = {
+		'type': 'single',
+		'id': '0521',
+		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
+		'options': {
+			'A': speed,
+			'B': speed - parseInt(Math.random()*10),
+			'C': speed + parseInt(Math.random()*10),
+			'D': speed - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
