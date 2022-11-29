@@ -1539,3 +1539,372 @@ function problem1232(){
 	return question;
 	
 }
+function problem1233(){
+	var inputData = [{
+		'diagonal': 60
+		},
+		{		
+		'diagonal': 60
+		},
+		{
+		'diagonal': 90
+		},
+		{		
+		'diagonal': 60
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		diagonal = inputData[randomIndex]['diagonal'],
+		areasquare,
+		question = {};
+
+	diagonal=parseInt(diagonal);
+	areasquare=1/2*(diagonal*diagonal);
+
+	question = {
+		'type': 'single',
+		'id': '1233',
+		'question': 'The diagonal of a square field is '+ diagonal +'m,then area of the field is',
+		'options': {
+			'A': areasquare - parseInt(Math.random()*10),
+			'B': areasquare - parseInt(Math.random()*10),
+			'C': areasquare ,
+			'D': areasquare + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+function problem1234(){
+	var inputData = [{
+		'salarya': 2000,
+		'salaryb': 6658,
+		'salaryc': 4590,
+		'salaryd': 2765,
+		'salarye': 1890,
+		'average': 3579
+		},
+		{
+		'salarya': 6435,
+		'salaryb': 6927,
+		'salaryc': 6855,
+		'salaryd': 7230,
+		'salarye': 6562,
+		'average': 6500
+		},
+		{
+		'salarya': 5439,
+		'salaryb': 3967,
+		'salaryc': 4865,
+		'salaryd': 1505,
+		'salarye': 3689,
+		'average': 5432
+		},
+		{
+		'salarya': 6543,
+		'salaryb': 6789,
+		'salaryc': 9087,
+		'salaryd': 6790,
+		'salarye': 4326,
+		'average': 7000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		salarya= inputData[randomIndex]['salarya'],
+		salaryb= inputData[randomIndex]['salaryb'],
+		salaryc= inputData[randomIndex]['salaryc'],
+		salaryd= inputData[randomIndex]['salaryd'],
+		salarye= inputData[randomIndex]['salarye'],
+		average= inputData[randomIndex]['average'],
+		total= inputData[randomIndex]['total'],
+		salary= inputData[randomIndex]['salary'],
+		monthofsalary,
+		question = {};
+
+		total = parseInt(salarya+salaryb+salaryc+salaryd+salarye),
+	    salary = parseInt(average*6),
+	    monthofsalary = parseInt(salary - total);
+
+	question = {
+		'type': 'single',
+		'id': '1234',
+		'question': 'Mohan gets a salary of '+ salarya +', '+salaryb+ ', '+salaryc+', '+salaryd+' and '+salarye +' for 5 months. How much salary he must have in the sixth month so that he gets an average of '+ average +'',
+		'options': {
+			'A': monthofsalary - parseInt(Math.random()*10),
+			'B': monthofsalary,
+			'C': monthofsalary + parseInt(Math.random()*10),
+			'D': monthofsalary - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '12'
+	}
+	
+	return question;
+}
+function problem1235(){
+	
+	var inputData = [{
+		'initial': 35000,
+		'ending': 10000,
+		'years': 10
+		},
+		{
+		'initial': 175000,
+		'ending': 262500,
+		'years': 10
+		},
+		{
+		'initial': 148900,
+		'ending': 670768,
+		'years': 30
+		},
+		{
+		'initial': 129000,
+		'ending': 558900,
+		'years': 3
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		initial= inputData[randomIndex]['initial'],
+		ending = inputData[randomIndex]['ending'],
+		years = inputData[randomIndex]['years'],
+		Average,
+		question = {};
+	
+	initial=parseInt(initial);
+	ending=parseInt(ending);
+	years=parseInt(years);
+	increased=ending-initial;
+	increasedpercentage=(increased/initial)*100;
+	Average=(increasedpercentage/years);
+
+	question = {
+		'type': 'single',
+		'id': '1235',
+		'question': ' The population of a town increased from '+ initial +' to '+ ending+' in a '+ years +'. The average percent increase of population per year is:',
+		'options': {
+			'A': Average + parseInt(Math.random()*10),
+			'B': Average,
+			'C': Average - parseInt(Math.random()*10),
+			'D': Average - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '12'
+	}
+	
+	return question;
+}
+function problem1236(){
+	var inputData = [{
+		'perimeter': 30		
+		},
+		{
+		'perimeter': 24,	
+		},
+		{
+		'perimeter': 60,		
+		},
+		{
+		'perimeter': 20,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		perimeter= inputData[randomIndex]['perimeter'],
+		side,
+		question = {};
+
+	perimeter=parseInt(perimeter);
+	side=perimeter/4;
+
+	question = {
+		'type': 'single',
+		'id': '1236',
+		'question': 'If the perimeter of square is ' + perimeter+', find one of the side of square?',
+		'options': {
+			'A': side - parseInt(Math.random()*10),
+			'B': side,
+			'C': side + parseInt(Math.random()*10),
+			'D': side - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+function problem1237(){
+	var inputData = [{
+		'value': 400,		
+		},
+		{
+		'value': 500,
+		},
+		{
+		'value': 200,		
+		},
+		{
+		'value': 150,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		value= inputData[randomIndex]['value'],
+		squareroot,
+		question = {};
+
+	value=parseInt(value);
+	squareroot=Math.sqrt(value);
+
+	question = {
+		'type': 'single',
+		'id': '1237',
+		'question': 'Find the square root value of '+ value+'? ',
+		'options': {
+			'A': squareroot,
+			'B': squareroot - parseInt(Math.random()*10),
+			'C': squareroot + parseInt(Math.random()*10),
+			'D': squareroot - parseInt(Math.random()*10)
+		},
+		'answer': 'D',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+function problem1238(){
+	var inputData = [{
+		'value': 511,		
+		},
+		{
+		'value': 729,	
+		},
+		{
+		'value': 342,		
+		},
+		{
+		'value': 215,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		value= inputData[randomIndex]['value'],
+		cuberoot,
+		question = {};
+
+	value=parseInt(value);
+	cuberoot=Math.cbrt(value);
+
+	question = {
+		'type': 'single',
+		'id': '1238',
+		'question': 'Find the cube root value of '+ value+'? ',
+		'options': {
+			'A':cuberoot- parseInt(Math.random()*10),
+			'B':cuberoot, 
+			'C':cuberoot+ parseInt(Math.random()*10),
+			'D':cuberoot- parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+function problem1239(){
+	var inputData = [{
+		'a': 3,
+		'b': 2,
+		'c': 5,
+		'd':1160
+		},
+		{
+	    'a': 3,
+		'b': 2,
+		'c': 5,
+		'd':1460
+		},
+		{
+		'a': 3,
+		'b': 2,
+		'c': 5,
+		'd':1560
+		},
+		{
+		'a': 3,
+		'b': 2,
+		'c': 5,
+		'd':1260
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		a= inputData[randomIndex]['a'],
+		b= inputData[randomIndex]['b'],
+		c = inputData[randomIndex]['c'],
+		d = inputData[randomIndex]['d'],
+		add,
+		total,
+		question = {};
+		
+	    add=c/(a+b+c)
+        total=add*d
+	question = {
+		'type': 'single',
+		'id': '1239',
+		'question': 'A:B:C is in ratio of ' + a + ':' + b + ':' + c + ' ,how much money will c get out of ' + total + '.',
+		'options': {
+			'A': total + parseInt(Math.random()*10),
+			'B': total- parseInt(Math.random()*10),
+			'C': total - parseInt(Math.random()*10),
+			'D': total 
+		},
+		'answer': 'D',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+function problem1240(){
+	var inputData = [{
+		'speeda':11,
+		'speedb': 3
+		},
+		{
+		'speeda':11,
+		'speedb': 4
+		},
+		{
+		'speeda':11,
+		'speedb': 5
+		},
+		{
+		'speeda':11,
+		'speedb': 6
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    speeda= inputData[randomIndex]['speeda'],
+		speedb = inputData[randomIndex]['speedb'],
+	    speed,
+		question = {};
+	
+		speed=(1/2*(speeda+speedb));
+
+	question = {
+		'type': 'single',
+		'id': '1240',
+		'question': ' in one hour a boat goes  '  +  speeda   + 'km/hr  along the stream and  '    +speedb   +   'km/hr  against the stream . the speed of the boat in still water is',
+		'options': {
+			'A': speed-parseInt(Math.random()*10),
+			'B': speed+parseInt(Math.random()*10),
+			'C': speed,
+			'D': speed-parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+
+
+
+
