@@ -1678,4 +1678,53 @@ function problem0333(){
 	return question;
 	
 }
-
+function problem0334()
+{
+	var inputData = [{
+		'start':9,
+		'middile':3.5,
+		'end':45
+	},
+	{
+	'start':3,
+	'middile':4.5,
+	'end':85
+    },
+	{
+	'start':8,
+	'middile':2.5,
+	'end':65
+    },	
+	{
+    'start':20,
+	'middile':5.5,
+	'end':95
+ }],
+    randomIndex = getRandomNumber(inputData.length),
+    start= inputData[randomIndex]['start'],
+    middile= inputData[randomIndex]['middile'],
+    end=inputData[randomIndex]['end'],
+    total,
+    question = {};
+	
+	start=parseInt(start);
+	middile=parseFloat(middile);
+	end=parseInt(end);
+	total=(start*middile)+end;
+	
+	question={
+		'type':'single',
+		'id':'0334',
+		'question':' the average weight of the '+ start+'  increased by '+ middile +' kg when a new person comes in place of one of them weighting '+ end +' of the new person.',
+		'option':
+		{
+			'A':total - parseInt(Math.random()*10),
+			'B':total + parseInt(Math.random()*10),
+			'C':total,			
+			'D':total - parseInt(Math.random()*10),
+		},
+		'answer':'C',
+		'author-id':'03'
+		}
+		return question;
+	}
