@@ -1325,3 +1325,50 @@ function problem0927(){
     }
 	return question;
 }
+
+function problem0928(){
+	var inputData = [{
+		'l':18,
+		'b':14
+		},
+		{
+		'l':16,
+		'b':13
+		},
+		{
+		'l': 12,
+		'b': 10
+		},
+		{
+		'l': 7,
+		'b': 7
+		},
+		{
+		'l': 20,
+		'b': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    l = inputData[randomIndex]['l'],
+	    b = inputData[randomIndex]['b'],
+		a,
+		question = {};
+
+	l = parseInt(l);
+    b = parseInt(b);
+    a = l*b;
+	
+	question = {
+		'type': 'single',
+		'id': '0928',
+		'question': 'If the length of rectangle is ' + l + ' m and its breadth is ' + b +' m. find the area'+ a + ' m? ',
+		'options': {
+			'A': a * parseInt(Math.random()*10),
+			'B': a ,
+			'C': a - parseInt(Math.random()*10),
+			'D': a + parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '09'
+    }
+	return question;
+}
