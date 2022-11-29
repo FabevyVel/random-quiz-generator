@@ -1531,3 +1531,124 @@ function problem1526(){
 	return question;
 	
 }
+
+
+//27
+
+function problem1527(){
+	var inputData = [{
+		'salaryA': 2000,
+		'salaryB': 6658,
+		'salaryC': 4590,
+		'salaryD': 2765,
+		'salaryE': 1890,
+		'average': 3579
+		},
+		{
+		'salaryA': 6435,
+		'salaryB': 6927,
+		'salaryC': 6855,
+		'salaryD': 7230,
+		'salaryE': 6562,
+		'average': 6500
+		},
+		{
+		'salaryA': 5439,
+		'salaryB': 3967,
+		'salaryC': 4865,
+		'salaryD': 1505,
+		'salaryE': 3689,
+		'average': 5432
+		},
+		{
+		'salaryA': 9075,
+		'salaryB': 7634,
+		'salaryC': 5423,
+		'salaryD': 9809,
+		'salaryE': 4500,
+		'average': 5000
+		},
+		{
+		'salaryA': 6543,
+		'salaryB': 6789,
+		'salaryC': 9087,
+		'salaryD': 6790,
+		'salaryE': 4326,
+		'average': 7000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		salaryA= inputData[randomIndex]['salaryA'],
+		salaryB= inputData[randomIndex]['salaryB'],
+		salaryC= inputData[randomIndex]['salaryC'],
+		salaryD= inputData[randomIndex]['salaryD'],
+		salaryE= inputData[randomIndex]['salaryE'],
+		average= inputData[randomIndex]['average'],
+		total= inputData[randomIndex]['total'],
+		salary= inputData[randomIndex]['salary'],
+		finalSalary,
+		question = {};
+
+	var total = parseInt(salaryA+salaryB+salaryC+salaryD+salaryE),
+	    salary = parseInt(average*6),
+	    finalSalary = parseInt(salary - total);
+
+	question = {
+		'type': 'single',
+		'id': '1527',
+		'question': 'Mohan gets a salary of '+ salaryA +', '+salaryB+ ', '+salaryC+', '+salaryD+' and '+salaryE +' for 5 months.How much salary he must have in the sixth month so that he gets an average of '+ average +'',
+		'options': {
+			'A': finalSalary,
+			'B': finalSalary - parseInt(Math.random()*10),
+			'C': finalSalary + parseInt(Math.random()*10),
+			'D': finalSalary - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '15'
+	}
+	
+	return question;
+}
+
+//28
+
+function problem1528(){
+	var inputData = [{
+		'perimeter': 56	
+		},
+		{
+		'perimeter': 78,
+		},
+		{
+		'perimeter': 29,	
+		},
+		{
+		'perimeter': 41,		
+		},
+		{
+		'perimeter': 49,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		perimeter= inputData[randomIndex]['perimeter'],
+		side,
+		question = {};
+
+	perimeter=parseInt(perimeter);
+	side=perimeter/4;
+
+	question = {
+		'type': 'single',
+		'id': '1528',
+		'question': 'If the perimeter of square is ' + perimeter+', find one of the side of square?',
+		'options': {
+			'A':side - parseInt(Math.random()*10),
+			'B': side - parseInt(Math.random()*10),
+			'C': side + parseInt(Math.random()*10),
+			'D':  side
+		},
+		'answer': 'D',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}

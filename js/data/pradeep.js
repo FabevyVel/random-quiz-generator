@@ -1167,3 +1167,115 @@ function problem0924(){
 	}
 	return question;
 }
+function problem0925(){
+	var inputData = [{
+		'ss':25,
+		'cs': 15,
+		'time':10
+		},
+		{
+		'ss':20,
+		'cs': 5,
+		'time':10
+		},
+		{
+		'ss':15,
+		'cs': 35,
+		'time':10
+		},
+		{
+		'ss':22,
+		'cs':14,
+		'time':6
+		},
+		{
+		'ss':16,
+		'cs': 24,
+		'time':14
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    ss = inputData[randomIndex]['ss'],
+		cs = inputData[randomIndex]['cs'],
+    	time = inputData[randomIndex]['time'],
+	    speed,
+	    distance,
+		question = {};
+		
+	    ss = parseInt(ss);
+		cs = parseInt(cs);
+		time = parseInt(time/60);
+		speed = ss+cs;
+	    distance = speed*time;
+
+
+	question = {
+		'type': 'single',
+		'id': '0925',
+		'question': ' The speed of a boat in stil water in' + ss + 'km/hr and the rate of current is '+ cs + 'km/hr. The distance travelled downstream in ' + time + 'minutes is?',
+		'options': {
+			'A': distance*parseInt(Math.random()*10),
+			'B': distance+parseInt(Math.random()*10),
+			'C': distance-parseInt(Math.random()*10),
+			'D': distance
+		},
+		'answer': 'D',
+		'author-id': '09'
+	}
+	
+	return question;
+	
+}
+function problem0926(){
+	var inputData = [{
+		'p': 48000,
+		'n': 12,
+		'r':4
+		},
+		{
+		'p': 40000,
+		'n': 8,
+		'r':10		
+		},
+		{
+		'p': 35000,
+		'n': 6,
+		'r':6
+		},
+		{
+		'p': 38000,
+		'n': 16,
+		'r':12
+		},
+		{
+		'p': 44000,
+		'n': 12,
+		'r':16
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		si,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+    si=p*n*r/100;
+	
+	question = {
+		'type': 'single',
+		'id': '0926',
+		'question': 'Find the simple interest when ' + p + ' rs rate of interest ' + r + ' percentage per annum, time ' + n + ' years.',
+		'options': {
+			'A': si - parseInt(Math.random()*10),
+			'B': si,
+			'C': si * parseInt(Math.random()*10),
+			'D': si + parseInt(Math.random()*10) 
+		},
+		'answer': 'B',
+		'author-id': '09'
+    }
+	return question;
+}

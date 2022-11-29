@@ -1018,3 +1018,57 @@ function problem0120(){
 	
 	return question;
 }
+
+function problem0121(){
+		var inputData = [{
+			's':4016.25,
+			'r':9,
+			't':5
+			},
+			{
+			's':4006.05,
+			'r':8,
+				't':4
+			},
+			{
+			's':3016.15,
+			'r':6,
+				't':3
+			},
+			
+			{
+			's':5016.25,
+			'r':4,
+				't':2
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			s= inputData[randomIndex]['s'],
+			r= inputData[randomIndex]['r'],
+		    t= inputData[randomIndex]['t'],
+			
+		    
+		    s=parseInt(s);
+		   
+		   r=parseInt(r);
+		   
+		   t=parseInt(t);
+		   
+		    p=(100*s)/(r*t);
+		   
+			question = {};
+					
+	  question = {
+			'type': 'single',
+			'id': '0121',
+			'question': 'A sum fetched a total simple interest of rs.'+s+'at the rate of '+r+'p.c.p.a. in '+t+'years what is the sum?',
+			'options': {
+				'A':p,
+				'B':p-parseInt(Math.random()*10),
+				'C':p-parseInt(Math.random()*10),
+				'D':p+parseInt(Math.random()*10)
+			},
+			'answer': 'A',
+			'author-id': '01'
+		}
+		return question;	
+}
