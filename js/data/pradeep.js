@@ -1075,3 +1075,49 @@ function problem0922(){
     }
 	return question;
 }
+function problem0923(){
+	var inputData = [{
+		'h':18,
+		'b':14
+		},
+		{
+		'h':26,
+		'b':30
+		},
+		{
+		'h': 12,
+		'b': 36
+		},
+		{
+		'h': 24,
+		'b': 36
+		},
+		{
+		'h': 42,
+		'b': 22
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    h = inputData[randomIndex]['h'],
+	    b = inputData[randomIndex]['b'],
+		a,
+		question = {};
+
+	h = parseInt(h);
+    b = parseInt(b);
+    a = b*h/2;
+	
+	question = {
+		'type': 'single',
+		'id': '0923',
+		'question': 'A triangle has its height ' + h + ' m and its breadth ' + b +' m. find the area'+ a + ' m of the triangle ? ',
+		'options': {
+			'A': a * parseInt(Math.random()*10),
+			'B': a, 
+			'C': a - parseInt(Math.random()*10),
+			'D': a + parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '09'
+    }
+	return question;
+}
