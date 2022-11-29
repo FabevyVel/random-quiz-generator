@@ -1384,3 +1384,52 @@ function problem1229(){
 	return question;
 	
 }
+
+function problem1230(){
+	var inputData = [{
+		'cp': 20,
+		'sp': 100,
+		'paid': 7011
+		},
+		{
+		'cp': 23,
+		'sp': 100,
+		'paid': 7011
+		},
+		{
+		'cp': 22,
+		'sp': 100,
+		'paid': 7011
+		},
+		{
+		'cp': 24,
+		'sp': 100,
+		'paid': 7011
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		cp= inputData[randomIndex]['cp'],
+		sp= inputData[randomIndex]['sp'],
+		paid= inputData[randomIndex]['paid'],
+		sellingprice,
+		costprice,
+		question = {};
+		sellingprice=sp+cp;
+        costprice=((100/sellingprice)*paid);
+
+	question = {
+		'type': 'single',
+		'id': '1230',
+		'question':'The owner of a cell phone shop charges his customer ' + cp + '% more than the cost price. If a customer paid Rs' + paid + ' for a cell phone, then what was the cost price of the cell phone?',
+		'options': {
+			'A': costprice - parseInt(Math.random()*10),
+			'B': costprice,
+			'C': costprice - parseInt(Math.random()*10),
+			'D': costprice + parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}

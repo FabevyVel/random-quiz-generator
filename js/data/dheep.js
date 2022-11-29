@@ -1728,3 +1728,55 @@ function problem0334()
 		}
 		return question;
 	}
+	function problem0335(){
+	 	var inputData = [{
+			'stream':16,
+			'hours1':2,
+			'hours2':4
+		    },
+			{
+		  'stream':28,
+		  'hours1':4,
+			'hours2':5
+	       },
+		   {
+	      'stream':39,
+	      'hours1':3,
+	      'hours2':4
+          },
+		  {
+	     'stream':50,
+	     'hours1':2,
+	      'hours2':4
+      }],
+	  randomIndex = getRandomNumber(inputData.length),
+	  stream=inputData[randomIndex]['stream'],
+	  hours1=inputData[randomIndex]['hours_1'],
+	  hours2=inputData[randomIndex]['hours_2'],
+	  speed,
+	  speed1,
+	  total,
+	  question={};
+	  stream=parseInt(stream);
+	  hours1=parseInt(hours1);
+	  hours2=parseInt(hours2);
+	  speed=(stream/hours1);
+	  speed_1=(stream/hours2);
+	  total=(1/2*(speed+speed_1));
+	  question=
+	  {
+		  'type':'single',
+		  'id':'0335',
+		  'question':' A boat running downstream covers a distance of '+ stream +' km in '+hours1+' while for covering the same distance upstream it takes '+ hours2 +' what is the speed of the boat in still water',
+		  'option':
+		  {
+			  'A':speed,
+			  'B':speed - parseInt(Math.random()*10),
+			  'C':speed + parseInt(Math.random()*10),
+			  'D':speed - parseInt(Math.random()*10)
+		  },
+		  'answer':'A',
+		  'author-id':'03'
+	  }
+	  return question;
+  }
