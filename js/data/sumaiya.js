@@ -1342,3 +1342,45 @@ function problem1228(){
 
 }
 
+function problem1229(){
+	var inputData = [{
+		'houra': 6,
+		'hourb': 12
+		},
+		{
+		'houra': 6,
+		'hourb': 10
+		},
+		{
+	    'houra': 6,
+		'hourb': 11
+		},
+		{
+		'houra': 6,
+		'hourb': 13
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		houra= inputData[randomIndex]['houra'],
+		hourb= inputData[randomIndex]['hourb'],
+		time,
+		question = {};
+		
+	    time=(houra*hourb)/(hourb-houra);
+
+	question = {
+		'type': 'single',
+		'id': '1229',
+		'question': 'A pipe can fill a tank in ' + houra + 'hours another pipe can empty the tank in ' + hourb + 'hours both the pipes are opened at same time ,the tank can be filled ',
+		'options': {
+			'A': time,
+			'B': time - parseInt(Math.random()*10),
+			'C': time + parseInt(Math.random()*10),
+			'D': time - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
