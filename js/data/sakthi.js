@@ -1804,7 +1804,6 @@ function problem1531(){
 		'answer': 'D',
 		'author-id': '15'
 	}
-	
 	return question;
 		
 }
