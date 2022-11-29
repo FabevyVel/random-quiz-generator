@@ -970,7 +970,7 @@ function problem0320(){
 
 	question = {
 		'type': 'single',
-		'id': '0319',
+		'id': '0320',
 		'question': 'A man speed with the current is ' + manspeed + ' km/hr and the speed of the current is ' + currentspeed + ' km/hr. The mans speed against the current is',
 		'options': {
 			'A': b - parseInt(Math.random()*10),
@@ -985,7 +985,6 @@ function problem0320(){
 	return question;
 	
 }
-
 function problem0321(){
 	var inputData = [{
 		'downstreamdistance':20,
@@ -1251,3 +1250,4 @@ function problem0325(){
 	return question;
 	
 }
+

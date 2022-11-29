@@ -1388,6 +1388,243 @@ function problem0527(){
 	return question;
 }
 
+function problem0528(){
+	var inputData = [{
+		'typist':6,
+		'pages': 600,
+		'hours': 5,
+		},
+		{
+		'typist':2,
+		'pages': 700,
+		'hours': 5,
+		},
+		{
+		'typist':4,
+		'pages': 800,
+		'hours': 4,
+		},
+		{
+		'typist':2,
+		'pages': 900,
+		'hours': 9,
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		typist= inputData[randomIndex]['typist'],
+		pages = inputData[randomIndex]['pages'],
+		hours = inputData[randomIndex]['hours'],
+		count,
+		total,
+		question = {};
+	
+	
+	count=pages/typist;
+	total=count/hours;
+
+	question = {
+		'type': 'single',
+		'id': '0528',
+		'question': + typist + " " +'typists can type'+ " " + pages + 'pages in ' + hours + 
+					'hours.Find the average number of pages typed by each typist in an hour.',
+		'options': {
+			'A': total - parseInt(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0529(){
+	var inputData = [{
+		'salaryA': 2000,
+		'salaryB': 6658,
+		'salaryC': 4590,
+		'salaryD': 2765,
+		'average': 3579
+		},
+		{
+		'salaryA': 6435,
+		'salaryB': 6927,
+		'salaryC': 6855,
+		'salaryD': 7230,
+		'average': 6500
+		},
+		{
+		'salaryA': 5439,
+		'salaryB': 3967,
+		'salaryC': 4865,
+		'salaryD': 1505,
+		'average': 5432
+		},
+		{
+		'salaryA': 9075,
+		'salaryB': 7634,
+		'salaryC': 5423,
+		'salaryD': 9809,
+		'average': 5000
+		},
+		{
+		'salaryA': 6543,
+		'salaryB': 6789,
+		'salaryC': 9087,
+		'salaryD': 6790,
+		'average': 7000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		salaryA= inputData[randomIndex]['salaryA'],
+		salaryB= inputData[randomIndex]['salaryB'],
+		salaryC= inputData[randomIndex]['salaryC'],
+		salaryD= inputData[randomIndex]['salaryD'],
+		average= inputData[randomIndex]['average'],
+		total= inputData[randomIndex]['total'],
+		salary= inputData[randomIndex]['salary'],
+		finalSalary,
+		question = {};
+
+	var total = parseInt(salaryA+salaryB+salaryC+salaryD),
+	    salary = parseInt(average*5),
+	    finalSalary = parseInt(salary - total);
+
+	question = {
+		'type': 'single',
+		'id': '0529',
+		'question': 'Mohan gets a salary of '+ salaryA +', '+salaryB+ ', '+salaryC+','+salaryD+ ' for 4 months. How much salary he must have in the fifth month?',
+		'options': {
+			'A': finalSalary,
+			'B': finalSalary - parseInt(Math.random()*10),
+			'C': finalSalary + parseInt(Math.random()*10),
+			'D': finalSalary - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '05'
+	}
+	
+	return question;
+}
+
+function problem0530(){
+	var inputData = [{
+		'anu':1000,
+		'banu':2000,
+		'sonu':3000
+		},
+		{
+		'anu':4000,
+		'banu':5000,
+		'sonu':6000
+		},
+		{
+		'anu':7000,
+		'banu':8000,
+		'sonu':9000
+		},
+		{
+		'anu':8000,
+		'banu':4000,
+		'sonu':4000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		anu = inputData[randomIndex]['anu'],
+		banu = inputData[randomIndex]['banu'],
+		sonu = inputData[randomIndex]['sonu'],
+		percentage,
+		question = {};
+
+
+	anu = parseInt(anu);
+	banu = parseInt(banu);
+	sonu = parseInt(sonu);
+	election=anu+banu+sonu;
+	percentage=(anu/election)*100;
+
+
+	question = {
+		'type': 'single',
+		'id': '0530',
+		'question':'Three candidates, anu, banu & sonu contested in  an election and received ' 
+					+ anu + ','+ banu + 'and' + sonu + ' votes respectively. What percent of the total votes did anu gets?',
+		'options': {
+			'A': percentage - parseFloat(Math.random()*10),
+			'B': percentage - parseInt(Math.random()*10),
+			'C': percentage + parseInt(Math.random()*10),
+			'D': percentage
+		},
+		'answer': 'D',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0531(){
+	var inputData = [{
+		'group_women':30,
+		'women_years': 16,
+		'women_leave': 19,
+		'new_woman': 15.8
+		},
+		{
+		'group_women':30,
+		'women_years': 17,
+		'women_leave': 18,
+		'new_woman': 16.9
+		},
+		{
+		'group_women':30,
+		'women_years': 18,
+		'women_leave': 28,
+		'new_woman': 17.5
+		},
+		{
+		'group_boy':40,
+		'boys_years': 16,
+		'boys_leave': 17,
+		'new_boy': 15.875
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		group_women = inputData[randomIndex]['group_women'],
+		women_years = inputData[randomIndex]['women_years'],
+		women_leave = inputData[randomIndex]['women_leave'],
+		new_woman = inputData[randomIndex]['new_woman'],
+		age,
+		group,
+		question = {};
+	
+	group_women = parseInt(group_women);
+	women_years = parseInt(women_years);
+	women_leave = parseInt(women_leave);
+	new_woman = parseFloat(new_woman);
+	age = group_women*women_years;
+	group = (new_woman*group_women) - age + women_leave;
+
+	question = {
+		'type': 'single',
+		'id': '0531',
+		'question': 'Average age of a group of' +" "+ group_women +" "+'women is'+" "+ women_years+" "+ 'years. A woman of age' +" "+ women_leave +" "+ 
+					'leaves the group and a new woman joins the group. If the new average age of the group is'+" "+ new_woman +" "+ 
+					'years, find the age of the new woman?',
+		'options': {
+			'A': group - parseFloat(Math.random()*10),
+			'B': group - parseInt(Math.random()*10),
+			'C': group,
+			'D': group + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+
 
 
 

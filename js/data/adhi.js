@@ -1626,3 +1626,505 @@ function problem0131(){
 
 }
 
+function problem0132(){
+	var inputData = [{
+		'Ajay':1000,
+		'bijoy': 2200,
+		'chandru': 6200
+		},
+		{
+		'Ajay':3000,
+		'bijoy': 5500,
+		'chandru': 12000
+		},
+		{
+		'Ajay':35000,
+		'bijoy': 45000,
+		'chandru': 80000
+		},
+		{
+		'Ajay':60000,
+		'bijoy': 80000,
+		'chandru': 71000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		Ajay = inputData[randomIndex]['Ajay'],
+		bijoy = inputData[randomIndex]['bijoy'],
+		chandru = inputData[randomIndex]['chandru'],
+		percentage,
+		question = {};
+
+
+	Ajay = parseInt(Ajay);
+	bijoy = parseInt(bijoy);
+	chandru = parseInt(chandru);
+	election=Ajay+bijoy+chandru;
+	percentage=(Ajay/election)*100;
+
+
+	question = {
+		'type': 'single',
+		'id': '0132',
+		'question':'Three candidates, Ajay, Bijoy & Chandu contested an election and received' 
+					+ Ajay + ','+ bijoy + 'and' + chandru + 'votes respectively. What percent of the total votes did get?',
+		'options': {
+			'A': percentage - parseFloat(Math.random()*10),
+			'B': percentage - parseInt(Math.random()*10),
+			'C': percentage + parseInt(Math.random()*10),
+			'D': percentage
+		},
+		'answer': 'D',
+		'author-id': '01'
+	}
+	
+	return question;
+	
+}
+
+function problem0133(){
+	var inputData = [{
+		'group_boy':30,
+		'boys_years': 60,
+		'boys_leave': 19,
+		'new_boy': 15.8
+		},
+		{
+		'group_boy': 60,
+		'boys_years': 40,
+		'boys_leave': 12,
+		'new_boy': 30.4
+		},
+		{
+		'group_boy': 80,
+		'boys_years': 23,
+		'boys_leave': 12,
+		'new_boy':20.7
+		},
+		{
+		'group_boy':30,
+		'boys_years': 36,
+		'boys_leave': 29,
+		'new_boy': 15.8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		group_boy = inputData[randomIndex]['group_boy'],
+		boys_years = inputData[randomIndex]['boys_years'],
+		boys_leave = inputData[randomIndex]['boys_leave'],
+		new_boy = inputData[randomIndex]['new_boy'],
+		age,
+		group,
+		question = {};
+	
+	group_boy = parseInt(group_boy);
+	boys_years = parseInt(boys_years);
+	boys_leave = parseInt(boys_leave);
+	new_boy = parseFloat(new_boy);
+	age=group_boy*boys_years;
+	group=(new_boy*group_boy)-age+boys_leave;
+
+
+
+
+	question = {
+		'type': 'single',
+		'id': '0133',
+		'question': 'Average age of a group of' + group_boy + 'boys is' + boys_years + 'years. A boy of age' + boys_leave + 
+					'leaves the group and a new boy joins the group. If the new average age of the group is' + new_boy + 
+					'years, find the age of the new boy.',
+		'options': {
+			'A': group - parseFloat(Math.random()*10),
+			'B': group - parseInt(Math.random()*10),
+			'C': group,
+			'D': group + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '01'
+	}
+	
+	return question;
+	
+}
+
+function problem0134(){
+	var inputData = [{
+		'village_increased':656000,
+		'decade': 234000
+		},
+		{
+		'village_increased':654000,
+		'decade': 543000
+		},
+		{
+		'village_increased':785000,
+		'decade': 258000
+		},
+		{
+		'village_increased':175000,
+		'decade': 262500
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		village_increased = inputData[randomIndex]['village_increased'],
+		decade = inputData[randomIndex]['decade'],
+		percentage_increase,
+		Increase_percentage,
+		required_average,
+		question = {};
+	
+	village_increased = parseInt(village_increased);
+	decade = parseInt(decade);
+	percentage_increase=(village_increased-decade);
+	Increase_percentage=(percentage_increase/village_increased)*100;
+	required_average=(Increase_percentage/10);
+
+
+
+
+	question = {
+		'type': 'single',
+		'id': '0134',
+		'question': 'The population of a town increased from' + village_increased + 'to' + decade + 
+					'in a decade. The average percent increased of population per year is:',
+		'options': {
+			'A': required_average - parseInt(Math.random()*10),
+			'B': required_average - parseInt(Math.random()*10),
+			'C': required_average + parseInt(Math.random()*10),
+			'D': required_average
+		},
+		'answer': 'D',
+		'author-id': '01'
+	}
+	
+	return question;
+	
+}
+function problem0135(){
+	var inputData = [{
+		'parallel_line':34,
+		'same_direction': 67,
+		'train_slower':33
+		},
+		{
+		'parallel_line':65,
+		'same_direction': 50,
+		'train_slower':3
+		},
+		{
+		'parallel_line':72,
+		'same_direction': 40,
+		'train_slower': 35
+		},
+		{
+		'parallel_line':46,
+		'same_direction': 36,
+		'train_slower':36
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		parallel_line = inputData[randomIndex]['parallel_line'],
+		same_direction = inputData[randomIndex]['same_direction'],
+		train_slower = inputData[randomIndex]['train_slower'],
+		train,
+		meter_sec,
+		x,
+		length,
+		question = {};
+	
+	parallel_line = parseInt(parallel_line);
+	same_direction = parseInt(same_direction);
+	train_slower = parseInt(train_slower),
+	train=parallel_line-same_direction;
+	meter_sec=[train*(5/18)];
+	x=meter_sec*train_slower;
+	length=x/2;
+	
+
+
+	question = {
+		'type': 'single',
+		'id': '0135',
+		'question': 'Two trains of equal lengths are running on parallel lines in the same direction at the rate of' + parallel_line + 'km/hr and' 
+					+ same_direction + 'km/hr. The faster train passes the slower train in' + train_slower + 'seconds. What is the length of the each trains ?',
+		'options': {
+			'A': length - parseFloat(Math.random()*10),
+			'B': length + parseFloat(Math.random()*10),
+			'C': length,
+			'D': length - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '01'
+	}
+	
+	return question;
+	
+}
+
+function problem0136(){
+	var inputData = [{
+		'buys':50,
+		'sell': 35,
+		'after_buying': 16,
+		'after_selling':90
+		},
+		{
+		'buys':80,
+		'sell': 65,
+		'after_buying': 12,
+		'after_selling':30
+		},
+		{
+		'buys':13,
+		'sell': 40,
+		'after_buying': 10,
+		'after_selling':80
+		},
+		{
+		'buys':15,
+		'sell': 20,
+		'after_buying': 30,
+		'after_selling': 40
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		buys = inputData[randomIndex]['buys'],
+		sell = inputData[randomIndex]['sell'],
+		after_buying = inputData[randomIndex]['after_buying'],
+		after_selling = inputData[randomIndex]['after_selling'],
+		cp,
+		sp,
+		profit,
+		profit_percentage,
+		question = {};
+	
+
+
+	cp=after_buying+buys;
+	sp=after_selling+sell;
+	profit=sp-cp;
+	profit_percentage=(profit/cp)*100;
+
+
+
+
+	question = {
+		'type': 'single',
+		'id': '0136',
+		'question': 'A person buys a horse for' + buys + 'pounds. after one year, he sells it for' + sell + 
+					'pounds. after one year, again he buys the same horse at' + after_buying + 
+					'pounds and sells it for' + after_selling + 
+					'pounds. what is the overall profit percent for that person over both the transactions?',
+		'options': {
+			'A': profit_percentage - parseInt(Math.random()*10),
+			'B': profit_percentage - parseFloat(Math.random()*10),
+			'C': profit_percentage,
+			'D': profit_percentage + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '01'
+	}
+	
+	return question;
+	
+}
+
+function problem0137(){
+	var inputData = [{
+		'start':90,
+		'mid':33.5,
+		'end':55
+		},
+		{
+		'start':83,
+		'mid':6.9,
+		'end':95
+		},
+		{
+		'start':67,
+		'mid':89.5,
+		'end':65
+		},	
+		{
+		'start':70,
+		'mid':44.7,
+		'end':95
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		start= inputData[randomIndex]['start'],
+		mid= inputData[randomIndex]['mid'],
+		end=inputData[randomIndex]['end'],
+		total,
+		question = {};
+		
+	start=parseInt(start);
+	mid=parseFloat(mid);
+	end=parseInt(end);
+	total=(start*mid)+end;
+		
+	question={
+		'type':'single',
+		'id':'0137',
+		'question':'The average weight of the' + start + 'increased by ' + mid + 
+					'kg when a new person comes in place of one of them weighting ' + end + ' of the new person.',
+		'option':
+		{
+			'A':total,
+			'B':total + parseInt(Math.random()*10),
+			'C':total - parseFloat(Math.random()*10),			
+			'D':total - parseInt(Math.random()*10),
+		},
+		'answer':'A',
+		'author-id':'01'
+		}
+		return question;
+}
+function problem0138(){
+	var inputData = [{
+		'input1': 160,
+		'input2': 100
+		},
+		{
+		'input1': 220,
+		'input2': 120
+		},
+		{
+		'input1': 300,
+		'input2': 230
+		},
+		{
+		'input1': 430,
+		'input2': 420
+		},
+		{
+		'input1': 260,
+		'input2': 180
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		input1=inputData[randomIndex]['input1'],
+		input2=inputData[randomIndex]['input2'],
+	    precentage,
+		
+		
+		input1=parseInt(input1),
+		input2=parseInt(input2),
+		precentage=(input1 - input2)/input1,
+		precentage=precentage*100,
+		
+		question = {
+		'type': 'single',
+		'id': '0138',
+		'question': 'A student multiplied a number by ' + input2 + 'instead of '+input1+ 'what is the percentage error in the calculation?',
+		'options': {
+			'A': precentage - parseFloat(Math.random()*10),
+			'B': precentage - parseInt(Math.random()*10),
+			'C': precentage + parseInt(Math.random()*10),
+			'D': precentage,
+		},
+		'answer': 'A',
+		'author-id': '01',
+	}
+	
+	return question;
+}
+function problem0139(){
+	var inputData = [{
+		'costprice': 2054,
+		'profit': 65
+		},
+		{
+		'costprice': 6540,
+		'profit': 23
+		},
+		{
+		'costprice': 2320,
+		'profit': 89
+		},
+		{
+		'costprice': 8640,
+		'profit': 67
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		costprice= inputData[randomIndex]['costprice'],
+		profit = inputData[randomIndex]['profit'],
+		p,
+		sellingprice,
+		question = {};
+		
+	costprice= inputData[randomIndex]['costprice'],
+	profit = inputData[randomIndex]['profit'],
+	p=(100+profit)/100;
+	sellingprice=p*costprice;
+
+
+	question = {
+		'type': 'single',
+		'id': '0139',
+		'question': 'Rajesh bought a chai for RS ' + costprice + ' and sold it suresh ,if rajesh earned a profit of ' + profit + 
+					'% profit.what is the sellingprice of chair',
+		'options': {
+			'A': sellingprice, 
+			'B': sellingprice - parseInt(Math.random()*10),
+			'C': sellingprice + parseInt(Math.random()*10),
+			'D': sellingprice - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '01'
+	}
+	
+	return question;
+	
+}
+function problem0140(){
+		var inputData = [{
+			'train1':45,
+			'train2':53,
+			'distance':700,
+			'time':42
+			},
+			{
+			'train1':84,
+			'train2':98,
+			'distance':60,
+			'time':35
+			},
+			{
+			'train1':105,
+			'train2':110,
+			'distance':500,
+			'time':23
+			},
+			
+			{
+			'train1':102,
+			'train2':23,
+			'distance':300,
+			'time':58
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			train1= inputData[randomIndex]['train1'],
+			train2= inputData[randomIndex]['train2'],
+		    distance= inputData[randomIndex]['distance'],
+			time= inputData[randomIndex]['time'],
+			question= {};
+			
+		train1=parseInt(train1);
+		train2=parseInt(train2);
+		distance=parseInt(distance);
+		time=parseInt( time);
+		speed=(distance/time)/train2;
+		ratio=train1*speed;
+					
+			
+	  question= {
+			'type': 'single',
+			'id': '0140',
+			'question': 'The ratio between the speed of two train is ' + train1 + ':' + train2 +
+			'.If the second train runs '+distance+' km in '+time+'hours, then the speed of the first train is?',
+			'options': {
+				'A':ratio-parseFloat(Math.random()*10),
+				'B':ratio-parseInt(Math.random()*10),
+				'C':ratio,
+				'D':ratio+parseInt(Math.random()*10)
+			},
+			'answer': 'C',
+			'author-id': '01'
+		}
+		return question;
+	
+}

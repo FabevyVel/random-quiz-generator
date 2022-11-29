@@ -43,7 +43,7 @@ function problem1601(){
 		'type': 'single',
 		'id': '16',
 		'question': 'The average monthly income of p and q is '+monthly1+' the average, monthly income q and r ' + monthly +
-                'the average of p and r '+ monthly3 +' the monthly income of p is:'
+                'the average of p and r '+ monthly3 +' the monthly income of p is:',
 		'options': {
 			'A': p,
 			'B': p - parseInt(Math.random()*10),
@@ -103,7 +103,7 @@ function problem1602(){
 		'type': 'single',
 		'id': '1602',
 		'question': 'The average monthly income of p and q is '+monthly1+' the average, monthly income q and r ' + monthly +
-                'the average of p and r '+ monthly3 +' the monthly income of p is:'
+                'the average of p and r '+ monthly3 +' the monthly income of p is:',
 				'options': {
 					'A': p,
 					'B': p + parseInt(Math.random()*10),
@@ -1098,3 +1098,1064 @@ function problem1620()
 	
 	}
 		
+	function problem1622()
+	{
+		var inputData = [{
+			'ngp': 2,
+			'np': 2,
+			'ngc': 3,
+			'aagp': 67,
+			'aap': 35,
+			'aagc': 6
+			},
+			{
+			'ngp': 2,
+			'np': 2,
+			'ngc': 4,
+			'aagp': 65,
+			'aap': 40,
+			'aagc': 8
+			},
+			{
+			'ngp': 2,
+			'np': 2,
+			'ngc': 3,
+			'aagp': 60,
+			'aap': 42,
+			'aagc': 8
+			},
+			{
+			'ngp': 2,
+			'np': 2,
+			'ngc': 3,
+			'aagp': 55,
+			'aap': 50,
+			'aagc': 5
+			},
+			{
+			'ngp': 2,
+			'np': 2,
+			'ngc': 3,
+			'aagp': 76,
+			'aap': 53,
+			'aagc': 12
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			ngp= inputData[randomIndex]['ngp'],
+			np= inputData[randomIndex]['np'],
+			ngc= inputData[randomIndex]['ngc'],
+			aagp= inputData[randomIndex]['aagp'],
+			aap= inputData[randomIndex]['aap'],
+			aagc= inputData[randomIndex]['aagc'],
+			af,
+			question = {};
+	
+		ngp=parseFloat(ngp);
+		np=parseFloat(np);
+		ngc=parseFloat(ngc);
+		aagp=parseFloat(aagp);
+		aap=parseFloat(aap);
+		aagc=parseFloat(aagc);
+		af=(aagp*ngp+np*aap+ngc*aagc)/(ngp+np+ngc);
+	
+		question = {
+			'type': 'single',
+			'id': '1622',
+			'question': "A family consists of"+ngp+"grandchildren,"+np+"parents and "+ngc+"grandparent. The average age of the grandparents is"+aagp+"years, that of the children is "+aap+" years and that of the pafrent is "+aagc+" years. What is the average age of the family?",
+			'options': {
+				'A': af,
+				'B': af- parseInt(Math.random()*10),
+				'C': af- parseInt(Math.random()*10),
+				'D': af+ parseInt(Math.random()*10)
+			},
+			'answer': 'A',
+			'author-id': '16'
+		}
+		
+		return question;
+		
+	}
+	function problem1623()
+{
+	var inputData = [{
+		'abc': 35,
+		'ab': 30,
+		'bc': 43
+		},
+		{
+		'abc': 60,
+		'ab': 55,
+		'bc': 40
+		},
+		{
+		'abc': 45,
+		'ab': 25,
+		'bc': 53
+		},
+		{
+		'abc': 45,
+		'ab': 80,
+		'bc': 43
+		},
+		{
+		'abc': 45,
+		'ab': 28,
+		'bc': 33
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		abc= inputData[randomIndex]['abc'],
+		ab= inputData[randomIndex]['ab'],
+		bc= inputData[randomIndex]['bc'],
+		b,
+		question = {};
+
+	abc=parseInt(abc);
+	ab=parseInt(ab);
+	bc=parseInt(bc);
+	b=2*bc-(3*abc-2*ab);
+
+	question = {
+		'type': 'single',
+		'id': '1623',
+		'question': "The average weight of A, B and C is "+abc+" kg. If the average weight of A and B be "+ab+" kg and that of B and C be "+bc+" kg, then the weight of B is:",
+		'options': {
+			'A': b- parseInt(Math.random()*10),
+			'B': b- parseInt(Math.random()*10),
+			'C': b,
+			'D': b+ parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+
+
+function problem1624(){
+	var inputData = [{
+		'sum': 420,
+		'totalNumber': 10
+		},
+		{
+		'sum': 415,
+		'totalNumber': 5
+		},
+		{
+		'sum': 980,
+		'totalNumber': 8
+		},
+		{
+		'sum': 840,
+		'totalNumber': 6
+		},
+		{
+		'sum': 503,
+		'totalNumber': 5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		sum = inputData[randomIndex]['sum'],
+		totalNumber = inputData[randomIndex]['totalNumber'],
+		average,
+		question = {};
+
+	sum = parseInt (sum);
+	totalNumber = parseInt (totalNumber);
+	average = sum/totalNumber;
+
+	question = {
+		'type': 'single',
+		'id': '1624',
+		'question': ' The sum of' +" " + totalNumber + " " + 'numbers is' +" " + + sum +'. Find their average number.?',
+		'options': {
+			'A': average + parseInt(Math.random()*10),
+			'B': average - parseInt(Math.random()*10),
+			'C': average - parseInt(Math.random()*10),
+			'D': average 
+		},
+		'answer': 'D',
+		'author-id': '16'
+	}
+	
+	return question;	
+}
+
+function problem1625(){
+	var inputData = [{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 10000,
+		'profit': 18000
+		},
+		{
+		'capital1': 35000,
+		'capital2': 250010,
+		'capital3': 20000,
+		'profit': 18000
+		},
+		{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 30000,
+		'profit': 18000
+		},
+		{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 40000,
+		'profit': 18000
+		},
+		{
+		'capital1': 35000,
+		'capital2': 25000,
+		'capital3': 60000,
+		'profit': 18000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		capital1 = inputData[randomIndex]['capital1'],
+		capital2 = inputData[randomIndex]['capital2'],
+		capital3 = inputData[randomIndex]['capital3'],
+		profit = inputData[randomIndex]['profit'],
+		shareA,
+		question = {};
+
+	capital1 = parseInt (capital1);
+	capital2 = parseInt (capital2);
+	capital3 = parseInt (capital3);
+	shareA = (capital1*profit)/(capital1+capital2+capital3);
+
+	question = {
+		'type': 'single',
+		'id': '1625',
+		'question': 'ramu, Balu and Caran are partners. They have invested Rs.' + capital1  +" " +',Rs.' + capital2  +" " +'and Rs.' + capital3 +" " + 'respectively for the same period. If the total profit is Rs.' + profit + ', find the share of ram ?',
+		'options': {
+			'A': shareA + parseInt(Math.random()*10),
+			'B': shareA,
+			'C': shareA - parseInt(Math.random()*10),
+			'D': shareA - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '16'
+	}
+	
+	return question;	
+}
+function problem1626(){
+	var inputData = [{
+		'average':10,
+		'bijoy': 2,
+		'chandru': 60
+		},
+		{
+		'average':30,
+		'bijoy': 5,
+		'chandru': 120
+		},
+		{
+		'average':35,
+		'bijoy': 4,
+		'chandru': 80
+		},
+		{
+		'average':60,
+		'bijoy': 8,
+		'chandru': 100
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		average = inputData[randomIndex]['average'],
+		bijoy = inputData[randomIndex]['bijoy'],
+		chandru = inputData[randomIndex]['chandru'],
+		x,
+		new_man,
+		question = {};
+	
+
+	average = parseInt(average);
+	bijoy = parseInt(bijoy);
+	chandru = parseInt(chandru);
+	x=average*bijoy;
+	new_man=chandru-x;
+
+	question = {
+		'type': 'single',
+		'id': '1626',
+		'question':'The average chandru of'+average+' men is bijoy by'+bijoy+'kg when one of them whose chandru is'+chandru+ 
+					'kg is replaced by a new man. What is the chandru of the new man?',
+		'options': {
+			'A': new_man,
+			'B': new_man - parseInt(Math.random()*10),
+			'C': new_man + parseFloat(Math.random()*10),
+			'D': new_man - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+function problem1627(){
+	var inputData = [{
+		'average':50,
+		'years': 35,
+		'teacher': 6,
+		'years_teacher':9
+		},
+		{
+		'average':80,
+		'years': 65,
+		'teacher': 12,
+		'years_teacher':3
+		},
+		{
+		'average':135,
+		'years': 40,
+		'teacher': 10,
+		'years_teacher':6
+		},
+		{
+		'average':30,
+		'years': 15,
+		'teacher': 2,
+		'years_teacher': 1
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		average = inputData[randomIndex]['average'],
+		years = inputData[randomIndex]['years'],
+		teacher = inputData[randomIndex]['teacher'],
+		years_teacher = inputData[randomIndex]['years_teacher'],
+		a,
+		sum,
+		age,
+		x,
+		includes,
+		question = {};
+	
+	average = parseInt(average);
+	years = parseInt(years);
+	teacher = parseInt(teacher);
+	years_teacher = parseInt(years_teacher);
+	a=average+teacher;
+	sum=years+years_teacher;
+	age=average*years;
+	x=a*sum;
+	includes=x-age;
+
+
+	question = {
+		'type': 'single',
+		'id': '1627',
+		'question':'The average age of' + average + 'boys in a class is'+ years + 'years. If we include the age of' + teacher + 
+		'teachers, the average age increases by' + years_teacher + ' . What is the sum of ages of the two teachers?',
+		'options': {
+			'A': includes - parseInt(Math.random()*10),
+			'B': includes - parseInt(Math.random()*10),
+			'C': includes + parseInt(Math.random()*10),
+			'D': includes
+		},
+		'answer': 'D',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+function problem1628(){
+	var inputData = [{
+		'first':4586,
+		'second': 7896,
+		'third': 2458,
+		'four': 6253,
+		'five': 4863,
+		'six': 5,
+		'month': 6845
+		},
+		{
+		'first': 6435,
+		'second': 6927,
+		'third': 6855,
+		'four': 7230,
+		'five': 6562,
+		'six': 5,
+		'month':6500 
+		},
+		{
+		'first': 4586,
+		'second': 3698,
+		'third': 1257,
+		'four': 4587,
+		'five': 3625,
+		'six': 5,
+		'month': 4257
+		},
+		{
+		'first': 4265,
+		'second': 8563,
+		'third': 7536,
+		'four': 4963,
+		'five': 7532,
+		'six': 5,
+		'month': 9756
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		first = inputData[randomIndex]['first'],
+		second = inputData[randomIndex]['second'],
+		third = inputData[randomIndex]['third'],
+		four = inputData[randomIndex]['four'],
+		five = inputData[randomIndex]['five'],
+		six = inputData[randomIndex]['six'],
+		month = inputData[randomIndex]['month'],
+		x,
+		y,
+		group,
+		question = {};
+	
+	first = parseInt(first);
+	second = parseInt(second);
+	third = parseInt(third);
+	four = parseInt(four);
+	five = parseInt(five);
+	six = parseInt(six);
+	month = parseInt(month);
+	x=first+second+third+four+five;
+	y=six*month;
+	group=y-x;
+
+
+	question = {
+		'type': 'single',
+		'id': '1628', 
+		'question':'Mohan gets a salary of Rs.'+ first + ', Rs.' + second + ', Rs.' + third + ', Rs.' + four + ' and Rs.'+ five + 'for'+ six + 
+		            'months. How much salary he must have in the sixth month so that he gets an average of Rs.' + month + '?',
+		'options': {
+			'A': group + parseFloat(Math.random()*10),
+			'B': group + parseInt(Math.random()*10),
+			'C': group + parseInt(Math.random()*10),
+			'D': group
+		},
+		'answer': 'D',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+function problem1629(){
+	var inputData = [{
+		'average':10,
+		'bijoy': 2,
+		'chandru': 60
+		},
+		{
+		'average':30,
+		'bijoy': 5,
+		'chandru': 120
+		},
+		{
+		'average':35,
+		'bijoy': 4,
+		'chandru': 80
+		},
+		{
+		'average':60,
+		'bijoy': 8,
+		'chandru': 100
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		average = inputData[randomIndex]['average'],
+		bijoy = inputData[randomIndex]['bijoy'],
+		chandru = inputData[randomIndex]['chandru'],
+		x,
+		new_man,
+		question = {};
+	
+
+	average = parseInt(average);
+	bijoy = parseInt(bijoy);
+	chandru = parseInt(chandru);
+	x=average*bijoy;
+	new_man=chandru-x;
+
+	question = {
+		'type': 'single',
+		'id': '1629',
+		'question':'The average chandru of'+average+' men is bijoy by'+bijoy+'kg when one of them whose chandru is'+chandru+ 
+					'kg is replaced by a new man. What is the chandru of the new man?',
+		'options': {
+			'A': new_man,
+			'B': new_man - parseInt(Math.random()*10),
+			'C': new_man + parseFloat(Math.random()*10),
+			'D': new_man - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+function problem1630(){
+	var inputData = [{
+		'average':40,
+		'years': 65,
+		'teacher': 7,
+		'years_teacher':3
+		},
+		{
+		'average':80,
+		'years': 65,
+		'teacher': 12,
+		'years_teacher':3
+		},
+		{
+		'average':15,
+		'years': 40,
+		'teacher': 10,
+		'years_teacher':6
+		},
+		{
+		'average':330,
+		'years': 15,
+		'teacher': 2,
+		'years_teacher': 1
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		average = inputData[randomIndex]['average'],
+		years = inputData[randomIndex]['years'],
+		teacher = inputData[randomIndex]['teacher'],
+		years_teacher = inputData[randomIndex]['years_teacher'],
+		a,
+		sum,
+		age,
+		x,
+		includes,
+		question = {};
+	
+	average = parseInt(average);
+	years = parseInt(years);
+	teacher = parseInt(teacher);
+	years_teacher = parseInt(years_teacher);
+	a=average+teacher;
+	sum=years+years_teacher;
+	age=average*years;
+	x=a*sum;
+	includes=x-age;
+
+
+	question = {
+		'type': 'single',
+		'id': '1630',
+		'question':'The average age of' + average + 'boys in a class is'+ years + 'years. If we include the age of' + teacher + 
+		'teachers, the average age increases by' + years_teacher + ' . What is the sum of ages of the two teachers?',
+		'options': {
+			'A': includes - parseInt(Math.random()*10),
+			'B': includes - parseInt(Math.random()*10),
+			'C': includes + parseInt(Math.random()*10),
+			'D': includes
+		},
+		'answer': 'D',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+function problem1631(){
+	var inputData = [{
+		'cp': 45,
+		'sp': 60
+		},
+		{
+		'cp': 100,
+		'sp': 120
+		},
+		{
+		'cp': 700,
+		'sp': 1000
+		},
+		{
+		'cp': 450,
+		'sp': 600
+		},
+		{
+		'cp': 300,
+		'sp': 500
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp = inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		p,
+		pp,
+		question = {};
+
+	cp = parseInt(cp);
+    sp = parseInt(sp);
+	p = sp - cp ;
+    pp = p/cp*100;
+
+	question = {
+		'type': 'single',
+		'id': '1631',
+		'question': 'a toy is bought for  ' + cp + 'rs and sold for ' + sp + ' rs. what is the '+ pp +' profit percentage of the toy?',
+		'options': {
+			'A': pp - parseFloat(Math.random()*10),
+			'B': pp * parseFloat(Math.random()*10),
+			'C': pp + parseFloat(Math.random()*10),
+			'D': pp 
+		},
+		'answer': 'D',
+		'author-id': '16'
+    }
+	return question;
+}
+function problem1632(){
+	var inputData = [{
+		'speed':40,
+		'time': 20
+		},
+		{
+		'speed':22,
+		'time':2
+		},
+		{
+		'speed':14,
+		'time':2
+		},
+		{
+		'speed':15,
+		'time': 2
+		},
+		{
+		'speed':18,
+		'time': 4
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speed = inputData[randomIndex]['speed'],
+		time = inputData[randomIndex]['time'],
+    	distance,
+		question = {};
+		
+	    speed = parseInt(speed*5/18);
+		time = parseInt(time*60);
+		distance = speed*time;
+		
+	question = {
+		'type': 'single',
+		'id': '1632',
+		'question': 'A rider moving at a speed of' + speed + ' m/s and crosses a street in  '+ time +' mins .what is the ' + distance + 'distance of the street?',
+		'options': {
+			'A':  distance-parseInt(Math.random()*10),
+			'B':  distance,
+			'C':  distance+parseInt(Math.random()*10),
+			'D':  distance-parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '16'
+	}
+	
+	return question;
+}
+function problem1633(){
+	var inputData = [{
+		'l':18,
+		'b':14
+		},
+		{
+		'l':16,
+		'b':13
+		},
+		{
+		'l': 12,
+		'b': 10
+		},
+		{
+		'l': 7,
+		'b': 7
+		},
+		{
+		'l': 20,
+		'b': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    l = inputData[randomIndex]['l'],
+	    b = inputData[randomIndex]['b'],
+		a,
+		question = {};
+
+	l = parseInt(l);
+    b = parseInt(b);
+    a = l*b;
+	
+	question = {
+		'type': 'single',
+		'id': '1633',
+		'question': 'If the length of rectangle is ' + l + ' m and its breadth is ' + b +' m. find the area'+ a + ' m? ',
+		'options': {
+			'A': a * parseInt(Math.random()*10),
+			'B': a ,
+			'C': a - parseInt(Math.random()*10),
+			'D': a + parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '16'
+    }
+	return question;
+}
+function problem1634(){
+	var inputData = [{
+		'p': 24600,
+		'n': 2,
+		'r':12
+		},
+		{
+		'p': 8400,
+		'n': 2,
+	    'r':6		
+		},
+		{
+		'p': 9700,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 12400,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 6000,
+		'n': 2,
+		'r':6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		a,
+		ci,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+	a = p*(1+(r/100))**n;
+	ci = a - p,
+
+	question = {
+		'type': 'single',
+		'id': '1634',
+		'question': 'Find the simple interest on' + p + ' rs for ' + n + ' years at ' + r + ' percentage per annum completed annualy.',
+		'options': {
+			'A': ci,
+			'B': ci + parseInt(Math.random()*10),
+			'C': ci - parseInt(Math.random()*10),
+			'D': ci * parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '16'
+    }
+	return question;
+}
+function problem1635(){
+	var inputData = [{
+		'ss':25,
+		'cs': 3,
+		'time':10
+		},
+		{
+		'ss':10,
+		'cs': 4,
+		'time':12
+		},
+		{
+		'ss':45,
+		'cs': 6,
+		'time':10
+		},
+		{
+		'ss':15,
+		'cs': 40,
+		'time':6
+		},
+		{
+		'ss':16,
+		'cs': 7,
+		'time':14
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    ss = inputData[randomIndex]['ss'],
+		cs = inputData[randomIndex]['cs'],
+    	time = inputData[randomIndex]['time'],
+	    speed,
+	    distance,
+		question = {};
+		
+	    ss = parseInt(ss);
+		cs = parseInt(cs);
+		time = parseInt(time/60);
+		speed = ss+cs;
+	    distance = speed*time;
+
+
+	question = {
+		'type': 'single',
+		'id': '1635',
+		'question': ' The speed of a jet in stil water in' + ss + 'km/hr and the rate of current is '+ cs + 'km/hr. The distance travlled downstream in ' + time + 'minutes is?',
+		'options': {
+			'A': distance-parseInt(Math.random()*10),
+			'B': distance+parseInt(Math.random()*10),
+			'C': distance-parseInt(Math.random()*10),
+			'D': distance
+		},
+		'answer': 'D',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+
+function problem1636(){
+	var inputData = [{
+		'hour1': 5,
+		'hour2': 10
+		},
+		{
+		'hour1': 6,
+		'hour2': 12
+		},
+		{
+	    'hour1': 14,
+		'hour2': 20
+		},
+		{
+		'hour1': 10,
+		'hour2': 20
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		hour1= inputData[randomIndex]['hour1'],
+		hour2 = inputData[randomIndex]['hour2'],
+		time,
+		question = {};
+		
+	    time=(hour1*hour2)/(hour2-hour1);
+
+	question = {
+		'type': 'single',
+		'id': '1631',
+		'question': 'A pipe can fill a ss tank in ' + hour1 + 'hours another pipe can empty the ss tank in ' + hour2 + 'hours both the pipes are opened at same time ,the tank can be filled ',
+		'options': {
+			'A': time - parseInt(Math.random()*10),
+			'B': time,
+			'C': time + parseInt(Math.random()*10),
+			'D': time- parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+
+function problem1637(){
+	var inputData = [{
+		'a': 8,
+		'weight1': 2.5,
+		'weight2': 65
+		},
+		{
+	   'a': 8,
+		'weight1': 2.5,
+		'weight2': 69
+		},
+		{
+	    'a': 8,
+		'weight1': 2.5,
+		'weight2': 68
+		},
+		{
+		'a': 8,
+		'weight1': 2.5,
+		'weight2': 75
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		a= inputData[randomIndex]['a'],
+		weight1= inputData[randomIndex]['weight1'],
+		weight2= inputData[randomIndex]['weight2'],
+		x,
+		weight,
+		question = {};
+		
+	    x=a*weight1;
+		weight=x+weight2
+
+	question = {
+		'type': 'single',
+		'id': '1637',
+		'question': 'The average weight of ' + a + 'persons increases by ' + weight1 + ' kg when a new person comes in place of one of them weighing ' + weight2 + ' kg. What might be the weight of the new person?',
+		'options': {
+			'A': weight ,
+			'B': weight- parseInt(Math.random()*10),
+			'C': weight+ parseInt(Math.random()*10),
+			'D': weight- parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+function problem1638(){
+	var inputData = [{
+		'cp': 100,
+		'p': 23,
+		'paid': 7011,
+		},
+		{
+		'cp': 100,
+		'p': 28,
+		'paid': 7022,
+		},
+		{
+		'cp':100,
+		'p': 27,
+		'paid': 7040,
+		},
+		{
+		'cp': 100,
+		'p': 28,
+		'paid': 7051,
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		cp= inputData[randomIndex]['cp'],
+		p= inputData[randomIndex]['p'],
+		paid= inputData[randomIndex]['paid'],
+		x,
+		y,
+		question = {};
+		x=cp+p;
+        y=(100/x)*paid;
+
+	question = {
+		'type': 'single',
+		'id': '1638',
+		'question':'The owner of a IPHONE shop charges his customer ' + p + '% more than the cost price. If a customer paid Rs' + paid + ' for a IPHONE, then what was the cost price of the cell phone?',
+		'options': {
+			'A': y,
+			'B': y - parseInt(Math.random()*10),
+			'C': y - parseInt(Math.random()*10),
+			'D': y + parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+
+
+function problem1639(){
+	var inputData = [{
+		'side': 5,
+		},
+		{
+		'side': 4,
+		},
+		{
+		'side': 7,
+		},
+		{
+		'side': 9,
+		},
+		{
+		'side': 2
+			
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		side = inputData[randomIndex]['side'],
+		surfaceArea,
+		question = {};
+
+	side = parseInt (side);
+	surfaceArea = 6*side*side;
+
+	question = {
+		'type': 'single',
+		'id': '1639',
+		'question': 'Find the total surface area of a cube with side' +" "+ side + 'cm?',
+		'options': {
+			'A': surfaceArea - parseInt(Math.random()*10),
+			'B': surfaceArea - parseInt(Math.random()*10),
+			'C': surfaceArea + parseInt(Math.random()*10), 
+			'D': surfaceArea
+		},
+		'answer': 'D',
+		'author-id': '16'
+	}
+	
+	return question;	
+}
+
+function problem1640(){
+	var inputData = [{
+		'train1':9,
+		'train2':8,
+		'distance':800,
+		'time':4
+		},
+		{
+		'train1':5,
+		'train2':9,
+		'distance':600,
+			'time':3
+		},
+		{
+		'train1':10,
+		'train2':11,
+		'distance':500,
+			'time':6
+		},
+		
+		{
+		'train1':12,
+		'train2':7,
+		'distance':300,
+			'time':5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		train1= inputData[randomIndex]['train1'],
+		train2= inputData[randomIndex]['train2'],
+		distance= inputData[randomIndex]['distance'],
+		time= inputData[randomIndex]['time'],
+		
+		 train1=parseInt(train1);
+		 train2=parseInt(train2);
+		 distance=parseInt(distance);
+		 time=parseInt( time);
+		 speed=(distance/time)/train2;
+		 firsttrain=train1*speed;
+		
+		question13= {};
+		
+		
+  question13= {
+		'type': 'single',
+		'id': '1640',
+		'question': 'The ratio between the speed of two train is '+train1+':'+train2+'.If the second train runs '+distance+' km in '+time+'hours, then the speed of the first train is?',
+		'options': {
+			'A':firsttrain-parseInt(Math.random()*10),
+			'B':firsttrain,
+			'C':firsttrain-parseInt(Math.random()*10),
+			'D':firsttrain+parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '16'
+	}
+	return question13;
+
+}

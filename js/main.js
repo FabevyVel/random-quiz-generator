@@ -1,5 +1,5 @@
 
 var questionBank = [];
 
-questionBank.push(problem341());
+questionBank.push(problem1401());
 console.log(questionBank);
