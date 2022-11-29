@@ -1475,3 +1475,43 @@ function problem0930(){
     }
 	return question;
 }
+function problem0931(){
+	var inputData = [{
+		'value': 27		
+		},
+		{
+		'value': 64,
+		},
+		{
+		'value': 125,	
+		},
+		{
+		'value':216,		
+		},
+		{
+		'value': 343,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		value= inputData[randomIndex]['value'],
+		cubeRoot,
+		question = {};
+
+	value=parseInt(value);
+	cubeRoot=Math.cbrt(value);
+
+	question = {
+		'type': 'single',
+		'id': '0931',
+		'question': 'Find the cube root of '+ value +'? ',
+		'options': {
+			'A':cubeRoot - parseInt(Math.random()*10),
+			'B':cubeRoot,
+			'C':cubeRoot + parseInt(Math.random()*10),
+			'D':cubeRoot - parseInt(Math.random()*10),
+		},
+		'answer': 'B',
+		'author-id': '09'
+	}
+	
+	return question;	
+}
