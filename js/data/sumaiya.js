@@ -1292,3 +1292,53 @@ function problem1227(){
 	return question;
 	
 }
+function problem1228(){
+	var inputData = [{
+		'l': 30,
+		'b': 24,
+		'h': 15
+		},
+		{
+		'l': 30,
+		'b': 24,
+		'h': 14
+		},
+		{
+		'l': 30,
+		'b': 24,
+		'h': 18
+		},
+		{
+		'l': 30,
+		'b': 24,
+		'h': 16
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		l= inputData[randomIndex]['l'],
+		b= inputData[randomIndex]['b'],
+		h = inputData[randomIndex]['h'],
+		diagonal,
+		x,
+		question = {};
+		diagonal=(l**2)+(b**2)+(h**2);
+        x=Math.sqrt(diagonal);
+
+	question = {
+		'type': 'single',
+		'id': '1228',
+		'question': 'The length of the largest rod than can be placed in a room that can be placed in a room ' + l + 'm long ' + b + 'm broad ' + h + 'm height',
+		'options': {
+			'A': x - parseInt(Math.random()*10),
+			'B': x - parseInt(Math.random()*10),
+			'C': x,
+			'D': x + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'	author-id': '12'
+	}
+	
+	return question;
+	
+
+}
+
