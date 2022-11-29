@@ -3,6 +3,50 @@ function getRandomNumber(max){
 	randomNumber = parseInt(randomNumber);
 	return randomNumber;
 }
+
+function problem112(){
+	var inputData = [{
+		'upstream':25,
+		'downstream': 55
+		},
+		{
+		'upstream':76,
+		'downstream': 89
+		},
+		{
+		'upstream':90,
+		'downstream': 50
+		},
+		{
+		'upstream':35,
+		'downstream': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		upstream= inputData[randomIndex]['upstream'],
+		downstream = inputData[randomIndex]['downstream'],
+		water,
+		question = {};
+		
+	
+	water=(upstream+downstream)/2;
+
+	question = {
+		'type': 'single',
+		'id': '112',
+		'question': 'A man can row upstream at' + upstream + ' kmph and downstream at' + downstream + 'kmph, and then find the speed of the man in still water?' ,
+		'options': {
+			'A': water + parseInt(Math.random()*10),
+			'B': water + parseInt(Math.random()*10),
+			'C': water,
+			'D': water - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '112'
+	}
+	
+	return question;
+	
+}
 function problem111(){
 	var vel;
 	var inputData = [{
@@ -52,49 +96,6 @@ function problem111(){
 		},
 		'answer': 'A',
 		'author-id': '111'
-	}
-	
-	return question;
-	
-}
-function problem112(){
-	var inputData = [{
-		'upstream':25,
-		'downstream': 55
-		},
-		{
-		'upstream':76,
-		'downstream': 89
-		},
-		{
-		'upstream':90,
-		'downstream': 50
-		},
-		{
-		'upstream':35,
-		'downstream': 25
-		}],
-		randomIndex = getRandomNumber(inputData.length),
-		upstream= inputData[randomIndex]['upstream'],
-		downstream = inputData[randomIndex]['downstream'],
-		water,
-		question = {};
-		
-	
-	water=(upstream+downstream)/2;
-
-	question = {
-		'type': 'single',
-		'id': '112',
-		'question': 'A man can row upstream at' + upstream + ' kmph and downstream at' + downstream + 'kmph, and then find the speed of the man in still water?' ,
-		'options': {
-			'A': water + parseInt(Math.random()*10),
-			'B': water + parseInt(Math.random()*10),
-			'C': water,
-			'D': water - parseInt(Math.random()*10)
-		},
-		'answer': 'C',
-		'author-id': '112'
 	}
 	
 	return question;
@@ -564,13 +565,7 @@ function problem1111(){
 		
 	
 	
-	change=(
-	
-	
-	
-	
-	
-	rate/(100-rate)*100);
+	change=(rate/(100-rate)*100);
 
 	question = {
 		'type': 'single',
