@@ -1240,6 +1240,107 @@ return question;
 
 }
 
+function problem0525(){
+    var inputData = [{
+    'plane': 25,
+    'helicopter': -15
+    },
+    {
+    'plane': 6,
+    'helicopter': -15
+    },
+    {
+    'plane': 7,
+    'helicopter': -15
+    },
+    {
+    'plane':8,
+    'helicopter': -14
+    }],
+    randomIndex = getRandomNumber(inputData.length),
+    plane = inputData[randomIndex]['plane'],
+    helicopter = inputData[randomIndex]['helicopter'],
+    x,
+    y,
+    question = {};
+    
+    x = plane - helicopter;
+    y = x - plane;
+
+question = {
+    'type': 'single',
+    'id': '0525',
+    'question': 'A plane speed  is ' + plane + ' km/hr and the speed of the helicopter is ' + helicopter + ' km/hr. The plane speed against the helicopter is',
+    'options': {
+        'A': y - parseInt(Math.random()*10),
+        'B': y - parseInt(Math.random()*10),
+        'C': y + parseInt(Math.random()*10),
+        'D': y
+    },
+    'answer': 'D',
+    'author-id': '05'
+}
+
+return question;
+
+}
+
+function problem0526(){
+	var inputData = [{
+		'd':500,
+		't1': 2,
+		't2': 4,
+		},
+		{
+		'd':500,
+		't1': 5,
+		't2': 2,
+		},
+		{
+		'd':600,
+		't1': 6,
+		't2': 2,
+		},
+		{
+		'd':700,
+		't1': 7,
+		't2': 2,
+		},
+		{
+        'd':800,
+		't1': 8,
+		't2': 2,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		d= inputData[randomIndex]['d'],
+		t1 = inputData[randomIndex]['t1'],
+		t2 = inputData[randomIndex]['t2'],
+		rate,
+		question = {};
+
+	d=parseInt(d);
+	t1=parseInt(t1);
+	t2=parseInt(t2);
+	rate=(d/t1*t2);
+
+	question = {
+		'type': 'single',
+		'id': '0526',
+		'question': 'The speed of a boat in still water is'+ " " +t1+ 'kmph and the rate of current is'+ " " +t2+ 'kmph . The distance travelled downstream is'+ " " +d+ ' km. Find the rate?',
+		'options': {
+        'A': rate - parseInt(Math.random()*10),
+        'B': rate,
+        'C': rate + parseInt(Math.random()*10),
+        'D': rate - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '05'
+	}
+
+	return question;
+}
+
+
 
 
 

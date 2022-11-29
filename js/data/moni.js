@@ -1036,3 +1036,52 @@ function problem0621(){
 	}
 	
 	return question;
+}
+function problem0622(){
+	var inputData = [{
+		'profitp': 25,
+		'costprice': 1300
+		},
+		{
+		'profitp': 25,
+		'costprice': 1200
+		},
+		{
+		'profitp': 25,
+		'costprice': 1500
+		},
+		{
+		'profitp': 25,
+		'costprice': 1600
+		},
+		{
+		'profitp': 25,
+		'costprice': 1800
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		profitp= inputData[randomIndex]['profitp'],
+		costprice= inputData[randomIndex]['costprice'],
+		sellingprice,
+		question = {};
+
+	profitp=parseInt(profitp);
+	costprice=parseInt(costprice);
+	sellingprice=(((100/profitp)/100)*costprice)
+
+	question = {
+		'type': 'single',
+		'id': '0622',
+		'question': 'A shopkeeper bought a watch for rs'  + costprice + 'at what price should he sell the watch to earn a profit of'+profitp,
+		'options': {
+			'A': sellingprice+parseInt(Math.random()*10),
+			'B': sellingprice-parseInt(Math.random()*10),
+			'C': sellingprice,
+			'D': sellingprice-parseInt(Math.random()*10)
+		},
+		'answer': 'c',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}

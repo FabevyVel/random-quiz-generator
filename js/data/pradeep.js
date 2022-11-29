@@ -1372,3 +1372,146 @@ function problem0928(){
     }
 	return question;
 }
+function problem0929(){
+	var inputData = [{
+		'p': 24600,
+		'n': 2,
+		'r':12
+		},
+		{
+		'p': 8400,
+		'n': 2,
+	    'r':6		
+		},
+		{
+		'p': 9700,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 12400,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 6000,
+		'n': 2,
+		'r':6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		a,
+		ci,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+	a = p*(1+(r/100))**n;
+	ci = a - p,
+
+	question = {
+		'type': 'single',
+		'id': '0929',
+		'question': 'Find the compound interest on' + p + ' rs for ' + n + ' years at ' + r + ' percentage per annum completed annualy.',
+		'options': {
+			'A': ci,
+			'B': ci + parseInt(Math.random()*10),
+			'C': ci - parseInt(Math.random()*10),
+			'D': ci * parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '09'
+    }
+	return question;
+}
+function problem0930(){
+	var inputData = [{
+		'cp': 40.25,
+		'sp': 32
+		},
+		{
+		'cp': 26.25,
+		'sp': 33
+		},
+		{
+		'cp': 32.5,
+		'sp': 40
+		},
+		{
+		'cp': 24.5,
+		'sp': 38
+		},
+		{
+		'cp': 20.25,
+		'sp': 30
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp = inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		p,
+		pp,
+		question = {};
+
+	cp = parseFloat(cp);
+    sp = parseInt(sp);
+	p = sp - cp ;
+    pp = p/cp*100;
+
+	question = {
+		'type': 'single',
+		'id': '0930',
+		'question': 'A book is bought for  ' + cp + 'rs and sold for ' + sp + ' rs. what is the '+ pp +' profit percentage of the book?',
+		'options': {
+			'A': pp ,
+			'B': pp * parseFloat(Math.random()*10),
+			'C': pp + parseFloat(Math.random()*10),
+			'D': pp - parseFloat(Math.random()*10)
+		},
+		'answer': 'D',
+		'author-id': '09'
+    }
+	return question;
+}
+function problem0931(){
+	var inputData = [{
+		'value': 27		
+		},
+		{
+		'value': 64,
+		},
+		{
+		'value': 125,	
+		},
+		{
+		'value':216,		
+		},
+		{
+		'value': 343,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		value= inputData[randomIndex]['value'],
+		cubeRoot,
+		question = {};
+
+	value=parseInt(value);
+	cubeRoot=Math.cbrt(value);
+
+	question = {
+		'type': 'single',
+		'id': '0931',
+		'question': 'Find the cube root of '+ value +'? ',
+		'options': {
+			'A':cubeRoot - parseInt(Math.random()*10),
+			'B':cubeRoot,
+			'C':cubeRoot + parseInt(Math.random()*10),
+			'D':cubeRoot - parseInt(Math.random()*10),
+		},
+		'answer': 'B',
+		'author-id': '09'
+	}
+	
+	return question;	
+}
