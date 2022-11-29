@@ -43,7 +43,7 @@ function problem1601(){
 		'type': 'single',
 		'id': '16',
 		'question': 'The average monthly income of p and q is '+monthly1+' the average, monthly income q and r ' + monthly +
-                'the average of p and r '+ monthly3 +' the monthly income of p is:'
+                'the average of p and r '+ monthly3 +' the monthly income of p is:',
 		'options': {
 			'A': p,
 			'B': p - parseInt(Math.random()*10),
@@ -103,7 +103,7 @@ function problem1602(){
 		'type': 'single',
 		'id': '1602',
 		'question': 'The average monthly income of p and q is '+monthly1+' the average, monthly income q and r ' + monthly +
-                'the average of p and r '+ monthly3 +' the monthly income of p is:'
+                'the average of p and r '+ monthly3 +' the monthly income of p is:',
 				'options': {
 					'A': p,
 					'B': p + parseInt(Math.random()*10),
@@ -1915,4 +1915,247 @@ function problem1635(){
 	
 	return question;
 	
+}
+
+function problem1636(){
+	var inputData = [{
+		'hour1': 5,
+		'hour2': 10
+		},
+		{
+		'hour1': 6,
+		'hour2': 12
+		},
+		{
+	    'hour1': 14,
+		'hour2': 20
+		},
+		{
+		'hour1': 10,
+		'hour2': 20
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		hour1= inputData[randomIndex]['hour1'],
+		hour2 = inputData[randomIndex]['hour2'],
+		time,
+		question = {};
+		
+	    time=(hour1*hour2)/(hour2-hour1);
+
+	question = {
+		'type': 'single',
+		'id': '1631',
+		'question': 'A pipe can fill a ss tank in ' + hour1 + 'hours another pipe can empty the ss tank in ' + hour2 + 'hours both the pipes are opened at same time ,the tank can be filled ',
+		'options': {
+			'A': time - parseInt(Math.random()*10),
+			'B': time,
+			'C': time + parseInt(Math.random()*10),
+			'D': time- parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+
+function problem1637(){
+	var inputData = [{
+		'a': 8,
+		'weight1': 2.5,
+		'weight2': 65
+		},
+		{
+	   'a': 8,
+		'weight1': 2.5,
+		'weight2': 69
+		},
+		{
+	    'a': 8,
+		'weight1': 2.5,
+		'weight2': 68
+		},
+		{
+		'a': 8,
+		'weight1': 2.5,
+		'weight2': 75
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		a= inputData[randomIndex]['a'],
+		weight1= inputData[randomIndex]['weight1'],
+		weight2= inputData[randomIndex]['weight2'],
+		x,
+		weight,
+		question = {};
+		
+	    x=a*weight1;
+		weight=x+weight2
+
+	question = {
+		'type': 'single',
+		'id': '1637',
+		'question': 'The average weight of ' + a + 'persons increases by ' + weight1 + ' kg when a new person comes in place of one of them weighing ' + weight2 + ' kg. What might be the weight of the new person?',
+		'options': {
+			'A': weight ,
+			'B': weight- parseInt(Math.random()*10),
+			'C': weight+ parseInt(Math.random()*10),
+			'D': weight- parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+function problem1638(){
+	var inputData = [{
+		'cp': 100,
+		'p': 23,
+		'paid': 7011,
+		},
+		{
+		'cp': 100,
+		'p': 28,
+		'paid': 7022,
+		},
+		{
+		'cp':100,
+		'p': 27,
+		'paid': 7040,
+		},
+		{
+		'cp': 100,
+		'p': 28,
+		'paid': 7051,
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		cp= inputData[randomIndex]['cp'],
+		p= inputData[randomIndex]['p'],
+		paid= inputData[randomIndex]['paid'],
+		x,
+		y,
+		question = {};
+		x=cp+p;
+        y=(100/x)*paid;
+
+	question = {
+		'type': 'single',
+		'id': '1638',
+		'question':'The owner of a IPHONE shop charges his customer ' + p + '% more than the cost price. If a customer paid Rs' + paid + ' for a IPHONE, then what was the cost price of the cell phone?',
+		'options': {
+			'A': y,
+			'B': y - parseInt(Math.random()*10),
+			'C': y - parseInt(Math.random()*10),
+			'D': y + parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '16'
+	}
+	
+	return question;
+	
+}
+
+
+function problem1639(){
+	var inputData = [{
+		'side': 5,
+		},
+		{
+		'side': 4,
+		},
+		{
+		'side': 7,
+		},
+		{
+		'side': 9,
+		},
+		{
+		'side': 2
+			
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		side = inputData[randomIndex]['side'],
+		surfaceArea,
+		question = {};
+
+	side = parseInt (side);
+	surfaceArea = 6*side*side;
+
+	question = {
+		'type': 'single',
+		'id': '1639',
+		'question': 'Find the total surface area of a cube with side' +" "+ side + 'cm?',
+		'options': {
+			'A': surfaceArea - parseInt(Math.random()*10),
+			'B': surfaceArea - parseInt(Math.random()*10),
+			'C': surfaceArea + parseInt(Math.random()*10), 
+			'D': surfaceArea
+		},
+		'answer': 'D',
+		'author-id': '16'
+	}
+	
+	return question;	
+}
+
+function problem1640(){
+	var inputData = [{
+		'train1':9,
+		'train2':8,
+		'distance':800,
+		'time':4
+		},
+		{
+		'train1':5,
+		'train2':9,
+		'distance':600,
+			'time':3
+		},
+		{
+		'train1':10,
+		'train2':11,
+		'distance':500,
+			'time':6
+		},
+		
+		{
+		'train1':12,
+		'train2':7,
+		'distance':300,
+			'time':5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		train1= inputData[randomIndex]['train1'],
+		train2= inputData[randomIndex]['train2'],
+		distance= inputData[randomIndex]['distance'],
+		time= inputData[randomIndex]['time'],
+		
+		 train1=parseInt(train1);
+		 train2=parseInt(train2);
+		 distance=parseInt(distance);
+		 time=parseInt( time);
+		 speed=(distance/time)/train2;
+		 firsttrain=train1*speed;
+		
+		question13= {};
+		
+		
+  question13= {
+		'type': 'single',
+		'id': '1640',
+		'question': 'The ratio between the speed of two train is '+train1+':'+train2+'.If the second train runs '+distance+' km in '+time+'hours, then the speed of the first train is?',
+		'options': {
+			'A':firsttrain-parseInt(Math.random()*10),
+			'B':firsttrain,
+			'C':firsttrain-parseInt(Math.random()*10),
+			'D':firsttrain+parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '16'
+	}
+	return question13;
+
 }
