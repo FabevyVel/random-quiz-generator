@@ -5,7 +5,7 @@ function getRandomNumber(max){
 }
 
 
-function problem051(){
+function problem0501(){
 	var inputData = [{
 		'distance': 100,
 		'time': 50
@@ -38,7 +38,7 @@ function problem051(){
 
 	question = {
 		'type': 'single',
-		'id': '051',
+		'id': '0501',
 		'question': 'A car travels a distance of'+" "+ + distance + 'km in'+" "+ + time + 'hours. What is its speed in km/hr?',
 		'options': {
 			'A': speed,
@@ -47,7 +47,7 @@ function problem051(){
 			'D': speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '051'
+		'author-id': '05'
 	}
 	
 	return question;	
