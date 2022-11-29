@@ -1511,23 +1511,23 @@ function problem0529(){
 function problem0530(){
 	var inputData = [{
 		'anu':1000,
-		'banu': 2200,
-		'sonu': 6200
+		'banu':2000,
+		'sonu':3000
 		},
 		{
-		'anu':1000,
-		'banu': 2200,
-		'sonu': 6200
+		'anu':4000,
+		'banu':5000,
+		'sonu':6000
 		},
 		{
-		'anu':1000,
-		'banu': 2200,
-		'sonu': 6200
+		'anu':7000,
+		'banu':8000,
+		'sonu':9000
 		},
 		{
-		'anu':1000,
-		'banu': 2200,
-		'sonu': 6200
+		'anu':8000,
+		'banu':4000,
+		'sonu':4000
 		}],
 		randomIndex = getRandomNumber(inputData.length),
 		anu = inputData[randomIndex]['anu'],
