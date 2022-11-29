@@ -1285,6 +1285,231 @@ return question;
 
 }
 
+function problem0526(){
+	var inputData = [{
+		'd':500,
+		't1': 2,
+		't2': 4,
+		},
+		{
+		'd':500,
+		't1': 5,
+		't2': 2,
+		},
+		{
+		'd':600,
+		't1': 6,
+		't2': 2,
+		},
+		{
+		'd':700,
+		't1': 7,
+		't2': 2,
+		},
+		{
+        'd':800,
+		't1': 8,
+		't2': 2,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		d= inputData[randomIndex]['d'],
+		t1 = inputData[randomIndex]['t1'],
+		t2 = inputData[randomIndex]['t2'],
+		rate,
+		question = {};
+
+	d=parseInt(d);
+	t1=parseInt(t1);
+	t2=parseInt(t2);
+	rate=(d/t1*t2);
+
+	question = {
+		'type': 'single',
+		'id': '0526',
+		'question': 'The speed of a boat in still water is'+ " " +t1+ 'kmph and the rate of current is'+ " " +t2+ 'kmph . The distance travelled downstream is'+ " " +d+ ' km. Find the rate?',
+		'options': {
+        'A': rate - parseInt(Math.random()*10),
+        'B': rate,
+        'C': rate + parseInt(Math.random()*10),
+        'D': rate - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '05'
+	}
+
+	return question;
+}
+
+function problem0527(){
+	var inputData = [{
+		'base':4,
+		'height':8,
+		},
+		{
+		'base':8,
+		'height':18,
+		},
+		{
+        'base':10,
+		'height':20,
+		},
+		{
+        'base':20,
+		'height':40,
+		},
+		{
+		'base':12,
+		'height':14,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		base  = inputData[randomIndex]['base'],
+         height  = inputData[randomIndex]['height'],
+		area,
+		question = {};
+
+	base = parseInt(base);
+	height = parseInt(height);
+	area = (1/2*base*height);
+
+	question = {
+		'type': 'single',
+		'id': '0527',
+		'question': 'what is the area of a triangle with base ' +base+ 'cm and height ' +height+ 'cm?',
+		'options': {
+        'A': area - parseInt(Math.random()*10),
+        'B': area,
+        'C': area + parseInt(Math.random()*10),
+        'D': area - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '05'
+	}
+
+	return question;
+}
+
+function problem0528(){
+	var inputData = [{
+		'typist':6,
+		'pages': 600,
+		'hours': 5,
+		},
+		{
+		'typist':2,
+		'pages': 700,
+		'hours': 5,
+		},
+		{
+		'typist':4,
+		'pages': 800,
+		'hours': 4,
+		},
+		{
+		'typist':2,
+		'pages': 900,
+		'hours': 9,
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		typist= inputData[randomIndex]['typist'],
+		pages = inputData[randomIndex]['pages'],
+		hours = inputData[randomIndex]['hours'],
+		count,
+		total,
+		question = {};
+	
+	
+	count=pages/typist;
+	total=count/hours;
+
+	question = {
+		'type': 'single',
+		'id': '0528',
+		'question': + typist + " " +'typists can type'+ " " + pages + 'pages in ' + hours + 
+					'hours.Find the average number of pages typed by each typist in an hour.',
+		'options': {
+			'A': total - parseInt(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0529(){
+	var inputData = [{
+		'salaryA': 2000,
+		'salaryB': 6658,
+		'salaryC': 4590,
+		'salaryD': 2765,
+		'average': 3579
+		},
+		{
+		'salaryA': 6435,
+		'salaryB': 6927,
+		'salaryC': 6855,
+		'salaryD': 7230,
+		'average': 6500
+		},
+		{
+		'salaryA': 5439,
+		'salaryB': 3967,
+		'salaryC': 4865,
+		'salaryD': 1505,
+		'average': 5432
+		},
+		{
+		'salaryA': 9075,
+		'salaryB': 7634,
+		'salaryC': 5423,
+		'salaryD': 9809,
+		'average': 5000
+		},
+		{
+		'salaryA': 6543,
+		'salaryB': 6789,
+		'salaryC': 9087,
+		'salaryD': 6790,
+		'average': 7000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		salaryA= inputData[randomIndex]['salaryA'],
+		salaryB= inputData[randomIndex]['salaryB'],
+		salaryC= inputData[randomIndex]['salaryC'],
+		salaryD= inputData[randomIndex]['salaryD'],
+		average= inputData[randomIndex]['average'],
+		total= inputData[randomIndex]['total'],
+		salary= inputData[randomIndex]['salary'],
+		finalSalary,
+		question = {};
+
+	var total = parseInt(salaryA+salaryB+salaryC+salaryD),
+	    salary = parseInt(average*5),
+	    finalSalary = parseInt(salary - total);
+
+	question = {
+		'type': 'single',
+		'id': '0529',
+		'question': 'Mohan gets a salary of '+ salaryA +', '+salaryB+ ', '+salaryC+','+salaryD+ ' for 4 months. How much salary he must have in the fifth month?',
+		'options': {
+			'A': finalSalary,
+			'B': finalSalary - parseInt(Math.random()*10),
+			'C': finalSalary + parseInt(Math.random()*10),
+			'D': finalSalary - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '05'
+	}
+	
+	return question;
+}
+
+
+
 
 
 

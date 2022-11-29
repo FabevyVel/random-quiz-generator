@@ -5,55 +5,6 @@ function getRandomNumber(max){
 }
 
 
-/*function proble238(){
-	var inputData = [{
-		'distance': 10,
-		'time': 60
-		},
-		{
-		'distance': 10,
-		'time': 90
-		},
-		{
-		'distance': 10,
-		'time': 60
-		},
-		{
-		'distance': 10,
-		'time': 60
-		},
-		{
-		'distance': 10,
-		'time': 60
-		}],
-		randomIndex = getRandomNumber(inputData.length),
-		distance= inputData[randomIndex]['distance'],
-		time = inputData[randomIndex]['time'],
-		speed,
-		question = {};
-
-	distance=parseInt(distance);
-	time=parseInt(time*60);
-	speed=((distance/time)*(18/5));
-
-	question = {
-		'type': 'single',
-		'id': '248',
-		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
-		'options': {
-			'A': speed,
-			'B': speed - parseInt(Math.random()*10),
-			'C': speed + parseInt(Math.random()*10),
-			'D': speed - parseInt(Math.random()*10)
-		},
-		'answer': 'A',
-		'author-id': '12'
-	}
-	
-	return question;
-	
-}*/
-
 function problem121(){
 	var inputData = [{
 		'd1':240,
@@ -974,4 +925,255 @@ var inputData = [{
 	
 	return question;
 
+}
+
+function problem1221(){
+	var inputData = [{
+	
+		'population1': 54500,
+		'population2': 58500
+		},
+		{
+		'population1': 54500,
+		'population2': 56500
+		},
+		{
+		'population1': 54500,
+		'population2': 57500
+		},
+		{
+		'population1': 54500,
+		'population2': 55500
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		population1= inputData[randomIndex]['population1'],
+		population2 = inputData[randomIndex]['population2'],
+		population,
+		percentageincrease,
+		question = {};
+
+	population1=parseInt(population1);
+	population2=parseInt(population2);
+	
+	population=(population1-population2);
+	
+	percentageincrease =((population/population1)*100);
+	
+
+	question = {
+		'type': 'single',
+		'id': '1221',
+		'question': 'The population of a town is increased from '+ population1 +' to '+ population2 +'  in one year. What is the percentage increase in the population?',
+		'options': {
+			'A': percentageincrease,
+			'B': percentageincrease - parseInt(Math.random()*10), 
+			'C': percentageincrease + parseInt(Math.random()*10),
+			'D': percentageincrease - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+function problem1222(){
+	var inputData = [{
+		'cp':25,
+		'sp': 45
+		},
+		{
+		'cp':25,
+		'sp': 35
+		},
+		{
+		'cp':25,
+		'sp': 15
+		},
+		{
+		'cp':25,
+		'sp': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp= inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		costprice,
+		sellingprice,
+		profit,
+		profitpercent,
+		
+		question = {};
+		
+		costprice=100-cp;
+		sellingprice=100+sp;
+		profit=(sellingprice-costprice);
+		profitpercent =((profit/costprice)*100);
+
+
+	question = {
+		'type': 'single',
+		'id': '1222',
+		'question': ' Mohan bought an article at '+cp+'  % less of the marked price and sold it at '+sp+'% more than the marked price. Find the profit earned by him.',
+		'options': {
+			'A': profitpercent-parseInt(Math.random()*10),
+			'B': profitpercent-parseInt(Math.random()*10),
+			'C': profitpercent,
+			'D': profitpercent+parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+
+function problem1223(){
+	var inputData = [{
+		'speed1':10,
+		'speed2':12,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 14,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 16,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 18,
+		'dis':8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    speed1= inputData[randomIndex]['speed1'],
+		speed2 = inputData[randomIndex]['speed2'],
+		dis = inputData[randomIndex]['dis'],
+		time,
+		
+		question = {};
+		speed=(speed2-speed1);
+		time=dis/speed;
+
+	question = {
+		'type': 'single',
+		'id': '1223',
+		'question': 'Two boys start running at the same time in the same direction at a speed of '+ speed1 +' km/hr and '+ speed2 +' km/hr respectively. In what time they will be '+ dis +' km apart?',
+		'options': {
+			'A': time,
+			'B': time-parseInt(Math.random()*10),
+			'C': time-parseInt(Math.random()*10),
+			'D': time+parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+
+function problem1224(){
+	var inputData = [{
+		'sub1':6,
+		'sub2':4,
+		'mark1':74,
+		'mark2':70
+		},
+		{
+		'sub1':6,
+		'sub2':5,
+		'mark1':74,
+		'mark2':70
+		},
+		{
+		'sub1':6,
+		'sub2':7,
+		'mark1':74,
+		'mark2':70
+		},
+		{
+		'sub1':6,
+		'sub2':8,
+		'mark1':74,
+		'mark2':70
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    sub1= inputData[randomIndex]['sub1'],
+		sub2 = inputData[randomIndex]['sub2'],
+		mark1 = inputData[randomIndex]['mark1'],
+		mark2 = inputData[randomIndex]['mark2'],
+		subjecta,
+		subjectb,
+		subjects,
+		
+		question = {};
+		subjecta=(sub1*mark1);
+		subjectb=(sub2*mark2);
+		subjects=(subjecta-subjectb);
+
+	question = {
+		'type': 'single',
+		'id': '1224',
+		'question': 'The average of Sohans marks in '+sub1+' subjects is '+mark2+'. If his average in '+sub2+' subjects excluding science is '+mark2+', how many marks he obtained in science?',
+		'options': {
+			'A': subjects-parseInt(Math.random()*10),
+			'B': subjects,
+			'C': subjects-parseInt(Math.random()*10),
+			'D': subjects+parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+
+function problem1225(){
+	var inputData = [{
+		'cp':20,
+		'sp': 375
+		},
+		{
+		'cp':20,
+		'sp': 375
+		},
+		{
+        'cp':20,
+		'sp': 33,
+		},
+		{
+        'cp':375,
+		'sp': 33
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+	cp= inputData[randomIndex]['cp'],
+    sp= inputData[randomIndex]['sp'],
+	profit,
+	question = {};
+
+	cp=parseInt(cp);
+	sp=parseInt(sp);
+	profit=(sp-cp),
+
+	question = {
+		'type':'single',
+		'id': '1225',
+		'question': 'Sam purchased ' +cp+ ' dozens of toys at the rate of ' +sp+ ' per dozen. He sold each one of them at the rate What was his percentage profit',
+		'options': {
+			'A':profit-parseInt(Math.random()*10),
+			'B':profit+parseInt(Math.random()*10),
+			'C':profit- parseInt(Math.random()*10),
+			'D':profit
+			},
+		'answer':'D',
+		'author-id': '12'
+	}
+	
+	return question;
 }
