@@ -1393,6 +1393,101 @@ function problem1126(){
 		return question;
 	
 }
+function problem1127(){
+	var inputData = [{
+		'length': 3042,
+		'breadth': 5604
+		},
+		{
+		'length': 1050,
+		'breadth': 1200
+		},
+		{
+		'length': 4933,
+		'breadth': 2524
+		},
+		{
+		'length': 1005,
+		'breadth': 2310
+		},
+		{
+		'length': 4950,
+		'breadth': 4523
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		length = inputData[randomIndex]['length'],
+		breadth = inputData[randomIndex]['breadth'],
+		answer,
+		question = {};
+
+	length = parseInt(length);
+	breadth = parseInt(breadth);
+	answer = length*breadth;
+
+	question = {
+		'type': 'single',
+		'id': '1127',
+		'question': 'Find the answer of Rectangle with length'+" "+ + length + 'cm and breadth' +" "+ + breadth + 'cm ?',
+		'options': {
+			'A': answer + parseInt(Math.random()*10),
+			'B': answer,
+			'C': answer - parseFloat(Math.random()*10),
+			'D': answer - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '11'
+	}
+	
+	return question;	
+}
+function problem1128(){
+	var inputData = [{
+		'costprice': 123,
+		'loss': 45
+		},
+		{
+		'costprice': 574,
+		'loss': 65
+		},
+		{
+		'costprice': 620,
+		'loss': 75
+		},
+		{
+		'costprice': 130,
+		'loss': 90
+		},
+		{
+		'costprice': 140,
+		'loss': 65
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		costprice = inputData[randomIndex]['costprice'],
+		loss = inputData[randomIndex]['loss'],
+		sellingprice,
+		question = {};
+		
+		costprice = parseInt(costprice);
+		loss = parseInt(loss);
+		sellingprice=(loss/100)*costprice;
+
+	question = {
+		'type': 'single',
+		'id': '1128',
+		'question': 'A man buys a cow for Rs' + costprice + ' and sells it at a loss of ' + loss + '%. What is the selling price of the cow?',
+		'options': {
+			'A': sellingprice, 
+			'B': sellingprice - parseFloat(Math.random()*10),
+			'C': sellingprice + parseInt(Math.random()*10),
+			'D': sellingprice - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 
 
 
