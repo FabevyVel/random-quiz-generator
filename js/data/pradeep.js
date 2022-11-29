@@ -1279,3 +1279,49 @@ function problem0926(){
     }
 	return question;
 }
+function problem0927(){
+	var inputData = [{
+		'us': 18,
+		'ds': 14
+		},
+		{
+		'us': 10,
+		'ds': 14
+		},
+		{
+		'us': 12,
+		'ds': 16
+		},
+		{
+		'us': 16,
+		'ds': 12
+		},
+		{
+		'us': 10,
+		'ds': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    us = inputData[randomIndex]['us'],
+		ds = inputData[randomIndex]['ds'],
+		ss,
+		question = {};
+
+	us = parseInt(us);
+    ds = parseInt(ds);
+    ss = (us+ds)/2;
+
+	question = {
+		'type': 'single',
+		'id': '0927',
+		'question': 'A boat goes  ' + us + ' km/hr along stream and ' + ds + ' km/hr against the stream . The speed of boat in ' + ss +' in km/hr is?',
+		'options': {
+			'A': ss - parseInt(Math.random()*10),
+			'B': ss + parseInt(Math.random()*10),
+			'C': ss * parseInt(Math.random()*10),
+			'D': ss
+		},
+		'answer': 'D',
+		'author-id': '09'
+    }
+	return question;
+}
