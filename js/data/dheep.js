@@ -1510,3 +1510,172 @@ function problem0330(){
 	
 }
 
+function problem0331(){
+	var inputData = [{
+		'salaryA': 2000,
+		'salaryB': 6658,
+		'salaryC': 4590,
+		'salaryD': 2765,
+		'salaryE': 1890,
+		'average': 3579
+		},
+		{
+		'salaryA': 6435,
+		'salaryB': 6927,
+		'salaryC': 6555,
+		'salaryD': 7230,
+		'salaryE': 6562,
+		'average': 6500
+		},
+		{
+		'salaryA': 5459,
+		'salaryB': 3967,
+		'salaryC': 4665,
+		'salaryD': 1505,
+		'salaryE': 3689,
+		'average': 5432
+		},
+		{
+		'salaryA': 9075,
+		'salaryB': 5634,
+		'salaryC': 5423,
+		'salaryD': 9509,
+		'salaryE': 5500,
+		'average': 5000
+		},
+		{
+		'salaryA': 6543,
+		'salaryB': 6789,
+		'salaryC': 5087,
+		'salaryD': 6790,
+		'salaryE': 3026,
+		'average': 7050
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		salaryA= inputData[randomIndex]['salaryA'],
+		salaryB= inputData[randomIndex]['salaryB'],
+		salaryC= inputData[randomIndex]['salaryC'],
+		salaryD= inputData[randomIndex]['salaryD'],
+		salaryE= inputData[randomIndex]['salaryE'],
+		average= inputData[randomIndex]['average'],
+		total= inputData[randomIndex]['total'],
+		salary= inputData[randomIndex]['salary'],
+		finalSalary,
+		question = {};
+
+	var total = parseInt(salaryA+salaryB+salaryC+salaryD+salaryE),
+	    salary = parseInt(average*6),
+	    total= parseInt(salary - total);
+
+	question = {
+		'type': 'single',
+		'id': '0331',
+		'question': 'Raman gets a salary of '+ salaryA +', '+salaryB+ ', '+salaryC+', '+salaryD+' and '+salaryE +' for 5 months. How much salary he must have in the sixth month so that he gets an average of '+ average +'',
+		'options': {
+			'A': total,
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03'
+	}
+	
+	return question;
+}
+function problem0332(){
+	var inputData = [{
+		'principal': 7500,
+		'interest': 6,
+		'years': 2
+		},
+		{
+		'principal': 1000,
+		'interest': 1,
+		'years': 7
+		},
+		{
+		'principal': 5540,
+		'interest': 5,
+		'years': 3
+		},
+		{
+		'principal': 1900,
+		'interest': 8,
+		'years': 5
+		},
+		{
+		'principal': 9340,
+		'interest': 3,
+		'years': 2
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		principal= inputData[randomIndex]['principal'],
+		interest = inputData[randomIndex]['interest'],
+		years = inputData[randomIndex]['years'],
+		amount,
+		question = {};
+	
+	principal=parseInt(principal);
+	interest=parseInt(interest);
+	years=parseInt(years);
+	totalamount=parseFloat(principal*(1+(interest/100))**years);
+
+	question = {
+		'type': 'single',
+		'id': '0332',
+		'question': ' What is the amount for a sum of money '+ principal +' at '+ interest +' rate of interest C.I. for '+ years +' years?',
+		'options': {
+			'A': totalamount + parseInt(Math.random()*10),
+			'B': totalamount - parseInt(Math.random()*10),
+			'C': totalamount,
+			'D': totalamount - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '03'
+	}
+	
+	return question;
+}
+function problem0333(){
+	var inputData = [{
+		'area': 10,		
+		},
+		{
+		'area': 780,
+		},
+		{
+		'area': 500,	
+		},
+		{
+		'area': 510,		
+		},
+		{
+		'area': 950,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		area= inputData[randomIndex]['area'],
+		areaSquare,
+		question = {};
+
+	area=parseInt(area);
+	areaSquare=area*area;
+
+	question = {
+		'type': 'single',
+		'id': '0333',
+		'question': 'What is the area of square field whose side is '+ area+'m ?',
+		'options': {
+			'A':areaSquare - parseInt(Math.random()*10),
+			'B': areaSquare - parseInt(Math.random()*10),
+			'C': areaSquare + parseInt(Math.random()*10),
+			'D':  areaSquare
+		},
+		'answer': 'D',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
+
