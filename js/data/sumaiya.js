@@ -1224,9 +1224,6 @@ function problem1226(){
 		siyear5=((siyear3/3)*yeara);
 		principal=(pricea-siyear5);
 		rate=((100*siyear5)/(principal*yeara));
-		
-
-
 
 	question = {
 		'type': 'single',
@@ -1237,6 +1234,56 @@ function problem1226(){
 			'B': rate- parseInt(Math.random()*10),
 			'C': rate+ parseInt(Math.random()*10),
 			'D': rate- parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+
+function problem1227(){
+	var inputData = [{
+		'speedboat':20,
+		'speedstream':5,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':6,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':8,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':10,
+		'distance':75
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speedboat= inputData[randomIndex]['speedboat'],
+		speedstream = inputData[randomIndex]['speedstream'],
+		distance = inputData[randomIndex]['distance'],
+		speed,
+		time,
+		question = {};
+		
+	    speed=(speedboat+speedstream);
+		time=distance/speed;
+
+	question = {
+		'type': 'single',
+		'id': '1227',
+		'question': 'A man can row a boat at speed of ' + speedboat + 'km/hr in still water.if the speed of the stream is ' + speedstream + ' km/hr in what time he distance ' + distance + '  km downstream',
+		'options': {
+			'A': time,
+			'B': time - parseInt(Math.random()*10),
+			'C': time + parseInt(Math.random()*10),
+			'D': time - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
 		'author-id': '12'
