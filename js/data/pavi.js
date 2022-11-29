@@ -1803,8 +1803,6 @@ function problem0836(){
 	return question;
 	
 }
-
-
 function problem0837(){
 	var inputData = [{
 		's1': 700,
@@ -1859,6 +1857,5 @@ function problem0837(){
 	}
 	
 	return question;
-	
 }
 
