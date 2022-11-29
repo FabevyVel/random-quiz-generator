@@ -1783,6 +1783,56 @@ function problem0635(){
 	return question;
 	
 }
+function problem0636(){
+	var inputData = [{
+		'score':100,
+		'boundaries':4,
+		'six':4
+	},
+	{
+	'score':200,
+	'boundaries':4,
+	'six':6
+    },
+	{
+	'score':110,
+	'boundaries':3,
+	'six':8
+    },
+	{
+	'score':150,
+	'boundaries':7,
+	'six':3
+    }],
+   randomIndex = getRandomNumber(inputData.length),
+   score=inputData[randomIndex]['score'],
+   boundaries=inputData[randomIndex]['boundaries'],
+   six=inputData[randomIndex]['six'],
+	total,
+	running,
+	question={};
+	
+	score=parseInt(score);
+	boundaries=parseInt(boundaries*4);
+	six=parseInt(six*6);
+	total=score-(boundaries+six);
+	running=(total/score)*100;
+	
+	question={
+		'type':'single',
+		'id':'0636',
+		'question':' A batsman scored '+ score +' runs which included '+ boundaries+' and '+ six+'. What present of his total score did he make by running between the wickets',
+		'optins':{
+			'A':running - parseInt(Math.random()*10),
+			'B':running + parseInt(Math.random()*10),
+			'C':running,
+			'D':running - parseInt(Math.random()*10),
+		},
+		'amswer':'C',
+		'author-id':'06'
+	}
+	return question;
+}
 
 
 
