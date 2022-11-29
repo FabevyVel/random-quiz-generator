@@ -1982,26 +1982,52 @@ function problem0639(){
 	}
 	return question;
 }
+function problem0640(){
+	var inputData = [{
+        'length':20,
+		'breath':34,
+		},
+		{
+        'length':20,
+		'breath':34,
+		},
+		{
+        'length':20,
+		'breath':34,
+		},
+		{
+		'length':20,
+		'breath':34,
+		},
+		{
+		'length':20,
+		'breath':34,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+	       length= inputData[randomIndex]['length'],
+         breath= inputData[randomIndex]['breath'],
+		fencing_length,
+		question = {};
 
+	length=parseInt(length);
+	breath=parseInt(breath);
+	area=(length*breath),
+	fencing_length=(length/2*breath),
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	question = {
+		'type': 'single',
+		'id': '0640',
+		'question': 'rectangular field to be fenced on' +length+ 'sides leaving side of' +
+		breath+ 'uncovered if the area of the field is' +area+ 'how many feet of fencing will be required', 
+		'options': {
+			'A': fencing_length * parseInt(Math.random()*10),
+			'B': fencing_length - parseInt(Math.random()*10),
+			'C': fencing_length + parseInt(Math.random()*10),
+			'D': fencing_length
+		},
+		'answer': 'D',
+		'author-id': '0640'
+	}
+	
+	return question;
+}
