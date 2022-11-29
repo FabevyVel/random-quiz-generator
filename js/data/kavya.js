@@ -971,9 +971,9 @@ function problem0519(){
     	time,
 		question = {};
 		
-	    speed=parseInt(speed*5/18);
-		distance=parseInt(distance);
-		time=(distance/speed);
+	    speed = parseInt(speed*5/18);
+		distance = parseInt(distance);
+		time = (distance/speed);
 		
 	question = {
 		'type': 'single',
@@ -1212,10 +1212,10 @@ function problem0524(){
     'runs': 282
     }],
     randomIndex = getRandomNumber(inputData.length),
-    over1= inputData[randomIndex]['over1'],
-    over2= inputData[randomIndex]['over2'],
-    rate= inputData[randomIndex]['rate'],
-    runs= inputData[randomIndex]['runs'],
+    over1 = inputData[randomIndex]['over1'],
+    over2 = inputData[randomIndex]['over2'],
+    rate = inputData[randomIndex]['rate'],
+    runs = inputData[randomIndex]['runs'],
     r,
     runrate,
     question = {};
@@ -1319,10 +1319,10 @@ function problem0526(){
 		rate,
 		question = {};
 
-	d=parseInt(d);
-	t1=parseInt(t1);
-	t2=parseInt(t2);
-	rate=(d/t1*t2);
+	d = parseInt(d);
+	t1 = parseInt(t1);
+	t2 = parseInt(t2);
+	rate = (d/t1*t2);
 
 	question = {
 		'type': 'single',
@@ -1411,7 +1411,7 @@ function problem0528(){
 		'hours': 9,
 		}],
 		randomIndex = getRandomNumber(inputData.length),
-		typist= inputData[randomIndex]['typist'],
+		typist = inputData[randomIndex]['typist'],
 		pages = inputData[randomIndex]['pages'],
 		hours = inputData[randomIndex]['hours'],
 		count,
@@ -1419,8 +1419,8 @@ function problem0528(){
 		question = {};
 	
 	
-	count=pages/typist;
-	total=count/hours;
+	count = pages/typist;
+	total = count/hours;
 
 	question = {
 		'type': 'single',
@@ -1478,12 +1478,12 @@ function problem0529(){
 		'average': 7000
 		}],
 		randomIndex = getRandomNumber(inputData.length),
-		salaryA= inputData[randomIndex]['salaryA'],
-		salaryB= inputData[randomIndex]['salaryB'],
-		salaryC= inputData[randomIndex]['salaryC'],
-		salaryD= inputData[randomIndex]['salaryD'],
-		average= inputData[randomIndex]['average'],
-		total= inputData[randomIndex]['total'],
+		salaryA = inputData[randomIndex]['salaryA'],
+		salaryB = inputData[randomIndex]['salaryB'],
+		salaryC = inputData[randomIndex]['salaryC'],
+		salaryD = inputData[randomIndex]['salaryD'],
+		average = inputData[randomIndex]['average'],
+		total = inputData[randomIndex]['total'],
 		salary= inputData[randomIndex]['salary'],
 		finalSalary,
 		question = {};
@@ -1541,8 +1541,8 @@ function problem0530(){
 	anu = parseInt(anu);
 	banu = parseInt(banu);
 	sonu = parseInt(sonu);
-	election=anu+banu+sonu;
-	percentage=(anu/election)*100;
+	election  = anu+banu+sonu;
+	percentage =  (anu/election)*100;
 
 
 	question = {
@@ -2003,5 +2003,96 @@ function problem0538(){
 			'author-id': '05'
 		}
 		return question;
+	
+}
+
+function problem0539(){
+   	var inputData = [{
+		'liquid':25
+	},
+	{
+	'liquid':35
+    },
+	{
+	'liquid':45
+    },
+	{
+	'liquid':15
+    }],
+	randomIndex = getRandomNumber(inputData.length),
+	liquid = inputData[randomIndex]['liquid'],
+	increase,
+	question = {};
+	liquid = parseInt(liquid);
+
+	increase=((liquid/liquid+100)*100);
+	question={
+		'type':'single',
+		'id':'213',
+		'question':'In the budget the price of coconut oil is increase by %.'+ liquid +' By how much precent must a person reduce his consumption so that his expensive on it does not increase',
+		'options':
+		{  
+		'A':liquid,
+		'B':liquid - parseInt(Math.random()*10),
+		'C':liquid + parseInt(Math.random()*10),
+		'D':liquid - parseInt(Math.random()*10),
+	},
+	'answer':'A',
+	'author-id':'05'
+}
+return question;
+}
+
+
+function problem0540(){
+	var inputData = [{
+		'score':100,
+		'boundaries':4,
+		'six':4
+	},
+	{
+	'score':120,
+	'boundaries':3,
+		'six':8
+    },
+	{
+	'score':140,
+	'boundaries':4,
+		'six':9
+    },
+	{
+	'score':150,
+	'boundaries':7,
+	'six':3
+    }],
+	
+   randomIndex = getRandomNumber(inputData.length),
+   score = inputData[randomIndex]['score'],
+   boundaries = inputData[randomIndex]['boundaries'],
+   six = inputData[randomIndex]['six'],
+	total,
+	running,
+	question = {};
+	
+	score = parseInt(score);
+	boundaries = parseInt(boundaries*4);
+	six = parseInt(six*6);
+	total = score-(boundaries+six);
+	running = (total/score)*100;
+	
+	question={
+		'type':'single',
+		'id':'0540',
+		'question':' A batsman scored '+ score +' runs which included '+ boundaries+' and '+ six+'.what present of his total score did he make by running between the wickets',
+		'optins':{
+			'A':running - parseInt(Math.random()*10),
+			'B':running + parseInt(Math.random()*10),
+			'C':running,
+			'D':running - parseInt(Math.random()*10),
+		},
+		'amswer':'C',
+		'author-id':'05'
+	}
+	return question;
 	
 }
