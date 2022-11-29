@@ -1226,3 +1226,44 @@ function problem0824(){
 	return question;
 	
 }
+function problem10825(){
+	var inputData = [{
+		'diagonal': 60
+		},
+		{		
+		'diagonal': 90
+		},
+		{		
+		'diagonal': 60
+		},
+		{
+		'diagonal': 60
+		},
+		{		
+		'diagonal': 60
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		diagonal = inputData[randomIndex]['diagonal'],
+		areaSquare,
+		question = {};
+
+	diagonal=parseInt(diagonal);
+	areaSquare=1/2*(diagonal*diagonal);
+
+	question = {
+		'type': 'single',
+		'id': '136',
+		'question': 'The diagonal of a square field is '+ diagonal +'m,then area of the field is',
+		'options': {
+			'A': areaSquare - parseInt(Math.random()*10),
+			'B': areaSquare - parseInt(Math.random()*10),
+			'C': areaSquare,
+			'D': areaSquare + parseInt(Math.random()*10),
+		},
+		'answer': 'C',
+		'author-id': '0825'
+	}
+	
+	return question;
+	
+}
