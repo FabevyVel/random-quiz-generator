@@ -1563,6 +1563,67 @@ function problem0530(){
 	
 }
 
+function problem0531(){
+	var inputData = [{
+		'group_women':30,
+		'women_years': 16,
+		'women_leave': 19,
+		'new_woman': 15.8
+		},
+		{
+		'group_women':30,
+		'women_years': 17,
+		'women_leave': 18,
+		'new_woman': 16.9
+		},
+		{
+		'group_women':30,
+		'women_years': 18,
+		'women_leave': 28,
+		'new_woman': 17.5
+		},
+		{
+		'group_boy':40,
+		'boys_years': 16,
+		'boys_leave': 17,
+		'new_boy': 15.875
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		group_women = inputData[randomIndex]['group_women'],
+		women_years = inputData[randomIndex]['women_years'],
+		women_leave = inputData[randomIndex]['women_leave'],
+		new_woman = inputData[randomIndex]['new_woman'],
+		age,
+		group,
+		question = {};
+	
+	group_women = parseInt(group_women);
+	women_years = parseInt(women_years);
+	women_leave = parseInt(women_leave);
+	new_woman = parseFloat(new_woman);
+	age = group_women*women_years;
+	group = (new_woman*group_women) - age + women_leave;
+
+	question = {
+		'type': 'single',
+		'id': '0531',
+		'question': 'Average age of a group of' +" "+ group_women +" "+'women is'+" "+ women_years+" "+ 'years. A woman of age' +" "+ women_leave +" "+ 
+					'leaves the group and a new woman joins the group. If the new average age of the group is'+" "+ new_woman +" "+ 
+					'years, find the age of the new woman?',
+		'options': {
+			'A': group - parseFloat(Math.random()*10),
+			'B': group - parseInt(Math.random()*10),
+			'C': group,
+			'D': group + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
 
 
 
