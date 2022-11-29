@@ -1022,3 +1022,207 @@ function problem0820(){
 	
 	return question;
 }
+function problem0821(){
+	var inputData = [{
+        'facevalue':100,
+		'truediscount':6
+		},
+		{
+        'facevalue':200,
+		'truediscount':3
+		},
+		{
+        'facevalue':100,
+		'truediscount':6
+		},
+		{
+		'facevalue':500,
+		'truediscount':4
+		},
+		{
+		'facevalue':100,
+		'truediscount':6
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+	       facevalue= inputData[randomIndex]['facevalue'],
+        truediscount= inputData[randomIndex]['truediscount'],
+		costprice,
+		simpleinterest,
+		question = {};
+
+    facevalue=parseInt(facevalue);
+	truediscount=parseInt(truediscount);
+	presentworth =facevalue-truediscount;
+	simpleinterest=(truediscount/presentworth*100);
+	
+	
+	question = {
+		'type': 'single',
+		'id': '0821',
+		'question': 'The true discount on a bill of' +facevalue+ 'is' +truediscount+ 'What is the bankers discount', 
+		'options': {
+			'A':presentworth,
+			'B':  presentworth - parseInt(Math.random()*10),
+			'C': presentworth / parseInt(Math.random()*10),
+			'D': presentworth * parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0821'
+	}
+	
+	return question;
+}
+function problem0822(){
+	var inputData = [{
+		'upstream':25,
+		'downstream': 55
+		},
+		{
+		'upstream':76,
+		'downstream': 89
+		},
+		{
+		'upstream':90,
+		'downstream': 50
+		},
+		{
+		'upstream':35,
+		'downstream': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		upstream= inputData[randomIndex]['upstream'],
+		downstream = inputData[randomIndex]['downstream'],
+		water,
+		question = {};
+		
+	upstream= parseInt(upstream);
+	downstream = parseInt(downstream);
+	water=(upstream+downstream)/2;
+
+	question = {
+		'type': 'single',
+		'id': '0822',
+		'question': 'A man can row upstream at' + upstream + ' kmph and downstream at' + downstream + 'kmph, and then find the speed of the man in still water?' ,
+		'options': {
+			'A': water,
+			'B': water + parseInt(Math.random()*10),
+			'C': water + parseInt(Math.random()*10),
+			'D': water - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '0822'
+	}
+	
+	return question;
+	
+}
+function problem0823(){
+	var inputData = [{
+		'children':5,
+		'age': 60,
+		'years':4
+		},
+		{
+		'children':3,
+		'age': 49,
+		'years':3
+		},
+		{
+		'children':5,
+		'age': 20,
+		'years':2
+		},
+		{
+		'children':2,
+		'age': 60,
+		'years':8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		children = inputData[randomIndex]['children'],
+		age = inputData[randomIndex]['age'],
+		years = inputData[randomIndex]['years'],
+		interval,
+		x1,
+		young,
+		profit_percentage,
+		question = {};
+		
+	children = parseInt(children);
+	age = parseInt(age);
+	years = parseInt(years);
+	interval=(age*age*age)+age;
+	x1=years-interval;
+	young=x1/children;
+
+	question = {
+		'type': 'single',
+		'id': '0823',
+		'question':'The sum of ages of'+ children + 'children born at the intervals of' + years + 'years each is'+ age + 'years. What is the age of the youngest child?',
+		'options': {
+			'A': young - parseInt(Math.random()*10),
+			'B':young - parseInt(Math.random()*10),
+			'C': young + parseInt(Math.random()*10),
+			'D': young
+		},
+		'answer': 'D',
+		'author-id': '0823'
+	}
+	
+	return question;
+	
+}
+function problem0824(){
+	var inputData = [{
+		'downstream_distance':20,
+		'downstream_time': 5,
+		'upstream_time': 8
+		},
+		{
+		'downstream_distance': 40,
+		'downstream_time': 30,
+		'upstream_time': 5
+		},
+		{
+		'downstream_distance': 50,
+		'downstream_time': 40,
+		'upstream_time': 2
+		},
+		{
+		'downstream_distance':16,
+		'downstream_time': 2,
+		'upstream_time': 4
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		downstream_distance = inputData[randomIndex]['downstream_distance'],
+		downstream_time = inputData[randomIndex]['downstream_time'],
+		upstream_time = inputData[randomIndex]['upstream_time'],
+		speed,
+		x,
+		stream_speed,
+		question = {};
+		
+	downstream_distance=parseInt(downstream_distance);
+	downstream_time=parseInt(downstream_time);
+	upstream_time=parseInt(upstream_time);
+	speed=downstream_distance/downstream_time;
+	x=downstream_distance/upstream_time;
+	stream_speed=1/2*(speed+x);
+
+	question = {
+		'type': 'single',
+		'id': '0824',
+		'question': 'A boat running downstream covers a distance of' + downstream_distance + 'km in' + downstream_time + 'hours while for covering the same distance upstream, it takes'
+					+ upstream_time + 'hours. What is the speed of the boat in still water?',
+		'options': {
+			'A': stream_speed + parseInt(Math.random()*10),
+			'B': stream_speed - parseFloat(Math.random()*10),
+			'C': stream_speed,
+			'D': stream_speed - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '0824'
+	}
+	
+	return question;
+	
+}
