@@ -1226,3 +1226,56 @@ function problem0925(){
 	return question;
 	
 }
+function problem0926(){
+	var inputData = [{
+		'p': 48000,
+		'n': 12,
+		'r':4
+		},
+		{
+		'p': 40000,
+		'n': 8,
+		'r':10		
+		},
+		{
+		'p': 35000,
+		'n': 6,
+		'r':6
+		},
+		{
+		'p': 38000,
+		'n': 16,
+		'r':12
+		},
+		{
+		'p': 44000,
+		'n': 12,
+		'r':16
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		si,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+    si=p*n*r/100;
+	
+	question = {
+		'type': 'single',
+		'id': '0926',
+		'question': 'Find the simple interest when ' + p + ' rs rate of interest ' + r + ' percentage per annum, time ' + n + ' years.',
+		'options': {
+			'A': si - parseInt(Math.random()*10),
+			'B': si,
+			'C': si * parseInt(Math.random()*10),
+			'D': si + parseInt(Math.random()*10) 
+		},
+		'answer': 'B',
+		'author-id': '09'
+    }
+	return question;
+}
