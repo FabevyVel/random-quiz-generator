@@ -1137,34 +1137,40 @@ function problem1224(){
 function problem1225(){
 	var inputData = [{
 		'cp':375,
-		'sp': 36
+		'cpa':12,
+		'sp':36
 		},
 		{
 		'cp':375,
-		'sp': 32
+		'cpa':12,
+		'sp':32
 		},
 		{
         'cp':375,
-		'sp': 30,
+        'cpa':12,
+		'sp':30
 		},
 		{
         'cp':375,
-		'sp': 33
+        'cpa':12,
+		'sp':33
 		}],
 	randomIndex = getRandomNumber(inputData.length),
 	cp= inputData[randomIndex]['cp'],
+	cpa= inputData[randomIndex]['cpa'],
     sp= inputData[randomIndex]['sp'],
+	costprice,
+	gain,
 	profit,
 	question = {};
-
-	cp=parseInt(cp);
-	sp=parseInt(sp);
-	profit=(sp-cp),
+	costprice=(cp/cpa);
+	gain=(sp-costprice);
+	profit=((gain/costprice)*100)
 
 	question = {
 		'type':'single',
 		'id': '1225',
-		'question': 'Sam purchased ' +cp+ ' dozens of toys at the rate of ' +sp+ ' per dozen. He sold each one of them at the rate What was his percentage profit',
+		'question': 'Sam purchased '+cpa+' dozens of toys at the rate of Rs. '+cp+' per dozen. He sold each one of them at the rate of Rs. '+sp+' . What was his percentage profit?',
 		'options': {
 			'A':profit-parseInt(Math.random()*10),
 			'B':profit+parseInt(Math.random()*10),
