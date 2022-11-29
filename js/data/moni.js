@@ -1635,6 +1635,59 @@ function problem0632(){
 	return question;
 	
 }
+function problem0633(){
+	var inputData = [{
+		'price': 6000,
+		'interest': 720,
+		'rate': 6
+		},
+		{
+		'price': 5000,
+		'interest': 720,
+		'rate': 6
+		},
+		{
+	    'price': 2000,
+		'interest': 720,
+		'rate': 6
+		},
+		{
+		'price': 6000,
+		'interest': 720,
+		'rate': 6
+		},
+		{
+		'price': 3000,
+		'interest': 420,
+		'rate': 6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		price= inputData[randomIndex]['price'],
+		interest = inputData[randomIndex]['interest'],
+		rate = inputData[randomIndex]['rate'],
+		time,
+		question = {};
+		
+	    time=(interest*100)/(price*rate)
+
+	question = {
+		'type': 'single',
+		'id': '0633',
+		'question': 'In what time RS' + price + ' will give interest ofRS ' + interest + ' at rate of ' + rate + ' time?',
+		'options': {
+			'A': time + parseInt(Math.random()*10),
+			'B': time - parseInt(Math.random()*10),
+			'C': time,
+			'D': time - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+
 
 
 
