@@ -1036,51 +1036,377 @@ function problem1421(){
 	return question;
 }
 
-function problem1421(){
+
+function problem1422(){
 	var inputData = [{
-		'price1': 1400,
-		'years':9,
-		'percentage':12
+		'price1': 12005,
+		'price2': 9800,
+		'years1':10,
+		'years2':8
 		},
 		{
-		'price1': 140,
-		'years':1,
-		'percentage':12
-		
+		'price1': 12005,
+		'price2': 9800,
+		'years1':7,
+		'years2':8
 		},
 		{
-		'price1': 1431,
-		'years':4,
-		'percentage':12
-	    },
+		'price1': 12005,
+		'price2': 9800,
+		'years1':5,
+		'years2':2
+		},
 		{
-		'price1': 1431,
-		'years':4,
-		'percentage':12
-		
+		'price1': 12005,
+		'price2': 9800,
+		'years1':15,
+		'years2':8
+		},
+		{
+		'price1': 12005,
+		'price2': 800,
+		'years1':2,
+		'years2':8
 		}],
-		randomIndex = getRandomNumber(inputData.length),
-		price1=inputData[randomIndex]['price1'],
-		years=inputData[randomIndex]['years'],
-		percentage=inputData[randomIndex]['percentage'],
+	randomIndex = getRandomNumber(inputData.length),
+		price1= inputData[randomIndex]['price1'],
+		price2 = inputData[randomIndex]['price2'],
+		years1= inputData[randomIndex]['years1'],
+		years2= inputData[randomIndex]['years2'],
+		years3,
+		years,
+		question = {};
 		
-		amount,
-		question={},
-		amount=(100*price1)/(percentage*years),
-		
-		question = {
-		  'type': 'single',
-		  'id': '1421',
-		  'question': 'if the price  is ' +price1 + ' and years  is'  +years +' and percentage is ?'+percentage+'find the amount',
-		  'options': {
-			'A': amount, 
-			'B': amount - parseInt(Math.random()*10),
-			'C': amount + parseInt(Math.random()*10),
-			'D': amount - parseInt(Math.random()*10)
+    price1=parseInt(price1);
+	price2=parseInt(price2);
+	years1=parseInt(years1);
+	years2=parseInt(years2);
+	years3=(price1-price2);
+	years=((years3)*years1);
+
+
+	question = {
+		'type': 'single',
+		'id': '1422',
+		'question': 'a sum of money amountsto Rs'+price2+'  after   '+years1+'and  Rs'+price1+'after  ' +years+'at the same rate of simple intrest.The rate of intrest pee annum is?',
+		'options': {
+			'A': years* parseInt(Math.random()*10),
+			'B': years- parseInt(Math.random()*10),
+			'C': years + parseInt(Math.random()*10),
+			'D': years
 		},
-		'answer': 'A',
-		'author-id': '14',
-		}
+		'answer': 'D',
+		'author-id': '14'
+	}
 	
 	return question;
+	
 }
+
+
+function problem1423()
+{
+	var inputData = [{
+		'person1': 16,
+		'avgone': 50.25,
+		'person2': 8,
+		'avgtwo': 45.15
+		},
+		{
+		'person1': 17,
+		'avgone': 51.25,
+		'person2': 9,
+		'avgtwo': 46.15
+		},
+		{
+		'person1': 18,
+		'avgone': 52.25,
+		'person2': 7,
+		'avgtwo': 44.15
+		},
+		{
+		'person1': 10,
+		'avgone': 62.5,
+		'person2': 6,
+		'avgtwo': 33.33
+		},
+		{
+		'person1': 12,
+		'avgone': 55.3,
+		'person2': 8,
+		'avgtwo': 44.35
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		person1= inputData[randomIndex]['person1'],
+		avgone= inputData[randomIndex]['avgone'],
+		person2= inputData[randomIndex]['person2'],
+		avgtwo= inputData[randomIndex]['avgtwo'],
+		avg,
+		question = {};
+
+	avg=(person1*avgone+person2*avgtwo)/(person1+person2);
+	avg=parseFloat(avg);
+
+	question = {
+		'type': 'single',
+		'id': '1423',
+		'question': "The average weight of"+person1+"boys in a class is"+avgone+"kg and that of the remaining"+person2+"boys is"+avgtwo+"kg. Find the average weights of all the boys in the class.",
+		'options': {
+			'A': avg - parseInt(Math.random()*10),
+			'B': avg,
+			'C': avg + parseInt(Math.random()*10),
+			'D': avg - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}
+
+function problem1424(){
+	var inputData = [{
+		'electricity_bill':35,
+		'deducted': 150
+		},
+		{
+		'electricity_bill':50,
+		'deducted': 200
+		},
+		{
+		'electricity_bill':60,
+		'deducted': 180
+		},
+		{
+		'electricity_bill':90,
+		'deducted': 300
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		electricity_bill= inputData[randomIndex]['electricity_bill'],
+		deducted = inputData[randomIndex]['deducted'],
+		bill,
+		question = {};
+	
+	
+	to_pay=deducted-electricity_bill;
+	bill=(deducted/to_pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '1424',
+		'question': 'If' + electricity_bill + '% of an electricity bill is deducted then rs' + deducted + 'is still to be paid .How much was the original bill',
+		'options': {
+			'A': bill,
+			'B': bill + parseInt(Math.random()*10),
+			'C': bill + parseInt(Math.random()*10),
+			'D': bill - parseFloat(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '14'
+	}
+	
+	return question;
+	
+}
+
+
+function problem1425(){
+	var inputData = [{
+		'p': 12600,
+		'n': 2,
+		'r':10
+		},
+		{
+		'p': 12400,
+		'n': 2,
+		'r':4		
+		},
+		{
+		'p': 12600,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 12600,
+		'n': 2,
+		'r':12
+		},
+		{
+		'p': 12400,
+		'n': 2,
+		'r':8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		a,
+		ci,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+	a = p*(1+(r/100))**n;
+	ci = a - p,
+
+	question = {
+		'type': 'single',
+		'id': '1425',
+		'question': 'Find the compound interest on' + p + ' rs for ' + n + ' years at ' + r + ' percentage per annum completed annualy.',
+		'options': {
+			'A': ci * parseInt(Math.random()*10),
+			'B': ci + parseInt(Math.random()*10),
+			'C': ci - parseInt(Math.random()*10),
+			'D': ci 
+		},
+		'answer': 'D',
+		'author-id': '14'
+    }
+	return question;
+}
+
+
+
+function problem1426(){
+	var inputData = [{
+		'rate':15
+		},
+		{
+		'rate':30
+		},
+		{
+		'rate':95
+		},
+		{
+		'rate':65
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		rate = inputData[randomIndex]['rate'],
+		change,
+		question = {};
+		
+	
+	rate = parseInt(rate);
+	change=(rate/(100-rate)*100);
+
+	question = {
+		'type': 'single',
+		'id': '1426',
+		'question': 'The price of rice falls by' + rate +
+					'% by what percentage a person can increase the consumption of rice so that his overall budget does not change',
+		'options': {
+			'A': change,
+			'B': change + parseInt(Math.random()*10),
+			'C': change + parseFloat(Math.random()*10),
+			'D': change + parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '14'
+	}
+	
+	return question;
+	
+}
+
+
+
+function problem1427(){
+	var inputData = [{
+		'side': 5,
+		},
+		{
+		'side': 4,
+		},
+		{
+		'side': 7,
+		},
+		{
+		'side': 9,
+		},
+		{
+		'side': 2
+			
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		side = inputData[randomIndex]['side'],
+		surfaceArea,
+		question = {};
+
+	side = parseInt (side);
+	surfaceArea = 6*side*side;
+
+	question = {
+		'type': 'single',
+		'id': '1427',
+		'question': 'Find the total surface area of a cube with side' +" "+ side + 'cm?',
+		'options': {
+			'A': surfaceArea - parseInt(Math.random()*10),
+			'B': surfaceArea - parseInt(Math.random()*10),
+			'C': surfaceArea + parseInt(Math.random()*10), 
+			'D': surfaceArea
+		},
+		'answer': 'D',
+		'author-id': '14'
+	}
+	
+	return question;	
+}
+
+
+function problem1428()
+{
+	var inputData = [{
+		'total': 110,
+		'boundaries': 3,
+		'six': 8
+		},
+		{
+		'total': 100,
+		'boundaries': 3,
+		'six': 8
+		},
+		{
+		'total': 110,
+		'boundaries': 4,
+		'six': 8
+		},
+		{
+		'total': 120,
+		'boundaries': 3,
+		'six': 8
+		},
+		{
+		'total': 110,
+		'boundaries': 2,
+		'six': 7
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		total= inputData[randomIndex]['total'],
+		boundaries= inputData[randomIndex]['boundaries'],
+		six= inputData[randomIndex]['six'],
+		percentage,
+		question = {};
+
+	percentage=(total-(boundaries*4+six*6))*100/total;
+	percentage=parseFloat(percentage);
+
+	question = {
+		'type': 'single',
+		'id': '1428',
+		'question': "A batsman scored "+total+" runs which included "+boundaries+" boundaries and "+six+" sixes. What percent of his total score did he make by running between the wickets?",
+		'options': {
+			'A': percentage- parseInt(Math.random()*10),
+			'B': percentage+ parseInt(Math.random()*10),
+			'C': percentage,
+			'D': percentage- parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '14'
+	}
+	
+	return question;
+	
+}
+
