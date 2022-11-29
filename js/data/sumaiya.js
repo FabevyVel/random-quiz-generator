@@ -1136,16 +1136,16 @@ function problem1224(){
 
 function problem1225(){
 	var inputData = [{
-		'cp':20,
-		'sp': 375
+		'cp':375,
+		'sp': 36
 		},
 		{
-		'cp':20,
-		'sp': 375
+		'cp':375,
+		'sp': 32
 		},
 		{
-        'cp':20,
-		'sp': 33,
+        'cp':375,
+		'sp': 30,
 		},
 		{
         'cp':375,
