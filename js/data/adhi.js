@@ -4,7 +4,7 @@ function getRandomNumber(max){
        return randomNumber;
 }
 
-function problem011(){
+function problem0101(){
 	var inputData = [{
 		'distance': 10,
 		'time': 60,
@@ -37,7 +37,7 @@ function problem011(){
 
 	question = {
 		'type': 'single',
-		'id': '011',
+		'id': '0101',
 		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
 		'options': {
 			'A': speed,
@@ -59,7 +59,7 @@ function getRandomNumber(max){
 	return randomNumber;
 }
 
-function problem012(){
+function problem0102(){
 	var inputData = [{
 		'distance': 100,
 		'time': 50
@@ -94,7 +94,7 @@ function problem012(){
 
 	question = {
 		'type': 'single',
-		'id': '012',
+		'id': '0102',
 		'question': 'A car travels a distance of'+" "+ + distance + 'km in'+" "+ + time + 'hours. What is its speed in km/hr?',
 		'options': {
 			'A': speed,
@@ -109,7 +109,7 @@ function problem012(){
 	return question;	
 }
 
-function problem013(){
+function problem0103(){
 	var inputData = [{
 		'streamSpeed': 10,
 		'boatSpeed': 25
@@ -144,7 +144,7 @@ function problem013(){
 
 	question = {
 		'type': 'single',
-		'id': '013',
+		'id': '0103',
 		'question': 'The speed of boat in still water is' +" "+ + boatSpeed + 'kmph. The speed of current is'+" "+ + streamSpeed + 'kmph. What is its Up stream speed in kmph?',
 		'options': {
 			'A': upStream + parseInt(Math.random()*10),
@@ -160,7 +160,7 @@ function problem013(){
 		
 }
 
-function problem014(){
+function problem0104(){
 	var inputData = [{
 		'sellingPrice': 8400,
 		'profit': 12
@@ -195,7 +195,7 @@ function problem014(){
 
 	question = {
 		'type': 'single',
-		'id': '014',
+		'id': '0104',
 		'question': 'Sam brought cell phone from a shop. If he sells at Rs' +" "+ + sellingPrice +" "+'and earns a profit of'+" "+ + profit  +'%. Find the cost price of the cell phone.?',
 		'options': {
 			'A': costPrice + parseInt(Math.random()*10),
@@ -211,7 +211,7 @@ function problem014(){
 		
 }
 
-function problem015(){
+function problem0105(){
 	var inputData = [{
 		'principal': 4500,
 		'rateOfInterest': 4,
@@ -253,7 +253,7 @@ function problem015(){
 
 	question = {
 		'type': 'single',
-		'id': '015',
+		'id': '0105',
 		'question': 'Find the Simple Interest when Principal is' +" "+ + principal +" "+ ',Rate of Interest is' +" "+ + rateOfInterest  +'% per annum and Time is' +" "+ + noOfYears+ 'years.?',
 		'options': {
 			'A': simpleInterest + parseInt(Math.random()*10),
@@ -269,7 +269,7 @@ function problem015(){
 		
 }
 
-function problem016(){
+function problem0106(){
 	var inputData = [{
 		'principal': 12600,
 		'rateOfInterest': 10,
@@ -312,7 +312,7 @@ function problem016(){
 
 	question = {
 		'type': 'single',
-		'id': '016',
+		'id': '0106',
 		'question': 'Find the Compound Interest on Rs' +" "+ + principal +" "+ 'for' +" "+ + noOfYears  +'years at' +" "+ + rateOfInterest+ '% per annum compounded annually.?',
 		'options': {
 			'A': compoundInterest + parseInt(Math.random()*10),
@@ -328,7 +328,7 @@ function problem016(){
 		
 }
 
-function problem017(){
+function problem0107(){
 	var inputData = [{
 		'distance': 10,
 		'time': 60,
@@ -361,7 +361,7 @@ function problem017(){
 
 	    question = {
 		'type': 'single',
-		'id': '017',
+		'id': '0107',
 		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
 		'options': {
 			'A': speed,
@@ -377,7 +377,7 @@ function problem017(){
 	
 }
 
-function problem018(){
+function problem0108(){
 	var inputData = [{
 		'distance': 60,
 		'speed': 10
@@ -410,7 +410,7 @@ function problem018(){
 
 	question = {
 		'type': 'single',
-		'id': '018',
+		'id': '0108',
 		'question': 'A train is coming in ' + speed + 'km/hr from north direction at ' + time + 'hr Calculate the time of the train.',
 		'options': {
 			'A': time,
@@ -426,7 +426,7 @@ function problem018(){
 	
 }
 
-function problem019(){
+function problem0109(){
 	var inputData = [{
 		'time': 60,
 		'speed': 10
@@ -459,7 +459,7 @@ function problem019(){
 	
 	question = {
 		'type': 'single',
-		'id': '019',
+		'id': '0109',
 		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time  +'sec. Calculate the distance of the train.',
 		'options': {
 			'A': distance,
