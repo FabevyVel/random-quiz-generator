@@ -1085,3 +1085,436 @@ function problem0622(){
 	return question;
 	
 }
+
+function problem0623(){
+	var inputData = [{
+		'speed':15,
+		'currentspeed': 2.5,
+		},
+		{
+		'speed': 15,
+		'currentspeed': 2.5,
+		},
+		{
+		'speed': 15,
+		'currentspeed': 2.5,
+		},
+		{
+		'speed': 15,
+		'currentspeed': 2.5,
+		},
+		{
+		'speed': 15,
+		'currentspeed': 2.5,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		currentspeed = inputData[randomIndex]['currentspeed '],
+		manspeed,
+		question = {};
+
+	speed=parseInt(speed);
+	currentspeed=parseInt(currentspeed);
+	manspeed=(speed-currentspeed);
+
+	question = {
+		'type': 'single',
+		'id': '0623',
+		'question': 'A man speed with the current is' +speed+ 'and the speed of the current is current' +currentspeed+ 'The man speed against the current is',
+		'options': {
+			'A':	manspeed * parseInt(Math.random()*10),
+			'B': 	manspeed * parseInt(Math.random()*10),
+			'C':	manspeed,
+			'D': 	manspeed + parseInt(Math.random()*10)
+		},
+		'answer': 'c',
+		'author-id': '06'
+	}
+	
+	return question;
+}
+function problem0624(){
+	var inputData = [{
+	
+		'population1': 54500,
+		'population2': 58500
+		},
+		{
+		'population1': 54500,
+		'population2': 56500
+		},
+		{
+		'population1': 54500,
+		'population2': 57500
+		},
+		{
+		'population1': 54500,
+		'population2': 55500
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		population1= inputData[randomIndex]['population1'],
+		population2 = inputData[randomIndex]['population2'],
+		population,
+		percentageincrease,
+		question = {};
+
+	population1=parseInt(population1);
+	population2=parseInt(population2);
+	
+	population=(population1-population2);
+	
+	percentageincrease =((population/population1)*100);
+	
+
+	question = {
+		'type': 'single',
+		'id': '0624',
+		'question': 'The population of a town is increased from '+ population1 +' to '+ population2 +'  in one year. What is the percentage increase in the population?',
+		'options': {
+			'A': percentageincrease,
+			'B': percentageincrease - parseInt(Math.random()*10), 
+			'C': percentageincrease + parseInt(Math.random()*10),
+			'D': percentageincrease - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+
+function problem0625(){
+	var inputData = [{
+		'cp':25,
+		'sp': 45
+		},
+		{
+		'cp':25,
+		'sp': 35
+		},
+		{
+		'cp':25,
+		'sp': 15
+		},
+		{
+		'cp':25,
+		'sp': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp= inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		costprice,
+		sellingprice,
+		profit,
+		profitpercent,
+		
+		question = {};
+		
+		costprice=100-cp;
+		sellingprice=100+sp;
+		profit=(sellingprice-costprice);
+		profitpercent =((profit/costprice)*100);
+
+
+	question = {
+		'type': 'single',
+		'id': '0624',
+		'question': ' Mohan bought an article at '+cp+'  % less of the marked price and sold it at '+sp+'% more than the marked price. Find the profit earned by him.',
+		'options': {
+			'A': profitpercent-parseInt(Math.random()*10),
+			'B': profitpercent-parseInt(Math.random()*10),
+			'C': profitpercent,
+			'D': profitpercent+parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+
+function problem0625(){
+	var inputData = [{
+		'speed1':10,
+		'speed2':12,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 14,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 16,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 18,
+		'dis':8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    speed1= inputData[randomIndex]['speed1'],
+		speed2 = inputData[randomIndex]['speed2'],
+		dis = inputData[randomIndex]['dis'],
+		time,
+		
+		question = {};
+		speed=(speed2-speed1);
+		time=dis/speed;
+
+	question = {
+		'type': 'single',
+		'id': '0625',
+		'question': 'Two boys start running at the same time in the same direction at a speed of '+ speed1 +' km/hr and '+ speed2 +' km/hr respectively. In what time they will be '+ dis +' km apart?',
+		'options': {
+			'A': time,
+			'B': time-parseInt(Math.random()*10),
+			'C': time-parseInt(Math.random()*10),
+			'D': time+parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+
+
+function problem0626(){
+	var inputData = [{
+		'distance': 600,
+		'time': 5
+		},
+		{
+		'distance': 900,
+		'time': 4
+		},
+		{
+		'distance': 700,
+		'time': 6
+		},
+		{
+		'distance': 500,
+		'time': 3
+	    }],
+		randomIndex = getRandomNumber(inputData.length),
+		distance= inputData[randomIndex]['distance'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+
+	distance=parseInt(distance);
+	time=parseInt(time*60);
+	speed=((distance/time)*(18/5));
+
+	question = {
+		'type': 'single',
+		'id': '0626',
+		'question': 'A person crosses a'+distance+'long street in'+time+'.what is his speed in km per hour?',
+		'options': {
+			'A': speed,
+			'B': speed - parseInt(Math.random()*10),
+			'C': speed + parseInt(Math.random()*10),
+			'D': speed - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+
+function problem0627(){
+	var inputData = [{
+		'x': 90,
+		'y': 30
+		},
+		{
+		'x': 30,
+		'y': 20
+		},
+		{
+		'x': 70,
+		'y': 60
+		},
+		{
+		'x': 110,
+		'y': 70
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		x= inputData[randomIndex]['x'],
+		y = inputData[randomIndex]['y'],
+		average,
+		question = {};
+
+	x=parseInt(x);
+	y=parseInt(y);
+	average=((2*x*y)/(x+y));
+
+	question= {
+		'type': 'single',
+		'id': '0627',
+		'question': 'Distance between two stations A and B is 778km. A train covers the journey from A to B at '+x+'per hour and returns back to A with a uniform speed of '+y+'per hour. Find the average speed of the train during the whole journey',
+		'options': {
+			'A': average,
+			'B': average +parseInt(Math.random()*10),
+			'C': average- parseInt(Math.random()*10),
+			'D': average*parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '06'
+	}
+	return question;
+	
+}
+function problem0628(){
+	var inputData = [
+		{
+		'distance':20,
+		'speed': 400
+		},
+		{
+		'distance':10,
+		'speed': 400
+		},
+		{
+		'distance':15,
+		'speed': 400
+		},
+		{
+		'distance':25,
+		'speed': 400
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		distance= inputData[randomIndex]['distance'],
+    	time,
+		question = {};
+		
+	    speed=parseInt((speed)*5/18);
+		distance=parseInt(distance);
+		time=(distance/speed);
+		
+	question = {
+		'type': 'single',
+		'id': '0628',
+		'question': 'A jogger is running at a speed of '+ speed +' km/hr. In what time he will cross a track of length '+ distance+' meters?',
+		'options': {
+			'A':  time+parseInt(Math.random()*10),
+			'B':  time-parseInt(Math.random()*10),
+			'C':  time,
+			'D':  time-parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+function problem0629(){
+	var inputData = [{
+		'time':2,
+		'speed':20
+		},
+		{
+		'time':2,
+		'speed':25
+		},
+		{
+		'time':2,
+		'speed': 24
+		},
+		{
+		'time':2,
+		'speed': 26
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		time= inputData[randomIndex]['time'],
+    	distance,
+		question = {};
+		
+	    speed=parseInt(speed*5/18);
+		time=parseInt(time*60);
+		distance=(speed*time);
+		
+	question = {
+		'type': 'single',
+		'id': '0629',
+		'question': 'A cyclist moving at a speed of '+ speed  +' a crosses bridge in  '+ time +' minitues.what is the length of the bridge?',
+		'options': {
+			'A':  distance,
+			'B':  distance-parseInt(Math.random()*10),
+			'C':  distance+parseInt(Math.random()*10),
+			'D':  distance-parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+
+function problem0630(){
+	var inputData = [{
+		'sub1':6,
+		'sub2':4,
+		'mark1':74,
+		'mark2':70
+		},
+		{
+		'sub1':6,
+		'sub2':5,
+		'mark1':74,
+		'mark2':70
+		},
+		{
+		'sub1':6,
+		'sub2':7,
+		'mark1':74,
+		'mark2':70
+		},
+		{
+		'sub1':6,
+		'sub2':8,
+		'mark1':74,
+		'mark2':70
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    sub1= inputData[randomIndex]['sub1'],
+		sub2 = inputData[randomIndex]['sub2'],
+		mark1 = inputData[randomIndex]['mark1'],
+		mark2 = inputData[randomIndex]['mark2'],
+		subjecta,
+		subjectb,
+		subjects,
+		
+		question = {};
+		subjecta=(sub1*mark1);
+		subjectb=(sub2*mark2);
+		subjects=(subjecta-subjectb);
+
+	question = {
+		'type': 'single',
+		'id': '0630',
+		'question': 'The average of Sohans marks in '+sub1+' subjects is '+mark2+'. If his average in '+sub2+' subjects excluding science is '+mark2+', how many marks he obtained in science?',
+		'options': {
+			'A': subjects-parseInt(Math.random()*10),
+			'B': subjects,
+			'C': subjects-parseInt(Math.random()*10),
+			'D': subjects+parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '06'
+	}
+	return question;
+}
