@@ -1624,7 +1624,228 @@ function problem0531(){
 	
 }
 
+function problem0532(){
+	var inputData = [{
+		'town_increased':656000,
+		'decade': 234000
+		},
+		{
+		'town_increased':654000,
+		'decade': 543000
+		},
+		{
+		'town_increased':785000,
+		'decade': 256000
+		},
+		{
+		'town_increased':175000,
+		'decade': 262200
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		town_increased = inputData[randomIndex]['town_increased'],
+		decade = inputData[randomIndex]['decade'],
+		percentage_increase,
+		Increase_percentage,
+		required_average,
+		question = {};
+	
+	town_increased = parseInt(town_increased);
+	decade = parseInt(decade);
+	percentage_increase = (town_increased-decade);
+	Increase_percentage = (percentage_increase/town_increased)*100;
+	required_average = (Increase_percentage/10);
 
+	question = {
+		'type': 'single',
+		'id': '0532',
+		'question': 'The population of a town increased from  ' + town_increased + ' to ' + decade + 
+					' in a decade. The average percent increased of population per year is:',
+		'options': {
+			'A': required_average - parseInt(Math.random()*10),
+			'B': required_average - parseInt(Math.random()*10),
+			'C': required_average + parseInt(Math.random()*10),
+			'D': required_average
+		},
+		'answer': 'D',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0533(){
+	var inputData = [{
+		'parallelLine':280,
+		'sameDirection':100,
+		'trainSlower':40
+		},
+		{
+		'parallelLine':280,
+		'sameDirection':100,
+		'trainSlower':56
+		},
+		{
+		'parallelLine':280,
+		'sameDirection':100,
+		'trainSlower': 80
+		},
+		{
+		'parallelLine':280,
+		'sameDirection':100,
+		'trainSlower':36
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		parallelLine = inputData[randomIndex]['parallelLine'],
+		sameDirection = inputData[randomIndex]['sameDirection'],
+		trainSlower = inputData[randomIndex]['trainSlower'],
+		train,
+		meterSec,
+		x,
+		length,
+		question = {};
+	
+	parallelLine = parseInt(parallelLine);
+	sameDirection = parseInt(sameDirection);
+	trainSlower = parseInt(trainSlower),
+	train = parallelLine - sameDirection;
+	meterSec = [train*(5/18)];
+	x = meterSec * trainSlower;
+	length=x/2;
+	
+
+
+	question = {
+		'type': 'single',
+		'id': '0533',
+		'question': 'Two trains of equal lengths are running on parallel lines in the same direction at the rate of' + parallelLine + 'km/hr and' 
+					+ sameDirection + 'km/hr. The faster train passes the slower train in' + trainSlower + 'seconds. What is the length of the each trains ?',
+		'options': {
+			'A': length - parseInt(Math.random()*10),
+			'B': length + parseInt(Math.random()*10),
+			'C': length,
+			'D': length - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0534(){
+	var inputData = [{
+		'buys':50,
+		'sell': 34,
+		'newBuy': 16,
+		'newSell':90
+		},
+		{
+		'buys':80,
+		'sell': 60,
+		'newBuy': 12,
+		'newSell':30
+		},
+		{
+		'buys':10,
+		'sell': 40,
+		'newBuy': 10,
+		'newSell':80
+		},
+		{
+		'buys':16,
+		'sell': 20,
+		'newBuy': 32,
+		'newSell': 40
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		buys = inputData[randomIndex]['buys'],
+		sell = inputData[randomIndex]['sell'],
+		newBuy = inputData[randomIndex]['newBuy'],
+		newSell = inputData[randomIndex]['newSell'],
+		cp,
+		sp,
+		profit,
+		profit_percentage,
+		question = {};
+
+	cp = newBuy + buys;
+	sp = newSell + sell;
+	profit = sp - cp;
+	profit_percentage = (profit/cp)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0534',
+		'question': 'Sathya buys a Dog for ' + buys + ' pounds. after one year, he sells it for ' + sell + 
+					' pounds. after one year, again he buys the same Dog at ' + newBuy + 
+					' pounds and sells it for ' + newSell + 
+					' pounds. what is the overall profit percent for sathya over both the transactions?',
+		'options': {
+			'A': profit_percentage - parseInt(Math.random()*10),
+			'B': profit_percentage - parseInt(Math.random()*10),
+			'C': profit_percentage,
+			'D': profit_percentage + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0535(){
+	var inputData = [{
+		's':8,
+		'm':2,
+		'e':24
+		},
+		{
+		's':10,
+		'm':5,
+		'e':30
+		},
+		{
+		's':12,
+		'm':7,
+		'e':55
+		},	
+		{
+		's':14,
+		'm':6,
+		'e':45
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		s= inputData[randomIndex]['s'],
+		m= inputData[randomIndex]['m'],
+		e=inputData[randomIndex]['e'],
+		total,
+		question = {};
+		
+	s=parseInt(s);
+	m=parseInt(m);
+	e=parseInt(e);
+	total=(s*m)+e;
+		
+	question={
+		'type':'single',
+		'id':'0535',
+		'question':'The average weight of ' + s + ' person increased by ' + m + 
+					' kg when a new person comes in place of one of them weighting ' + e + ' of the new person. What is the age of new person?',
+		'option':
+		{
+			'A':total,
+			'B':total + parseInt(Math.random()*10),
+			'C':total - parseInt(Math.random()*10),			
+			'D':total - parseInt(Math.random()*10),
+		},
+		'answer':'A',
+		'author-id':'05'
+		}
+		return question;
+}
 
 
 
