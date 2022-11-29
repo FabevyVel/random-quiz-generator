@@ -1936,6 +1936,52 @@ function problem0638(){
 	return question;
 	
 }
+function problem0639(){
+	var inputData = [{
+		'dist': 100,
+		'time': 5
+		},
+		{
+		'dist': 50,
+		'time': 4
+		},
+		{
+		'dist': 72,
+		'time': 4
+		},
+		{
+		'dist': 180,
+		'time': 8
+		},
+		{
+		'dist': 220,
+		'time': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		dist = inputData[randomIndex]['dist'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+		
+	dist = parseInt(dist*18/5);
+	time = parseInt(time*60);
+	speed = dist/time;
+	
+	question = {
+		'type': 'single',
+		'id': '0639',
+		'question': 'A rider crosses a ' + dist + ' m long street in ' + time + ' minutes. What is speed in km per hour?', 
+		'options': {
+			'A': speed,
+			'B': speed * parseInt(Math.random()*10),
+			'C': speed + parseInt(Math.random()*10),
+			'D': speed - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '06',
+	}
+	return question;
+}
 
 
 
