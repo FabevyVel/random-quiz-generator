@@ -5,49 +5,58 @@ function getRandomNumber(max){
 }
 
 
-function problem341(){
+function problem1620(){
 	var inputData = [{
-		'distance': 10,
-		'time': 60
+		'a': 10,
+		'b': 60
 		},
 		{
-		'distance': 10,
-		'time': 90
-		},
-		{
-		'distance': 10,
-		'time': 60
-		},
-		{
-		'distance': 10,
-		'time': 60
-		},
-		{
-		'distance': 10,
-		'time': 60
-		}],
+			'a':30,
+			'b': 60
+			},
+			{
+				'a':310,
+				'b': 7
+				},
+				{
+					'a': 20,
+					'b': 10
+					},
+
+					{
+						'a': 50,
+						'b': 80
+						},
+		
+		]
+	}
+		
 		randomIndex = getRandomNumber(inputData.length),
-		distance= inputData[randomIndex]['distance'],
-		time = inputData[randomIndex]['time'],
-		speed,
+		a= inputData[randomIndex]['a'],
+		b = inputData[randomIndex]['b'],
+		c,
 		question = {};
 
-	distance=parseInt(distance);
-	time=parseInt(time*60);
-	speed=((distance/time)*(18/5));
+		if(a > b) {
+			alert(c+"a is greater than b");
+		  } else if(a < b) {
+			alert("a is lesser than b"+c);
+			 
+			  alert("a is equal to b"+c);
+		  };
 
 	question = {
 		'type': 'single',
-		'id': '041',
-		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
+		'id': '1620',
+		'question': 'given number greater or lesser',
 		'options': {
-			'A': speed,
-			'B': speed - parseInt(Math.random()*10),
-			'C': speed + parseInt(Math.random()*10),
-			'D': speed - parseInt(Math.random()*10)
+			'A': c,
+			'B': c - parseInt(Math.random()*10),
+			'C': c+ parseInt(Math.random()*10),
+			'D': c- parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '04'
+		'author-id': '16'
 	}
 	
 	return question;
