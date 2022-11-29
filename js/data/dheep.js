@@ -1077,54 +1077,58 @@ function problem0321(){
 	
 }
 function problem0322(){
-    var inputData = [{
-        'orange':520,
-        'sells':40
-        },
-        {
-        'orange':480,
-        'sells':30
-        },
-        {
-        'orange': 450,
-         'sells':20
-        },
-        
-        {
-        'orange': 430,
-        'sells':10
-        }],
-        randomIndex = getRandomNumber(inputData.length),
-        orange= inputData[randomIndex]['orange'],
-        sells= inputData[randomIndex]['sells'],
-        
-        
-        
-        orange=parseInt(orange);
-        
-        sells=parseInt(sells);
-        totalsells=100;
-        selling=totalsells-sells;
-        price=parseFloat(selling/100);
-        price=y;
-        y=orange*100/selling;
-        
-        question = {};
-        
-        
-         question= {
-        'type': 'single',
-        'id': '0322',
-        'question': 'A fruit seller had some orange. He sells '+sells+'% orange and still has '+orange+' orange. Originally, he had',
-        'options': {
-            'A':y-parseInt(Math.random()*10),
-            'B':y,
-            'C':y-parseInt(Math.random()*10),
-            'D':y+parseInt(Math.random()*10)
-        },
-        'answer': 'B',
-        'author-id': '03'
-    }
-    return question;
+	var inputData = [{
+		'downstreamdistance':20,
+		'downstreamtime': 5,
+		'upstreamtime': 8
+		},
+		{
+		'downstreamdistance': 50,
+		'downstreamtime': 30,
+		'upstreamtime': 5
+		},
+		{
+		'downstreamdistance': 60,
+		'downstreamtime': 40,
+		'upstreamtime': 2
+		},
+		{
+		'downstreamdistance':26,
+		'downstreamtime': 2,
+		'upstreamtime': 4
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		downstreamdistance = inputData[randomIndex]['downstreamdistance'],
+		downstreamtime = inputData[randomIndex]['downstreamtime'],
+		upstreamtime = inputData[randomIndex]['upstreamtime'],
+		speed,
+		x,
+		stream_speed,
+		question = {};
+		
+	downstreamdistance=parseInt(downstreamdistance);
+	downstreamtime=parseInt(downstreamtime);
+	upstreamtime=parseInt(upstreamtime);
+	speed=downstreamdistance/downstreamtime;
+	x=downstreamdistance/upstreamtime;
+	streamspeed=1/2*(speed+x);
 
+	question = {
+		'type': 'single',
+		'id': '0322
+		'question': 'A boat running downstream covers a distance of' + downstreamdistance + 'km in' + downstreamtime + 'hours while for covering the same distance upstream, it takes'
+					+ upstreamtime + 'hours. What is the speed of the boat in still water?',
+		'options':
+		{
+			'A': streamspeed,
+			'B': streamspeed - parseFloat(Math.random()*10),
+			'C': streamspeed + parseInt(Math.random()*10),
+			'D': streamspeed - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03'
+	}
+	
+	return question;
+	
 }
