@@ -1213,3 +1213,158 @@ function problem1520()
 	return question;
 	
 }
+
+
+
+//21
+
+function problem1521(){
+	var inputData = [{
+		'electricity_bill':35,
+		'deducted': 150
+		},
+		{
+		'electricity_bill':50,
+		'deducted': 200
+		},
+		{
+		'electricity_bill':60,
+		'deducted': 180
+		},
+		{
+		'electricity_bill':90,
+		'deducted': 300
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		electricity_bill= inputData[randomIndex]['electricity_bill'],
+		deducted = inputData[randomIndex]['deducted'],
+		bill,
+		question = {};
+	
+	
+	to_pay=deducted-electricity_bill;
+	bill=(deducted/to_pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '1521',
+		'question': 'If' + electricity_bill + '% of an electricity bill is deducted then rs' + deducted + 'is still to be paid .How much was the original bill',
+		'options': {
+			'A': bill,
+			'B': bill + parseInt(Math.random()*10),
+			'C': bill + parseInt(Math.random()*10),
+			'D': bill - parseFloat(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}
+
+
+//22
+
+function problem1522(){
+    var inputData = [{
+    'over1': 10,
+    'rr': 3.2,
+    'over2': 40,
+    'runs': 252
+    },
+    {
+    'over1': 10,
+    'rr': 3.2,
+    'over2': 40,
+    'runs': 262
+    },
+    {
+    'over1': 10,
+    'rr': 3.2,
+    'over2': 40,
+    'runs': 292
+    },
+    {
+    'over1': 10,
+    'rr': 3.2,
+    'over2': 40,
+    'runs': 282
+    }],
+    randomIndex = getRandomNumber(inputData.length),
+    over1= inputData[randomIndex]['over1'],
+    over2= inputData[randomIndex]['over2'],
+    rr= inputData[randomIndex]['rr'],
+    runs= inputData[randomIndex]['runs'],
+    r,
+    runrate,
+    question = {};
+    
+    r=runs-(over1*rr);
+    runrate=r/over2;
+
+question = {
+    'type': 'single',
+    'id': '1522',
+    'question': 'In the first ' + over1 + ' overs of a cricket game, the run rate was only ' + rr + '. What should be the run rate in the remaining ' + over2 + ' overs to reach the target of ' + runs + ' runs?',
+    'options': {
+        'A': runrate - parseInt(Math.random()*10),
+        'B': runrate - parseInt(Math.random()*10),
+        'C': runrate+ parseInt(Math.random()*10),
+        'D': runrate
+    },
+    'answer': 'D',
+    'author-id': '15'
+}
+
+return question;
+
+}
+
+
+//23
+
+function problem1523(){
+    var inputData = [{
+    'manspeed': 10,
+    'bike': 1.5
+    },
+    {
+    'manspeed': 15,
+    'bike': 4.5
+    },
+    {
+    'manspeed': 8,
+    'bike': 3.5
+    },
+    {
+    'manspeed':5,
+    'bike': 2.5
+    }],
+    randomIndex = getRandomNumber(inputData.length),
+    manspeed= inputData[randomIndex]['manspeed'],
+    bike= inputData[randomIndex]['bike'],
+    a,
+    b,
+    question = {};
+    
+    a=manspeed-bike;
+    b=a-bike;
+
+question = {
+    'type': 'single',
+    'id': '1523',
+    'question': 'A man speed  is ' + manspeed + ' km/hr and the speed of the bike is ' + bike + ' km/hr. The mans speed against the bike is',
+    'options': {
+        'A': b - parseInt(Math.random()*10),
+        'B': b - parseInt(Math.random()*10),
+        'C': b + parseInt(Math.random()*10),
+        'D': b
+    },
+    'answer': 'D',
+    'author-id': '15'
+}
+
+return question;
+
+}
