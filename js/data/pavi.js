@@ -1759,3 +1759,106 @@ function problem0835(){
 	
 	return question;
 }
+function problem0836(){
+		var inputData = [{
+		'manspeed': 12,
+		'currentspeed': 1
+		},
+		{
+		'manspeed': 15,
+		'currentspeed': 4
+		},
+		{
+		'manspeed': 16,
+		'currentspeed': 3
+		},
+		{
+		'manspeed': 17,
+		'currentspeed': 2
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		manspeed= inputData[randomIndex]['manspeed'],
+		currentspeed= inputData[randomIndex]['currentspeed'],
+		a,
+		b,
+		question = {};
+		
+		a=manspeed-currentspeed;
+		b=a-currentspeed;
+
+	question = {
+		'type': 'single',
+		'id': '0836',
+		'question': 'A man speed with the current is ' + manspeed + ' km/hr and the speed of the current is ' + currentspeed + ' km/hr. The mans speed against the current is',
+		'options': {
+			'A': b,
+			'B': b - parseInt(Math.random()*10),
+			'C': b + parseInt(Math.random()*10),
+			'D':  b / parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0836'
+	}
+	
+	return question;
+	
+}
+
+
+function problem0837(){
+	var inputData = [{
+		's1': 700,
+		's2': 94,
+		'y1': 3,
+		'y2': 4
+		},
+		{
+		's1': 615,
+		's2': 254,
+		'y1': 8,
+		'y2': 5
+		},
+		{
+		's1': 215,
+		's2': 159,
+		'y1': 5,
+		'y2': 9
+		},
+		{
+		's1': 315,
+		's2': 53,
+		'y1': 8,
+		'y2': 2
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		s1= inputData[randomIndex]['s1'],
+		s2= inputData[randomIndex]['s2'],
+		y1= inputData[randomIndex]['y1'],
+		y2= inputData[randomIndex]['y2'],
+		a,
+		b,
+		principal,
+		question = {};
+		
+		a=s2-s1;
+		b=a*y1;
+		principal=s1-b;
+
+	question = {
+		'type': 'single',
+		'id': '0837',
+		'question': 'A sum of money at simple interest amounts to Rs. ' + s1 + ' in ' + y1 + '  years and to Rs.' + s2 + ' in ' + y2 + ' years. The sum is:',
+		'options': {
+			'A': principal + parseInt(Math.random()*10),
+			'B': principal - parseInt(Math.random()*10),
+			'C': principal,
+			'D': principal - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '0837'
+	}
+	
+	return question;
+	
+}
+
