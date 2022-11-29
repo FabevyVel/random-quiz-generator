@@ -1834,6 +1834,52 @@ function problem0636(){
 	return question;
 }
 
+function problem0637(){
+	var inputData = [{
+		'us': 8,
+		'ds': 4
+		},
+		{
+		'us': 10,
+		'ds': 4
+		},
+		{
+		'us': 12,
+		'ds': 6
+		},
+		{
+		'us': 16,
+		'ds': 4
+		},
+		{
+		'us': 14,
+		'ds': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    us = inputData[randomIndex]['us'],
+		ds = inputData[randomIndex]['ds'],
+		ss,
+		question = {};
+
+	us = parseInt(us);
+    ds = parseInt(ds);
+    ss = (us+ds)/2;
+
+	question = {
+		'type': 'single',
+		'id': '0637',
+		'question': 'In one hour a boat goes  ' + us + ' km/hr along stream and ' + ds + ' km/hr against the stream . The speed of boat in ' + ss +' in km/hr is.',
+		'options': {
+			'A': ss - parseInt(Math.random()*10),
+			'B': ss + parseInt(Math.random()*10),
+			'C': ss,
+			'D': ss * parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '06'
+    }
+	return question;
+}
 
 
 
