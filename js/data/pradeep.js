@@ -981,3 +981,537 @@ function problem0920(){
 	return question;
 	
 }
+function problem0921(){
+	var inputData = [{
+		'dist': 100,
+		'time': 5
+		},
+		{
+		'dist': 50,
+		'time': 4
+		},
+		{
+		'dist': 72,
+		'time': 4
+		},
+		{
+		'dist': 180,
+		'time': 8
+		},
+		{
+		'dist': 220,
+		'time': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		dist = inputData[randomIndex]['dist'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+		
+	dist = parseInt(dist*18/5);
+	time = parseInt(time*60);
+	speed = dist/time;
+	
+	question = {
+		'type': 'single',
+		'id': '0921',
+		'question': 'A rider crosses a ' + dist + ' m long street in ' + time + ' minutes. What is speed in km per hour?', 
+		'options': {
+			'A': speed,
+			'B': speed * parseInt(Math.random()*10),
+			'C': speed + parseInt(Math.random()*10),
+			'D': speed - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '09',
+	}
+	return question;
+}
+function problem0922(){
+	var inputData = [{
+		'cp': 40,
+		'sp': 120
+		},
+		{
+		'cp': 1200,
+		'sp': 2000
+		},
+		{
+		'cp': 780,
+		'sp': 1000
+		},
+		{
+		'cp': 1400,
+		'sp': 2600
+		},
+		{
+		'cp': 400,
+		'sp': 900
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp = inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		p,
+		pp,
+		question = {};
+
+	cp = parseInt(cp);
+    sp = parseInt(sp);
+	p = sp - cp ;
+    pp = p/cp*100;
+
+	question = {
+		'type': 'single',
+		'id': '0922',
+		'question': 'An watch is bought for  ' + cp + 'rs and sold for ' + sp + ' rs. what is the '+ pp +' profit percentage of the watch?',
+		'options': {
+			'A': pp - parseFloat(Math.random()*10),
+			'B': pp * parseFloat(Math.random()*10),
+			'C': pp + parseFloat(Math.random()*10),
+			'D': pp 
+		},
+		'answer': 'D',
+		'author-id': '09'
+    }
+	return question;
+}
+function problem0923(){
+	var inputData = [{
+		'h':18,
+		'b':14
+		},
+		{
+		'h':26,
+		'b':30
+		},
+		{
+		'h': 12,
+		'b': 36
+		},
+		{
+		'h': 24,
+		'b': 36
+		},
+		{
+		'h': 42,
+		'b': 22
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    h = inputData[randomIndex]['h'],
+	    b = inputData[randomIndex]['b'],
+		a,
+		question = {};
+
+	h = parseInt(h);
+    b = parseInt(b);
+    a = b*h/2;
+	
+	question = {
+		'type': 'single',
+		'id': '0923',
+		'question': 'A triangle has its height ' + h + ' m and its breadth ' + b +' m. find the area'+ a + ' m of the triangle ? ',
+		'options': {
+			'A': a * parseInt(Math.random()*10),
+			'B': a, 
+			'C': a - parseInt(Math.random()*10),
+			'D': a + parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '09'
+    }
+	return question;
+}
+function problem0924(){
+	var inputData = [{
+		'distance': 35,
+		'time': 50
+		},
+		{
+		'distance': 55,
+		'time': 70
+		},
+		{
+		'distance': 12,
+		'time': 26
+		},
+		{
+		'distance': 23,
+		'time': 56
+		},
+		{
+		'distance': 15,
+		'time': 45
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		distance= inputData[randomIndex]['distance'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+
+	distance=parseInt(distance);
+	time=parseInt(time*60);
+	speed=((distance/time)*(18/5));
+
+	question = {
+		'type': 'single',
+		'id': '0924',
+		'question': 'An object travells a distance ' + distance + 'km at ' + time + ' sec. Calculate the speed of the object ?',
+		'options': {
+			'A': speed + parseInt(Math.random()*10),
+			'B': speed - parseInt(Math.random()*10),
+			'C': speed * parseInt(Math.random()*10),
+			'D': speed
+		},
+		'answer': 'D',
+		'author-id': '09'
+	}
+	return question;
+}
+function problem0925(){
+	var inputData = [{
+		'ss':25,
+		'cs': 15,
+		'time':10
+		},
+		{
+		'ss':20,
+		'cs': 5,
+		'time':10
+		},
+		{
+		'ss':15,
+		'cs': 35,
+		'time':10
+		},
+		{
+		'ss':22,
+		'cs':14,
+		'time':6
+		},
+		{
+		'ss':16,
+		'cs': 24,
+		'time':14
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    ss = inputData[randomIndex]['ss'],
+		cs = inputData[randomIndex]['cs'],
+    	time = inputData[randomIndex]['time'],
+	    speed,
+	    distance,
+		question = {};
+		
+	    ss = parseInt(ss);
+		cs = parseInt(cs);
+		time = parseInt(time/60);
+		speed = ss+cs;
+	    distance = speed*time;
+
+
+	question = {
+		'type': 'single',
+		'id': '0925',
+		'question': ' The speed of a boat in stil water in' + ss + 'km/hr and the rate of current is '+ cs + 'km/hr. The distance travelled downstream in ' + time + 'minutes is?',
+		'options': {
+			'A': distance*parseInt(Math.random()*10),
+			'B': distance+parseInt(Math.random()*10),
+			'C': distance-parseInt(Math.random()*10),
+			'D': distance
+		},
+		'answer': 'D',
+		'author-id': '09'
+	}
+	
+	return question;
+	
+}
+function problem0926(){
+	var inputData = [{
+		'p': 48000,
+		'n': 12,
+		'r':4
+		},
+		{
+		'p': 40000,
+		'n': 8,
+		'r':10		
+		},
+		{
+		'p': 35000,
+		'n': 6,
+		'r':6
+		},
+		{
+		'p': 38000,
+		'n': 16,
+		'r':12
+		},
+		{
+		'p': 44000,
+		'n': 12,
+		'r':16
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		si,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+    si=p*n*r/100;
+	
+	question = {
+		'type': 'single',
+		'id': '0926',
+		'question': 'Find the simple interest when ' + p + ' rs rate of interest ' + r + ' percentage per annum, time ' + n + ' years.',
+		'options': {
+			'A': si - parseInt(Math.random()*10),
+			'B': si,
+			'C': si * parseInt(Math.random()*10),
+			'D': si + parseInt(Math.random()*10) 
+		},
+		'answer': 'B',
+		'author-id': '09'
+    }
+	return question;
+}
+function problem0927(){
+	var inputData = [{
+		'us': 18,
+		'ds': 14
+		},
+		{
+		'us': 10,
+		'ds': 14
+		},
+		{
+		'us': 12,
+		'ds': 16
+		},
+		{
+		'us': 16,
+		'ds': 12
+		},
+		{
+		'us': 10,
+		'ds': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    us = inputData[randomIndex]['us'],
+		ds = inputData[randomIndex]['ds'],
+		ss,
+		question = {};
+
+	us = parseInt(us);
+    ds = parseInt(ds);
+    ss = (us+ds)/2;
+
+	question = {
+		'type': 'single',
+		'id': '0927',
+		'question': 'A boat goes  ' + us + ' km/hr along stream and ' + ds + ' km/hr against the stream . The speed of boat in ' + ss +' in km/hr is?',
+		'options': {
+			'A': ss - parseInt(Math.random()*10),
+			'B': ss + parseInt(Math.random()*10),
+			'C': ss * parseInt(Math.random()*10),
+			'D': ss
+		},
+		'answer': 'D',
+		'author-id': '09'
+    }
+	return question;
+}
+
+function problem0928(){
+	var inputData = [{
+		'l':18,
+		'b':14
+		},
+		{
+		'l':16,
+		'b':13
+		},
+		{
+		'l': 12,
+		'b': 10
+		},
+		{
+		'l': 7,
+		'b': 7
+		},
+		{
+		'l': 20,
+		'b': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    l = inputData[randomIndex]['l'],
+	    b = inputData[randomIndex]['b'],
+		a,
+		question = {};
+
+	l = parseInt(l);
+    b = parseInt(b);
+    a = l*b;
+	
+	question = {
+		'type': 'single',
+		'id': '0928',
+		'question': 'If the length of rectangle is ' + l + ' m and its breadth is ' + b +' m. find the area'+ a + ' m? ',
+		'options': {
+			'A': a * parseInt(Math.random()*10),
+			'B': a ,
+			'C': a - parseInt(Math.random()*10),
+			'D': a + parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '09'
+    }
+	return question;
+}
+function problem0929(){
+	var inputData = [{
+		'p': 24600,
+		'n': 2,
+		'r':12
+		},
+		{
+		'p': 8400,
+		'n': 2,
+	    'r':6		
+		},
+		{
+		'p': 9700,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 12400,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 6000,
+		'n': 2,
+		'r':6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		a,
+		ci,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+	a = p*(1+(r/100))**n;
+	ci = a - p,
+
+	question = {
+		'type': 'single',
+		'id': '0929',
+		'question': 'Find the compound interest on' + p + ' rs for ' + n + ' years at ' + r + ' percentage per annum completed annualy.',
+		'options': {
+			'A': ci,
+			'B': ci + parseInt(Math.random()*10),
+			'C': ci - parseInt(Math.random()*10),
+			'D': ci * parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '09'
+    }
+	return question;
+}
+function problem0930(){
+	var inputData = [{
+		'cp': 40.25,
+		'sp': 32
+		},
+		{
+		'cp': 26.25,
+		'sp': 33
+		},
+		{
+		'cp': 32.5,
+		'sp': 40
+		},
+		{
+		'cp': 24.5,
+		'sp': 38
+		},
+		{
+		'cp': 20.25,
+		'sp': 30
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp = inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		p,
+		pp,
+		question = {};
+
+	cp = parseFloat(cp);
+    sp = parseInt(sp);
+	p = sp - cp ;
+    pp = p/cp*100;
+
+	question = {
+		'type': 'single',
+		'id': '0930',
+		'question': 'A book is bought for  ' + cp + 'rs and sold for ' + sp + ' rs. what is the '+ pp +' profit percentage of the book?',
+		'options': {
+			'A': pp ,
+			'B': pp * parseFloat(Math.random()*10),
+			'C': pp + parseFloat(Math.random()*10),
+			'D': pp - parseFloat(Math.random()*10)
+		},
+		'answer': 'D',
+		'author-id': '09'
+    }
+	return question;
+}
+function problem0931(){
+	var inputData = [{
+		'value': 27		
+		},
+		{
+		'value': 64,
+		},
+		{
+		'value': 125,	
+		},
+		{
+		'value':216,		
+		},
+		{
+		'value': 343,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		value= inputData[randomIndex]['value'],
+		cubeRoot,
+		question = {};
+
+	value=parseInt(value);
+	cubeRoot=Math.cbrt(value);
+
+	question = {
+		'type': 'single',
+		'id': '0931',
+		'question': 'Find the cube root of '+ value +'? ',
+		'options': {
+			'A':cubeRoot - parseInt(Math.random()*10),
+			'B':cubeRoot,
+			'C':cubeRoot + parseInt(Math.random()*10),
+			'D':cubeRoot - parseInt(Math.random()*10),
+		},
+		'answer': 'B',
+		'author-id': '09'
+	}
+	
+	return question;	
+}
