@@ -1427,3 +1427,51 @@ function problem0929(){
     }
 	return question;
 }
+function problem0930(){
+	var inputData = [{
+		'cp': 40.25,
+		'sp': 32
+		},
+		{
+		'cp': 26.25,
+		'sp': 33
+		},
+		{
+		'cp': 32.5,
+		'sp': 40
+		},
+		{
+		'cp': 24.5,
+		'sp': 38
+		},
+		{
+		'cp': 20.25,
+		'sp': 30
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp = inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		p,
+		pp,
+		question = {};
+
+	cp = parseFloat(cp);
+    sp = parseInt(sp);
+	p = sp - cp ;
+    pp = p/cp*100;
+
+	question = {
+		'type': 'single',
+		'id': '0930',
+		'question': 'A book is bought for  ' + cp + 'rs and sold for ' + sp + ' rs. what is the '+ pp +' profit percentage of the book?',
+		'options': {
+			'A': pp ,
+			'B': pp * parseFloat(Math.random()*10),
+			'C': pp + parseFloat(Math.random()*10),
+			'D': pp - parseFloat(Math.random()*10)
+		},
+		'answer': 'D',
+		'author-id': '09'
+    }
+	return question;
+}
