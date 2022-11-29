@@ -1042,3 +1042,111 @@ function problem0321(){
 	return question;
 	
 }
+function problem0322(){
+	var inputData = [{
+		'dist1':260,
+		'time1': 21,
+		'dist2':600
+		},
+		{
+		'dist1':220,
+		'time1': 25,
+		'dist2':750
+		},
+		{
+		'dist1':300,
+		'time1': 20,
+		'dist2':700
+		},
+		{
+		'dist1':180,
+		'time1': 14,
+		'dist2':560
+		},
+		{
+		'dist1':200,
+		'time1': 25,
+		'dist2':800
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    dist1 = inputData[randomIndex]['dist1'],
+		time1 = inputData[randomIndex]['time1'],
+    	dist2 = inputData[randomIndex]['dist2'],
+	    speed,
+	    time,
+		question = {};
+		
+	    dist1=parseInt(dist1);
+		time1=parseInt(time1);
+		dist2=parseInt(dist2);
+		speed=dist1/time1;
+	    time=((dist1+dist2)/speed);
+
+
+	question = {
+		'type': 'single',
+		'id': '0322',
+		'question': 'A train ' + dist1 + ' m long passes a pole in' + time1 + 'seconds. How long will take to pass a plateform '+ dist2 +'m long?',
+		'options': {
+			'A': time * parseInt(Math.random()*10),
+			'B': time - parseInt(Math.random()*10),
+			'C': time + parseInt(Math.random()*10),
+			'D': time
+		},
+		'answer': 'D',
+		'author-id': '03'
+	}
+	return question;	
+}
+function problem0323(){
+	var inputData = [{
+		'speed':20,
+		'time': 4
+		},
+		{
+		'speed':22,
+		'time':6
+		},
+		{
+		'speed':54,
+		'time':2
+		},
+		{
+		'speed':55,
+		'time': 9
+		},
+		{
+		'speed':30,
+		'time': 6
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		time= inputData[randomIndex]['time'],
+    	distance,
+		question = {};
+		
+	    speed = parseInt(speed*5/18);
+		time = parseInt(time*60);
+		distance = speed*time;
+		
+
+
+	question = {
+		'type': 'single',
+		'id': '0323',
+		'question': 'A cyclist moving at a speed of' + speed + 'a crosses bridge in '+ time +'minitues.what is the length' + distance +' of the bridge?',
+		'options': {
+			'A':  distance-parseInt(Math.random()*10),
+			'B':  distance,
+			'C':  distance+parseInt(Math.random()*10),
+			'D':  distance-parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '09'
+	}
+	
+	return question;
+	
+}
