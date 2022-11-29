@@ -5,7 +5,7 @@ function getRandomNumber(max){
 }
 
 
-function problem051(){
+function problem0501(){
 	var inputData = [{
 		'distance': 100,
 		'time': 50
@@ -38,7 +38,7 @@ function problem051(){
 
 	question = {
 		'type': 'single',
-		'id': '051',
+		'id': '0501',
 		'question': 'A car travels a distance of'+" "+ + distance + 'km in'+" "+ + time + 'hours. What is its speed in km/hr?',
 		'options': {
 			'A': speed,
@@ -47,13 +47,13 @@ function problem051(){
 			'D': speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '051'
+		'author-id': '05'
 	}
 	
 	return question;	
 }
 
-function problem052(){
+function problem0502(){
 	var inputData = [{
 		'streamSpeed': 10,
 		'boatSpeed': 25
@@ -86,7 +86,7 @@ function problem052(){
 
 	question = {
 		'type': 'single',
-		'id': '052',
+		'id': '0502',
 		'question': 'The speed of boat in still water is' +" "+ + boatSpeed + 'kmph. The speed of current is'+" "+ + streamSpeed + 'kmph. What is its Up stream speed in kmph?',
 		'options': {
 			'A': upStream + parseInt(Math.random()*10),
@@ -95,14 +95,14 @@ function problem052(){
 			'D': upStream
 		},
 		'answer': 'D',
-		'author-id': '052'
+		'author-id': '05'
 	}
 	
 	return question;
 		
 }
 
-function problem053(){
+function problem0503(){
 	var inputData = [{
 		'sellingPrice': 8400,
 		'profit': 12
@@ -135,7 +135,7 @@ function problem053(){
 
 	question = {
 		'type': 'single',
-		'id': '053',
+		'id': '0503',
 		'question': 'Sam brought cell phone from a shop. If he sells at Rs' +" "+ + sellingPrice +" "+'and earns a profit of'+" "+ + profit  +'%. Find the cost price of the cell phone.?',
 		'options': {
 			'A': costPrice + parseInt(Math.random()*10),
@@ -144,14 +144,14 @@ function problem053(){
 			'D': costPrice - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '053'
+		'author-id': '05'
 	}
 	
 	return question;
 		
 }
 
-function problem054(){
+function problem0504(){
 	var inputData = [{
 		'principal': 4500,
 		'rateOfInterest': 4,
@@ -191,7 +191,7 @@ function problem054(){
 
 	question = {
 		'type': 'single',
-		'id': '054',
+		'id': '0504',
 		'question': 'Find the Simple Interest when Principal is' +" "+ + principal +" "+ ',Rate of Interest is' +" "+ + rateOfInterest  +'% per annum and Time is' +" "+ + noOfYears+ 'years.?',
 		'options': {
 			'A': simpleInterest + parseInt(Math.random()*10),
@@ -200,14 +200,14 @@ function problem054(){
 			'D': simpleInterest - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '054'
+		'author-id': '05'
 	}
 	
 	return question;
 		
 }
 
-function problem055(){
+function problem0505(){
 	var inputData = [{
 		'principal': 12600,
 		'rateOfInterest': 10,
@@ -248,7 +248,7 @@ function problem055(){
 
 	question = {
 		'type': 'single',
-		'id': '055',
+		'id': '0505',
 		'question': 'Find the Compound Interest on Rs' +" "+ + principal +" "+ 'for' +" "+ + noOfYears  +'years at' +" "+ + rateOfInterest+ '% per annum compounded annually.?',
 		'options': {
 			'A': compoundInterest + parseInt(Math.random()*10),
@@ -257,14 +257,14 @@ function problem055(){
 			'D': compoundInterest - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '055'
+		'author-id': '05'
 	}
 	
 	return question;
 		
 }
 
-function problem056(){
+function problem0506(){
 	var inputData = [{
 		'boatSpeed': 13,
 		'streamSpeed': 4,
@@ -278,7 +278,7 @@ function problem056(){
 		{
 		'boatSpeed': 15,
 		'streamSpeed': 9,
-			'distance': 100
+		'distance': 100
 		},
 		{
 		'boatSpeed': 10,
@@ -305,7 +305,7 @@ function problem056(){
 
 	question = {
 		'type': 'single',
-		'id': '056',
+		'id': '0506',
 		'question': 'A Boat can travel with a speed of ' +" "+ + boatSpeed +" "+ 'km/hr in still water. If the speed of stream is ' +" "+ + streamSpeed  +'km/hr. Find the time by the boat to go' +" "+ + distance+ 'km downstream ?',
 		'options': {
 			'A': time,
@@ -314,14 +314,14 @@ function problem056(){
 			'D': time - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '056'
+		'author-id': '05'
 	}
 	
 	return question;
 		
 }
 
-function problem057(){
+function problem0507(){
 	var inputData = [{
 		'length': 24,
 		'breadth': 16
@@ -354,7 +354,7 @@ function problem057(){
 
 	question = {
 		'type': 'single',
-		'id': '057',
+		'id': '0507',
 		'question': 'Find the Area of Rectangle with length'+" "+ + length + 'cm and breadth' +" "+ + breadth + 'cm ?',
 		'options': {
 			'A': area + parseInt(Math.random()*10),
@@ -363,13 +363,13 @@ function problem057(){
 			'D': area - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '057'
+		'author-id': '05'
 	}
 	
 	return question;	
 }
 
-function problem058(){
+function problem0508(){
 	var inputData = [{
 		'sum': 550,
 		'totalNumber': 10
@@ -402,7 +402,7 @@ function problem058(){
 
 	question = {
 		'type': 'single',
-		'id': '058',
+		'id': '0508',
 		'question': ' The sum of' +" " + totalNumber + " " + 'numbers is' +" " + + sum +'. Find their average number.?',
 		'options': {
 			'A': average + parseInt(Math.random()*10),
@@ -411,13 +411,13 @@ function problem058(){
 			'D': average 
 		},
 		'answer': 'D',
-		'author-id': '058'
+		'author-id': '05'
 	}
 	
 	return question;	
 }
 
-function problem059(){
+function problem0509(){
 	var inputData = [{
 		'capital1': 35000,
 		'capital2': 25000,
@@ -463,7 +463,7 @@ function problem059(){
 
 	question = {
 		'type': 'single',
-		'id': '059',
+		'id': '0509',
 		'question': 'A, B and C are partners. They have invested Rs.' + capital1  +" " +',Rs.' + capital2  +" " +'and Rs.' + capital3 +" " + 'respectively for the same period. If the total profit is Rs.' + profit + ', find the share of A ?',
 		'options': {
 			'A': shareA + parseInt(Math.random()*10),
@@ -472,7 +472,7 @@ function problem059(){
 			'D': shareA - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '059'
+		'author-id': '05'
 	}
 	
 	return question;	
@@ -519,7 +519,7 @@ function problem0510(){
 			'D': perimeter - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '0510'
+		'author-id': '05'
 	}
 	
 	return question;	
@@ -567,7 +567,7 @@ function problem0511(){
 			'D': z - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '0511'
+		'author-id': '05'
 	}
 	
 	return question;	
@@ -609,7 +609,7 @@ function problem0512(){
 			'D': surfaceArea
 		},
 		'answer': 'D',
-		'author-id': '0512'
+		'author-id': '05'
 	}
 	
 	return question;	
@@ -664,7 +664,7 @@ function problem0513(){
 			'D': presentPopulation - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0513'
+		'author-id': '05'
 	}
 	
 	return question;
@@ -713,7 +713,7 @@ function problem0514(){
 			'D': stillWaterSpeed
 		},
 		'answer': 'D',
-		'author-id': '0514'
+		'author-id': '05'
 	}
 	
 	return question;
@@ -762,7 +762,7 @@ function problem0515(){
 			'D': costPrice - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0515'
+		'author-id': '05'
 	}
 	
 	return question;
@@ -818,7 +818,7 @@ function problem0516(){
 			'D': amount - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '0516'
+		'author-id': '05'
 	}
 	
 	return question;
@@ -882,7 +882,7 @@ function problem0517(){
 			'D': noOfPerson - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '0517'
+		'author-id': '05'
 	}
 	
 	return question;
@@ -939,7 +939,7 @@ function problem0518(){
 			'D': principal - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '0518'
+		'author-id': '05'
 	}
 	
 	return question;
@@ -986,7 +986,7 @@ function problem0519(){
 			'D':  time-parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '0519'
+		'author-id': '05'
 	}
 	
 	return question;
@@ -1035,8 +1035,282 @@ function problem0520(){
 			'D': nBuck - parseFloat(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0520'
+		'author-id': '05'
     }
 	return question;
 }
+
+function problem0521(){
+	var inputData = [{
+		'distance': 100,
+		'time': 9
+		},
+		{
+		'distance': 100,
+			'time': 6
+		},
+		{
+		'distance': 100,
+		'time': 3
+		},
+		{
+		'distance': 100,
+		'time': 12
+		},
+		{
+		'distance': 100,
+		'time': 15
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		distance= inputData[randomIndex]['distance'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+
+	distance=parseInt(distance);
+	time=parseInt(time*60);
+	speed=((distance/time)*(18/5));
+
+	question = {
+		'type': 'single',
+		'id': '0521',
+		'question': 'A Bike is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the Bike.',
+		'options': {
+			'A': speed,
+			'B': speed - parseInt(Math.random()*10),
+			'C': speed + parseInt(Math.random()*10),
+			'D': speed - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0522(){
+	var inputData = [{
+		'costprice': 1400,
+		'loss': 85
+		},
+		{
+		'costprice': 1740,
+		'loss': 25
+		},
+		{
+		'costprice': 1620,
+		'loss': 25
+		},
+		{
+		'costprice': 1630,
+		'loss': 25
+		},
+		{
+		'costprice': 1840,
+		'loss': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		costprice = inputData[randomIndex]['costprice'],
+		loss = inputData[randomIndex]['loss'],
+		sellingprice,
+		question = {};
+		
+		sellingprice=(loss/100)*costprice;
+
+	question = {
+		'type': 'single',
+		'id': '0522',
+		'question': 'A man buys a car for Rs' + costprice + ' and sells it at a loss of ' + loss + '%. What is the selling price of the car?',
+		'options': {
+			'A': sellingprice + parseInt(Math.random()*10), 
+			'B': sellingprice - parseInt(Math.random()*10),
+			'C': sellingprice,
+			'D': sellingprice - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0523(){
+	var inputData = [{
+		'petrol_bill':50,
+		'deducted': 150
+		},
+		{
+		'petrol_bill':50,
+		'deducted': 200
+		},
+		{
+		'petrol_bill':100,
+		'deducted': 180
+		},
+		{
+		'petrol_bill':80,
+		'deducted': 180
+		},
+		{
+		'petrol_bill':100,
+		'deducted': 300
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		petrol_bill= inputData[randomIndex]['petrol_bill'],
+		deducted = inputData[randomIndex]['deducted'],
+		bill,
+		question = {};
+	
+	
+	to_pay = deducted - petrol_bill;
+	bill = (deducted/to_pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0523',
+		'question': 'If' +" "+ petrol_bill + ' % of an petrol bill is deducted then Rs' + deducted +" "+ 'is still to be paid .How much was the original bill',
+		'options': {
+			'A': bill,
+			'B': bill + parseInt(Math.random()*10),
+			'C': bill + parseInt(Math.random()*10),
+			'D': bill - parseFloat(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
+function problem0524(){
+    var inputData = [{
+    'over1': 10,
+    'rate': 2.0,
+    'over2': 40,
+    'runs': 252
+    },
+    {
+    'over1': 10,
+    'rate': 3.0,
+    'over2': 40,
+    'runs': 262
+    },
+    {
+    'over1': 10,
+    'rate': 3.0,
+    'over2': 40,
+    'runs': 292
+    },
+    {
+    'over1': 10,
+    'rate': 3.0,
+    'over2': 40,
+    'runs': 282
+    }],
+    randomIndex = getRandomNumber(inputData.length),
+    over1= inputData[randomIndex]['over1'],
+    over2= inputData[randomIndex]['over2'],
+    rate= inputData[randomIndex]['rate'],
+    runs= inputData[randomIndex]['runs'],
+    r,
+    runrate,
+    question = {};
+    
+    r=runs-(over1*rate);
+    runrate=r/over2;
+
+question = {
+    'type': 'single',
+    'id': '0524',
+    'question': 'In the first ' + over1 + ' overs of a cricket game, the run rate was only ' + rate + '. What should be the run rate in the remaining ' + over2 + ' overs to reach the target of ' + runs + ' runs?',
+    'options': {
+        'A': runrate - parseInt(Math.random()*10),
+        'B': runrate - parseInt(Math.random()*10),
+        'C': runrate+ parseInt(Math.random()*10),
+        'D': runrate
+    },
+    'answer': 'D',
+    'author-id': '05'
+}
+
+return question;
+
+}
+
+function problem0525(){
+    var inputData = [{
+    'plane': 25,
+    'helicopter': -15
+    },
+    {
+    'plane': 6,
+    'helicopter': -15
+    },
+    {
+    'plane': 7,
+    'helicopter': -15
+    },
+    {
+    'plane':8,
+    'helicopter': -14
+    }],
+    randomIndex = getRandomNumber(inputData.length),
+    plane = inputData[randomIndex]['plane'],
+    helicopter = inputData[randomIndex]['helicopter'],
+    x,
+    y,
+    question = {};
+    
+    x = plane - helicopter;
+    y = x - plane;
+
+question = {
+    'type': 'single',
+    'id': '0525',
+    'question': 'A plane speed  is ' + plane + ' km/hr and the speed of the helicopter is ' + helicopter + ' km/hr. The plane speed against the helicopter is',
+    'options': {
+        'A': y - parseInt(Math.random()*10),
+        'B': y - parseInt(Math.random()*10),
+        'C': y + parseInt(Math.random()*10),
+        'D': y
+    },
+    'answer': 'D',
+    'author-id': '05'
+}
+
+return question;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

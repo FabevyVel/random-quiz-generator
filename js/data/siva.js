@@ -33,7 +33,9 @@ function problem1101(){
 		increased_speed,
 		question = {};
 		
-	
+	speed1= parseInt(speed1);
+	time = parseInt(time);
+	time2 = parseInt(time2);
 	distance=speed1*time;
 	speed2=distance/time2;
 	increased_speed=speed2-speed1;
@@ -50,7 +52,7 @@ function problem1101(){
 			'D': increased_speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '1101'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -79,7 +81,8 @@ function problem1102(){
 		water,
 		question = {};
 		
-	
+	upstream= parseInt(upstream);
+	downstream = parseInt(downstream);
 	water=(upstream+downstream)/2;
 
 	question = {
@@ -93,7 +96,7 @@ function problem1102(){
 			'D': water - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '1102'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -124,7 +127,8 @@ function problem1103(){
 		distance,
 		question = {};
 		
-		
+	speed = parseInt(speed);
+	time = parseInt(time);	
 	speed1=speed*5/18;
 	distance=speed1*time;
 
@@ -139,7 +143,7 @@ function problem1103(){
 			'D': distance - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '1103'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -171,7 +175,8 @@ function problem1104(){
 		question = {};
 	
 	
-	
+	percentage = parseInt(percentage);
+	oranges = parseInt(oranges);
 	fruit=(100-percentage);
 	seller=(oranges*100);
 	original=seller/fruit;
@@ -187,7 +192,7 @@ function problem1104(){
 			'D': original
 		},
 		'answer': 'D',
-		'author-id': '1104'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -217,6 +222,8 @@ function problem1105(){
 		profit_percentage,
 		question = {};
 	
+	sellprofit = parseInt(sellprofit);
+	costprofit = parseInt(costprofit);
 	profit=sellprofit-costprofit;
 	profit_percentage=(profit/costprofit)*100;
 
@@ -231,7 +238,7 @@ function problem1105(){
 			'D': profit_percentage + parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '1105'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -267,7 +274,10 @@ function problem1106(){
 		young,
 		profit_percentage,
 		question = {};
-	
+		
+	children = parseInt(children);
+	age = parseInt(age);
+	years = parseInt(years);
 	interval=(age*age*age)+age;
 	x1=years-interval;
 	young=x1/children;
@@ -283,7 +293,7 @@ function problem1106(){
 			'D': young - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '1106'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -319,7 +329,9 @@ function problem1107(){
 		question = {};
 	
 
-
+	average = parseInt(average);
+	bijoy = parseInt(bijoy);
+	chandru = parseInt(chandru);
 	x=average*bijoy;
 	new_man=chandru-x;
 
@@ -335,7 +347,7 @@ function problem1107(){
 			'D': new_man - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '1107'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -378,7 +390,10 @@ function problem1108(){
 		includes,
 		question = {};
 	
-
+	average = parseInt(average);
+	years = parseInt(years);
+	teacher = parseInt(teacher);
+	years_teacher = parseInt(years_teacher);
 	a=average+teacher;
 	sum=years+years_teacher;
 	age=average*years;
@@ -398,7 +413,7 @@ function problem1108(){
 			'D': includes
 		},
 		'answer': 'D',
-		'author-id': '1108'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -447,7 +462,12 @@ function problem1109(){
 		group,
 		question = {};
 	
-	
+	male_count = parseInt(male_count);
+	female_count = parseInt(female_count);
+	children_count = parseInt(children_count);
+	male_one = parseInt(male_one);
+	female_two = parseInt(female_two);
+	children = parseInt(children);
 	group=(((male_one*male_count)+(female_two*female_count)+(children*children_count))/(male_count+female_count+children_count));
 
 
@@ -464,7 +484,7 @@ function problem1109(){
 			'D': group + parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '1109'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -520,7 +540,13 @@ function problem1110(){
 		group,
 		question = {};
 	
-	
+	first = parseInt(first);
+	second = parseInt(second);
+	third = parseInt(third);
+	four = parseInt(four);
+	five = parseInt(five);
+	six = parseInt(six);
+	month = parseInt(month);
 	x=first+second+third+four+five;
 	y=six*month;
 	group=y-x;
@@ -538,7 +564,7 @@ function problem1110(){
 			'D': group
 		},
 		'answer': 'D',
-		'author-id': '1110'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -563,7 +589,7 @@ function problem1111(){
 		question = {};
 		
 	
-	
+	rate = parseInt(rate);
 	change=(rate/(100-rate)*100);
 
 	question = {
@@ -578,7 +604,7 @@ function problem1111(){
 			'D': change + parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '1111'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -617,7 +643,9 @@ function problem1112(){
 		end,
 		question = {};
 	
-
+	rate1 = parseInt(rate1);
+	rate2 = parseInt(rate2);
+	rate3 = parseInt(rate3);
 	end =(population*[1+rate1/100]*[1-rate2/100]*[1+rate3/100]);
 
 
@@ -634,7 +662,7 @@ function problem1112(){
 			'D': end + parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '1112'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -668,6 +696,9 @@ function problem1113(){
 		percentage,
 		question = {};
 
+	Ajay = parseInt(Ajay);
+	bijoy = parseInt(bijoy);
+	chandru = parseInt(chandru);
 	election=Ajay+bijoy+chandru;
 	percentage=(Ajay/election)*100;
 
@@ -683,7 +714,7 @@ function problem1113(){
 			'D': percentage
 		},
 		'answer': 'D',
-		'author-id': '1113'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -723,7 +754,10 @@ function problem1114(){
 		group,
 		question = {};
 	
-
+	group_boy = parseInt(group_boy);
+	boys_years = parseInt(boys_years);
+	boys_leave = parseInt(boys_leave);
+	new_boy = parseFloat(new_boy);
 	age=group_boy*boys_years;
 	group=(new_boy*group_boy)-age+boys_leave;
 
@@ -741,7 +775,7 @@ function problem1114(){
 			'D': group + parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '1114'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -770,7 +804,8 @@ function problem1115(){
 		bill,
 		question = {};
 	
-	
+	electricity_bill= parseInt(electricity_bill);
+	deducted = parseInt(deducted),
 	to_pay=deducted-electricity_bill;
 	bill=(deducted/to_pay)*100;
 
@@ -785,7 +820,7 @@ function problem1115(){
 			'D': bill - parseFloat(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '1115'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -820,7 +855,9 @@ function problem1116(){
 		total,
 		question = {};
 	
-	
+	typist= parseInt(typist);
+	pages = parseInt(pages);
+	hours = parseInt(hours);
 	count=pages/typist;
 	total=count/hours;
 
@@ -836,7 +873,7 @@ function problem1116(){
 			'D': total
 		},
 		'answer': 'D',
-		'author-id': '1116'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -867,7 +904,8 @@ function problem1117(){
 		required_average,
 		question = {};
 	
-	
+	village_increased = parseInt(village_increased);
+	decade = parseInt(decade);
 	percentage_increase=(village_increased-decade);
 	Increase_percentage=(percentage_increase/village_increased)*100;
 	required_average=(Increase_percentage/10);
@@ -885,7 +923,7 @@ function problem1117(){
 			'D': required_average
 		},
 		'answer': 'D',
-		'author-id': '1117'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -922,6 +960,9 @@ function problem1118(){
 		length,
 		question = {};
 	
+	parallel_line = parseInt(parallel_line);
+	same_direction = parseInt(same_direction);
+	train_slower = parseInt(train_slower),
 	train=parallel_line-same_direction;
 	meter_sec=[train*(5/18)];
 	x=meter_sec*train_slower;
@@ -940,7 +981,7 @@ function problem1118(){
 			'D': length - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '1118'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -976,7 +1017,9 @@ function problem1119(){
 		stream_speed,
 		question = {};
 		
-	
+	downstream_distance=parseInt(downstream_distance);
+	downstream_time=parseInt(downstream_time);
+	upstream_time=parseInt(upstream_time);
 	speed=downstream_distance/downstream_time;
 	x=downstream_distance/upstream_time;
 	stream_speed=1/2*(speed+x);
@@ -993,7 +1036,7 @@ function problem1119(){
 			'D': stream_speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '119'
+		'author-id': '11'
 	}
 	
 	return question;
@@ -1056,12 +1099,301 @@ function problem1120(){
 			'D': profit_percentage + parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '1120'
+		'author-id': '11'
 	}
 	
 	return question;
 	
 }
+function problem1121(){
+	var inputData=[
+		{
+		'fill':85,
+		'water':2.5
+		},
+		{
+		'fill':135,
+		'water':7.3
+		},
+
+		{
+		'fill':225,
+		'water':9.5
+		},
+
+		{
+		'fill':450,
+		'water':9.6
+		}],
+		randomIndex=getRandomNumber(inputData.length),
+		fill=inputData[randomIndex]['fill'],
+		water=inputData[randomIndex]['water'],
+		bucket,
+		question={};
+		
+	fill=parseInt(fill);
+	water=parseFloat(water);
+	bucket=(fill/water);
+	
+	question={
+		'type':'single',
+		'id':'1121',
+		'question':'To fill a tank ' + fill +
+			'bucket of water is required.how many bucket of water will be required to fill the same tank if the capacity of the bucket is required to'
+			 + water +' of its present',
+		'options':{
+			'A':bucket + parseFloat(Math.random()*10),
+			'B':bucket - parseInt(Math.random()*10),
+			'C':bucket,
+			'D':bucket - parseFloat(Math.random()*10),
+		},
+		'answer':'C',
+		'author-id':'11'
+	}
+	return question;
+
+}
+function problem1122(){
+	var inputData = [{
+		'start':90,
+		'mid':33.5,
+		'end':55
+		},
+		{
+		'start':83,
+		'mid':6.9,
+		'end':95
+		},
+		{
+		'start':67,
+		'mid':89.5,
+		'end':65
+		},	
+		{
+		'start':70,
+		'mid':44.7,
+		'end':95
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		start= inputData[randomIndex]['start'],
+		mid= inputData[randomIndex]['mid'],
+		end=inputData[randomIndex]['end'],
+		total,
+		question = {};
+		
+	start=parseInt(start);
+	mid=parseFloat(mid);
+	end=parseInt(end);
+	total=(start*mid)+end;
+		
+	question={
+		'type':'single',
+		'id':'1122',
+		'question':'The average weight of the' + start + 'increased by ' + mid + 
+					'kg when a new person comes in place of one of them weighting ' + end + ' of the new person.',
+		'option':
+		{
+			'A':total,
+			'B':total + parseInt(Math.random()*10),
+			'C':total - parseFloat(Math.random()*10),			
+			'D':total - parseInt(Math.random()*10),
+		},
+		'answer':'A',
+		'author-id':'11'
+		}
+		return question;
+}
+function problem1123(){
+	var inputData = [{
+		'input1': 160,
+		'input2': 100
+		},
+		{
+		'input1': 220,
+		'input2': 120
+		},
+		{
+		'input1': 300,
+		'input2': 230
+		},
+		{
+		'input1': 430,
+		'input2': 420
+		},
+		{
+		'input1': 260,
+		'input2': 180
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		input1=inputData[randomIndex]['input1'],
+		input2=inputData[randomIndex]['input2'],
+	    precentage,
+		
+		
+		input1=parseInt(input1),
+		input2=parseInt(input2),
+		precentage=(input1 - input2)/input1,
+		precentage=precentage*100,
+		
+		question = {
+		'type': 'single',
+		'id': '1123',
+		'question': 'A student multiplied a number by ' + input2 + 'instead of '+input1+ 'what is the percentage error in the calculation?',
+		'options': {
+			'A': precentage - parseFloat(Math.random()*10),
+			'B': precentage - parseInt(Math.random()*10),
+			'C': precentage + parseInt(Math.random()*10),
+			'D': precentage,
+		},
+		'answer': 'A',
+		'author-id': '11',
+	}
+	
+	return question;
+}
+function problem1124(){
+	var inputData = [{
+		'costprice': 2054,
+		'profit': 65
+		},
+		{
+		'costprice': 6540,
+		'profit': 23
+		},
+		{
+		'costprice': 2320,
+		'profit': 89
+		},
+		{
+		'costprice': 8640,
+		'profit': 67
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		costprice= inputData[randomIndex]['costprice'],
+		profit = inputData[randomIndex]['profit'],
+		p,
+		sellingprice,
+		question = {};
+		
+	costprice= inputData[randomIndex]['costprice'],
+	profit = inputData[randomIndex]['profit'],
+	p=(100+profit)/100;
+	sellingprice=p*costprice;
+
+	question = {
+		'type': 'single',
+		'id': '1124',
+		'question': 'Rajesh bought a chai for RS ' + costprice + ' and sold it suresh ,if rajesh earned a profit of ' + profit + 
+					'% profit.what is the sellingprice of chair',
+		'options': {
+			'A': sellingprice, 
+			'B': sellingprice - parseInt(Math.random()*10),
+			'C': sellingprice + parseInt(Math.random()*10),
+			'D': sellingprice - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
+function problem1125(){
+		var inputData = [{
+			'train1':45,
+			'train2':53,
+			'distance':700,
+			'time':42
+			},
+			{
+			'train1':84,
+			'train2':98,
+			'distance':60,
+			'time':35
+			},
+			{
+			'train1':105,
+			'train2':110,
+			'distance':500,
+			'time':23
+			},
+			
+			{
+			'train1':102,
+			'train2':23,
+			'distance':300,
+			'time':58
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			train1= inputData[randomIndex]['train1'],
+			train2= inputData[randomIndex]['train2'],
+		    distance= inputData[randomIndex]['distance'],
+			time= inputData[randomIndex]['time'],
+			question= {};
+			
+		train1=parseInt(train1);
+		train2=parseInt(train2);
+		distance=parseInt(distance);
+		time=parseInt( time);
+		speed=(distance/time)/train2;
+		ratio=train1*speed;
+					
+			
+	  question= {
+			'type': 'single',
+			'id': '1125',
+			'question': 'The ratio between the speed of two train is ' + train1 + ':' + train2 +
+			'.If the second train runs '+distance+' km in '+time+'hours, then the speed of the first train is?',
+			'options': {
+				'A':ratio-parseFloat(Math.random()*10),
+				'B':ratio-parseInt(Math.random()*10),
+				'C':ratio,
+				'D':ratio+parseInt(Math.random()*10)
+			},
+			'answer': 'C',
+			'author-id': '11'
+		}
+		return question;
+	
+}
+function problem1126(){
+		var inputData = [{
+			'speed':280
+			},
+			{
+			'speed':340
+			},
+			{
+			'speed':260
+			},
+			{
+			'speed':540
+			}],
+			
+			randomIndex = getRandomNumber(inputData.length),
+			speed= inputData[randomIndex]['speed'],
+			question = {};
+			
+	speed=parseInt(speed);
+	meters=speed*(5/18);
+			
+	  question= {
+			'type': 'single',
+			'id': '1126',
+			'question': 'A bike moves at the speed of '+speed+'km/hr. What is the speed of the car in metres per second',
+			'options': {
+				'A':meters-parseInt(Math.random()*10),
+				'B':meters-parseInt(Math.random()*10),
+				'C':meters,
+				'D':meters+parseInt(Math.random()*10)
+			},
+			'answer': 'C',
+			'author-id': '11'
+		}
+		return question;
+	
+}
+
 
 
 	

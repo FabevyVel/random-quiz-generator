@@ -3,9 +3,6 @@ function getRandomNumber(max){
 	randomNumber = parseInt(randomNumber);
 	return randomNumber;
 }
-
-
-
 function problem061(){
 	var inputData = [{
 		'distance': 10,
@@ -987,6 +984,101 @@ function problem0620(){
 			'D': costPrice - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
+		'author-id': '06'
+	}
+	return question;
+}
+
+function problem0621(){
+		var inputData = [{
+		's1': 15,
+		's2': 4,
+		'd': 35,
+		},
+		{
+		's1': 85,
+		's2': 4,
+		'd': 3,
+		},
+		{
+		's1': 15,
+		's2': 8,
+		'd': 3,
+		},
+		{
+		's1': 13,
+		's2': 4,
+		'd': 68,
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		s1= inputData[randomIndex]['s1'],
+		s2= inputData[randomIndex]['s2'],
+		d= inputData[randomIndex]['d'],
+		speed,
+		time,
+		question = {};
+		
+		speed=s1+s2;
+		time=d/speed;
+
+	question = {
+		'type': 'single',
+		'id': '0621',
+		'question': 'A boat can travel with a speed of ' + s1 + ' km/hr in still water. If the speed of the stream is ' + s2 + 'km/hr, find the time taken by the boat to go ' + d + ' km downstream.',
+		'options': {
+			'A': time - parseInt(Math.random()*10),
+			'B': time - parseInt(Math.random()*10),
+			'C': time + parseInt(Math.random()*10),
+			'D': time
+		},
+		'answer': 'D',
+		'author-id': '06'
+	}
+	
+	return question;
+}
+function problem0622(){
+	var inputData = [{
+		'profitp': 25,
+		'costprice': 1300
+		},
+		{
+		'profitp': 25,
+		'costprice': 1200
+		},
+		{
+		'profitp': 25,
+		'costprice': 1500
+		},
+		{
+		'profitp': 25,
+		'costprice': 1600
+		},
+		{
+		'profitp': 25,
+		'costprice': 1800
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		profitp= inputData[randomIndex]['profitp'],
+		costprice= inputData[randomIndex]['costprice'],
+		sellingprice,
+		question = {};
+
+	profitp=parseInt(profitp);
+	costprice=parseInt(costprice);
+	sellingprice=(((100/profitp)/100)*costprice)
+
+	question = {
+		'type': 'single',
+		'id': '0622',
+		'question': 'A shopkeeper bought a watch for rs'  + costprice + 'at what price should he sell the watch to earn a profit of'+profitp,
+		'options': {
+			'A': sellingprice+parseInt(Math.random()*10),
+			'B': sellingprice-parseInt(Math.random()*10),
+			'C': sellingprice,
+			'D': sellingprice-parseInt(Math.random()*10)
+		},
+		'answer': 'c',
 		'author-id': '06'
 	}
 	
