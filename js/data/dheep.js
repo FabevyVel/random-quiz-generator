@@ -1024,7 +1024,7 @@ function problem0321(){
 
 	question = {
 		'type': 'single',
-		'id': '0322
+		'id': '0322',
 		'question': 'A boat running downstream covers a distance of' + downstreamdistance + 'km in' + downstreamtime + 'hours while for covering the same distance upstream, it takes'
 					+ upstreamtime + 'hours. What is the speed of the boat in still water?',
 		'options':
@@ -1248,6 +1248,265 @@ function problem0325(){
 	}
 	
 	return question;
+	
+}
+function problem0326(){
+	var inputData = [{
+		'price1': 1400,
+		'years':9,
+		'percentage':52
+		},
+		{
+		'price1': 1600,
+		'years':1,
+		'percentage':12
+		
+		},
+		{
+		'price1': 1931,
+		'years':4,
+		'percentage':45
+	    },
+		{
+		'price1': 143-51,
+		'years':4,
+		'percentage':12
+		
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		price1=inputData[randomIndex]['price1'],
+		years=inputData[randomIndex]['years'],
+		percentage=inputData[randomIndex]['percentage'],
+		
+		amount,
+		question={},
+		amount=(100*price1)/(percentage*years),
+		
+		question = {
+		  'type': 'single',
+		  'id': '0326',
+		  'question': 'if the price  is ' +price1 + ' and years  is'  +years +' and percentage is ?'+percentage+'find the amount',
+		  'options': {
+			'A': amount, 
+			'B': amount - parseInt(Math.random()*10),
+			'C': amount + parseInt(Math.random()*10),
+			'D': amount - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03',
+		}
+	
+	return question;
+}
+function problem0327(){
+	var inputData = [{
+		'speed1':10,
+		'speed2':12,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 24,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 96,
+		'dis':8
+		},
+		{
+		'speed1':10,
+		'speed2': 28,
+		'dis':8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    speed1= inputData[randomIndex]['speed1'],
+		speed2 = inputData[randomIndex]['speed2'],
+		dis = inputData[randomIndex]['dis'],
+		time,
+		
+		question = {};
+		speed=(speed2-speed1);
+		time=dis/speed;
+
+	question = {
+		'type': 'single',
+		'id': '0327',
+		'question': 'Two girls start running at the same time in the same direction at a speed of '+ speed1 +' km/hr and '+ speed2 +' km/hr respectively. In what time they will be '+ dis +' km apart?',
+		'options': {
+			'A': time,
+			'B': time-parseInt(Math.random()*10),
+			'C': time-parseInt(Math.random()*10),
+			'D': time+parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
+function problem0328(){
+		var inputData = [{
+			's':4016.25,
+			'r':9,
+			't':5
+			},
+			{
+			's':4006.05,
+			'r':8,
+				't':4
+			},
+			{
+			's':3016.15,
+			'r':6,
+				't':3
+			},
+			
+			{
+			's':5016.25,
+			'r':4,
+				't':2
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			s= inputData[randomIndex]['s'],
+			r= inputData[randomIndex]['r'],
+		    t= inputData[randomIndex]['t'],
+			
+		    
+		    s=parseInt(s);
+		   
+		   r=parseInt(r);
+		   
+		   t=parseInt(t);
+		   
+		    sum=(100*s)/(r*t);
+		   
+			question= {};
+			
+			
+	  question= {
+			'type': 'single',
+			'id': '0328',
+			'question': 'A sum fetched a total simple interest of rs.'+s+'at the rate of '+r+'p.c.p.a. in '+t+'years what is the sum?',
+			'options': {
+				'A':sum,
+				'B':sum-parseInt(Math.random()*10),
+				'C':sum-parseInt(Math.random()*10),
+				'D':sum+parseInt(Math.random()*10)
+			},
+			'answer': 'A',
+			'author-id': '03'
+		}
+		return question;
+	
+}
+
+function problem0329(){
+		var inputData = [{
+			'speed':90
+			},
+			{
+			
+				'speed':30
+			},
+			{
+			
+				'speed':70
+			},
+			
+			{
+			
+				'speed':20
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			
+			speed= inputData[randomIndex]['speed'],
+		    
+			
+			
+			speed=parseInt(speed);
+			speed1=speed*(5/18);
+			
+			question = {};
+			
+			
+	  question= {
+			'type': 'single',
+			'id': '0329',
+			'question': 'A car moves at the speed of '+speed+'km/hr. What is the speed of the car in metres per second',
+			'options': {
+				'A':speed1-parseInt(Math.random()*10),
+				'B':speed1,
+				'C':speed1-parseInt(Math.random()*10),
+				'D':speed1+parseInt(Math.random()*10)
+			},
+			'answer': 'B',
+			'author-id': '03'
+		}
+		return question;
+	
+}
+
+
+function problem0330(){
+		var inputData = [{
+			'student1':90,
+			'student2':80,
+			'student3':54
+			},
+			{
+			'student1':80,
+			'student2':88,
+			'student3':64
+			},
+			{
+			'student1':60,
+			'student2':84,
+			'student3':74
+			},
+			
+			{
+			'student1':50,
+			'student2':85,
+			'student3':84
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			student1= inputData[randomIndex]['student1'],
+			student2= inputData[randomIndex]['student2'],
+		    student3 = inputData[randomIndex]['student3'],
+			
+			
+			student1=parseFloat(student1/100);
+			student2=parseFloat(student2/100);
+			student3=parseFloat(student3/100);
+			testp1=100;
+			testp2=150;
+			testp3=200;
+			st1=student1*testp1;
+		    st2=student2*testp2;
+			st3=student3*testp3;
+			total=st1+st2+st3;
+			markt=testp1+testp2+testp3;
+		    percentage=(total/markt)*100;
+			
+			question = {};
+			
+			
+	  question= {
+			'type': 'single',
+			'id': '0330',
+			'question': 'A student scores '+student1+','+student2+', '+student1+'marks in a test paper of 100, 150, 200 respectively as maximum marks. What is the total percentage?',
+			'options': {
+				'A':percentage-parseInt(Math.random()*10),
+				'B':percentage,
+				'C':percentage-parseInt(Math.random()*10),
+				'D':percentage+parseInt(Math.random()*10)
+			},
+			'answer': 'B',
+			'author-id': '03'
+		}
+		return question;
 	
 }
 
