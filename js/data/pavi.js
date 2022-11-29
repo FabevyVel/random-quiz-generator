@@ -1859,3 +1859,150 @@ function problem0837(){
 	return question;
 }
 
+function problem0838(){
+	var inputData = [{
+		'sellingPrice': 8634,
+		'gainPercentage': 5
+		},
+		{
+		'sellingPrice': 7621,
+		'gainPercentage': 9
+		},
+		{
+		'sellingPrice': 8400,
+		'gainPercentage': 12
+		},
+		{
+		'sellingPrice': 6500,
+		'gainPercentage': 6
+		},
+		{
+		'sellingPrice': 4320,
+		'gainPercentage': 3
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+		sellingPrice= inputData[randomIndex]['sellingPrice'],
+		gainPercentage = inputData[randomIndex]['gainPercentage'],
+		costPrice,
+		question = {};
+		
+sellingPrice=parseInt(sellingPrice);
+	gainPercentage=parseInt(gainPercentage);
+	costPrice=(100/(100+gainPercentage))*sellingPrice;
+
+	question = {
+		'type': 'single',
+		'id': '0838',
+		'question': 'Suresh bought a cell phone from a shop. If he sells it at '+ sellingPrice +' to Mahesh and earns a profit of '+ gainPercentage +', find the price at which Suresh bought the cell phone.?',
+		'options': {
+			'A': costPrice,
+			'B': costPrice - parseInt(Math.random()*10),
+			'C': costPrice + parseInt(Math.random()*10),
+			'D': costPrice - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0838'
+	}
+	
+	return question;
+	
+}
+function problem0839(){
+	var inputData = [{
+		'distance1': 160,
+		'time1': 6,
+		'time2': 3
+		},
+		{
+		'distance1': 134,
+		'time1': 14,
+		'time2': 2
+		},
+		{
+		'distance1': 527,
+		'time1': 2,
+		'time2': 9
+		},
+		{
+		'distance1': 1900,
+		'time1': 5,
+		'time2': 15
+		},
+		{
+		'distance1': 490,
+		'time1': 3,
+		'time2': 7
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		distance1= inputData[randomIndex]['distance1'],
+		time1 = inputData[randomIndex]['time1'],
+		time2 = inputData[randomIndex]['time2'],
+		speedStream,
+		question = {};
+	
+	distance1=parseInt(distance1);
+	time1=parseInt(time1);
+	time2=parseInt(time2);
+	ds= parseInt(distance1/time1);
+	us = parseInt(distance1/time2);
+	speedStream=1/2*(ds-us);
+
+	question = {
+		'type': 'single',
+		'id': '0839',
+		'question': ' A boat running downstream covers a distance of '+ distance1 +' km in '+ time1 +' hours while for covering the same distance upstream, it takes '+ time2 +' hours. What is the speed of the boat in still water?',
+		'options': {
+			'A': speedStream + parseInt(Math.random()*10),
+			'B': speedStream,
+			'C': speedStream - parseInt(Math.random()*10),
+			'D': speedStream - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '0839'
+	}
+	
+	return question;
+}
+function problem0840(){
+var inputData = [{
+		'sum': 220,
+		'number':40
+		},
+		{
+		'sum': 230,
+		'number':40
+		},
+		{
+		'sum': 240,
+		'number':40
+		},
+		{
+		'sum': 250,
+		'number':40
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+		sum= inputData[randomIndex]['sum'],
+		number= inputData[randomIndex]['number'],
+		average ,
+		question = {};
+		
+    sum=parseInt(sum);
+    number=parseInt(number);
+	average=sum/number;
+	question = {
+		'type': 'single',
+		'id': '0840',
+		'question': 'If the sum is '+ sum +' and average is '+ number +', find the number of quantities.',
+		'options': {
+			'A': average + parseInt(Math.random()*10),
+			'B': average - parseInt(Math.random()*10),
+			'C': average,
+			'D': average - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '0840'
+	}
+	
+	return question;
+
+}
