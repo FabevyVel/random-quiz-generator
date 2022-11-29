@@ -1368,3 +1368,166 @@ question = {
 return question;
 
 }
+
+
+//24
+function problem1524(){
+	var inputData = [{
+		'distance':16,
+		'time1': 2,
+		'time2': 4,
+		},
+		{
+		'distance':18,
+		'time1': 3,
+		'time2': 4,
+		},
+		{
+		'distance':20,
+		'time1': 7,
+		'time2': 5,
+		},
+		{
+		'distance':14,
+		'time1': 5,
+		'time2': 7,
+		},
+		{
+        'distance':15,
+		'time1': 2,
+		'time2': 4,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		distance= inputData[randomIndex]['distance'],
+		time1 = inputData[randomIndex]['time1'],
+		time2 = inputData[randomIndex]['time2'],
+		manspeed,
+		question = {};
+
+	distance=parseInt(distance);
+	time1=parseInt(time1);
+	time2=parseInt(time2);
+	rate=(distance/time1*time2);
+
+	question = {
+		'type': 'single',
+		'id': '1524',
+		'question': 'The speed of a boat in still water in' +distance+ 'and the rate of current is' +time1+ 'The distance travelled downstream in' +time2+ 'is',
+		'options': {
+			 'A'	:1.2,
+             'B': 1.8,
+             'C' :2.4,
+             'D': rate,
+		},
+		'answer': 'D',
+		'author-id': '15'
+	}
+
+	return question;
+}
+
+
+//25
+
+function problem1525(){
+	var inputData = [{
+		'base':5,
+		'height':15,
+		},
+		{
+		'base':8,
+		'height':15,
+		},
+		{
+        'base':7,
+		'height':10,
+		},
+		{
+        'base':5,
+		'height':12,
+		},
+		{
+		'base':5,
+		'height':10,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		base= inputData[randomIndex]['base'],
+         height= inputData[randomIndex]['height'],
+		area,
+		question = {};
+
+	base=parseInt(base);
+	height=parseInt(height);
+	area=(1/2*base*height),
+
+	question = {
+		'type': 'single',
+		'id': '1525',
+		'question': 'what is the area of a triangle with' +base+ 'and' +height+ 'meters',
+		'options': {
+			 'A':area,
+             'B': 40,
+             'C' :52,
+             'D': 25,
+		},
+		'answer': 'a',
+		'author-id': '15'
+	}
+
+	return question;
+}
+
+
+//26
+
+function problem1526(){
+	var inputData = [{
+		'typist':80,
+		'pages': 1150,
+		'hours': 4
+		},
+		{
+		'typist':50,
+		'pages': 400,
+		'hours': 5
+		},
+		{
+		'typist':70,
+		'pages': 750,
+		'hours': 2
+		},
+		{
+		'typist':10,
+		'pages': 600,
+		'hours': 8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		typist= inputData[randomIndex]['typist'],
+		pages = inputData[randomIndex]['pages'],
+		hours = inputData[randomIndex]['hours'],
+		count,
+		total,
+		question = {};
+	
+	
+	count=pages/typist;
+	total=count/hours;
+
+	question = {
+		'type': 'single',
+		'id': '1526',
+		'question': + typist + 'typists can type' + pages + 'pages in' + hours + 
+					'hours.Find the average number of pages typed by each typist in an hour.',
+		'options': {
+			'A': total - parseInt(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}
