@@ -1059,3 +1059,98 @@ function problem1320(){
 	return question;
 	
 }
+
+function problem1321(){
+	var inputData = [{
+		'costprice':20,
+		'sellinprice': 375,
+		},
+		{
+		'costprice':20,
+		'sellinprice': 375,
+		},
+		{
+        'costprice':20,
+		'sellinprice': 33,
+		},
+		{
+        'costprice':20,
+		'sellinprice': 33,
+		},
+		{
+        'costprice':20,
+		'sellinprice': 375,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		costprice= inputData[randomIndex]['costprice'],
+         sellingprice= inputData[randomIndex]['sellingprice'],
+		profit,
+		question = {};
+
+	costprice=parseInt(costprice);
+	sellingprice=parseInt(sellingprice);
+	profit=(sellingprice-costprice),
+
+	question = {
+		'type': 'single',
+		'id': '1321',
+		'question': 'Sam purchased' +costprice+ 'of toys at the rate of' +sellingprice+ 'per dozen. He sold each one of them at the rate What was his percentage profit',
+		'options': {
+			'A':profit+ parseInt(Math.random()*10),
+			'B':profit- parseInt(Math.random()*10),
+			'C':profit,
+			'D':profit- parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '13'
+	}
+	
+	return question;
+}
+function problem1322(){
+	var inputData = [{
+		'amount': 815,
+		'time': 3
+		},
+		{
+		'amount': 815,
+		'time': 3
+		},
+		{
+		'amount': 854,
+		'time': 4
+		},
+		{
+		'amount': 854,
+		'time': 3
+		},
+		{
+		'amount': 854,
+		'time': 4
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		amount= inputData[randomIndex]['amount'],
+		time = inputData[randomIndex]['time'],
+		simpleinterest,
+		question = {};
+
+	amount=parseInt(amount);
+	time=parseInt(time);
+	simpleinterest=(simpleinterest*100/amount*time);
+
+	question = {
+		'type': 'single',
+		'id': '1322',
+		'question': 'A sum of money at simple interest '+amount+ 'in '+time+ 'years and '+amount+ 'in '+time+ 'years The sum is',
+		'options': {
+			'A':simpleinterest-parseInt(Math.random()*10),
+			'B':simpleinterest+parseInt(Math.random()*10),
+			'C':simpleinterest,
+			'D':simpleinterest+parseInt(Math.random()*10)
+		},
+		'answer': 'c',
+		'author-id': '13'
+	}
+	
+	return question;
+}

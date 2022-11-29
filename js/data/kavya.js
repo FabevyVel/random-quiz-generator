@@ -1340,6 +1340,55 @@ function problem0526(){
 	return question;
 }
 
+function problem0527(){
+	var inputData = [{
+		'base':4,
+		'height':8,
+		},
+		{
+		'base':8,
+		'height':18,
+		},
+		{
+        'base':10,
+		'height':20,
+		},
+		{
+        'base':20,
+		'height':40,
+		},
+		{
+		'base':12,
+		'height':14,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		base  = inputData[randomIndex]['base'],
+         height  = inputData[randomIndex]['height'],
+		area,
+		question = {};
+
+	base = parseInt(base);
+	height = parseInt(height);
+	area = (1/2*base*height);
+
+	question = {
+		'type': 'single',
+		'id': '0527',
+		'question': 'what is the area of a triangle with base ' +base+ 'cm and height ' +height+ 'cm?',
+		'options': {
+        'A': area - parseInt(Math.random()*10),
+        'B': area,
+        'C': area + parseInt(Math.random()*10),
+        'D': area - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '05'
+	}
+
+	return question;
+}
+
+
 
 
 

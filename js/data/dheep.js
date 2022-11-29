@@ -1144,7 +1144,108 @@ function problem0323(){
 			'D':  distance-parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '09'
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
+
+function problem0324(){
+	var inputData = [{
+	
+		'population1': 54500,
+		'population2': 58500
+		},
+		{
+		'population1': 64500,
+		'population2': 56500
+		},
+		{
+		'population1': 75500,
+		'population2': 57500
+		},
+		{
+		'population1': 65500,
+		'population2': 55500
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		population1= inputData[randomIndex]['population1'],
+		population2 = inputData[randomIndex]['population2'],
+		population,
+		percentageincrease,
+		question = {};
+
+	population1=parseInt(population1);
+	population2=parseInt(population2);
+	
+	population=(population1-population2);
+	
+	percentageincrease =((population/population1)*100);
+	
+
+	question = {
+		'type': 'single',
+		'id': '0324',
+		'question': 'The population of a town is increased from '+ population1 +' to '+ population2 +'  in one year. What is the percentage increase in the population?',
+		'options': {
+			'A': percentageincrease,
+			'B': percentageincrease - parseInt(Math.random()*10), 
+			'C': percentageincrease + parseInt(Math.random()*10),
+			'D': percentageincrease - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
+function problem0325(){
+	var inputData = [{
+		'cp':55,
+		'sp': 45
+		},
+		{
+		'cp':45,
+		'sp': 35
+		},
+		{
+		'cp':25,
+		'sp': 15
+		},
+		{
+		'cp':35,
+		'sp': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp= inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		costprice,
+		sellingprice,
+		profit,
+		profitpercent,
+		
+		question = {};
+		
+		costprice=100-cp;
+		sellingprice=100+sp;
+		profit=(sellingprice-costprice);
+		profitpercent =((profit/costprice)*100);
+
+
+	question = {
+		'type': 'single',
+		'id': '0325',
+		'question': ' Raman bought an article at '+cp+'  % less of the marked price and sold it at '+sp+'% more than the marked price. Find the profit earned by him.',
+		'options': {
+			'A': profitpercent-parseInt(Math.random()*10),
+			'B': profitpercent-parseInt(Math.random()*10),
+			'C': profitpercent,
+			'D': profitpercent+parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '03'
 	}
 	
 	return question;
