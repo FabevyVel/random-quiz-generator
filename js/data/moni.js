@@ -1576,3 +1576,87 @@ function problem0631(){
 	return question;
 	
 }
+function problem0632(){
+	var inputData = [{
+		'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1660
+		},
+		{
+		'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1760
+		},
+		{
+	    'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1960
+		},
+		{
+		'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1560
+		},
+		{
+		'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1260
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		A= inputData[randomIndex]['A'],
+		B= inputData[randomIndex]['B'],
+		C = inputData[randomIndex]['C'],
+		total = inputData[randomIndex]['total'],
+		add,
+		cshare,
+		question = {};
+		
+	    add=C/(A+B+C)
+        cshare=add*total
+	question = {
+		'type': 'single',
+		'id': '0632',
+		'question': 'A:B:C is in ratio of ' + A + ':' + B + ':' + C + ' ,how much money will c get out of ' + total + '.',
+		'options': {
+			'A': cshare + parseInt(Math.random()*10),
+			'B': cshare- parseInt(Math.random()*10),
+			'C': cshare - parseInt(Math.random()*10),
+			'D': cshare 
+		},
+		'answer': 'D',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
