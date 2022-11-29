@@ -4,7 +4,7 @@ function getRandomNumber(max){
 	return randomNumber;
 }
 
-function problem112(){
+function problem1102(){
 	var inputData = [{
 		'upstream':25,
 		'downstream': 55
@@ -47,8 +47,7 @@ function problem112(){
 	return question;
 	
 }
-function problem111(){
-	var vel;
+function problem1101(){
 	var inputData = [{
 		'speed1':80,
 		'time': 10,
@@ -146,7 +145,7 @@ function problem113(){
 	return question;
 	
 }
-function problem114(){
+function problem1104(){
 	var inputData = [{
 		'percentage':20,
 		'oranges': 180
