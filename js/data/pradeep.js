@@ -1167,3 +1167,62 @@ function problem0924(){
 	}
 	return question;
 }
+function problem0925(){
+	var inputData = [{
+		'ss':25,
+		'cs': 15,
+		'time':10
+		},
+		{
+		'ss':20,
+		'cs': 5,
+		'time':10
+		},
+		{
+		'ss':15,
+		'cs': 35,
+		'time':10
+		},
+		{
+		'ss':22,
+		'cs':14,
+		'time':6
+		},
+		{
+		'ss':16,
+		'cs': 24,
+		'time':14
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    ss = inputData[randomIndex]['ss'],
+		cs = inputData[randomIndex]['cs'],
+    	time = inputData[randomIndex]['time'],
+	    speed,
+	    distance,
+		question = {};
+		
+	    ss = parseInt(ss);
+		cs = parseInt(cs);
+		time = parseInt(time/60);
+		speed = ss+cs;
+	    distance = speed*time;
+
+
+	question = {
+		'type': 'single',
+		'id': '0925',
+		'question': ' The speed of a boat in stil water in' + ss + 'km/hr and the rate of current is '+ cs + 'km/hr. The distance travelled downstream in ' + time + 'minutes is?',
+		'options': {
+			'A': distance*parseInt(Math.random()*10),
+			'B': distance+parseInt(Math.random()*10),
+			'C': distance-parseInt(Math.random()*10),
+			'D': distance
+		},
+		'answer': 'D',
+		'author-id': '09'
+	}
+	
+	return question;
+	
+}
