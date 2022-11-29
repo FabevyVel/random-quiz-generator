@@ -981,3 +981,97 @@ function problem0920(){
 	return question;
 	
 }
+function problem0921(){
+	var inputData = [{
+		'dist': 100,
+		'time': 5
+		},
+		{
+		'dist': 50,
+		'time': 4
+		},
+		{
+		'dist': 72,
+		'time': 4
+		},
+		{
+		'dist': 180,
+		'time': 8
+		},
+		{
+		'dist': 220,
+		'time': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		dist = inputData[randomIndex]['dist'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+		
+	dist = parseInt(dist*18/5);
+	time = parseInt(time*60);
+	speed = dist/time;
+	
+	question = {
+		'type': 'single',
+		'id': '0921',
+		'question': 'A rider crosses a ' + dist + ' m long street in ' + time + ' minutes. What is speed in km per hour?', 
+		'options': {
+			'A': speed,
+			'B': speed * parseInt(Math.random()*10),
+			'C': speed + parseInt(Math.random()*10),
+			'D': speed - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '09',
+	}
+	return question;
+}
+function problem0922(){
+	var inputData = [{
+		'cp': 40,
+		'sp': 120
+		},
+		{
+		'cp': 1200,
+		'sp': 2000
+		},
+		{
+		'cp': 780,
+		'sp': 1000
+		},
+		{
+		'cp': 1400,
+		'sp': 2600
+		},
+		{
+		'cp': 400,
+		'sp': 900
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp = inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		p,
+		pp,
+		question = {};
+
+	cp = parseInt(cp);
+    sp = parseInt(sp);
+	p = sp - cp ;
+    pp = p/cp*100;
+
+	question = {
+		'type': 'single',
+		'id': '0922',
+		'question': 'An watch is bought for  ' + cp + 'rs and sold for ' + sp + ' rs. what is the '+ pp +' profit percentage of the watch?',
+		'options': {
+			'A': pp - parseFloat(Math.random()*10),
+			'B': pp * parseFloat(Math.random()*10),
+			'C': pp + parseFloat(Math.random()*10),
+			'D': pp 
+		},
+		'answer': 'D',
+		'author-id': '09'
+    }
+	return question;
+}
