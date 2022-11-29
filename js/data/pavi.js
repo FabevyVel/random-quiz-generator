@@ -1656,3 +1656,106 @@ function problem0833(){
 	return question;
 	
 }
+function problem0834(){
+	var inputData = [{
+		'initial': 4600,
+		'ending': 59000,
+		'years': 4
+		},
+		{
+		'initial': 18400,
+		'ending': 45500,
+			'years': 8
+		},
+		{
+		'initial': 96600,
+		'ending': 69000,
+			'years': 3
+		},
+		{
+		'initial': 27800,
+		'ending': 6600,
+		'years': 5
+		},
+		{
+		'initial': 1100,
+		'ending': 4000,
+			'years': 4
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		initial= inputData[randomIndex]['initial'],
+		ending = inputData[randomIndex]['ending'],
+		years = inputData[randomIndex]['years'],
+		average,
+		question = {};
+	
+	initial=parseInt(initial);
+	ending=parseInt(ending);
+	years=parseInt(years);
+	increased=ending-initial;
+	increasedPercentage=(increased/initial)*100;
+	average=(increasedPercentage/years);
+
+	question = {
+		'type': 'single',
+		'id': '0834',
+		'question': ' The population of a town increased from '+ initial +' to '+ ending+' in a '+ years +'. The average percent increase of population per year is:',
+		'options': {
+			'A': average / parseInt(Math.random()*10),
+			'B': average - parseInt(Math.random()*10),
+			'C': average + parseInt(Math.random()*10),
+			'D': average,
+		},
+		'answer': 'D',
+		'author-id': '0834'
+	}
+	
+	return question;
+}
+function problem0835(){
+	var inputData = [{
+		'speed':30,
+		'time': 10
+		},
+		{
+		'speed':42,
+		'time':24
+		},
+		{
+		'speed':44,
+		'time':64
+		},
+		{
+		'speed':55,
+		'time': 82
+		},
+		{
+		'speed':48,
+		'time': 91
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speed = inputData[randomIndex]['speed'],
+		time = inputData[randomIndex]['time'],
+    	distance,
+		question = {};
+		
+	    speed = parseInt(speed*5/18);
+		time = parseInt(time*60);
+		distance = speed*time;
+		
+	question = {
+		'type': 'single',
+		'id': '0835',
+		'question': 'A rider moving at a speed of' + speed + ' m/s and crosses a street in  '+ time +' mins .what is the ' + distance + 'distance of the street?',
+		'options': {
+			'A':  distance-parseInt(Math.random()*10),
+			'B':  distance-parseInt(Math.random()*10),
+			'C':  distance+parseInt(Math.random()*10),
+			'D':  distance
+		},
+		'answer': 'B',
+		'author-id': '0835'
+	}
+	
+	return question;
+}
