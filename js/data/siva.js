@@ -1203,6 +1203,101 @@ function problem1122(){
 		}
 		return question;
 }
+function problem1123(){
+	var inputData = [{
+		'input1': 160,
+		'input2': 100
+		},
+		{
+		'input1': 220,
+		'input2': 120
+		},
+		{
+		'input1': 300,
+		'input2': 230
+		},
+		{
+		'input1': 430,
+		'input2': 420
+		},
+		{
+		'input1': 260,
+		'input2': 180
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		input1=inputData[randomIndex]['input1'],
+		input2=inputData[randomIndex]['input2'],
+	    precentage,
+		
+		
+		input1=parseInt(input1),
+		input2=parseInt(input2),
+		precentage=(input1 - input2)/input1,
+		precentage=precentage*100,
+		
+		question = {
+		'type': 'single',
+		'id': '1123',
+		'question': 'A student multiplied a number by ' + input2 + 'instead of '+input1+ 'what is the percentage error in the calculation?',
+		'options': {
+			'A': precentage - parseFloat(Math.random()*10),
+			'B': precentage - parseInt(Math.random()*10),
+			'C': precentage + parseInt(Math.random()*10),
+			'D': precentage,
+		},
+		'answer': 'A',
+		'author-id': '11',
+	}
+	
+	return question;
+}
+function problem1124(){
+	var inputData = [{
+		'costprice': 2054,
+		'profit': 65
+		},
+		{
+		'costprice': 6540,
+		'profit': 23
+		},
+		{
+		'costprice': 2320,
+		'profit': 89
+		},
+		{
+		'costprice': 8640,
+		'profit': 67
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		costprice= inputData[randomIndex]['costprice'],
+		profit = inputData[randomIndex]['profit'],
+		p,
+		sellingprice,
+		question = {};
+		
+	costprice= inputData[randomIndex]['costprice'],
+	profit = inputData[randomIndex]['profit'],
+	p=(100+profit)/100;
+	sellingprice=p*costprice;
+
+	question = {
+		'type': 'single',
+		'id': '1124',
+		'question': 'Rajesh bought a chai for RS ' + costprice + ' and sold it suresh ,if rajesh earned a profit of ' + profit + 
+					'% profit.what is the sellingprice of chair',
+		'options': {
+			'A': sellingprice, 
+			'B': sellingprice - parseInt(Math.random()*10),
+			'C': sellingprice + parseInt(Math.random()*10),
+			'D': sellingprice - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 
 
 
