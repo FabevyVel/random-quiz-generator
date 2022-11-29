@@ -1358,3 +1358,149 @@ function problem0827(){
 	return question;
 	
 }
+function problem0828(){
+	var inputData = [{
+		'rate': 36
+        },
+		{
+		'rate':20
+		},
+		{
+		'rate':50
+		},
+		{
+		'rate': 80
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		rate= inputData[randomIndex]['rate'],
+		
+		rate=parseInt(rate);
+		percentage=[rate/(100-rate)*100];
+		question = {};
+
+	
+
+	question = {
+		'type': 'single',
+		'id': '0828',
+		'question': 'If A is salary is'+rate+'less than B is salary by how much percent is B is salary more than A is?',
+		'options': {
+			'A': percentage,
+			'B': percentage- parseInt(Math.random()*10),
+			'C': percentage+ parseInt(Math.random()*10),
+			'D': percentage/ parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0828'
+	}
+	
+	return question;
+	
+}
+function problem0829(){
+		var inputData = [{
+			'sugar': 40,
+			'litres':3
+			},
+			{
+			'sugar': 44,
+				'litres':2
+			},
+			{
+			'sugar': 12,
+				'litres':4
+			},
+			
+			{
+			'sugar': 80,
+			
+				'litres':12
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			sugar= inputData[randomIndex]['sugar'],
+			litres= inputData[randomIndex]['litres'],
+			
+			
+		    sugar=parseInt(sugar/100);
+			litres=parseInt(litres);
+			quality=sugar*litres;
+		    addedonelitres=litres+1;
+		    percentage=(quality/addedonelitres)*100;
+			question = {};
+			
+			
+	  question= {
+			'type': 'single',
+			'id': '0829',
+			'question': 'To a sugar solution of '+ litres+' containing '+sugar+', one litre of water is added.the percentage of sugar in the new solution is',
+			'options': {
+				'A': percentage-parseInt(Math.random()*10),
+				'B': percentage-parseInt(Math.random()*10),
+				'C': percentage,
+				'D': percentage+parseInt(Math.random()*10)
+			},
+			'answer': 'c',
+			'author-id': '0829'
+		}
+		return question;
+	
+}
+	
+function problem0830(){
+		var inputData = [{
+			'train1':7,
+			'train2':8,
+			'distance':400,
+			'time':4
+			},
+			{
+			'train1':8,
+			'train2':9,
+			'distance':600,
+				'time':3
+			},
+			{
+			'train1':10,
+			'train2':11,
+			'distance':500,
+				'time':2
+			},
+			
+			{
+			'train1':12,
+			'train2':13,
+			'distance':300,
+		    'time':5
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			train1= inputData[randomIndex]['train1'],
+			train2= inputData[randomIndex]['train2'],
+		    distance= inputData[randomIndex]['distance'],
+			time= inputData[randomIndex]['time'],
+			
+			 train1=parseInt(train1);
+			 train2=parseInt(train2);
+			 distance=parseInt(distance);
+			 time=parseInt( time);
+			 speed=(distance/time)/train2;
+			 firsttrain=train1*speed;
+			
+			question= {};
+			
+			
+	  question= {
+			'type': 'single',
+			'id': '0830',
+			'question': 'The ratio between the speed of two train is '+train1+':'+train2+'.If the second train runs '+distance+' km in '+time+'hours, then the speed of the first train is?',
+			'options': {
+				'A':firsttrain-parseInt(Math.random()*10),
+				'B':firsttrain+parseInt(Math.random()*10),
+				'C':firsttrain-parseInt(Math.random()*10),
+				'D':firsttrain
+			},
+			'answer': 'D',
+			'author-id': '0830'
+		}
+		return question;
+	
+}
