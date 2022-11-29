@@ -1515,3 +1515,59 @@ function problem0931(){
 	
 	return question;	
 }
+function problem0932(){
+		var inputData = [{
+			'train1':6,
+			'train2':8,
+			'distance':480,
+			'time':4
+			},
+			{
+			'train1':8,
+			'train2':10,
+			'distance':800,
+				'time':3
+			},
+			{
+			'train1':10,
+			'train2':12,
+			'distance':600,
+				'time':2
+			},
+			
+			{
+			'train1':4,
+			'train2':6,
+			'distance':500,
+				'time':5
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			train1= inputData[randomIndex]['train1'],
+			train2= inputData[randomIndex]['train2'],
+		    distance= inputData[randomIndex]['distance'],
+			time= inputData[randomIndex]['time'],
+			
+			question= {};
+			
+			 train1=parseInt(train1);
+			 train2=parseInt(train2);
+			 distance=parseInt(distance);
+			 time=parseInt( time);
+			 speed=(distance/time)/train2;
+			 firsttrain=train1*speed;
+			
+	  question = {
+			'type': 'single',
+			'id': '0932',
+			'question': 'The ratio between the speed of two train is '+train1+':'+train2+'.If the second train runs '+distance+' km in '+time+'hours, then the speed of the first train is?',
+			'options': {
+				'A':firsttrain+parseInt(Math.random()*10),
+				'B':firsttrain*parseInt(Math.random()*10),
+				'C':firsttrain-parseInt(Math.random()*10),
+				'D':firsttrain
+			},
+			'answer': 'D',
+			'author-id': '09'
+		}
+		return question;	
+}
