@@ -88,10 +88,10 @@ function problem082(){
 		'id': '082',
 		'question': 'A train running at the '+speed+ 'km/hr crosses a pole in '+time+ 'sec What is the length of the train?',
 		'options': {
-			 'A'	:120,
-             'B':	180,
-             'C' :324,
-             'D':	150,
+			 'A':trainlength - parseInt(Math.random()*10),
+			'B': trainlength - parseInt(Math.random()*10),
+			'C': trainlength+ parseInt(Math.random()*10),
+			'D': trainlength
 		},
 		'answer': 'D',
 		'author-id': '082'
@@ -135,10 +135,10 @@ function problem083(){
 		'id': '083',
 		'question': 'A sum of money at simple interest '+amount+ 'in '+time+ 'years and '+amount+ 'in '+time+ 'years The sum is',
 		'options': {
-			 'A'	:650,
-             'B':	690,
-             'C' :698,
-             'D':	700,
+			'A':simpleinterest - parseInt(Math.random()*10),
+			'B': simpleinterest * parseInt(Math.random()*10),
+			'C':simpleinterest,
+			'D': simpleinterest + parseInt(Math.random()*10)
 		},
 		'answer': 'c',
 		'author-id': '083'
@@ -190,10 +190,10 @@ function problem084(){
 		'id': '084',
 		'question': 'How much time will it take for an' +sum+ 'to yield' +time+ 'as interest at' +rate+ 'per annum of simple interest',
 		'options': {
-			 'A'	:3.4,
-             'B':	4,
-             'C' :4.5,
-             'D':	5,
+			 'A':simpleinterest - parseInt(Math.random()*10),
+			'B': simpleinterest,
+			'C':simpleinterest* parseInt(Math.random()*10),
+			'D': simpleinterest + parseInt(Math.random()*10)
 		},
 		'answer': 'B',
 		'author-id': '084'
@@ -244,10 +244,10 @@ function problem085(){
 		'id': '085',
 		'question': 'The compound' +principle+ 'at' +amount+  'per annum is' +compound+ 'The period in years is',
 		'options': {
-			 'A'	:2,
-             'B':	5,
-             'C' :3,
-             'D':	4,
+			 'A':simpleinterest,
+			'B': simpleinterest * parseInt(Math.random()*10),
+			'C':simpleinterest - parseInt(Math.random()*10),
+			'D': simpleinterest + parseInt(Math.random()*10)
 		},
 		'answer': 'A',
 		'author-id': '085'
@@ -291,10 +291,10 @@ function problem086(){
 		'id': '086',
 		'question': 'A man speed with the current is' +speed+ 'and the speed of the current is current' +currentspeed+ 'The man speed against the current is',
 		'options': {
-			 'A'	:8.5,
-             'B': 10,
-             'C' :9,
-             'D': 12.5,
+			'A':	manspeed * parseInt(Math.random()*10),
+			'B': 	manspeed * parseInt(Math.random()*10),
+			'C':	manspeed,
+			'D': 	manspeed + parseInt(Math.random()*10)
 		},
 		'answer': 'c',
 		'author-id': '086'
@@ -345,10 +345,10 @@ function problem087(){
 		'id': '087',
 		'question': 'The speed of a boat in still water in' +distance+ 'and the rate of current is' +time1+ 'The distance travelled downstream in' +time2+ 'is',
 		'options': {
-			 'A'	:1.2,
-             'B': 1.8,
-             'C' :2.4,
-             'D': 3.6,
+			'A':	manspeed * parseInt(Math.random()*10),
+			'B': 	manspeed * parseInt(Math.random()*10),
+			'C':	manspeed + parseInt(Math.random()*10),
+			'D': 	manspeed
 		},
 		'answer': 'D',
 		'author-id': '087'
@@ -392,10 +392,11 @@ function problem088(){
 		'id': '088',
 		'question': 'In a shower' +area+ 'of rain falls The volume of water that falls on' +hectares+ 'of ground is',
 		'options': {
-			 'A'	:75,
-             'B': 750,
-             'C' :7500,
-             'D': 75000,
+			'A':	volume * parseInt(Math.random()*10),
+			'B':    volume,
+			'C':	volume + parseInt(Math.random()*10),
+			'D': volume- parseInt(Math.random()*10)
+			
 		},
 		'answer': 'B',
 		'author-id': '088'
@@ -439,10 +440,10 @@ function problem089(){
 		'id': '089',
 		'question': 'A man buys a cycle for' +CP+ 'and sells it at a' +loss+ 'What is the selling price of the cycle',
 		'options': {
-			 'A'	:75,
-             'B': 750,
-             'C' :7500,
-             'D': 75000,
+            'A': sellingprice / parseInt(Math.random()*10),
+			'B': sellingprice,
+			'C':  sellingprice - parseInt(Math.random()*10),
+			'D':sellingprice * parseInt(Math.random()*10)
 		},
 		'answer': 'B',
 		'author-id': '089'
@@ -486,10 +487,10 @@ function problem0810(){
 		'id': '0810',
 		'question': 'Sam purchased' +costprice+ 'of toys at the rate of' +sellingprice+ 'per dozen. He sold each one of them at the rate What was his percentage profit',
 		'options': {
-			 'A'	:3.5,
-             'B': 4.5,
-             'C' :5.6,
-             'D': 6.5,
+			'A': profit  / parseInt(Math.random()*10),
+			'B':  profit* parseInt(Math.random()*10),
+			'C':profit,
+			'D':profit- parseInt(Math.random()*10)
 		},
 		'answer': 'C',
 		'author-id': '0810'
@@ -533,10 +534,10 @@ function problem0811(){
 		'id': '0811',
 		'question': 'what is the area of a triangle with' +base+ 'and' +height+ 'meters',
 		'options': {
-			 'A':35,
-             'B': 40,
-             'C' :52,
-             'D': 25,
+			 'A': area * parseInt(Math.random()*10),
+			'B': area - parseInt(Math.random()*10),
+			'C': area + parseInt(Math.random()*10),
+			'D': area
 		},
 		'answer': 'D',
 		'author-id': '0811'
@@ -596,10 +597,10 @@ function problem0812(){
 		'id': '0812',
 		'question': 'the dimensions of a hall are' +length+ " " +breath+ " " +height+ 'if each person requires' +meters+  'cubic meters find the number of person who can be accomodated in the hall', 
 		'options': {
-			 'A':350,
-             'B': 458,
-             'C' :100,
-             'D': 500,
+             'A': volume  / parseInt(Math.random()*10),
+			'B':  volume* parseInt(Math.random()*10),
+			'C':volume- parseInt(Math.random()*10),
+			'D':volume
 		},
 		'answer': 'D',
 		'author-id': '0812'
@@ -646,10 +647,10 @@ function problem0813(){
 		'id': '0813',
 		'question': 'A shopkeeper sold an article for' +sp+ 'of the cost price of the article is is' +sp+ 'find the profit', 
 		'options': {
-			'A': 36,
-			'B':49,
-			'C':53,
-			'D':25
+			'A': profit  / parseInt(Math.random()*10),
+			'B':  profit* parseInt(Math.random()*10),
+			'C':profit- parseInt(Math.random()*10),
+			'D':profit
 		},
 		'answer': 'D',
 		'author-id': '0813'
