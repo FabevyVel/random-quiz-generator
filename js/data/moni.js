@@ -1518,3 +1518,61 @@ function problem0630(){
 	}
 	return question;
 }
+function problem0631(){
+	var inputData = [{
+		'speed1':15,
+		'speed2': 3,
+		'time':12
+		},
+		{
+		'speed1':15,
+		'speed2': 4,
+		'time':12
+		},
+		{
+		'speed1':15,
+		'speed2': 5,
+		'time':12
+		},
+		{
+		'speed1':15,
+		'speed2': 6,
+		'time':12
+		},
+		{
+		'speed1':15,
+		'speed2': 7,
+		'time':12
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    speed1= inputData[randomIndex]['speed1'],
+		speed2 = inputData[randomIndex]['speed2'],
+    	time = inputData[randomIndex]['time'],
+	    speed,
+	    distance,
+		question = {};
+		
+	    speed1=parseInt(speed1);
+		speed2=parseInt(speed2);
+		time=parseInt(time);
+		speed=speed1+speed2;
+	    distance=(speed*(time/60));
+
+	question = {
+		'type': 'single',
+		'id': '0631',
+		'question': ' the speed of a boat in stil water in '+ speed1 +'km/hr and the rate of current is '+speed2 +'km/hr.the distance travlled downstream in '+time+'minutes is?',
+		'options': {
+			'A': distance-parseInt(Math.random()*10),
+			'B': distance+parseInt(Math.random()*10),
+			'C': distance-parseInt(Math.random()*10),
+			'D': distance
+		},
+		'answer': 'd',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
