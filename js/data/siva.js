@@ -1298,6 +1298,101 @@ function problem1124(){
 	return question;
 	
 }
+function problem1125(){
+		var inputData = [{
+			'train1':45,
+			'train2':53,
+			'distance':700,
+			'time':42
+			},
+			{
+			'train1':84,
+			'train2':98,
+			'distance':60,
+			'time':35
+			},
+			{
+			'train1':105,
+			'train2':110,
+			'distance':500,
+			'time':23
+			},
+			
+			{
+			'train1':102,
+			'train2':23,
+			'distance':300,
+			'time':58
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			train1= inputData[randomIndex]['train1'],
+			train2= inputData[randomIndex]['train2'],
+		    distance= inputData[randomIndex]['distance'],
+			time= inputData[randomIndex]['time'],
+			question= {};
+			
+		train1=parseInt(train1);
+		train2=parseInt(train2);
+		distance=parseInt(distance);
+		time=parseInt( time);
+		speed=(distance/time)/train2;
+		ratio=train1*speed;
+					
+			
+	  question= {
+			'type': 'single',
+			'id': '1125',
+			'question': 'The ratio between the speed of two train is ' + train1 + ':' + train2 +
+			'.If the second train runs '+distance+' km in '+time+'hours, then the speed of the first train is?',
+			'options': {
+				'A':ratio-parseFloat(Math.random()*10),
+				'B':ratio-parseInt(Math.random()*10),
+				'C':ratio,
+				'D':ratio+parseInt(Math.random()*10)
+			},
+			'answer': 'C',
+			'author-id': '11'
+		}
+		return question;
+	
+}
+function problem1126(){
+		var inputData = [{
+			'speed':280
+			},
+			{
+			'speed':340
+			},
+			{
+			'speed':260
+			},
+			{
+			'speed':540
+			}],
+			
+			randomIndex = getRandomNumber(inputData.length),
+			speed= inputData[randomIndex]['speed'],
+			question = {};
+			
+	speed=parseInt(speed);
+	meters=speed*(5/18);
+			
+	  question= {
+			'type': 'single',
+			'id': '1126',
+			'question': 'A bike moves at the speed of '+speed+'km/hr. What is the speed of the car in metres per second',
+			'options': {
+				'A':meters-parseInt(Math.random()*10),
+				'B':meters-parseInt(Math.random()*10),
+				'C':meters,
+				'D':meters+parseInt(Math.random()*10)
+			},
+			'answer': 'C',
+			'author-id': '11'
+		}
+		return question;
+	
+}
 
 
 

@@ -1372,3 +1372,58 @@ function problem0928(){
     }
 	return question;
 }
+function problem0929(){
+	var inputData = [{
+		'p': 24600,
+		'n': 2,
+		'r':12
+		},
+		{
+		'p': 8400,
+		'n': 2,
+	    'r':6		
+		},
+		{
+		'p': 9700,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 12400,
+		'n': 2,
+		'r':8
+		},
+		{
+		'p': 6000,
+		'n': 2,
+		'r':6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		a,
+		ci,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+	a = p*(1+(r/100))**n;
+	ci = a - p,
+
+	question = {
+		'type': 'single',
+		'id': '0929',
+		'question': 'Find the compound interest on' + p + ' rs for ' + n + ' years at ' + r + ' percentage per annum completed annualy.',
+		'options': {
+			'A': ci,
+			'B': ci + parseInt(Math.random()*10),
+			'C': ci - parseInt(Math.random()*10),
+			'D': ci * parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '09'
+    }
+	return question;
+}
