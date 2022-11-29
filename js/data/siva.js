@@ -1105,8 +1105,7 @@ function problem1120(){
 	return question;
 	
 }
-function problem1121()
-{
+function problem1121(){
 	var inputData=[
 		{
 		'fill':85,
@@ -1139,19 +1138,72 @@ function problem1121()
 	question={
 		'type':'single',
 		'id':'1121',
-		'question':'To fill a tank '+ bucket+'bucket of water is required.how many bucket of water will be required to fill the same tank if the capacity of the bucket is required to two-fifth of its present',
+		'question':'To fill a tank ' + fill +
+			'bucket of water is required.how many bucket of water will be required to fill the same tank if the capacity of the bucket is required to'
+			 + water +' of its present',
 		'options':{
-			'A':bucket,
-			'B':bucket - parseFloat(Math.random()*10),
-			'C':bucket + parseFloat(Math.random()*10),
+			'A':bucket + parseFloat(Math.random()*10),
+			'B':bucket - parseInt(Math.random()*10),
+			'C':bucket,
 			'D':bucket - parseFloat(Math.random()*10),
 		},
-		'answer':'A',
+		'answer':'C',
 		'author-id':'11'
 	}
 	return question;
 
 }
+function problem1122(){
+	var inputData = [{
+		'start':90,
+		'mid':33.5,
+		'end':55
+		},
+		{
+		'start':83,
+		'mid':6.9,
+		'end':95
+		},
+		{
+		'start':67,
+		'mid':89.5,
+		'end':65
+		},	
+		{
+		'start':70,
+		'mid':44.7,
+		'end':95
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		start= inputData[randomIndex]['start'],
+		mid= inputData[randomIndex]['mid'],
+		end=inputData[randomIndex]['end'],
+		total,
+		question = {};
+		
+	start=parseInt(start);
+	mid=parseFloat(mid);
+	end=parseInt(end);
+	total=(start*mid)+end;
+		
+	question={
+		'type':'single',
+		'id':'1122',
+		'question':'The average weight of the' + start + 'increased by ' + mid + 
+					'kg when a new person comes in place of one of them weighting ' + end + ' of the new person.',
+		'option':
+		{
+			'A':total,
+			'B':total + parseInt(Math.random()*10),
+			'C':total - parseFloat(Math.random()*10),			
+			'D':total - parseInt(Math.random()*10),
+		},
+		'answer':'A',
+		'author-id':'11'
+		}
+		return question;
+}
+
 
 
 	
