@@ -1135,3 +1135,52 @@ function problem0522(){
 	return question;
 	
 }
+
+function problem0523(){
+	var inputData = [{
+		'petrol_bill':50,
+		'deducted': 150
+		},
+		{
+		'petrol_bill':50,
+		'deducted': 200
+		},
+		{
+		'petrol_bill':100,
+		'deducted': 180
+		},
+		{
+		'petrol_bill':80,
+		'deducted': 180
+		},
+		{
+		'petrol_bill':100,
+		'deducted': 300
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		petrol_bill= inputData[randomIndex]['petrol_bill'],
+		deducted = inputData[randomIndex]['deducted'],
+		bill,
+		question = {};
+	
+	
+	to_pay = deducted - petrol_bill;
+	bill = (deducted/to_pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0523',
+		'question': 'If' +" "+ petrol_bill + ' % of an petrol bill is deducted then Rs' + deducted +" "+ 'is still to be paid .How much was the original bill',
+		'options': {
+			'A': bill,
+			'B': bill + parseInt(Math.random()*10),
+			'C': bill + parseInt(Math.random()*10),
+			'D': bill - parseFloat(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
