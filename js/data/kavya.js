@@ -1508,6 +1508,61 @@ function problem0529(){
 	return question;
 }
 
+function problem0530(){
+	var inputData = [{
+		'anu':1000,
+		'banu': 2200,
+		'sonu': 6200
+		},
+		{
+		'anu':1000,
+		'banu': 2200,
+		'sonu': 6200
+		},
+		{
+		'anu':1000,
+		'banu': 2200,
+		'sonu': 6200
+		},
+		{
+		'anu':1000,
+		'banu': 2200,
+		'sonu': 6200
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		anu = inputData[randomIndex]['anu'],
+		banu = inputData[randomIndex]['banu'],
+		sonu = inputData[randomIndex]['sonu'],
+		percentage,
+		question = {};
+
+
+	anu = parseInt(anu);
+	banu = parseInt(banu);
+	sonu = parseInt(sonu);
+	election=anu+banu+sonu;
+	percentage=(anu/election)*100;
+
+
+	question = {
+		'type': 'single',
+		'id': '0530',
+		'question':'Three candidates, anu, banu & sonu contested in  an election and received ' 
+					+ anu + ','+ banu + 'and' + sonu + ' votes respectively. What percent of the total votes did anu gets?',
+		'options': {
+			'A': percentage - parseFloat(Math.random()*10),
+			'B': percentage - parseInt(Math.random()*10),
+			'C': percentage + parseInt(Math.random()*10),
+			'D': percentage
+		},
+		'answer': 'D',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
+
 
 
 
