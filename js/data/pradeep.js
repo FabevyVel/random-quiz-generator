@@ -1027,3 +1027,51 @@ function problem0921(){
 	}
 	return question;
 }
+function problem0922(){
+	var inputData = [{
+		'cp': 40,
+		'sp': 120
+		},
+		{
+		'cp': 1200,
+		'sp': 2000
+		},
+		{
+		'cp': 780,
+		'sp': 1000
+		},
+		{
+		'cp': 1400,
+		'sp': 2600
+		},
+		{
+		'cp': 400,
+		'sp': 900
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp = inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		p,
+		pp,
+		question = {};
+
+	cp = parseInt(cp);
+    sp = parseInt(sp);
+	p = sp - cp ;
+    pp = p/cp*100;
+
+	question = {
+		'type': 'single',
+		'id': '0922',
+		'question': 'An watch is bought for  ' + cp + 'rs and sold for ' + sp + ' rs. what is the '+ pp +' profit percentage of the watch?',
+		'options': {
+			'A': pp - parseFloat(Math.random()*10),
+			'B': pp * parseFloat(Math.random()*10),
+			'C': pp + parseFloat(Math.random()*10),
+			'D': pp 
+		},
+		'answer': 'D',
+		'author-id': '09'
+    }
+	return question;
+}
