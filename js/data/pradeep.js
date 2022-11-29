@@ -1121,3 +1121,49 @@ function problem0923(){
     }
 	return question;
 }
+function problem0924(){
+	var inputData = [{
+		'distance': 35,
+		'time': 50
+		},
+		{
+		'distance': 55,
+		'time': 70
+		},
+		{
+		'distance': 12,
+		'time': 26
+		},
+		{
+		'distance': 23,
+		'time': 56
+		},
+		{
+		'distance': 15,
+		'time': 45
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		distance= inputData[randomIndex]['distance'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+
+	distance=parseInt(distance);
+	time=parseInt(time*60);
+	speed=((distance/time)*(18/5));
+
+	question = {
+		'type': 'single',
+		'id': '0924',
+		'question': 'An object travells a distance ' + distance + 'km at ' + time + ' sec. Calculate the speed of the object ?',
+		'options': {
+			'A': speed + parseInt(Math.random()*10),
+			'B': speed - parseInt(Math.random()*10),
+			'C': speed * parseInt(Math.random()*10),
+			'D': speed
+		},
+		'answer': 'D',
+		'author-id': '09'
+	}
+	return question;
+}
