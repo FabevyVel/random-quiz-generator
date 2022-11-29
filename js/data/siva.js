@@ -4,6 +4,7 @@ function getRandomNumber(max){
 	return randomNumber;
 }
 function problem111(){
+	var vel;
 	var inputData = [{
 		'speed1':80,
 		'time': 10,
