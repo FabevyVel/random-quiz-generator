@@ -1780,3 +1780,131 @@ function problem0334()
 	  }
 	  return question;
   }
+  
+  function problem0336(){
+	var inputData = [{
+		'subject1':6,
+		'subject2': 6,
+		'average1':75,
+		'average2':74
+		},
+		{
+		'subject1':8,
+		'subject2': 5,
+		'average1':75,
+		'average2':76
+		},
+		{
+		'subject1':6,
+		'subject2': 5,
+		'average1':75,
+		'average2':93
+		},
+		{
+		'subject1':6,
+		'subject2': 5,
+		'average1':80,
+		'average2':72
+		},
+		{
+		'subject1':6,
+		'subject2': 5,
+		'average1':75,
+		'average2':75
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    subject1= inputData[randomIndex]['subject1'],
+		subject2 = inputData[randomIndex]['subject2'],
+    	average1= inputData[randomIndex]['average1'],
+	    average2= inputData[randomIndex]['average2'],
+	    tomarks1,
+	    tomarks2,
+	    mark,
+		question = {};
+		
+	    subject1=parseInt(subject1);
+		subject2=parseInt(subject2);
+		average1=parseInt(average1);
+		average2=parseInt(average2);
+	    tomarks1=average1*subject1;
+        tomarks2=average2*subject2;
+		mark=tomarks1-tomarks2;
+	question = {
+		'type': 'single',
+		'id': '0336',
+		'question': ' kumar secures average of  '   +   average1 +  'marks in  '  +subject1 + 'subject if the average of amrks in    '+subject2+'is  '+average2+'how many marks did he secure in the 6th subject?',
+		'options': {
+			'A': mark-parseInt(Math.random()*10),
+			'B': mark+parseInt(Math.random()*10),
+			'C': mark-parseInt(Math.random()*10),
+			'D': mark
+		},
+		'answer': 'd',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
+function problem0337(){
+	var inputData = [{
+		'overs':10 ,
+		'runrate': 3.2,
+		'overs1': 42,
+		'target':282
+		},
+		{
+		'overs':10 ,
+		'runrate': 3.2,
+		'overs1': 40,
+		'target':282
+		},
+		{
+		'overs':12 ,
+		'runrate': 3.2,
+		'overs1': 40,
+		'target':282
+		},
+		{
+		'overs':18 ,
+		'runrate': 3.2,
+		'overs1': 40,
+		'target':288
+		},
+		{
+		'overs':10 ,
+		'runrate': 3.8,
+		'overs1': 40,
+		'target':282
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		overs= inputData[randomIndex]['overs'],
+		runrate= inputData[randomIndex]['runrate'],
+		overs1= inputData[randomIndex]['overs1'],
+	 	target= inputData[randomIndex]['target'],
+	    score,
+		question = {};
+		
+		target=parseInt(target);
+		overs1=parseInt(overs1);
+		overs=parseInt(overs);
+		runrate=parseInt(runrate);
+	    score=((target-(runrate*overs))/40);
+	question = {
+		'type': 'single',
+		'id': '0337',
+		'question': 'in the first  ' + overs + '  of a cricket game.the run rate was only  ' + runrate + 'what should be the run rate in the remaining   ' + overs1 + 'overs to reach the target of   ' + target + 'runs',
+		'options': {
+			'A': score + parseInt(Math.random()*10),
+			'B': score,
+			'C': score+ parseInt(Math.random()*10),
+			'D':score - parseInt(Math.random()*10)
+		},
+		'answer': 'b',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
