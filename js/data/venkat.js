@@ -1158,7 +1158,7 @@ function problem1423()
 			'D': avg - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '15'
+		'author-id': '14'
 	}
 	
 	return question;
