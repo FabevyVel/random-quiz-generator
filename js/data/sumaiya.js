@@ -1433,3 +1433,109 @@ function problem1230(){
 	return question;
 	
 }
+
+function problem1231(){
+	var inputData = [{
+		'dsdis':16,
+		'dstime': 5,
+		'upstime': 8
+		},
+		{
+		'dsdis': 16,
+		'dstime': 2,
+		'upstime':4
+		},
+		{
+		'dsdis': 12,
+		'dstime': 3,
+		'upstime': 7
+		},
+		{
+		'dsdis':16,
+		'dstime': 8,
+		'upstime': 5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		dsdis = inputData[randomIndex]['dsdis'],
+		dstime = inputData[randomIndex]['dstime'],
+		upstime = inputData[randomIndex]['upstime'],
+		rateds,
+		rateus,
+		speed,
+		question = {};
+		
+	dsdis=parseInt(dsdis);
+	dstime=parseInt(dstime);
+	upstime=parseInt(upstime);
+	rateds=dsdis/dstime;
+	rateus=dsdis/upstime;
+	speed=(1/2*(rateds+rateus));
+
+	question = {
+		'type': 'single',
+		'id': '1231',
+		'question': 'A boat running downstream covers a distance of' + dsdis + 'km in' + dstime + 'hours while for covering the same distance upstream, it takes'+ upstime + 'hours. What is the speed of the boat in still water?',
+		'options':
+		{
+			'A': speed - parseFloat(Math.random()*10),
+			'B': speed ,
+			'C': speed + parseInt(Math.random()*10),
+			'D': speed - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
+function problem1232(){
+	var inputData = [{
+		'cp':25,
+		'sp':15
+		},
+		{
+		'cp':35,
+		'sp':25
+		},
+		{
+		'cp':45,
+		'sp':35
+		},
+		{
+		'cp':55,
+		'sp':45
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp= inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		costprice,
+		sellingprice,
+		profit,
+		profitpercent,
+		
+		question = {};
+		
+		costprice=(100-cp);
+		sellingprice=(100+sp);
+		profit=(sellingprice-costprice);
+		profitpercent =((profit/costprice)*100);
+
+
+	question = {
+		'type': 'single',
+		'id': '1232',
+		'question': ' Raman bought an article at '+cp+'  % less of the marked price and sold it at '+sp+'% more than the marked price. Find the profit earned by him.',
+		'options': {
+			'A': profitpercent,
+			'B': profitpercent-parseInt(Math.random()*10),
+			'C': profitpercent-parseInt(Math.random()*10),
+			'D': profitpercent+parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '12'
+	}
+	
+	return question;
+	
+}
