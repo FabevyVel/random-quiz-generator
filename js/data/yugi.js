@@ -41,10 +41,10 @@ function problem1601(){
 
 	question = {
 		'type': 'single',
-		'id': '161',
+		'id': '16',
 		'question': 'The average monthly income of p and q is '+monthly1+' the average, monthly income q and r ' + monthly +
                 'the average of p and r '+ monthly3 +' the monthly income of p is:'
-		'option': {
+		'options': {
 			'A': p,
 			'B': p - parseInt(Math.random()*10),
 			'C': p + parseInt(Math.random()*10),
@@ -65,7 +65,7 @@ function getRandomNumber(max){
 }
 
 
-function problem1601(){
+function problem1602(){
 	var inputData = [
 		{
             'monthly1': 4000,
@@ -101,17 +101,17 @@ function problem1601(){
 
 	question = {
 		'type': 'single',
-		'id': '161',
+		'id': '1602',
 		'question': 'The average monthly income of p and q is '+monthly1+' the average, monthly income q and r ' + monthly +
                 'the average of p and r '+ monthly3 +' the monthly income of p is:'
-		'option': {
-			'A': p,
-			'B': p - parseInt(Math.random()*10),
-			'C': p + parseInt(Math.random()*10),
-			'D': p - parseInt(Math.random()*10)
-		},
+				'options': {
+					'A': p,
+					'B': p + parseInt(Math.random()*10),
+					'C': p + parseInt(Math.random()*10),
+					'D': p - parseFloat(Math.random()*10),
+				},
 		'answer': 'A',
-		'author-id': '1601'
+		'author-id': '16'
 	}
 	
 	return question;
@@ -147,7 +147,7 @@ function problem1603(){
 
 	question = {
 		'type': 'single',
-		'id': '1115',
+		'id': '1604',
 		'question': 'If' + electricity_bill + '% of an electricity bill is deducted then rs' + deducted + 'is still to be paid .How much was the original bill',
 		'options': {
 			'A': bill,
@@ -156,7 +156,7 @@ function problem1603(){
 			'D': bill - parseFloat(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '1603'
+		'author-id': '16'
 	}
 	
 	return question;
@@ -1049,4 +1049,52 @@ function problem1620()
     }
 	return question;
     
+	function problem1621(){
+		var inputData = [{
+			'wheat': 40,
+			'water':3
+			},
+			{
+			'wheat': 44,
+				'water':2
+			},
+			{
+			'wheat': 12,
+				'water':4
+			},
+			
+			{
+			'wheat': 80,
+			
+			'water':12
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			milk= inputData[randomIndex]['wheat'],
+			litres= inputData[randomIndex]['water'],
+			
+			
+			wheat=parseInt(wheat/100);
+			water=parseInt(litres);
+			quality=wheat*water;
+			addedonelitres=water+1;
+			percentage=(quality/addedonelitres)*100;
+			q = {};
+			
+			
+		q= {
+			'type': 'single',
+			'id': '1621',
+			'question': 'To a wheat solution of '+ wheat+' containing '+water+', one litre of water is added.the percentage of water in the new solution is',
+			'options': {
+				'A': percentage-parseInt(Math.random()*10),
+				'B': percentage-parseInt(Math.random()*10),
+				'C': percentage,
+				'D': percentage+parseInt(Math.random()*10)
+			},
+			'answer': 'c',
+			'author-id': '16'
+		}
+		return q;
 	
+	}
+		
