@@ -1410,3 +1410,110 @@ function problem1428()
 	
 }
 
+function problem1429(){
+	var inputData = [{
+        'perimeter':216,
+		'breath':5,
+		},
+		{
+        'perimeter':216,
+		'breath':5,
+		},
+		{
+        'perimeter':216,
+		'breath':5,
+		},
+		{
+		'perimeter':216,
+		'breath':5,
+		},
+		{
+		'perimeter':216,
+		'breath':5,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+	       perimeter= inputData[randomIndex]['perimeter'],
+         breath= inputData[randomIndex]['breath'],
+		area,
+		question = {};
+
+	perimeter=parseInt(perimeter);
+	breath=parseInt(breath);
+	length*breath,
+	area=(length+breath/breath),
+
+	question = {
+		'type': 'single',
+		'id': '1429',
+		'question': 'The ratio between the' +perimeter+ 'and the' +breath+ 'of a is If the area of the rectangle is what is the length of the rectangle', 
+		'options': {
+			'A': area * parseInt(Math.random()*10),
+			'B': area - parseInt(Math.random()*10),
+			'C': area + parseInt(Math.random()*10),
+			'D': area
+		},
+		'answer': 'D',
+		'author-id': '14'
+	}
+	
+	return question;
+}
+
+
+
+function problem1430(){
+	var inputData = [{
+        'length':10,
+		'breath':4,
+		'height':3,
+		},
+		{
+        'length':10,
+		'breath':4,
+		'height':3,
+		},
+		{
+        'length':10,
+		'breath':4,
+		'height':3,
+		},
+		{
+		'length':10,
+		'breath':4,
+		'height':3,
+		},
+		{
+		'length':10,
+		'breath':4,
+		'height':3,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+	       length= inputData[randomIndex]['length'],
+        breath= inputData[randomIndex]['breath'],
+        height= inputData[randomIndex]['height'],
+		area,
+		question = {};
+
+       length=parseInt(length);
+	breath=parseInt(breath);
+	height=parseInt(height);
+	area=2*((length*breath)+(breath*length)+(height*length)),
+	
+	
+
+	question = {
+		'type': 'single',
+		'id': '1430',
+		'question': 'the' +length+  +breath+ 'and'  +height+ 'of a brick are also find the surface area of the brick' , 
+		'options': {
+			'A': area - parseInt(Math.random()*10),
+			'B':  area,
+			'C':area+ parseInt(Math.random()*10),
+			'D':area * parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '14'
+	}
+	
+	return question;
+}
