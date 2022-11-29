@@ -1908,3 +1908,118 @@ function problem0337(){
 	return question;
 	
 }
+
+  function problem0339(){
+	var inputData = [{
+		'pricea':9800,
+		'priceb':12005,
+		'yeara':5,
+		'yearb':8
+		},
+		{
+		'pricea':8800,
+		'priceb':12005,
+		'yeara':5,
+		'yearb':6
+		},
+		{
+		'pricea':6800,
+		'priceb':12005,
+		'yeara':5,
+		'yearb':5
+		},
+		{
+		'pricea':5800,
+		'priceb':12005,
+		'yeara':5,
+		'yearb':4
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+		pricea= inputData[randomIndex]['pricea'],
+		priceb = inputData[randomIndex]['priceb'],
+		yeara= inputData[randomIndex]['yeara'],
+		yearb= inputData[randomIndex]['yearb'],
+		siyear3,
+		siyear5,
+		principal,
+		rate,
+		question = {};
+		
+		siyear3=(priceb-pricea);
+		siyear5=((siyear3/3)*yeara);
+		principal=(pricea-siyear5);
+		rate=((100*siyear5)/(principal*yeara));
+		
+
+
+
+	question = {
+		'type': 'single',
+		'id': '0339',
+		'question': 'A sum of money amounts to Rs. '+pricea+' after '+yeara+' years and Rs. '+priceb+' after '+yearb+' years at the same rate of simple interest. The rate of interest per annum is:',
+		'options': {
+			'A': rate,
+			'B': rate- parseInt(Math.random()*10),
+			'C': rate+ parseInt(Math.random()*10),
+			'D': rate- parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
+
+
+
+
+function problem0340(){
+	var inputData = [{
+		'speedboat':20,
+		'speedstream':5,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':6,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':8,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':10,
+		'distance':75
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speedboat= inputData[randomIndex]['speedboat'],
+		speedstream = inputData[randomIndex]['speedstream'],
+		distance = inputData[randomIndex]['distance'],
+		speed,
+		time,
+		question = {};
+		
+	    speed=(speedboat+speedstream);
+		time=distance/speed;
+
+	question = {
+		'type': 'single',
+		'id': '0340',
+		'question': 'A man can row a boat at speed of ' + speedboat + 'km/hr in still water.if the speed of the stream is ' + speedstream + ' km/hr in what time he distance ' + distance + '  km downstream',
+		'options': {
+			'A': time,
+			'B': time - parseInt(Math.random()*10),
+			'C': time + parseInt(Math.random()*10),
+			'D': time - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
