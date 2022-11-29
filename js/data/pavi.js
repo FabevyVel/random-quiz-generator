@@ -1504,3 +1504,155 @@ function problem0830(){
 		return question;
 	
 }
+function problem0831(){
+	var inputData = [{
+		'a': 8,
+		'weight1': 2.5,
+		'weight2': 65
+		},
+		{
+	   'a': 8,
+		'weight1': 2.5,
+		'weight2': 69
+		},
+		{
+	    'a': 8,
+		'weight1': 2.5,
+		'weight2': 68
+		},
+		{
+		'a': 8,
+		'weight1': 2.5,
+		'weight2': 75
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		a= inputData[randomIndex]['a'],
+		weight1= inputData[randomIndex]['weight1'],
+		weight2= inputData[randomIndex]['weight2'],
+		x,
+		weight,
+		question = {};
+		
+	    x=a*weight1;
+		weight=x+weight2
+
+	question = {
+		'type': 'single',
+		'id': '0831',
+		'question': 'The average weight of ' + a + 'persons increases by ' + weight1 + ' kg when a new person comes in place of one of them weighing ' + weight2 + ' kg. What might be the weight of the new person?',
+		'options': {
+			'A':weight- parseInt(Math.random()*10),
+			'B': weight,
+			'C': weight+ parseInt(Math.random()*10),
+			'D': weight- parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0831'
+	}
+	
+	return question;
+	
+}
+
+function problem0832(){
+	var inputData = [{
+		'principle': 23000,
+		'interest': 9,
+		'years': 4
+		},
+		{
+	    'principle': 3500,
+		'interest': 6,
+		'years': 9
+		},
+		{
+	    'principle': 46000,
+		'interest': 6,
+		'years': 6
+		},
+		{
+		'principle': 80000,
+		'interest': 5,
+		'years': 7
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		principle= inputData[randomIndex]['principle'],
+		interest= inputData[randomIndex]['interest'],
+		years= inputData[randomIndex]['years'],
+		x,
+		S,
+		question = {};
+		
+	    x=principle*interest*years;
+		S=x/100;
+
+	question = {
+		'type': 'single',
+		'id': '0832',
+		'question': 'If Suresh borrows Rs. ' + principle + ' from Mahesh at rate of interest ' + interest + ' S.I, at the end of four years how much interest Suresh has to pay along with principal amount?',
+		'options': {
+			'A': S,
+			'B': S - parseInt(Math.random()*10),
+			'C': S+ parseInt(Math.random()*10),
+			'D': S - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '0832'
+	}
+	
+	return question;
+	
+}
+function problem0833(){
+	var inputData = [{
+		'length': 10,
+		'breadth': 24,
+		'height': 35,
+		'sop': 270
+		},
+		{
+		'length': 50,
+		'breadth': 25,
+		'height': 25,
+		'sop': 250
+		},
+		{
+		'length': 80,
+		'breadth': 25,
+		'height': 29,
+		'sop': 249
+		},
+		{
+		'length': 30,
+		'breadth': 24,
+		'height': 18,
+		'sop': 276
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		length= inputData[randomIndex]['length'],
+		breadth= inputData[randomIndex]['breadth'],
+		height = inputData[randomIndex]['height'],
+		sop = inputData[randomIndex]['sop'],
+		x,
+		y,
+		question = {};
+		x=(length)*(breadth)*(height);
+        y=x/sop;
+
+	question = {
+		'type': 'single',
+		'id': '0833',
+		'question': 'The dimensions of a hall are ' + length + 'm, ' + breadth + 'm and ' + height + 'm. If each person requires ' + sop + ' cubic meters, then the number of persons who can be accommodated in the hall are ?',
+		'options': {
+			'A': y / parseInt(Math.random()*10),
+			'B': y - parseInt(Math.random()*10),
+			'C': y + parseInt(Math.random()*10),
+			'D': y,
+		},
+		'answer': 'D',
+		'author-id': '0833'
+	}
+	
+	return question;
+	
+}
