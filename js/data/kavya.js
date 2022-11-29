@@ -1088,3 +1088,50 @@ function problem0521(){
 	return question;
 	
 }
+
+function problem0522(){
+	var inputData = [{
+		'costprice': 1400,
+		'loss': 85
+		},
+		{
+		'costprice': 1740,
+		'loss': 25
+		},
+		{
+		'costprice': 1620,
+		'loss': 25
+		},
+		{
+		'costprice': 1630,
+		'loss': 25
+		},
+		{
+		'costprice': 1840,
+		'loss': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		costprice = inputData[randomIndex]['costprice'],
+		loss = inputData[randomIndex]['loss'],
+		sellingprice,
+		question = {};
+		
+		sellingprice=(loss/100)*costprice;
+
+	question = {
+		'type': 'single',
+		'id': '0522',
+		'question': 'A man buys a cycle for Rs' + costprice + ' and sells it at a loss of ' + loss + '%. What is the selling price of the cycle?',
+		'options': {
+			'A': sellingprice + parseInt(Math.random()*10), 
+			'B': sellingprice - parseInt(Math.random()*10),
+			'C': sellingprice,
+			'D': sellingprice - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '05'
+	}
+	
+	return question;
+	
+}
