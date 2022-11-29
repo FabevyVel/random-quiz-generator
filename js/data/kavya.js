@@ -1074,7 +1074,7 @@ function problem0521(){
 	question = {
 		'type': 'single',
 		'id': '0521',
-		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
+		'question': 'A Bike is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the Bike.',
 		'options': {
 			'A': speed,
 			'B': speed - parseInt(Math.random()*10),
@@ -1121,7 +1121,7 @@ function problem0522(){
 	question = {
 		'type': 'single',
 		'id': '0522',
-		'question': 'A man buys a cycle for Rs' + costprice + ' and sells it at a loss of ' + loss + '%. What is the selling price of the cycle?',
+		'question': 'A man buys a car for Rs' + costprice + ' and sells it at a loss of ' + loss + '%. What is the selling price of the car?',
 		'options': {
 			'A': sellingprice + parseInt(Math.random()*10), 
 			'B': sellingprice - parseInt(Math.random()*10),
@@ -1184,3 +1184,88 @@ function problem0523(){
 	return question;
 	
 }
+
+function problem0524(){
+    var inputData = [{
+    'over1': 10,
+    'rate': 2.0,
+    'over2': 40,
+    'runs': 252
+    },
+    {
+    'over1': 10,
+    'rate': 3.0,
+    'over2': 40,
+    'runs': 262
+    },
+    {
+    'over1': 10,
+    'rate': 3.0,
+    'over2': 40,
+    'runs': 292
+    },
+    {
+    'over1': 10,
+    'rate': 3.0,
+    'over2': 40,
+    'runs': 282
+    }],
+    randomIndex = getRandomNumber(inputData.length),
+    over1= inputData[randomIndex]['over1'],
+    over2= inputData[randomIndex]['over2'],
+    rate= inputData[randomIndex]['rate'],
+    runs= inputData[randomIndex]['runs'],
+    r,
+    runrate,
+    question = {};
+    
+    r=runs-(over1*rate);
+    runrate=r/over2;
+
+question = {
+    'type': 'single',
+    'id': '0524',
+    'question': 'In the first ' + over1 + ' overs of a cricket game, the run rate was only ' + rate + '. What should be the run rate in the remaining ' + over2 + ' overs to reach the target of ' + runs + ' runs?',
+    'options': {
+        'A': runrate - parseInt(Math.random()*10),
+        'B': runrate - parseInt(Math.random()*10),
+        'C': runrate+ parseInt(Math.random()*10),
+        'D': runrate
+    },
+    'answer': 'D',
+    'author-id': '05'
+}
+
+return question;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
