@@ -1965,46 +1965,97 @@ function problem1137(){
 }
 function problem1138(){
 	var inputData = [{
-		'increased':600,
-		'decade': 200
+		'children':4,
+		'age': 70,
+		'years':5
 		},
 		{
-		'increased':600,
-		'decade': 300
+		'children':6,
+		'age': 90,
+		'years':3
 		},
 		{
-		'increased':5000,
-		'decade': 200
+		'children':7,
+		'age': 60,
+		'years':3
 		},
 		{
-		'increased':700,
-		'decade': 200
+		'children':5,
+		'age': 30,
+		'years':3
 		}],
 		randomIndex = getRandomNumber(inputData.length),
-		village_increased = inputData[randomIndex]['village_increased'],
-		decade = inputData[randomIndex]['decade'],
-		percentage_increase,
-		Increase_percentage,
-		average,
+		children = inputData[randomIndex]['children'],
+		age = inputData[randomIndex]['age'],
+		years = inputData[randomIndex]['years'],
+		interval,
+		x1,
+		young,
+		profit_percentage,
 		question = {};
-	
-	increased = parseInt(increased);
-	decade = parseInt(decade);
-	percentage_increase=(village_increased-decade);
-	Increase_percentage=(percentage_increase/village_increased)*100;
-	average=(Increase_percentage/10);
-
+		
+	children = parseInt(children);
+	age = parseInt(age);
+	years = parseInt(years);
+	interval=(age*age*age)+age;
+	x1=years-interval;
+	young=x1/children;
 
 	question = {
 		'type': 'single',
 		'id': '1138',
-		'question': 'The population of a town increased from ' + increased + 'to' + decade + 
-					'in a decade. The average percent increased of population per year is:',
+		'question':'The sum of ages of'+ children + 'children born at the intervals of' + years + 'years each is'+ age + 'years. What is the age of the youngest child?',
 		'options': {
-			'A': average + parseFloat(Math.random()*10),
-			'B': average - parseInt(Math.random()*10),
-			'C': average,
-			'D': average + parseInt(Math.random()*10)
+			'A': young - parseFloat(Math.random()*10),
+			'B': young,
+			'C': young + parseFloat(Math.random()*10),
+			'D': young - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
+function problem1139(){
+	var inputData = [{
+		'sellprofit':78,
+		'costprofit': 80
+		},
+		{
+		'sellprofit':85,
+		'costprofit': 140
+		},
+		{
+		'sellprofit':75,
+		'costprofit': 300
+		},
+		{
+		'sellprofit':65,
+		'costprofit': 100
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		sellprofit = inputData[randomIndex]['sellprofit'],
+		costprofit = inputData[randomIndex]['costprofit'],
+		profit,
+		profit_percentage,
+		question = {};
+	
+	sellprofit = parseInt(sellprofit);
+	costprofit = parseInt(costprofit);
+	profit=sellprofit-costprofit;
+	profit_percentage=(profit/costprofit)*100;
+
+	question = {
+		'type': 'single',
+		'id': '1139',
+		'question':'An article is bought for Rs.' + sellprofit + 'and sold for Rs.' + costprofit + '. What is the gain percentage?',
+		'options': {
+			'A': profit_percentage - parseFloat(Math.random()*10),
+			'B': profit_percentage + parseInt(Math.random()*10),
+			'C': profit_percentage,
+			'D': profit_percentage + parseInt(Math.random()*10)
 		},
 		'answer': 'C',
 		'author-id': '11'
@@ -2013,7 +2064,5 @@ function problem1138(){
 	return question;
 	
 }
-
-
 
 	
