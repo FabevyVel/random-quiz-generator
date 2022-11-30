@@ -1413,6 +1413,61 @@ function problem0427(){
 	return question27;
 	
 }
+function problem0428(){
+	var inputData = [{
+		'principal': 13600,
+		'rateinterest': 10,
+		'noyears': 2
+		},
+		{
+		'principal': 58000,
+		'rateinterest': 8,
+		'noyears': 1
+		},
+		{
+		'principal': 9000,
+		'rateinterest': 15,
+		'noyears': 2
+		},
+		{
+		'principal': 8500,
+		'rateinterest': 4,
+		'noyears': 6
+		},
+		{
+		'principal': 7000,
+		'rateinterest': 4,
+		'noyears': 6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		principal = inputData[randomIndex]['principal'],
+		rateinterest = inputData[randomIndex]['rateinterest'],
+		noyears = inputData[randomIndex]['noyears'],
+		amount,compoundInterest,
+		question28 = {};
 
+	principal = parseInt(principal);
+	rateinterest = parseInt(rateinterest);
+	noyears = parseInt(noyears);
+	amount = principal*(1+(rateinterest/100))**noyears;
+	compoundInterest = amount-principal
+
+	question28 = {
+		'type': 'single',
+		'id': '0428',
+		'question': 'Find the Compound Interest on Rs' +" "+ + principal +" "+ 'for' +" "+ + noyears  +'years at' +" "+ + rateinterest+ '% per annum compounded annually.?',
+		'options': {
+			'A': compoundInterest + parseInt(Math.random()*10),
+			'B': compoundInterest- parseInt(Math.random()*10),
+			'C': compoundInterest + parseInt(Math.random()*10),
+			'D': compoundInterest 
+		},
+		'answer': 'D',
+		'author-id': '04'
+	}
+	
+	return question28;
+		
+}
 	
 	
