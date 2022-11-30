@@ -1591,6 +1591,60 @@ function problem1130(){
 	return question;
 	
 }
+function problem1131(){
+	var inputData = [{
+		'sum': 678,
+		'rate': 987,
+		'time': 345
+		},
+		{
+		'sum': 578,
+		'rate': 986,
+		'time': 89
+		},
+		{
+		'sum': 345,
+		'rate': 67,
+		'time': 334
+		},
+		{
+		'sum': 345,
+		'rate': 564,
+		'time': 987
+		},
+		{
+		'sum': 453,
+		'rate': 987,
+		'time': 345
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		sum= inputData[randomIndex]['sum'],
+		time = inputData[randomIndex]['time'],
+		rate = inputData[randomIndex]['rate'],
+		interest,
+		question = {};
+
+	sum=parseInt(sum);
+	time=parseInt(time);
+	rate=parseInt(rate);
+	interest=(sum*time*rate/100);
+
+	question = {
+		'type': 'single',
+		'id': '1131',
+		'question': 'How much time will it take for an' +sum+ 'to yield' +time+ 'as interest at' +rate+ 'per annum of simple interest',
+		'options': {
+			 'A':interest - parseInt(Math.random()*10),
+			 'B':interest - parseInt(Math.random()*10),
+			 'C':interest,
+			 'D':interest + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '11'
+	}
+	
+	return question;
+}
 
 
 
