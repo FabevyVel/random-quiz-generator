@@ -1439,6 +1439,66 @@ function problem0227(){
 	
 }	
 
+// program 28
+function problem0228(){
+	var inputData = [{
+		'boy':50,
+		'years': 20,
+		'leave': 17,
+		'new_1': 13.5
+		},
+		{
+		'boy': 70,
+		'years': 10,
+		'leave': 2,
+		'new_1': 70.4
+		},
+		{
+		'boy': 10,
+		'years': 93,
+		'leave': 16,
+		'new_1':70.7
+		},
+		{
+		'boy':70,
+		'years': 96,
+		'leave': 79,
+		'new_1': 18.8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		boy = inputData[randomIndex]['boy'],
+		years = inputData[randomIndex]['years'],
+		leave = inputData[randomIndex]['leave'],
+		new_1 = inputData[randomIndex]['new_1'],
+		average,
+		total,
+		question = {};
+	
+
+	average=boy*years;
+	total=(new_1*boy)-average+leave;
+
+
+	question = {
+		'type': 'single',
+		'id': '0228',
+		'question': 'Average age of a group of' + boy + 'boys is' + years + 'years. A boy of age' + leave + 
+					'leaves the group and a new boy joins the group. If the new average age of the group is' + new_1 + 
+					'years, find the age of the new boy.',
+		'options': {
+			'A': total - parseFloat(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+
 
 
   
