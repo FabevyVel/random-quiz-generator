@@ -1546,6 +1546,60 @@ function problem0229(){
 	
 }
 
+// program 30
+function problem0230(){
+	var inputData = [{
+		'first':30,
+		'book': 1000,
+		'time': 5
+		},
+		{
+		'first':20,
+		'book': 200,
+		'time': 5
+		},
+		{
+		'first':80,
+		'book': 250,
+		'time': 2
+		},
+		{
+		'first':60,
+		'book': 300,
+			'time': 9
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		first= inputData[randomIndex]['first'],
+		book = inputData[randomIndex]['book'],
+		time = inputData[randomIndex]['time'],
+		average,
+		total,
+		question = {};
+	
+	
+	average=book/first;
+	total=average/time;
+
+	question = {
+		'type': 'single',
+		'id': '0230',
+		'question': + first + 'typists can type' + book + 'pages in' + time + 
+					'hours.Find the average number of pages typed by each typist in an hour.',
+		'options': {
+			'A': total + parseInt(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+
+
 
 
   
