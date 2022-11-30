@@ -1729,5 +1729,46 @@ function problem0434(){
 	
 	return question34;
 }
+function problem0435(){
+	var inputData = [{
+		'value': 2	
+		},
+		{
+			'value': 4
+		},
+		{
+			'value': 6	
+		},
+		{
+			'value': 12		
+		},
+		{
+			'value': 8	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		value= inputData[randomIndex]['value'],
+		squareRoot,
+		question35 = {};
+
+	value=parseInt(value);
+	squareRoot=Math.sqrt(value);
+
+	question35 = {
+		'type': 'single',
+		'id': '0435',
+		'question': 'Find the square root value of '+ value+'? ',
+		'options': {
+			'A':squareRoot - parseInt(Math.random()*10),
+			'B': squareRoot - parseInt(Math.random()*10),
+			'C': squareRoot ,
+			'D':  squareRoot+ parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question35;
+	
+}
 	
 	
