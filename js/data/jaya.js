@@ -1202,10 +1202,57 @@ function problem0423(){
 	return question23;
 	
 }
-		
-		
-		
-		
-			
+function problem0424(){
+	var inputData = [{
+		'children':6,
+		'age': 50,
+		'years':3
+		},
+		{
+		'children':8,
+		'age': 30,
+		'years':3
+		},
+		{
+		'children':4,
+		'age': 80,
+		'years':3
+		},
+		{
+		'children':5,
+		'age': 40,
+		'years':3
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		children = inputData[randomIndex]['children'],
+		age = inputData[randomIndex]['age'],
+		years = inputData[randomIndex]['years'],
+		interval,
+		x,
+		young,
+		profitpercentage,
+		question24 = {};
+	
+	interval=(age*age*age)+age;
+	x=years-interval;
+	young=x/children;
+
+	question24= {
+		'type': 'single',
+		'id': '0424',
+		'question':'The sum of ages of'+ children + 'children born at the intervals of' + years + 'years each is'+ age + 'years. What is the age of the youngest child?',
+		'options': {
+			'A': young - parseFloat(Math.random()*10),
+			'B': young+ parseFloat(Math.random()*10),
+			'C': young ,
+			'D': young - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question24;
+	
+}
 	
 	
