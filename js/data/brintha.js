@@ -1388,6 +1388,57 @@ function problem0226(){
 	
 }
 
+// program27
+
+function problem0227(){
+	var inputData = [{
+		'cp': 7000,
+		'gp': 20
+		},
+		{
+		'cp': 2500,
+			'gp': 15
+		},
+		{
+		'cp': 4300,
+			'gp': 200
+		},
+		{
+		'cp': 2000,
+		'gp': 63
+		},
+		{
+		'cp': 3090,
+		'gp': 30
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+		cp= inputData[randomIndex]['cp'],
+		gp = inputData[randomIndex]['gp'],
+		sp,
+		question = {};
+		
+    cp=parseInt(cp);
+	gp=parseInt(gp);
+	sp=((100+gp)/100)*cp;
+
+	question = {
+		'type': 'single',
+		'id': '0227',
+		'question': 'kavi bought a chair for '+ cp +' and sold it to banu. If kavi earned a profit of '+ gp+'%, find the selling price of chair.',
+		'options': {
+			'A': sp - parseInt(Math.random()*10),
+			'B': sp,
+			'C': sp + parseInt(Math.random()*10),
+			'D': sp - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}	
+
 
 
   
