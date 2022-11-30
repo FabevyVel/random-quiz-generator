@@ -1241,6 +1241,60 @@ function problem0223(){
 		
 }
 
+// program24
+function problem0224(){
+		var inputData = [{
+			'start':64,
+			'end':2
+			},
+			{
+			'start':90,
+				'end':8
+			},
+			{
+			'start': 21,
+				'end':4
+			},
+			
+			{
+			'start': 203,
+			'end':50
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			start= inputData[randomIndex]['start'],
+			end= inputData[randomIndex]['end'],
+		    
+			
+			count=100;
+		 
+			start=parseInt(start);
+		    start=count*(start+count)/count;
+			
+			end=parseInt(end);
+			total=(100+end)/100*count;
+			main=(start-total)*count/start;
+		
+			question12 = {};
+			
+			
+	  question12 = {
+			'type': 'single',
+			'id': '0224 ',
+			'question': 'A trader keeps the marked price of an item '+start+'% above its cost price. The percentage of discount allowed to gain '+end+'% is',
+			'options': {
+				'A':main-parseInt(Math.random()*10),
+				'B':main+parseInt(Math.random()*10),
+				'C':main-parseInt(Math.random()*10),
+				'D':main
+			},
+			'answer': 'D',
+			'author-id': '02'
+		}
+		return question12 ;
+	
+}
+
+  
 
 	
 
