@@ -1645,6 +1645,58 @@ function problem1131(){
 	
 	return question;
 }
+function problem1132(){
+	var inputData = [{
+        'upstream':60,
+		'downstream':35,
+		},
+		{
+        'upstream':80,
+		'downstream':20.4,
+		},
+		{
+        'upstream':60,
+		'downstream':9.6,
+		},
+		{
+		'upstream':30,
+		'downstream':5.5,
+		},
+		{
+		'upstream':93,
+		'downstream':7.5,
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    upstream= inputData[randomIndex]['upstream'],
+        downstream= inputData[randomIndex]['downstream'],
+		distance,
+		time,
+		question = {};
+
+	upstream=parseInt(upstream);
+	downstream=parseInt(downstream);
+	distance=upstream-downstream;
+	distance=upstream+downstream;
+	time=distance/upstream;
+	
+
+	question = {
+		'type': 'single',
+		'id': '1132',
+		'question': 'Speed of a boat in standing water is' + upstream + 'and the speed of the stream is' 
+					+ downstream + 'A man rows to a place at a' + distance + 'and comes back to the starting point. The total time taken by him is', 
+		'options': {
+			'A': time - parseInt(Math.random()*10),
+			'B': time - parseInt(Math.random()*10),
+			'C': time + parseInt(Math.random()*10),
+			'D': time
+		},
+		'answer': 'D',
+		'author-id': '11'
+	}
+	
+	return question;
+}
 
 
 
