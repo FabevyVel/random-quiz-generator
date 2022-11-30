@@ -1883,6 +1883,86 @@ function problem1136(){
 	return question;
 	
 }
+function problem1110(){
+	var inputData = [{
+		'first':456,
+		'second': 796,
+		'third': 458,
+		'four': 253,
+		'five': 863,
+		'six': 5,
+		'month': 6845
+		},
+		{
+		'first': 635,
+		'second': 927,
+		'third': 855,
+		'four': 230,
+		'five': 662,
+		'six': 5,
+		'month':6500 
+		},
+		{
+		'first': 486,
+		'second': 698,
+		'third': 257,
+		'four': 487,
+		'five': 625,
+		'six': 5,
+		'month': 257
+		},
+		{
+		'first': 465,
+		'second': 563,
+		'third': 536,
+		'four': 463,
+		'five': 732,
+		'six': 5,
+		'month': 976
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		first = inputData[randomIndex]['first'],
+		second = inputData[randomIndex]['second'],
+		third = inputData[randomIndex]['third'],
+		four = inputData[randomIndex]['four'],
+		five = inputData[randomIndex]['five'],
+		six = inputData[randomIndex]['six'],
+		month = inputData[randomIndex]['month'],
+		x,
+		y,
+		group,
+		question = {};
+	
+	first = parseInt(first);
+	second = parseInt(second);
+	third = parseInt(third);
+	four = parseInt(four);
+	five = parseInt(five);
+	six = parseInt(six);
+	month = parseInt(month);
+	x=first+second+third+four+five;
+	y=six*month;
+	group=y-x;
+
+
+	question = {
+		'type': 'single',
+		'id': '1110', 
+		'question':'Ajay gets a salary of Rs.'+ first + ', Rs.' + second + ', Rs.' + third + ', Rs.' + four + ' and Rs.'+ five + 'for'+ six + 
+		            'months. How much salary he must have in the sixth month so that he gets an average of Rs.' + month + '?',
+		'options': {
+			'A': group + parseFloat(Math.random()*10),
+			'B': group + parseInt(Math.random()*10),
+			'C': group,
+			'D': group + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 
 
 
