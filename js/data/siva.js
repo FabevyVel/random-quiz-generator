@@ -1697,6 +1697,54 @@ function problem1132(){
 	
 	return question;
 }
+function problem1133(){
+	var inputData = [{
+		'cp': 64,
+		'sp': 234
+		},
+		{
+		'cp': 876,
+		'sp': 34
+		},
+		{
+		'cp': 350,
+		'sp': 487
+		},
+		{
+		'cp': 765,
+		'sp': 234
+		},
+		{
+		'cp': 456,
+		'sp': 30
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    cp = inputData[randomIndex]['cp'],
+		sp = inputData[randomIndex]['sp'],
+		p,
+		pp,
+		question = {};
+
+	cp = parseFloat(cp);
+    sp = parseInt(sp);
+	p = sp - cp ;
+    pp = p/cp*100;
+
+	question = {
+		'type': 'single',
+		'id': '1133',
+		'question': 'A pen is bought for  ' + cp + 'rs and sold for ' + sp + ' rs. what is the '+ pp +' profit percentage of the pen?',
+		'options': {
+			'A': pp - parseInt(Math.random()*10),
+			'B': pp - parseFloat(Math.random()*10),
+			'C': pp / parseInt(Math.random()*10),
+			'D': pp 
+		},
+		'answer': 'D',
+		'author-id': '11'
+    }
+	return question;
+}
 
 
 
