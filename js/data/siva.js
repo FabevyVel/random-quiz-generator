@@ -2064,5 +2064,50 @@ function problem1139(){
 	return question;
 	
 }
+function problem1140(){
+	var inputData = [{
+		'speed':78,
+		'time': 30
+		},
+		{
+		'speed':19,
+		'time': 25
+		},
+		{
+		'speed':23,
+		'time': 25
+		},
+		{
+		'speed':54,
+		'time': 19
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speed = inputData[randomIndex]['speed'],
+		time = inputData[randomIndex]['time'],
+		speed1,
+		distance,
+		question = {};
+		
+	speed = parseInt(speed);
+	time = parseInt(time);	
+	speed1=speed*5/18;
+	distance=speed1*time;
 
+	question = {
+		'type': 'single',
+		'id': '1140',
+		'question': 'What distance will be covered by a bus moving at'+ speed +' kmph in' + time +' seconds?' ,
+		'options': {
+			'A': distance - parseInt(Math.random()*10),
+			'B': distance - parseInt(Math.random()*10),
+			'C': distance + parseInt(Math.random()*10),
+			'D': distance
+		},
+		'answer': 'D',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 	
