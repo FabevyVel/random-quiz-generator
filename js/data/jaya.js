@@ -1863,5 +1863,72 @@ function problem0437(){
 	return question37;
 	
 }
+function problem0438(){
+	var inputData = [{
+		'sub1':5,
+		'sub2': 6,
+		'a1':65,
+		'a2':64
+		},
+		{
+		'sub1':4,
+		'sub2': 5,
+		'a1':85,
+		'a2':75
+		},
+		{
+		'sub1':7,
+		'sub2': 9,
+		'a1':5,
+		'a2':73
+		},
+		{
+		'sub1':6,
+		'sub2': 5,
+		'a1':7,
+		'a2':2
+		},
+		{
+		'sub1':6,
+		'sub2': 5,
+		'a1':75,
+		'a2':55
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    sub1= inputData[randomIndex]['sub1'],
+		sub2 = inputData[randomIndex]['sub2'],
+    	a1= inputData[randomIndex]['a1'],
+	    a2= inputData[randomIndex]['a2'],
+	    themarks1,
+	    themarks2,
+	    mark,
+		question38 = {};
+		
+	    sub1=parseInt(sub1);
+		sub2=parseInt(sub2);
+		a1=parseInt(a1);
+		a2=parseInt(a2);
+	    themarks1=a1*sub1;
+        themarks2=a2*sub2;
+		mark=themarks1-themarks2;
+	question38 = {
+		'type': 'single',
+		'id': '0438',
+		'question': ' A karthik secures average of  '   +   a1 +  'marks in  '  +sub1 + 'subjects if the average of amrks in    '+sub2+'is  '+a2+'how many marks did he secure in the 6th subject?',
+		'options': {
+			'A': mark-parseInt(Math.random()*10),
+			'B': mark,
+			'C': mark-parseInt(Math.random()*10),
+			'D': mark+parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '04'
+	}
+	
+	return question38;
+	
+}
+
 	
 	
