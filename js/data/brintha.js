@@ -1600,6 +1600,58 @@ function problem0230(){
 }
 
 
+// program 31
+
+function problem0231(){
+	var inputData = [{
+		'calc': 300,
+		'amount': 81,
+		'hour': 2
+		},
+		{
+		'calc': 550,
+		'amount': 20,
+			'hour': 4
+		},
+		{
+		'calc': 854,
+		'amount': 83,
+			'hour': 9
+		},
+		{
+		'calc': 900,
+		'amount': 80,
+			'hour': 3
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		calc= inputData[randomIndex]['calc'],
+		hour = inputData[randomIndex]['hour'],
+		amount = inputData[randomIndex]['amount'],
+		si,
+		question = {};
+
+	calc=parseInt(calc);
+	hour=parseInt(hour);
+		amount=parseInt(amount);
+	si=(calc*hour*amount/100);
+
+	question = {
+		'type': 'single',
+		'id': '0231',
+		'question': 'How much time will it take for an' +calc+ 'to yield' +hour+ 'as interest at' +amount+ 'P.A of simple interest',
+		'options': {
+			'A':si + parseInt(Math.random()*10),
+			'B':si + parseInt(Math.random()*10),
+            'C' :si + parseInt(Math.random()*10),
+			'D':si
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;
+}
+
 
 
   
