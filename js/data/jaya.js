@@ -1254,5 +1254,68 @@ function problem0424(){
 	return question24;
 	
 }
+function problem0425(){
+	var inputData = [{
+		'average':50,
+		'years': 45,
+		'teacher': 6,
+		'yearsteacher':2
+		},
+		{
+		'average':80,
+		'years': 65,
+		'teacher': 12,
+		'yearsteacher':3
+		},
+		{
+		'average':125,
+		'years': 30,
+		'teacher': 10,
+		'yearsteacher':6
+		},
+		{
+		'average':40,
+		'years': 25,
+		'teacher': 2,
+		'yearsteacher': 1
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		average = inputData[randomIndex]['average'],
+		years = inputData[randomIndex]['years'],
+		teacher = inputData[randomIndex]['teacher'],
+		yearsteacher = inputData[randomIndex]['yearsteacher'],
+		a,
+		sum,
+		age,
+		x1,
+		includes,
+		question25 = {};
+	
+
+	a=average+teacher;
+	sum=years+yearsteacher;
+	age=average*years;
+	x1=a*sum;
+	includes=x1-age;
+
+
+	question25 = {
+		'type': 'single',
+		'id': '0425',
+		'question':'The average age of' + average + 'boys in a class is'+ years + 'years. If we include the age of' + teacher + 
+		'teachers, the average age increases by' + yearsteacher + ' . What is the sum of ages of the two teachers?',
+		'options': {
+			'A': includes - parseInt(Math.random()*10),
+			'B': includes - parseInt(Math.random()*10),
+			'C': includes,
+			'D': includes + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question25;
+	
+}
 	
 	
