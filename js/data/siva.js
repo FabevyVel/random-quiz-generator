@@ -1963,6 +1963,56 @@ function problem1137(){
 	return question;
 	
 }
+function problem1138(){
+	var inputData = [{
+		'increased':600,
+		'decade': 200
+		},
+		{
+		'increased':600,
+		'decade': 300
+		},
+		{
+		'increased':5000,
+		'decade': 200
+		},
+		{
+		'increased':700,
+		'decade': 200
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		village_increased = inputData[randomIndex]['village_increased'],
+		decade = inputData[randomIndex]['decade'],
+		percentage_increase,
+		Increase_percentage,
+		average,
+		question = {};
+	
+	increased = parseInt(increased);
+	decade = parseInt(decade);
+	percentage_increase=(village_increased-decade);
+	Increase_percentage=(percentage_increase/village_increased)*100;
+	average=(Increase_percentage/10);
+
+
+	question = {
+		'type': 'single',
+		'id': '1138',
+		'question': 'The population of a town increased from ' + increased + 'to' + decade + 
+					'in a decade. The average percent increased of population per year is:',
+		'options': {
+			'A': average + parseFloat(Math.random()*10),
+			'B': average - parseInt(Math.random()*10),
+			'C': average,
+			'D': average + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 
 
 
