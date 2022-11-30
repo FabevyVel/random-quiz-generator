@@ -1551,5 +1551,51 @@ var inputData = [{
 	
 	return question30;
 }
+function problem0431(){
+	var inputData = [{
+		'correct': 20,
+		'wrong': 10
+		},
+		{
+		'correct': 60,
+		'wrong': 20
+		},
+		{
+		'correct': 40,
+		'wrong': 30
+		},
+		{
+		'correct': 30,
+		'wrong': 40
+		},
+		{
+		'correct': 20,
+			'wrong': 5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		correct=inputData[randomIndex]['correct'],
+		wrong=inputData[randomIndex]['wrong'],
+	    errorpercentage,
+		correct=parseInt(correct),
+		wrong=parseInt(wrong),
+		errorpercentage=(correct - wrong)/correct,
+		error=errorpercentage*100,
+		
+		question31 = {
+		'type': 'single',
+		'id': '0431',
+		'question': 'A student multiplied a number by ' + wrong + 'instead of '+correct+  'what is the percentage error in the calculation?',
+		'options': {
+			'A': error- parseInt(Math.random()*10),
+			'B': error - parseInt(Math.random()*10),
+			'C': error + parseInt(Math.random()*10),
+			'D': error
+		},
+		'answer': 'D',
+		'author-id': '04',
+	}
+	
+	return question31;
+}
 	
 	
