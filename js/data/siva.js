@@ -1838,6 +1838,51 @@ function problem1135(){
 	return question;
 	
 }
+function problem1136(){
+	var inputData = [{
+		'electricity_bill':4.5,
+		'deducted': 13
+		},
+		{
+		'electricity_bill':9.5,
+		'deducted': 20
+		},
+		{
+		'electricity_bill':5.6,
+		'deducted': 15
+		},
+		{
+		'electricity_bill':8.6,
+		'deducted': 10
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		electricity_bill= inputData[randomIndex]['electricity_bill'],
+		deducted = inputData[randomIndex]['deducted'],
+		bill,
+		question = {};
+	
+	electricity_bill= parseInt(electricity_bill);
+	deducted = parseInt(deducted),
+	to_pay=deducted-electricity_bill;
+	bill=(deducted/to_pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '1136',
+		'question': 'If' + electricity_bill + '% of an electricity bill is deducted then Rs ' + deducted + 'is still to be paid .How much was the original bill',
+		'options': {
+			'A': bill,
+			'B': bill + parseInt(Math.random()*10),
+			'C': bill + parseInt(Math.random()*10),
+			'D': bill - parseFloat(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 
 
 
