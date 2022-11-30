@@ -1798,6 +1798,46 @@ function problem1134(){
     }
 	return question;
 }
+function problem1135(){
+	var inputData = [{
+		'rate':1.8
+		},
+		{
+		'rate':4.8
+		},
+		{
+		'rate':3.5
+		},
+		{
+		'rate':9.6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		rate = inputData[randomIndex]['rate'],
+		change,
+		question = {};
+		
+	
+	rate = parseInt(rate);
+	change=(rate/(100-rate)*100);
+
+	question = {
+		'type': 'single',
+		'id': '1135',
+		'question': 'The price of rice falls by' + rate +
+					'% by what percentage a person can increase the consumption of rice so that his overall budget does not change',
+		'options': {
+			'A': change / parseInt(Math.random()*10),
+			'B': change,
+			'C': change + parseFloat(Math.random()*10),
+			'D': change - parseFloat(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 
 
 
