@@ -1372,5 +1372,47 @@ function problem0426(){
 	return question26;
 		
 }
+function problem0427(){
+	var inputData = [{
+		'cp': 6000,
+		'loss': 4
+		},
+		{
+		'cp': 5000,
+			'loss': 7
+		},
+		{
+		'cp': 8000,
+			'loss': 9
+		},
+		{
+		'cp': 7000,
+		'loss': 10
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		cp= inputData[randomIndex]['cp'],
+		loss = inputData[randomIndex]['loss'],
+		sp,
+		question = {};
+		sp=(((100-loss)/100)*cp);
+	    
+	question27 = {
+		'type': 'single',
+		'id': '0427',
+		'question': 'A man purchase tv for RS ' + cp + ' and sells it ' + loss + '% loss.what is the sellingprice of TV',
+		'options': {
+			'A': sp - parseInt(Math.random()*10),
+			'B': sp+ parseInt(Math.random()*10),
+			'C': sp ,
+			'D': sp - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question27;
+	
+}
+
 	
 	
