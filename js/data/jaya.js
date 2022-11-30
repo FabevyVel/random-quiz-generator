@@ -1007,6 +1007,59 @@ function problem0420(){
 		return question20;
 	
 }
+function problem0421(){
+	var inputData = [{
+		'speed':90,
+		'time': 10,
+		'time2': 4
+		},
+		{
+		'speed':80,
+		'time': 6,
+		'time2': 5
+		},
+		{
+		'speed':60,
+		'time': 4,
+		'time2': 2
+		},
+		{
+		'speed':40,
+		'time': 2,
+		'time2': 3
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		time = inputData[randomIndex]['time'],
+		time2 = inputData[randomIndex]['time2'],
+		distance,
+		speed2,
+		speed1,
+		question21 = {};
+		
+	
+	distance=speed1*time;
+	speed2=distance/time2;
+	speed1=speed2-speed;
+
+	question21 = {
+		'type': 'single',
+		'id': '0421',
+		'question': 'A car covers its journey at the speed of' + speed + ' km/hour in' + time +' hours. If the same distance is to be covered in'
+						+ time2 + 'hours, by how much the speed of car will have to increase?',
+		'options': {
+			'A': speed1 - parseInt(Math.random()*10),
+			'B': speed1,
+			'C': speed1 + parseInt(Math.random()*10),
+			'D': speed1 - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '04'
+	}
+	
+	return question21;
+	
+}
 		
 		
 		
