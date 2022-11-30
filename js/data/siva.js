@@ -1883,7 +1883,7 @@ function problem1136(){
 	return question;
 	
 }
-function problem1110(){
+function problem1137(){
 	var inputData = [{
 		'first':456,
 		'second': 796,
@@ -1947,7 +1947,7 @@ function problem1110(){
 
 	question = {
 		'type': 'single',
-		'id': '1110', 
+		'id': '1137', 
 		'question':'Ajay gets a salary of Rs.'+ first + ', Rs.' + second + ', Rs.' + third + ', Rs.' + four + ' and Rs.'+ five + 'for'+ six + 
 		            'months. How much salary he must have in the sixth month so that he gets an average of Rs.' + month + '?',
 		'options': {
