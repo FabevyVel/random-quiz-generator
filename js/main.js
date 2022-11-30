@@ -36,10 +36,10 @@ function createQuestionTemplate(questionObject){
         optionElement.innerText = option + ": " + questionObject.options[option]
         optionWrapperElement.append(optionElement);
     }
-//    .innerText = questionObject.question;
 
     //Update answer
     answerElement.innerText = questionObject.answer + ": " +questionObject.options[questionObject.answer];
+    //TODO: Implement 'Show Answer' feature
 
     //Update author
     //TODO: Get Author Info
@@ -62,6 +62,8 @@ function generateQuestionData(){
         questionSet.push(questionBank[funtionKeys[randomKeyIndex]]());
         funtionKeys.splice(randomKeyIndex, 1);
     }
+
+
 }
 function generateQuestionDOM(){
     questionSet.forEach(createQuestionTemplate);    

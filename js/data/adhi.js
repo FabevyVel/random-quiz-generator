@@ -504,102 +504,104 @@ var adhi = {
 		}
 		
 		return question;
-	}
-}
-
-function problem0111(){
-	var inputData = [{
-		'costprice': 2000,
-		'loss': 10
-		},
-		{
-		'costprice': 5000,
-		'loss': 10
-		},
-		{
-		'costprice': 4000,
-		'loss': 10
-		},
-		{
-		'costprice': 8000,
-		'loss': 10
-		}],
-		randomIndex = getRandomNumber(inputData.length),
-		costprice= inputData[randomIndex]['costprice'],
-		loss = inputData[randomIndex]['loss'],
-		p,
-		sellingprice,
-		question = {};
+	},
+	"problem0111": function(){
+		var inputData = [{
+			'costprice': 2000,
+			'loss': 10
+			},
+			{
+			'costprice': 5000,
+			'loss': 10
+			},
+			{
+			'costprice': 4000,
+			'loss': 10
+			},
+			{
+			'costprice': 8000,
+			'loss': 10
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			costprice= inputData[randomIndex]['costprice'],
+			loss = inputData[randomIndex]['loss'],
+			p,
+			sellingprice,
+			question = {};
+			
+			p=(100-loss)/100;
+			sellingprice=p*costprice;
+	
+		question = {
+			'type': 'single',
+			'id': '0111',
+			'question': 'A man purchase tv for RS ' + costprice + ' and sells it ' + loss + '% loss.what is the sellingprice of TV',
+			'options': {
+				'A': sellingprice - parseInt(Math.random()*10),
+				'B': sellingprice - parseInt(Math.random()*10),
+				'C': sellingprice + parseInt(Math.random()*10),
+				'D': sellingprice
+			},
+			'answer': 'D',
+			'author-id': '0111'
+		}
 		
-	    p=(100-loss)/100;
-		sellingprice=p*costprice;
-
-	question = {
-		'type': 'single',
-		'id': '0111',
-		'question': 'A man purchase tv for RS ' + costprice + ' and sells it ' + loss + '% loss.what is the sellingprice of TV',
-		'options': {
-			'A': sellingprice - parseInt(Math.random()*10),
-			'B': sellingprice - parseInt(Math.random()*10),
-			'C': sellingprice + parseInt(Math.random()*10),
-			'D': sellingprice
-		},
-		'answer': 'D',
-		'author-id': '0111'
+		return question;
+		
+	},
+	"problem0112": function(){
+		var inputData = [{
+			'distance': 35,
+			'time': 50
+			},
+			{
+			'distance': 55,
+			'time': 70
+			},
+			{
+			'distance': 12,
+				'time': 26
+			},
+			{
+			'distance': 23,
+				'time': 56
+			},
+			{
+			'distance': 15,
+			'time': 45
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			distance= inputData[randomIndex]['distance'],
+			time = inputData[randomIndex]['time'],
+			speed,
+			question = {};
+	
+		distance=parseInt(distance);
+		time=parseInt(time*60);
+		speed=((distance/time)*(18/5));
+	
+		question = {
+			'type': 'single',
+			'id': '0112',
+			'question': 'A car travells a distance ' + distance + 'km at ' + time + ' sec. Calculate the speed of the train.',
+			'options': {
+				'A': speed,
+				'B': speed - parseInt(Math.random()*10),
+				'C': speed + parseInt(Math.random()*10),
+				'D': speed * parseInt(Math.random()*10)
+			},
+			'answer': 'A',
+			'author-id': '0112'
+		}
+		
+		return question;
+		
 	}
-	
-	return question;
-	
 }
 
-function problem0112(){
-	var inputData = [{
-		'distance': 35,
-		'time': 50
-		},
-		{
-		'distance': 55,
-		'time': 70
-		},
-		{
-		'distance': 12,
-			'time': 26
-		},
-		{
-		'distance': 23,
-			'time': 56
-		},
-		{
-		'distance': 15,
-		'time': 45
-		}],
-		randomIndex = getRandomNumber(inputData.length),
-		distance= inputData[randomIndex]['distance'],
-		time = inputData[randomIndex]['time'],
-		speed,
-		question = {};
 
-	distance=parseInt(distance);
-	time=parseInt(time*60);
-	speed=((distance/time)*(18/5));
 
-	question = {
-		'type': 'single',
-		'id': '0112',
-		'question': 'A car travells a distance ' + distance + 'km at ' + time + ' sec. Calculate the speed of the train.',
-		'options': {
-			'A': speed,
-			'B': speed - parseInt(Math.random()*10),
-			'C': speed + parseInt(Math.random()*10),
-			'D': speed * parseInt(Math.random()*10)
-		},
-		'answer': 'A',
-		'author-id': '0112'
-	}
-	
-	return question;
-	
-}
+
 
 function problem0113(){
 	var inputData = [{
