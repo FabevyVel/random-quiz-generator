@@ -1372,5 +1372,315 @@ function problem0426(){
 	return question26;
 		
 }
+function problem0427(){
+	var inputData = [{
+		'cp': 6000,
+		'loss': 4
+		},
+		{
+		'cp': 5000,
+			'loss': 7
+		},
+		{
+		'cp': 8000,
+			'loss': 9
+		},
+		{
+		'cp': 7000,
+		'loss': 10
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		cp= inputData[randomIndex]['cp'],
+		loss = inputData[randomIndex]['loss'],
+		sp,
+		question = {};
+		sp=(((100-loss)/100)*cp);
+	    
+	question27 = {
+		'type': 'single',
+		'id': '0427',
+		'question': 'A man purchase tv for RS ' + cp + ' and sells it ' + loss + '% loss.what is the sellingprice of TV',
+		'options': {
+			'A': sp - parseInt(Math.random()*10),
+			'B': sp+ parseInt(Math.random()*10),
+			'C': sp ,
+			'D': sp - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question27;
+	
+}
+function problem0428(){
+	var inputData = [{
+		'principal': 13600,
+		'rateinterest': 10,
+		'noyears': 2
+		},
+		{
+		'principal': 58000,
+		'rateinterest': 8,
+		'noyears': 1
+		},
+		{
+		'principal': 9000,
+		'rateinterest': 15,
+		'noyears': 2
+		},
+		{
+		'principal': 8500,
+		'rateinterest': 4,
+		'noyears': 6
+		},
+		{
+		'principal': 7000,
+		'rateinterest': 4,
+		'noyears': 6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		principal = inputData[randomIndex]['principal'],
+		rateinterest = inputData[randomIndex]['rateinterest'],
+		noyears = inputData[randomIndex]['noyears'],
+		amount,compoundInterest,
+		question28 = {};
+
+	principal = parseInt(principal);
+	rateinterest = parseInt(rateinterest);
+	noyears = parseInt(noyears);
+	amount = principal*(1+(rateinterest/100))**noyears;
+	compoundInterest = amount-principal
+
+	question28 = {
+		'type': 'single',
+		'id': '0428',
+		'question': 'Find the Compound Interest on Rs' +" "+ + principal +" "+ 'for' +" "+ + noyears  +'years at' +" "+ + rateinterest+ '% per annum compounded annually.?',
+		'options': {
+			'A': compoundInterest + parseInt(Math.random()*10),
+			'B': compoundInterest- parseInt(Math.random()*10),
+			'C': compoundInterest + parseInt(Math.random()*10),
+			'D': compoundInterest 
+		},
+		'answer': 'D',
+		'author-id': '04'
+	}
+	
+	return question28;
+		
+}
+function problem0429(){
+	var inputData = [
+		{
+		'distance':10,
+		'speed': 400
+		},
+		{
+		'distance':20,
+		'speed': 600
+		},
+		{
+		'distance':15,
+		'speed': 300
+		},
+		{
+		'distance':25,
+		'speed': 200
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		distance= inputData[randomIndex]['distance'],
+    	time,
+		question29 = {};
+		
+	    speed=parseInt(speed*5/18);
+		distance=parseInt(distance);
+		time=(distance/speed);
+		
+	question29 = {
+		'type': 'single',
+		'id': '0429',
+		'question': 'A van is running at a speed of '+ speed +' km/hr. In what time he will cross a track of length '+ distance+' meters?',
+		'options': {
+			'A':  time,
+			'B':  time-parseInt(Math.random()*10),
+			'C':  time+parseInt(Math.random()*10),
+			'D':  time-parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '04'
+	}
+	
+	return question29;
+	
+}
+function problem0430(){
+var inputData = [{
+		'no':2
+		},
+		{
+		'no':4
+		},
+		{
+		'no':6
+		},
+		{
+		'no':5
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+		no= inputData[randomIndex]['no'],
+		average ,
+		question30 = {};
+		
+    no=parseInt(no);
+	average=(2*(no+1)*(2*no+1)/3);
+	question30 = {
+		'type': 'single',
+		'id': '0430',
+		'question': 'The average of square of first '+ no +' consecutive even numbers is:',
+		'options': {
+			'A': average + parseInt(Math.random()*10),
+			'B': average, 
+			'C': average- parseInt(Math.random()*10),
+			'D': average - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '04'
+	}
+	
+	return question30;
+}
+function problem0431(){
+	var inputData = [{
+		'correct': 20,
+		'wrong': 10
+		},
+		{
+		'correct': 60,
+		'wrong': 20
+		},
+		{
+		'correct': 40,
+		'wrong': 30
+		},
+		{
+		'correct': 30,
+		'wrong': 40
+		},
+		{
+		'correct': 20,
+			'wrong': 5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		correct=inputData[randomIndex]['correct'],
+		wrong=inputData[randomIndex]['wrong'],
+	    errorpercentage,
+		correct=parseInt(correct),
+		wrong=parseInt(wrong),
+		errorpercentage=(correct - wrong)/correct,
+		error=errorpercentage*100,
+		
+		question31 = {
+		'type': 'single',
+		'id': '0431',
+		'question': 'A student multiplied a number by ' + wrong + 'instead of '+correct+  'what is the percentage error in the calculation?',
+		'options': {
+			'A': error- parseInt(Math.random()*10),
+			'B': error - parseInt(Math.random()*10),
+			'C': error + parseInt(Math.random()*10),
+			'D': error
+		},
+		'answer': 'D',
+		'author-id': '04',
+	}
+	
+	return question31;
+}
+function problem0432(){
+	var inputData = [{
+		'costprice': 1640,
+		'profit': 35
+		},
+		{
+		'costprice': 1540,
+		'profit': 25
+		},
+		{
+		'costprice': 1420,
+		'profit': 20
+		},
+		{
+		'costprice': 1840,
+		'profit': 45
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		costprice= inputData[randomIndex]['costprice'],
+		profit = inputData[randomIndex]['profit'],
+		p,
+		sellingprice,
+		question32 = {};
+		
+	    p=(100+profit)/100;
+		sellingprice=p*costprice;
+
+	question32 = {
+		'type': 'single',
+		'id': '0432',
+		'question': 'Ramesh bought a chair for RS ' + costprice + ' and sold it suressh ,if ramesh earned a profit of ' + profit + '% profit.what is the sellingprice of chair',
+		'options': {
+			'A': sellingprice+ parseInt(Math.random()*10), 
+			'B': sellingprice - parseInt(Math.random()*10),
+			'C': sellingprice ,
+			'D': sellingprice - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question32;
+	
+}
+function problem0433(){
+	var inputData = [{
+		'diagonal': 90
+		},
+		{		
+		'diagonal': 60
+		},
+		{		
+		'diagonal': 70
+		},
+		{
+		'diagonal': 80
+		},
+		{		
+		'diagonal': 50
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		diagonal = inputData[randomIndex]['diagonal'],
+		areaSquare,
+		question33 = {};
+
+	diagonal=parseInt(diagonal);
+	areaSquare=1/2*(diagonal*diagonal);
+
+	question33 = {
+		'type': 'single',
+		'id': '0433',
+		'question': 'The diagonal of a square field is '+ diagonal +'m,then area of the field is',
+		'options': {
+			'A': areaSquare - parseInt(Math.random()*10),
+			'B': areaSquare ,
+			'C': areaSquare + parseInt(Math.random()*10),
+			'D': areaSquare- parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '04'
+	}
+	
+	return question33;
+	
+}
 	
 	
