@@ -1499,6 +1499,53 @@ function problem0228(){
 	
 }
 
+// program 29
+
+function problem0229(){
+	var inputData = [{
+		'bill':25,
+		'reduce': 130
+		},
+		{
+		'bill':30,
+		'reduce': 200
+		},
+		{
+		'bill':40,
+		'reduce': 150
+		},
+		{
+		'bill':20,
+		'reduce': 100
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		bill= inputData[randomIndex]['bill'],
+		reduce = inputData[randomIndex]['reduce'],
+		total,
+		question = {};
+	
+	
+	pay=reduce-bill;
+	total=(reduce/pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0229',
+		'question': 'the' + bill + ' of an electricity bill is deducted then rs' + reduce + 'is still to be paid .How much was the total bill',
+		'options': {
+			'A': total + parseInt(Math.random()*10),
+			'B': total,
+			'C': total + parseInt(Math.random()*10),
+			'D': total - parseFloat(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+
 
 
   
