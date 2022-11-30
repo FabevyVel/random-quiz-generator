@@ -1317,5 +1317,60 @@ function problem0425(){
 	return question25;
 	
 }
+function problem0426(){
+	var inputData = [{
+		'principal': 5500,
+		'rateinterest': 2,
+		'noyears': 6
+		},
+		{
+		'principal': 6000,
+		'rateinterest': 8,
+		'noyears': 2
+		},
+		{
+		'principal': 5000,
+		'rateinterest': 4,
+			'noyears': 3
+		},
+		{
+		'principal': 6500,
+		'rateinterest': 3,
+			'noyears': 4
+		},
+		{
+		'principal': 7000,
+		'rateinterest': 5,
+			'noyears': 1
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		principal = inputData[randomIndex]['principal'],
+		rateinterest = inputData[randomIndex]['rateinterest'],
+		noyears = inputData[randomIndex]['noyears'],
+		simpleInterest,
+		question26 = {};
+
+	principal = parseInt(principal);
+	rateinterest = parseInt(rateinterest);
+	noyears = parseInt(noyears);
+	simpleInterest = (principal*rateinterest*noyears)/100;
+
+	question26 = {
+		'type': 'single',
+		'id': '0426',
+		'question': 'Find the Simple Interest when Principal is' +" "+ + principal +" "+ ',Rate of Interest is' +" "+ + rateinterest  +'% per annum and Time is' +" "+ + noyears+ 'years.?',
+		'options': {
+			'A': simpleInterest + parseInt(Math.random()*10),
+			'B': simpleInterest + parseInt(Math.random()*10),
+			'C': simpleInterest - parseInt(Math.random()*10),
+			'D': simpleInterest
+		},
+		'answer': 'D',
+		'author-id': '04'
+	}
+	
+	return question26;
+		
+}
 	
 	
