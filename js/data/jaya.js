@@ -1597,5 +1597,49 @@ function problem0431(){
 	
 	return question31;
 }
+function problem0432(){
+	var inputData = [{
+		'costprice': 1640,
+		'profit': 35
+		},
+		{
+		'costprice': 1540,
+		'profit': 25
+		},
+		{
+		'costprice': 1420,
+		'profit': 20
+		},
+		{
+		'costprice': 1840,
+		'profit': 45
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		costprice= inputData[randomIndex]['costprice'],
+		profit = inputData[randomIndex]['profit'],
+		p,
+		sellingprice,
+		question32 = {};
+		
+	    p=(100+profit)/100;
+		sellingprice=p*costprice;
+
+	question32 = {
+		'type': 'single',
+		'id': '0432',
+		'question': 'Ramesh bought a chair for RS ' + costprice + ' and sold it suressh ,if ramesh earned a profit of ' + profit + '% profit.what is the sellingprice of chair',
+		'options': {
+			'A': sellingprice+ parseInt(Math.random()*10), 
+			'B': sellingprice - parseInt(Math.random()*10),
+			'C': sellingprice ,
+			'D': sellingprice - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question32;
+	
+}
 	
 	
