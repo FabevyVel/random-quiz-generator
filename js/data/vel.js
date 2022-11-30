@@ -29,7 +29,7 @@ function problem1620(){
 						},
 		
 		]
-	}
+	
 		
 		randomIndex = getRandomNumber(inputData.length),
 		a= inputData[randomIndex]['a'],
