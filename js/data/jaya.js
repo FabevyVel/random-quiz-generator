@@ -1975,5 +1975,61 @@ function problem0439(){
     }
 	return question39;
 }
+function problem0440()
+{
+	var inputData = [{
+		't': 150,
+		'b': 2,
+		's': 5
+		},
+		{
+		't': 120,
+		'b': 3,
+			's': 7
+		},
+		{
+		't': 110,
+		'b': 4,
+		's': 8
+		},
+		{
+		't': 140,
+		'b': 3,
+			's': 6
+		},
+		{
+		't': 180,
+		'b': 2,
+			's': 5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		t= inputData[randomIndex]['t'],
+		b= inputData[randomIndex]['b'],
+		s= inputData[randomIndex]['s'],
+		p,
+		question40 = {};
+
+	p=(total-(b*4+s*6))*100/total;
+	p=parseFloat(p);
+
+	question40= {
+		'type': 'single',
+		'id': '0440',
+		'question': "A batsman scored "+t+" runs which included "+b+" boundaries and "+s+" sixes. What percent of his total score did he make by running between the wickets?",
+		'options': {
+			'A': p- parseInt(Math.random()*10),
+			'B': p+ parseInt(Math.random()*10),
+			'C': p- parseInt(Math.random()*10),
+			'D': p
+		},
+		'answer': 'D',
+		'author-id': '04'
+	}
+	
+	return question40;
+	
+}
+
+
 	
 	
