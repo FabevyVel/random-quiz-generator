@@ -757,9 +757,7 @@ function problem1415(){
 	}
 	
 	return question;
-	
-<<<<<<<< HEAD:dheepika/js/data/dheep.js
-========
+
 }
 
 
@@ -982,7 +980,6 @@ function problem1420(){
 		}
 	
 	return question;
->>>>>>>> 8ace16682ce43666d7c9ff004aaafc2d4a9f2323:js/data/venkat.js
 }
 
 
