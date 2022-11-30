@@ -1682,5 +1682,138 @@ function problem0433(){
 	return question33;
 	
 }
+function problem0434(){
+	var inputData = [{
+		'area':5,
+		'hec': 1.5,
+		},
+		{
+		'area':6,
+		'hec': 2.5,
+		},
+		{
+        'area':7,
+		'hec':3.5,
+		},
+		{
+			'area':8,
+		'hec': 1.5,
+		},
+		{
+        'area':7,
+		'hec': 1.5,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		area= inputData[randomIndex]['area'],
+		hec = inputData[randomIndex]['hec'],
+		volume,
+		question34 = {};
+
+	area=parseInt(area);
+	hec=parseInt(hec);
+	volume=(area*hec);
+
+	question34 = {
+		'type': 'single',
+		'id': '0434',
+		'question': 'In a shower' +area+ 'of rain falls The volume of water that falls on' +hec+ 'of ground is',
+		'options': {
+			 'A':volume,
+             'B':volume - parseInt(Math.random()*10),
+             'C' :volume+parseInt(Math.random()*10),
+			'D': volume+parseInt(Math.random()*10),
+		},
+		'answer': 'A',
+		'author-id': '04'
+	}
+	
+	return question34;
+}
+function problem0435(){
+	var inputData = [{
+		'value': 2	
+		},
+		{
+			'value': 4
+		},
+		{
+			'value': 6	
+		},
+		{
+			'value': 12		
+		},
+		{
+			'value': 8	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		value= inputData[randomIndex]['value'],
+		squareRoot,
+		question35 = {};
+
+	value=parseInt(value);
+	squareRoot=Math.sqrt(value);
+
+	question35 = {
+		'type': 'single',
+		'id': '0435',
+		'question': 'Find the square root value of '+ value+'? ',
+		'options': {
+			'A':squareRoot - parseInt(Math.random()*10),
+			'B': squareRoot - parseInt(Math.random()*10),
+			'C': squareRoot ,
+			'D':  squareRoot+ parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question35;
+	
+}
+function problem0436(){
+	var inputData = [{
+        'perimeter':414,
+		'breath':5,
+		},
+		{
+        'perimeter':316,
+		'breath':3,
+		},
+		{
+        'perimeter':316,
+		'breath':4,
+		},
+		
+		{
+		'perimeter':236,
+		'breath':5,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+	       perimeter= inputData[randomIndex]['perimeter'],
+         breath= inputData[randomIndex]['breath'],
+		area,
+		question36 = {};
+
+	perimeter=parseInt(perimeter);
+	breath=parseInt(breath);
+	length*breath,
+	area=(length+breath/breath),
+
+	question36 = {
+		'type': 'single',
+		'id': '0436',
+		'question': 'The ratio between the' +perimeter+ 'and the' +breath+ 'of a is If the area of the rectangle is what is the length of the rectangle', 
+		'options': {
+			'A': area ,
+			'B': area - parseInt(Math.random()*10),
+			'C': area + parseInt(Math.random()*10),
+			'D': area* parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '04'
+	}
+	
+	return question36;
+}
 	
 	
