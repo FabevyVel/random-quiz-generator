@@ -1815,5 +1815,120 @@ function problem0436(){
 	
 	return question36;
 }
+function problem0437(){
+	var inputData = [{
+		'profit': 65,
+		'costprice': 1400
+		},
+		{
+		'profit': 55,
+		'costprice': 1200
+		},
+		{
+		'profit': 25,
+		'costprice': 1500
+		},
+		{
+		'profit': 85,
+		'costprice': 1600
+		},
+		{
+		'profit': 45,
+		'costprice': 1800
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		profit= inputData[randomIndex]['profit'],
+		costprice= inputData[randomIndex]['costprice'],
+		sellingprice,
+		question37 = {};
+
+	profit=parseInt(profit);
+	costprice=parseInt(costprice);
+	sellingprice=(((100/profit)/100)*costprice)
+
+	question37 = {
+		'type': 'single',
+		'id': '0437',
+		'question': 'A shopkeeper bought a clock for rs'  + costprice + 'at what price should he sell the watch to earn a profit of'+profit,
+		'options': {
+			'A': sellingprice,
+			'B': sellingprice-parseInt(Math.random()*10),
+			'C': sellingprice+parseInt(Math.random()*10),
+			'D': sellingprice-parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '04'
+	}
+	
+	return question37;
+	
+}
+function problem0438(){
+	var inputData = [{
+		'sub1':5,
+		'sub2': 6,
+		'a1':65,
+		'a2':64
+		},
+		{
+		'sub1':4,
+		'sub2': 5,
+		'a1':85,
+		'a2':75
+		},
+		{
+		'sub1':7,
+		'sub2': 9,
+		'a1':5,
+		'a2':73
+		},
+		{
+		'sub1':6,
+		'sub2': 5,
+		'a1':7,
+		'a2':2
+		},
+		{
+		'sub1':6,
+		'sub2': 5,
+		'a1':75,
+		'a2':55
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    sub1= inputData[randomIndex]['sub1'],
+		sub2 = inputData[randomIndex]['sub2'],
+    	a1= inputData[randomIndex]['a1'],
+	    a2= inputData[randomIndex]['a2'],
+	    themarks1,
+	    themarks2,
+	    mark,
+		question38 = {};
+		
+	    sub1=parseInt(sub1);
+		sub2=parseInt(sub2);
+		a1=parseInt(a1);
+		a2=parseInt(a2);
+	    themarks1=a1*sub1;
+        themarks2=a2*sub2;
+		mark=themarks1-themarks2;
+	question38 = {
+		'type': 'single',
+		'id': '0438',
+		'question': ' A karthik secures average of  '   +   a1 +  'marks in  '  +sub1 + 'subjects if the average of amrks in    '+sub2+'is  '+a2+'how many marks did he secure in the 6th subject?',
+		'options': {
+			'A': mark-parseInt(Math.random()*10),
+			'B': mark,
+			'C': mark-parseInt(Math.random()*10),
+			'D': mark+parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '04'
+	}
+	
+	return question38;
+	
+}
+
 	
 	
