@@ -1745,6 +1745,59 @@ function problem1133(){
     }
 	return question;
 }
+function problem1134(){
+	var inputData = [{
+		'p': 240,
+		'n': 120,
+		'r':44
+		},
+		{
+		'p': 980,
+		'n': 67,
+		'r':10		
+		},
+		{
+		'p': 345,
+		'n': 78,
+		'r': 6
+		},
+		{
+		'p': 567,
+		'n': 16,
+		'r': 12
+		},
+		{
+		'p':789,
+		'n': 2,
+		'r':16
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    p = inputData[randomIndex]['p'],
+		n = inputData[randomIndex]['n'],
+		r = inputData[randomIndex]['r'],
+		intrest,
+		question = {};
+
+	p = parseInt(p);
+    n = parseInt(n);
+    r = parseInt(r);
+    intrest=p*n*r/100;
+	
+	question = {
+		'type': 'intrestngle',
+		'id': '1134',
+		'question': 'Find the intrestmple interest when ' + p + ' rs rate of interest ' + r + ' percentage per annum, time ' + n + ' years.',
+		'options': {
+			'A': intrest - parseInt(Math.random()*10),
+			'B': intrest + parseInt(Math.random()*10),
+			'C': intrest + parseInt(Math.random()*10),
+			'D': intrest 
+		},
+		'answer': 'D',
+		'author-id': '11'
+    }
+	return question;
+}
 
 
 
