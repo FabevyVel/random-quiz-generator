@@ -1469,5 +1469,51 @@ function problem0428(){
 	return question28;
 		
 }
+function problem0429(){
+	var inputData = [
+		{
+		'distance':10,
+		'speed': 400
+		},
+		{
+		'distance':20,
+		'speed': 600
+		},
+		{
+		'distance':15,
+		'speed': 300
+		},
+		{
+		'distance':25,
+		'speed': 200
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		distance= inputData[randomIndex]['distance'],
+    	time,
+		question29 = {};
+		
+	    speed=parseInt(speed*5/18);
+		distance=parseInt(distance);
+		time=(distance/speed);
+		
+	question29 = {
+		'type': 'single',
+		'id': '0429',
+		'question': 'A van is running at a speed of '+ speed +' km/hr. In what time he will cross a track of length '+ distance+' meters?',
+		'options': {
+			'A':  time,
+			'B':  time-parseInt(Math.random()*10),
+			'C':  time+parseInt(Math.random()*10),
+			'D':  time-parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '04'
+	}
+	
+	return question29;
+	
+}
 	
 	
