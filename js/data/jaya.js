@@ -1682,5 +1682,52 @@ function problem0433(){
 	return question33;
 	
 }
+function problem0434(){
+	var inputData = [{
+		'area':5,
+		'hec': 1.5,
+		},
+		{
+		'area':6,
+		'hec': 2.5,
+		},
+		{
+        'area':7,
+		'hec':3.5,
+		},
+		{
+			'area':8,
+		'hec': 1.5,
+		},
+		{
+        'area':7,
+		'hec': 1.5,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		area= inputData[randomIndex]['area'],
+		hec = inputData[randomIndex]['hec'],
+		volume,
+		question34 = {};
+
+	area=parseInt(area);
+	hec=parseInt(hec);
+	volume=(area*hec);
+
+	question34 = {
+		'type': 'single',
+		'id': '0434',
+		'question': 'In a shower' +area+ 'of rain falls The volume of water that falls on' +hec+ 'of ground is',
+		'options': {
+			 'A':volume,
+             'B':volume - parseInt(Math.random()*10),
+             'C' :volume+parseInt(Math.random()*10),
+			'D': volume+parseInt(Math.random()*10),
+		},
+		'answer': 'A',
+		'author-id': '04'
+	}
+	
+	return question34;
+}
 	
 	
