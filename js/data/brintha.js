@@ -1128,6 +1128,65 @@ function problem0221(){
 	return question;
 	
 }
+
+// program  22	
+function problem0222(){
+	var inputData = [{
+		'interest': 8000,
+		'capital': 1550,
+		'amount': 50
+		},
+		{
+		'interest': 1000,
+		'capital': 100,
+		'amount': 3
+		},
+		{
+		'interest': 4530,
+		'capital': 1000,
+		'amount': 6
+		},
+		{
+		'interest': 5500,
+		'capital': 1400,
+		'amount': 8
+		},
+		{
+		'interest': 4320,
+		'capital': 300,
+		'amount': 8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		interest= inputData[randomIndex]['interest'],
+		capital= inputData[randomIndex]['capital'],
+		amount= inputData[randomIndex]['amount'],
+		count,
+		question = {};
+	
+	interest=parseInt(interest);
+	capital=parseInt(capital);
+	amount=parseInt(amount);
+	count= (interest*100)/(capital*amount);
+
+	question = {
+		'type': 'single',
+		'id': '0222',
+		'question': 'In how many years the simple interest on '+ capital +' at '+ amount +' rate of interest s.I will become '+ interest+'',
+		'options': {
+			'A': count - parseInt(Math.random()*10),
+			'B': count + parseInt(Math.random()*10),
+			'C': count - parseInt(Math.random()*10),
+			'D': count
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;
+}
+
+
+
 	
 
 	
