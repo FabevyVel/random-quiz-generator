@@ -1515,5 +1515,41 @@ function problem0429(){
 	return question29;
 	
 }
+function problem0430(){
+var inputData = [{
+		'no':2
+		},
+		{
+		'no':4
+		},
+		{
+		'no':6
+		},
+		{
+		'no':5
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+		no= inputData[randomIndex]['no'],
+		average ,
+		question30 = {};
+		
+    no=parseInt(no);
+	average=(2*(no+1)*(2*no+1)/3);
+	question30 = {
+		'type': 'single',
+		'id': '0430',
+		'question': 'The average of square of first '+ no +' consecutive even numbers is:',
+		'options': {
+			'A': average + parseInt(Math.random()*10),
+			'B': average, 
+			'C': average- parseInt(Math.random()*10),
+			'D': average - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '04'
+	}
+	
+	return question30;
+}
 	
 	
