@@ -1929,6 +1929,51 @@ function problem0438(){
 	return question38;
 	
 }
+function problem0439(){
+	var inputData = [{
+		't': 25,
+		'b': 3/5
+		},
+		{
+		't': 80,
+			'b': 4/5
+		},
+		{
+		't': 70,
+			'b': 2/5
+		},
+		{
+		't': 85,
+			'b': 6/5
+		},
+		{
+		't': 90,
+			'b': 8/5
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    t= inputData[randomIndex]['t'],
+		b = inputData[randomIndex]['b'],
+		n,
+		question39 = {};
 
+	t = parseInt(t);
+    b= parseFloat(b);
+    n = t/b;
+
+	question39 = {
+		'type': 'single',
+		'id': '0439',
+		'question': 'To fill a tank ' + t + 'buckets of water is required. How many buckets of water will be required to fill the same tank if the capacity of the bucket is reduced to ' + b + ' two fifth of its present?',
+		'options': {
+			'A': n * parseFloat(Math.random()*10),
+			'B': n + parseFloat(Math.random()*10),
+			'C': n- parseFloat(Math.random()*10),
+			'D': n 
+		},
+		'answer': 'D',
+		'author-id': '04'
+    }
+	return question39;
+}
 	
 	
