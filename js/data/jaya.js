@@ -1060,6 +1060,104 @@ function problem0421(){
 	return question21;
 	
 }
+function problem0421(){
+	var inputData = [{
+		'speed':90,
+		'time': 10,
+		'time2': 4
+		},
+		{
+		'speed':80,
+		'time': 6,
+		'time2': 5
+		},
+		{
+		'speed':60,
+		'time': 4,
+		'time2': 2
+		},
+		{
+		'speed':40,
+		'time': 2,
+		'time2': 3
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speed= inputData[randomIndex]['speed'],
+		time = inputData[randomIndex]['time'],
+		time2 = inputData[randomIndex]['time2'],
+		distance,
+		speed2,
+		speed1,
+		question21 = {};
+		
+	
+	distance=speed1*time;
+	speed2=distance/time2;
+	speed1=speed2-speed;
+
+	question21 = {
+		'type': 'single',
+		'id': '0421',
+		'question': 'A car covers its journey at the speed of' + speed + ' km/hour in' + time +' hours. If the same distance is to be covered in'
+						+ time2 + 'hours, by how much the speed of car will have to increase?',
+		'options': {
+			'A': speed1 - parseInt(Math.random()*10),
+			'B': speed1,
+			'C': speed1 + parseInt(Math.random()*10),
+			'D': speed1 - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '04'
+	}
+	
+	return question21;
+	
+}
+function problem0422(){
+	var inputData = [{
+		'speed1':75,
+		'time1': 20
+		},
+		{
+		'speed1':105,
+		'time1': 10
+		},
+		{
+		'speed1':85,
+		'time1': 25
+		},
+		{
+		'speed1':65,
+			'time1': 8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speed1 = inputData[randomIndex]['speed1'],
+		time1 = inputData[randomIndex]['time1'],
+		speed,
+		distance1,
+		question22 = {};
+		
+		
+	speed=speed1*5/18;
+	distance1=speed*time1;
+
+	question22 = {
+		'type': 'single',
+		'id': '0422',
+		'question': 'What distance will be covered by a bus moving at'+ speed1 +' kmph in' + time1 +' seconds?' ,
+		'options': {
+			'A': distance1 - parseInt(Math.random()*10),
+			'B': distance1+ parseInt(Math.random()*10),
+			'C': distance1, 
+			'D': distance1 - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '04'
+	}
+	
+	return question22;
+	
+}
 		
 		
 		
