@@ -1345,6 +1345,50 @@ function problem0225(){
 	return question;	
 }
 
+// program 26
+function problem0226(){
+	var inputData = [{
+		'num': 8534,		
+		},
+		{
+		'num': 8345,
+		},
+		{
+		'num': 2456,	
+		},
+		{
+		'num': 7835,		
+		},
+		{
+		'num': 9235,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		num= inputData[randomIndex]['num'],
+		multi,
+		question = {};
+
+	num=parseInt(num);
+	multi=parseInt(multi);
+
+	question = {
+		'type': 'single',
+		'id': '0226',
+		'question': 'find the cube root value of '+ num+' ',
+		'options': {
+			'A':multi,
+			'B':multi - parseInt(Math.random()*10),
+			'C':multi + parseInt(Math.random()*10),
+			'D':multi - parseInt(Math.random()*10),
+		},
+		'answer': 'A',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+
+
 
   
 
