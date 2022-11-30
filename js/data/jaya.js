@@ -1815,5 +1815,53 @@ function problem0436(){
 	
 	return question36;
 }
+function problem0437(){
+	var inputData = [{
+		'profit': 65,
+		'costprice': 1400
+		},
+		{
+		'profit': 55,
+		'costprice': 1200
+		},
+		{
+		'profit': 25,
+		'costprice': 1500
+		},
+		{
+		'profit': 85,
+		'costprice': 1600
+		},
+		{
+		'profit': 45,
+		'costprice': 1800
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		profit= inputData[randomIndex]['profit'],
+		costprice= inputData[randomIndex]['costprice'],
+		sellingprice,
+		question37 = {};
+
+	profit=parseInt(profit);
+	costprice=parseInt(costprice);
+	sellingprice=(((100/profit)/100)*costprice)
+
+	question37 = {
+		'type': 'single',
+		'id': '0437',
+		'question': 'A shopkeeper bought a clock for rs'  + costprice + 'at what price should he sell the watch to earn a profit of'+profit,
+		'options': {
+			'A': sellingprice,
+			'B': sellingprice-parseInt(Math.random()*10),
+			'C': sellingprice+parseInt(Math.random()*10),
+			'D': sellingprice-parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '04'
+	}
+	
+	return question37;
+	
+}
 	
 	
