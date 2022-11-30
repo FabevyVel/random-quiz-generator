@@ -1158,6 +1158,50 @@ function problem0422(){
 	return question22;
 	
 }
+function problem0423(){
+	var inputData = [{
+		'sellprofit':672,
+		'costprofit': 450
+		},
+		{
+		'sellprofit':872,
+		'costprofit': 114
+		},
+		{
+		'sellprofit':672,
+		'costprofit': 700
+		},
+		{
+		'sellprofit':872,
+		'costprofit': 155
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		sellprofit = inputData[randomIndex]['sellprofit'],
+		costprofit = inputData[randomIndex]['costprofit'],
+		profit,
+		profitpercentage,
+		question23 = {};
+	
+	profit=sellprofit-costprofit;
+	profitpercentage=(profit/costprofit)*100;
+
+	question23 = {
+		'type': 'single',
+		'id': '0423',
+		'question':'An article is bought for Rs.' + sellprofit + 'and sold for Rs.' + costprofit + '. What is the gain percentage?',
+		'options': {
+			'A': profitpercentage - parseFloat(Math.random()*10),
+			'B': profitpercentage + parseInt(Math.random()*10),
+			'C': profitpercentage+ parseInt(Math.random()*10),
+			'D': profitpercentage 
+		},
+		'answer': 'D',
+		'author-id': '04'
+	}
+	
+	return question23;
+	
+}
 		
 		
 		
