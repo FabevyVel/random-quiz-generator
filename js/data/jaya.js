@@ -1770,5 +1770,50 @@ function problem0435(){
 	return question35;
 	
 }
+function problem0436(){
+	var inputData = [{
+        'perimeter':414,
+		'breath':5,
+		},
+		{
+        'perimeter':316,
+		'breath':3,
+		},
+		{
+        'perimeter':316,
+		'breath':4,
+		},
+		
+		{
+		'perimeter':236,
+		'breath':5,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+	       perimeter= inputData[randomIndex]['perimeter'],
+         breath= inputData[randomIndex]['breath'],
+		area,
+		question36 = {};
+
+	perimeter=parseInt(perimeter);
+	breath=parseInt(breath);
+	length*breath,
+	area=(length+breath/breath),
+
+	question36 = {
+		'type': 'single',
+		'id': '0436',
+		'question': 'The ratio between the' +perimeter+ 'and the' +breath+ 'of a is If the area of the rectangle is what is the length of the rectangle', 
+		'options': {
+			'A': area ,
+			'B': area - parseInt(Math.random()*10),
+			'C': area + parseInt(Math.random()*10),
+			'D': area* parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '04'
+	}
+	
+	return question36;
+}
 	
 	
