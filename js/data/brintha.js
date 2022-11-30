@@ -1294,6 +1294,58 @@ function problem0224(){
 	
 }
 
+  // program25
+
+
+function problem0225(){
+	var inputData = [{
+		'height': 54,
+		'bottom': 20
+		},
+		{
+		'height': 20,
+		'bottom': 18
+		},
+		{
+		'height': 88,
+		'bottom': 32
+		},
+		{
+		'height': 60,
+		'bottom': 30
+		},
+		{
+		'height': 20,
+		'bottom': 2
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		height = inputData[randomIndex]['height'],
+		bottom = inputData[randomIndex]['bottom'],
+		total,
+		question = {};
+
+	height = parseInt (height);
+	bottom = parseInt (bottom);
+	total = 2*(height+bottom);
+
+	question = {
+		'type': 'single',
+		'id': '0225',
+		'question': '  calculate the total of the Rectangle with length '+ height +' cm and breadth'+ bottom + 'cm .',
+		'options': {
+			'A': total + parseInt(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total - parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;	
+}
+
+
   
 
 	
