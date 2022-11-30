@@ -1963,7 +1963,151 @@ function problem1137(){
 	return question;
 	
 }
+function problem1138(){
+	var inputData = [{
+		'children':4,
+		'age': 70,
+		'years':5
+		},
+		{
+		'children':6,
+		'age': 90,
+		'years':3
+		},
+		{
+		'children':7,
+		'age': 60,
+		'years':3
+		},
+		{
+		'children':5,
+		'age': 30,
+		'years':3
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		children = inputData[randomIndex]['children'],
+		age = inputData[randomIndex]['age'],
+		years = inputData[randomIndex]['years'],
+		interval,
+		x1,
+		young,
+		profit_percentage,
+		question = {};
+		
+	children = parseInt(children);
+	age = parseInt(age);
+	years = parseInt(years);
+	interval=(age*age*age)+age;
+	x1=years-interval;
+	young=x1/children;
 
+	question = {
+		'type': 'single',
+		'id': '1138',
+		'question':'The sum of ages of'+ children + 'children born at the intervals of' + years + 'years each is'+ age + 'years. What is the age of the youngest child?',
+		'options': {
+			'A': young - parseFloat(Math.random()*10),
+			'B': young,
+			'C': young + parseFloat(Math.random()*10),
+			'D': young - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
+function problem1139(){
+	var inputData = [{
+		'sellprofit':78,
+		'costprofit': 80
+		},
+		{
+		'sellprofit':85,
+		'costprofit': 140
+		},
+		{
+		'sellprofit':75,
+		'costprofit': 300
+		},
+		{
+		'sellprofit':65,
+		'costprofit': 100
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		sellprofit = inputData[randomIndex]['sellprofit'],
+		costprofit = inputData[randomIndex]['costprofit'],
+		profit,
+		profit_percentage,
+		question = {};
+	
+	sellprofit = parseInt(sellprofit);
+	costprofit = parseInt(costprofit);
+	profit=sellprofit-costprofit;
+	profit_percentage=(profit/costprofit)*100;
 
+	question = {
+		'type': 'single',
+		'id': '1139',
+		'question':'An article is bought for Rs.' + sellprofit + 'and sold for Rs.' + costprofit + '. What is the gain percentage?',
+		'options': {
+			'A': profit_percentage - parseFloat(Math.random()*10),
+			'B': profit_percentage + parseInt(Math.random()*10),
+			'C': profit_percentage,
+			'D': profit_percentage + parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
+function problem1140(){
+	var inputData = [{
+		'speed':78,
+		'time': 30
+		},
+		{
+		'speed':19,
+		'time': 25
+		},
+		{
+		'speed':23,
+		'time': 25
+		},
+		{
+		'speed':54,
+		'time': 19
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speed = inputData[randomIndex]['speed'],
+		time = inputData[randomIndex]['time'],
+		speed1,
+		distance,
+		question = {};
+		
+	speed = parseInt(speed);
+	time = parseInt(time);	
+	speed1=speed*5/18;
+	distance=speed1*time;
 
+	question = {
+		'type': 'single',
+		'id': '1140',
+		'question': 'What distance will be covered by a bus moving at'+ speed +' kmph in' + time +' seconds?' ,
+		'options': {
+			'A': distance - parseInt(Math.random()*10),
+			'B': distance - parseInt(Math.random()*10),
+			'C': distance + parseInt(Math.random()*10),
+			'D': distance
+		},
+		'answer': 'D',
+		'author-id': '11'
+	}
+	
+	return question;
+	
+}
 	

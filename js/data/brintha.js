@@ -1128,6 +1128,534 @@ function problem0221(){
 	return question;
 	
 }
+
+// program  22	
+function problem0222(){
+	var inputData = [{
+		'interest': 8000,
+		'capital': 1550,
+		'amount': 50
+		},
+		{
+		'interest': 1000,
+		'capital': 100,
+		'amount': 3
+		},
+		{
+		'interest': 4530,
+		'capital': 1000,
+		'amount': 6
+		},
+		{
+		'interest': 5500,
+		'capital': 1400,
+		'amount': 8
+		},
+		{
+		'interest': 4320,
+		'capital': 300,
+		'amount': 8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		interest= inputData[randomIndex]['interest'],
+		capital= inputData[randomIndex]['capital'],
+		amount= inputData[randomIndex]['amount'],
+		count,
+		question = {};
+	
+	interest=parseInt(interest);
+	capital=parseInt(capital);
+	amount=parseInt(amount);
+	count= (interest*100)/(capital*amount);
+
+	question = {
+		'type': 'single',
+		'id': '0222',
+		'question': 'In how many years the simple interest on '+ capital +' at '+ amount +' rate of interest s.I will become '+ interest+'',
+		'options': {
+			'A': count - parseInt(Math.random()*10),
+			'B': count + parseInt(Math.random()*10),
+			'C': count - parseInt(Math.random()*10),
+			'D': count
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;
+}
+
+
+// program 23
+
+
+
+function problem0223(){
+	var inputData = [{
+		'price': 1000,
+		'gain': 35
+		},
+		{
+		'price': 600,
+		'gain': 15
+		},
+		{
+		'price': 1335,
+			'gain': 65
+		},
+		{
+		'price': 208,
+		'gain': 32
+		},
+		{
+		'price': 605,
+		'gain': 65
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		price= inputData[randomIndex]['price'],
+		gain = inputData[randomIndex]['gain'],
+		cost,
+		question = {};
+
+
+	price = parseInt(price);
+	gain = parseInt(gain);
+	cost = (100/(100+gain)*price);
+
+
+	question = {
+		'type': 'single',
+		'id': '0223',
+		'question': 'banu purchase cell phone from a shop. If he sells at Rs' + price +'and earns a profit of '+ gain  +'. Find the cost price of the cell phone.',
+		'options': {
+			'A': cost + parseInt(Math.random()*10),
+			'B': cost,
+			'C': cost + parseInt(Math.random()*10),
+			'D': cost - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '02'
+	}
+	
+	return question;
+		
+}
+
+// program24
+function problem0224(){
+		var inputData = [{
+			'start':64,
+			'end':2
+			},
+			{
+			'start':90,
+				'end':8
+			},
+			{
+			'start': 21,
+				'end':4
+			},
+			
+			{
+			'start': 203,
+			'end':50
+			}],
+			randomIndex = getRandomNumber(inputData.length),
+			start= inputData[randomIndex]['start'],
+			end= inputData[randomIndex]['end'],
+		    
+			
+			count=100;
+		 
+			start=parseInt(start);
+		    start=count*(start+count)/count;
+			
+			end=parseInt(end);
+			total=(100+end)/100*count;
+			main=(start-total)*count/start;
+		
+			question12 = {};
+			
+			
+	  question12 = {
+			'type': 'single',
+			'id': '0224 ',
+			'question': 'A trader keeps the marked price of an item '+start+'% above its cost price. The percentage of discount allowed to gain '+end+'% is',
+			'options': {
+				'A':main-parseInt(Math.random()*10),
+				'B':main+parseInt(Math.random()*10),
+				'C':main-parseInt(Math.random()*10),
+				'D':main
+			},
+			'answer': 'D',
+			'author-id': '02'
+		}
+		return question12 ;
+	
+}
+
+  // program25
+
+
+function problem0225(){
+	var inputData = [{
+		'height': 54,
+		'bottom': 20
+		},
+		{
+		'height': 20,
+		'bottom': 18
+		},
+		{
+		'height': 88,
+		'bottom': 32
+		},
+		{
+		'height': 60,
+		'bottom': 30
+		},
+		{
+		'height': 20,
+		'bottom': 2
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		height = inputData[randomIndex]['height'],
+		bottom = inputData[randomIndex]['bottom'],
+		total,
+		question = {};
+
+	height = parseInt (height);
+	bottom = parseInt (bottom);
+	total = 2*(height+bottom);
+
+	question = {
+		'type': 'single',
+		'id': '0225',
+		'question': '  calculate the total of the Rectangle with length '+ height +' cm and breadth'+ bottom + 'cm .',
+		'options': {
+			'A': total + parseInt(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total - parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;	
+}
+
+// program 26
+function problem0226(){
+	var inputData = [{
+		'num': 8534,		
+		},
+		{
+		'num': 8345,
+		},
+		{
+		'num': 2456,	
+		},
+		{
+		'num': 7835,		
+		},
+		{
+		'num': 9235,	
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		num= inputData[randomIndex]['num'],
+		multi,
+		question = {};
+
+	num=parseInt(num);
+	multi=parseInt(multi);
+
+	question = {
+		'type': 'single',
+		'id': '0226',
+		'question': 'find the cube root value of '+ num+' ',
+		'options': {
+			'A':multi,
+			'B':multi - parseInt(Math.random()*10),
+			'C':multi + parseInt(Math.random()*10),
+			'D':multi - parseInt(Math.random()*10),
+		},
+		'answer': 'A',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+
+// program27
+
+function problem0227(){
+	var inputData = [{
+		'cp': 7000,
+		'gp': 20
+		},
+		{
+		'cp': 2500,
+			'gp': 15
+		},
+		{
+		'cp': 4300,
+			'gp': 200
+		},
+		{
+		'cp': 2000,
+		'gp': 63
+		},
+		{
+		'cp': 3090,
+		'gp': 30
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+		cp= inputData[randomIndex]['cp'],
+		gp = inputData[randomIndex]['gp'],
+		sp,
+		question = {};
+		
+    cp=parseInt(cp);
+	gp=parseInt(gp);
+	sp=((100+gp)/100)*cp;
+
+	question = {
+		'type': 'single',
+		'id': '0227',
+		'question': 'kavi bought a chair for '+ cp +' and sold it to banu. If kavi earned a profit of '+ gp+'%, find the selling price of chair.',
+		'options': {
+			'A': sp - parseInt(Math.random()*10),
+			'B': sp,
+			'C': sp + parseInt(Math.random()*10),
+			'D': sp - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}	
+
+// program 28
+function problem0228(){
+	var inputData = [{
+		'boy':50,
+		'years': 20,
+		'leave': 17,
+		'new_1': 13.5
+		},
+		{
+		'boy': 70,
+		'years': 10,
+		'leave': 2,
+		'new_1': 70.4
+		},
+		{
+		'boy': 10,
+		'years': 93,
+		'leave': 16,
+		'new_1':70.7
+		},
+		{
+		'boy':70,
+		'years': 96,
+		'leave': 79,
+		'new_1': 18.8
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		boy = inputData[randomIndex]['boy'],
+		years = inputData[randomIndex]['years'],
+		leave = inputData[randomIndex]['leave'],
+		new_1 = inputData[randomIndex]['new_1'],
+		average,
+		total,
+		question = {};
+	
+
+	average=boy*years;
+	total=(new_1*boy)-average+leave;
+
+
+	question = {
+		'type': 'single',
+		'id': '0228',
+		'question': 'Average age of a group of' + boy + 'boys is' + years + 'years. A boy of age' + leave + 
+					'leaves the group and a new boy joins the group. If the new average age of the group is' + new_1 + 
+					'years, find the age of the new boy.',
+		'options': {
+			'A': total - parseFloat(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+
+// program 29
+
+function problem0229(){
+	var inputData = [{
+		'bill':25,
+		'reduce': 130
+		},
+		{
+		'bill':30,
+		'reduce': 200
+		},
+		{
+		'bill':40,
+		'reduce': 150
+		},
+		{
+		'bill':20,
+		'reduce': 100
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		bill= inputData[randomIndex]['bill'],
+		reduce = inputData[randomIndex]['reduce'],
+		total,
+		question = {};
+	
+	
+	pay=reduce-bill;
+	total=(reduce/pay)*100;
+
+	question = {
+		'type': 'single',
+		'id': '0229',
+		'question': 'the' + bill + ' of an electricity bill is deducted then rs' + reduce + 'is still to be paid .How much was the total bill',
+		'options': {
+			'A': total + parseInt(Math.random()*10),
+			'B': total,
+			'C': total + parseInt(Math.random()*10),
+			'D': total - parseFloat(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+
+// program 30
+function problem0230(){
+	var inputData = [{
+		'first':30,
+		'book': 1000,
+		'time': 5
+		},
+		{
+		'first':20,
+		'book': 200,
+		'time': 5
+		},
+		{
+		'first':80,
+		'book': 250,
+		'time': 2
+		},
+		{
+		'first':60,
+		'book': 300,
+			'time': 9
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		first= inputData[randomIndex]['first'],
+		book = inputData[randomIndex]['book'],
+		time = inputData[randomIndex]['time'],
+		average,
+		total,
+		question = {};
+	
+	
+	average=book/first;
+	total=average/time;
+
+	question = {
+		'type': 'single',
+		'id': '0230',
+		'question': + first + 'typists can type' + book + 'pages in' + time + 
+					'hours.Find the average number of pages typed by each typist in an hour.',
+		'options': {
+			'A': total + parseInt(Math.random()*10),
+			'B': total - parseInt(Math.random()*10),
+			'C': total + parseInt(Math.random()*10),
+			'D': total
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+
+
+// program 31
+
+function problem0231(){
+	var inputData = [{
+		'calc': 300,
+		'amount': 81,
+		'hour': 2
+		},
+		{
+		'calc': 550,
+		'amount': 20,
+			'hour': 4
+		},
+		{
+		'calc': 854,
+		'amount': 83,
+			'hour': 9
+		},
+		{
+		'calc': 900,
+		'amount': 80,
+			'hour': 3
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+		calc= inputData[randomIndex]['calc'],
+		hour = inputData[randomIndex]['hour'],
+		amount = inputData[randomIndex]['amount'],
+		si,
+		question = {};
+
+	calc=parseInt(calc);
+	hour=parseInt(hour);
+		amount=parseInt(amount);
+	si=(calc*hour*amount/100);
+
+	question = {
+		'type': 'single',
+		'id': '0231',
+		'question': 'How much time will it take for an' +calc+ 'to yield' +hour+ 'as interest at' +amount+ 'P.A of simple interest',
+		'options': {
+			'A':si + parseInt(Math.random()*10),
+			'B':si + parseInt(Math.random()*10),
+            'C' :si + parseInt(Math.random()*10),
+			'D':si
+		},
+		'answer': 'D',
+		'author-id': '02'
+	}
+	
+	return question;
+}
+
+
+
+  
+
 	
 
 	
