@@ -1072,6 +1072,64 @@ function problem220(){
 }
 return question;
 }
+
+// program 21
+
+function problem0221(){
+	var inputData = [{
+		'distanceStart':200,
+		'time': 74,
+		'distanceEnd':350
+	     },
+		 {
+		'distanceStart':640,
+		'time': 94,
+		'distanceEnd':700
+		},
+		{
+		'distanceStart':200,
+		'time': 20,
+		'distanceEnd':900
+		},
+		{
+		'distanceStart':340,
+		'time': 14,
+		'distanceEnd':490
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    distanceStart = inputData[randomIndex]['distanceStart'],
+		time = inputData[randomIndex]['time'],
+    	distanceEnd = inputData[randomIndex]['distanceEnd'],
+	    speed,
+	    total,
+		question = {};
+		
+	    distance=parseInt(distanceStart);
+		time=parseInt(time);
+		distanceEnd=parseInt(distanceEnd);
+		speed=distanceStart/time;
+	    total=((distanceStart+distanceEnd)/speed);
+
+
+	question = {
+		'type': 'single',
+		'id': '0221',
+		'question': 'A train '+distanceStart+' m long passes a pole in '+time+' seconds. How long will it take to pass a platform '+distanceEnd+' m long',
+		'options': {
+			'A': time - parseInt(Math.random()*10),
+			'B': time + parseInt(Math.random()*10),
+			'C': time,
+			'D': time - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '02'
+	}
+	
+	return question;
+	
+}
+	
+
 	
 	
 
