@@ -1571,3 +1571,57 @@ function problem0932(){
 		}
 		return question;	
 }
+function problem0933(){
+	var inputData = [{
+		'sum': 550,
+		'rate': 60,
+		'time': 6
+		},
+		{
+		'sum': 400,
+		'rate': 44,
+		'time': 3
+		},
+		{
+		'sum': 636,
+		'rate': 65,
+		'time': 4
+		},
+		{
+		'sum': 450,
+		'rate': 85,
+		'time': 3
+		},
+		{
+		'sum': 784,
+		'rate': 42,
+		'time': 3
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+	 sum= inputData[randomIndex]['sum'],
+	 time = inputData[randomIndex]['time'],
+	 rate = inputData[randomIndex]['rate'],
+	 si,
+	 question = {};
+
+	sum=parseInt(sum);
+	time=parseInt(time);
+	rate=parseInt(rate);
+	si=(sum*time*rate/100);
+
+	question = {
+		'type': 'single',
+		'id': '0933',
+		'question': 'How much time will it take for an' +sum+ 'to yield' +time+ 'as interest at' +rate+ 'per annum of simple interest',
+		'options': {
+			'A':si - parseInt(Math.random()*10),
+			'B':si + parseInt(Math.random()*10),
+			'C':si * parseInt(Math.random()*10),
+			'D':si 
+		},
+		'answer': 'D',
+		'author-id': '09'
+	}
+	
+	return question;
+}
