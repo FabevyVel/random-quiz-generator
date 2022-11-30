@@ -1186,6 +1186,61 @@ function problem0222(){
 }
 
 
+// program 23
+
+
+
+function problem0223(){
+	var inputData = [{
+		'price': 1000,
+		'gain': 35
+		},
+		{
+		'price': 600,
+		'gain': 15
+		},
+		{
+		'price': 1335,
+			'gain': 65
+		},
+		{
+		'price': 208,
+		'gain': 32
+		},
+		{
+		'price': 605,
+		'gain': 65
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		price= inputData[randomIndex]['price'],
+		gain = inputData[randomIndex]['gain'],
+		cost,
+		question = {};
+
+
+	price = parseInt(price);
+	gain = parseInt(gain);
+	cost = (100/(100+gain)*price);
+
+
+	question = {
+		'type': 'single',
+		'id': '0223',
+		'question': 'banu purchase cell phone from a shop. If he sells at Rs' + price +'and earns a profit of '+ gain  +'. Find the cost price of the cell phone.',
+		'options': {
+			'A': cost + parseInt(Math.random()*10),
+			'B': cost,
+			'C': cost + parseInt(Math.random()*10),
+			'D': cost - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '02'
+	}
+	
+	return question;
+		
+}
+
 
 	
 
