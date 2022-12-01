@@ -1,17 +1,17 @@
-var questionilank - { } 
+var questionilank = { } 
      funtionKeys = [ ], 
      questionSet = [ ], 
      randomKeyIndex,
      wrapperElement = document.getElementById ( 'wrapper')
      generatorButton document.getElementById('generate- questions' ),
      question Template = < header> <h2> </h2>   </header> <section > <ul> </ul> </section> 
-      //questionBank.push ( problem1401 ( ) ) ; // funtionkeys.push ( Object keys ( adhi ) ) ;
+      //questionBank.push ( problem061 ( ) ) ; // funtionkeys.push ( Object keys ( monisha ) ) ;
 	   function clearData ( ) 
 	  wrapperElement.innerHTML ="";
 	   questionBank =  {}; 
 	   funtionkeys = [ ]; 
 	   questionset = [ ]; 
-   }
+ 
    function createQuestionTemplate(questionObject) {
 	    let questionwrapper = document.createElement ('div');
 		     questionwrapper.classlist= 'question-wrapper';
@@ -27,3 +27,5 @@ var questionilank - { }
 			 for ( option questionobject.options ){
 				  let optionElement document.createElement ( 'li' );
 				  optionElement.innerText = option " : " + questionObject.option
+			 }
+   }

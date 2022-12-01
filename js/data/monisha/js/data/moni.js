@@ -4,7 +4,9 @@ function getRandomNumber(max){
 	return randomNumber;
 }
 
-"problem061"=function problem061(){
+var monisha = 
+{
+	"problem061"=function problem061(){
 	var inputData = [{
 		'distance': 10,
 		'speed': 60
@@ -990,4 +992,5 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
+}
 }
