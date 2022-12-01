@@ -3,8 +3,6 @@ function getRandomNumber(max){
 	randomNumber = parseInt(randomNumber);
 	return randomNumber;
 }
-
-
 function problem041(){
 	var inputData = [{
 		'distance': 600,
