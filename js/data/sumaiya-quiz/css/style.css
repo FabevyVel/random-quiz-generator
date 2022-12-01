@@ -1,0 +1,50 @@
+.header .wrapper
+{
+width:80%;
+
+}
+.banner .wrapper
+{
+width:80%;
+margin:auto;
+}
+.header
+{
+	margin:auto;
+	display:flex;
+	text-align:center;
+	justify-content:center;
+	height:200px;
+	width:15%;
+	height:30px;
+	padding-top:10px;
+	margin-top:100px;
+}
+.banner
+{
+	height:800px;
+	background-color:white;
+}
+.banner-fc
+{ 
+	
+	display:flex;
+	text-align:center;
+	justify-content:center;
+}
+.banner .banner-fc .boxs
+{
+
+}
+.banner .banner-fc .boxs .boxa
+{
+
+}
+.banner .banner-fc .boxs .boxb
+{
+
+}
+.banner .banner-fc .boxs .boxc
+{
+
+}
