@@ -3,8 +3,6 @@ function getRandomNumber(max){
 	randomNumber = parseInt(randomNumber);
 	return randomNumber;
 }
-
-
 function problem1201(){
 	var inputData = [{
 		'd1':240,
