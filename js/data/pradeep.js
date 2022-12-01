@@ -5,7 +5,7 @@ function getRandomNumber(max){
 }
 
 
-function problem091(){
+function problem0901(){
 	var inputData = [{
 		'distance': 35,
 		'time': 50
@@ -38,7 +38,7 @@ function problem091(){
 
 	question = {
 		'type': 'single',
-		'id': '091',
+		'id': '0901',
 		'question': 'A car travells a distance ' + distance + 'km at ' + time + ' sec. Calculate the speed of the train.',
 		'options': {
 			'A': speed,
@@ -54,7 +54,7 @@ function problem091(){
 	
 }
 
-function problem092(){
+function problem0902(){
 	var inputData = [{
 		'number': 5,
 		},
@@ -80,7 +80,7 @@ function problem092(){
 
 	question = {
 		'type': 'single',
-		'id': '092',
+		'id': '0902',
 		'question': 'find the average of first 10 ' + number + 'whole numbers.',
 		'options': {
 			'A': average + parseInt(Math.random()*10),
@@ -95,7 +95,7 @@ function problem092(){
 	return question;
 }
 
-function problem093(){
+function problem0903(){
 	var inputData = [{
 		'cp': 8000,
 		'lp': 10
@@ -128,7 +128,7 @@ function problem093(){
 
 	question = {
 		'type': 'single',
-		'id': '093',
+		'id': '0903',
 		'question': 'A man purchases TV for ' + cp + 'rs and sells it at ' + lp + ' loss percentage. what is the sp of the TV?',
 		'options': {
 			'A': sp - parseFloat(Math.random()*10),
@@ -141,7 +141,7 @@ function problem093(){
     }
 	return question;
 }
-function problem094(){
+function problem0904(){
 	var inputData = [{
 		'tankCap': 25,
 		'buckCap': 2/5
@@ -174,7 +174,7 @@ function problem094(){
 
 	question = {
 		'type': 'single',
-		'id': '094',
+		'id': '0904',
 		'question': 'To fill a tank ' + tankCap + 'buckets of water is required. How many buckets of water will be required to fill the same tank if the capacity of the bucket is reduced to ' + buckCap + ' two fifth of its present?',
 		'options': {
 			'A': nBuck * parseFloat(Math.random()*10),
@@ -187,7 +187,7 @@ function problem094(){
     }
 	return question;
 }
-function problem095(){
+function problem0905(){
 	var inputData = [{
 		'sp': 8400,
 		'pp': 12
@@ -220,7 +220,7 @@ function problem095(){
 
 	question = {
 		'type': 'single',
-		'id': '095',
+		'id': '0905',
 		'question': 'suresh bought a cell phone from a shop. If he sells it at ' + sp + ' rs to mahesh and earns a profit ' + pp + ' percentage . Find the price at which suresh bought the cell phone.',
 		'options': {
 			'A': cp * parseInt(Math.random()*10),
@@ -233,7 +233,7 @@ function problem095(){
     }
 	return question;
 }
-function problem096(){
+function problem0906(){
 	var inputData = [{
 		'us': 8,
 		'ds': 4
@@ -266,7 +266,7 @@ function problem096(){
 
 	question = {
 		'type': 'single',
-		'id': '096',
+		'id': '0906',
 		'question': 'In one hour a boat goes  ' + us + ' km/hr along stream and ' + ds + ' km/hr against the stream . The speed of boat in ' + ss +' in km/hr is.',
 		'options': {
 			'A': ss - parseInt(Math.random()*10),
@@ -279,7 +279,7 @@ function problem096(){
     }
 	return question;
 }
-function problem097(){
+function problem0907(){
 	var inputData = [{
 		'p': 12600,
 		'n': 2,
@@ -321,7 +321,7 @@ function problem097(){
 
 	question = {
 		'type': 'single',
-		'id': '097',
+		'id': '0907',
 		'question': 'Find the compound interest on' + p + ' rs for ' + n + ' years at ' + r + ' percentage per annum completed annualy.',
 		'options': {
 			'A': ci * parseInt(Math.random()*10),
@@ -334,7 +334,7 @@ function problem097(){
     }
 	return question;
 }
-function problem098(){
+function problem0908(){
 	var inputData = [{
 		'p': 45000,
 		'n': 6,
@@ -374,7 +374,7 @@ function problem098(){
 	
 	question = {
 		'type': 'single',
-		'id': '098',
+		'id': '0908',
 		'question': 'Find the simple interest when ' + p + ' rs rate of interest ' + r + ' percentage per annum, time ' + n + ' years.',
 		'options': {
 			'A': si - parseInt(Math.random()*10),
@@ -387,7 +387,7 @@ function problem098(){
     }
 	return question;
 }
-function problem099(){
+function problem0909(){
 	var inputData = [{
 		'l':8,
 		'b':4
@@ -420,7 +420,7 @@ function problem099(){
 	
 	question = {
 		'type': 'single',
-		'id': '099',
+		'id': '0909',
 		'question': 'If the length of rectangle is ' + l + ' m and its breadth is ' + b +' m. find the area'+ a + ' m? ',
 		'options': {
 			'A': a * parseInt(Math.random()*10),
