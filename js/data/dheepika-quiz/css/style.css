@@ -1,0 +1,48 @@
+ .header .wrapper
+{
+width:80%;
+margin:auto;
+}
+.header
+{
+	background-color:beige;
+	height:200px;
+}
+.header-fc
+{ 
+	
+	display:flex;
+	justify-content:center;
+	text-align:center;
+}
+.header .header-fc .header-logo
+{
+	/*background-color:aqua;*/
+	width:15%;
+	height:30px;
+	margin-top:80px;
+	padding-top:20px;
+}
+.banner-fc
+{ 
+	
+	display:flex;
+	text-align:center;
+	justify-content:center;
+}
+.banner .banner-fc .boxs
+{
+
+}
+.banner .banner-fc .boxs .boxa
+{
+
+}
+.banner .banner-fc .boxs .boxb
+{
+
+}
+.banner .banner-fc .boxs .boxc
+{
+
+}
