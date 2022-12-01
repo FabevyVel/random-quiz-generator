@@ -1,0 +1,26 @@
+.header .wrapper
+{
+	width:100%;
+    margin:auto;	
+} 
+
+.banner .wrapper
+{
+	width:100%;
+    margin:auto;	
+}
+.header 
+{
+	justify-content:center;
+	height:50px;
+	text-align:center;	
+	background-color:pink;
+	
+}
+ 
+.style
+{
+	margin-top:15px;
+	background-color:red;
+	
+}
