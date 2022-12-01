@@ -1,11 +1,11 @@
-var questionilank = { } 
+var questionilank - { } 
      funtionKeys = [ ], 
      questionSet = [ ], 
      randomKeyIndex,
      wrapperElement = document.getElementById ( 'wrapper')
      generatorButton document.getElementById('generate- questions' ),
      question Template = < header> <h2> </h2>   </header> <section > <ul> </ul> </section> 
-      //questionBank.push ( problem1401 ( ) ) ; // funtionkeys.push ( Object keys ( adhi ) ) ;
+      //questionBank.push ( problem1201 ( ) ) ; // funtionkeys.push ( Object keys ( sumaiya ) ) ;
 	   function clearData ( ) 
 	  wrapperElement.innerHTML ="";
 	   questionBank =  {}; 
@@ -27,3 +27,4 @@ var questionilank = { }
 			 for ( option questionobject.options ){
 				  let optionElement document.createElement ( 'li' );
 				  optionElement.innerText = option " : " + questionObject.option
+

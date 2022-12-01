@@ -5,7 +5,7 @@ function getRandomNumber(max){
 }
 
 
-function problem121(){
+function problem1201(){
 	var inputData = [{
 		'd1':240,
 		'ta': 24,
@@ -43,7 +43,7 @@ function problem121(){
 
 	question = {
 		'type': 'single',
-		'id': '121',
+		'id': '1201',
 		'question': 'A train '+d1+' m long passes a pole in '+ta+' seconds. How long will it take to pass a platform '+d2+' m long?',
 		'options': {
 			'A': time,
@@ -59,7 +59,7 @@ function problem121(){
 	
 }
 	
-function problem122(){
+function problem1202(){
 	var inputData = [{
 		'cp': 5000,
 		'loss': 10
@@ -85,7 +85,7 @@ function problem122(){
 	    
 	question = {
 		'type': 'single',
-		'id': '122',
+		'id': '1202',
 		'question': 'A man purchase tv for RS ' + cp + ' and sells it ' + loss + '% loss.what is the sellingprice of TV',
 		'options': {
 			'A': sp - parseInt(Math.random()*10),
@@ -101,7 +101,7 @@ function problem122(){
 	
 }
 
-function problem123(){
+function problem1203(){
 	var inputData = [{
 	
 		'p': 8000,
@@ -137,7 +137,7 @@ function problem123(){
 
 	question = {
 		'type': 'single',
-		'id': '123',
+		'id': '1203',
 		'question': 'In what time Rs. '+ p +' will give interest of Rs. '+ i +' at the rate of '+ r +' % p.a. S.I.?',
 		'options': {
 			'A': n- parseInt(Math.random()*10),
@@ -153,7 +153,7 @@ function problem123(){
 	
 } 
 
-function problem124(){
+function problem1204(){
 	var inputData = [{
 	
 		'sp': 8500,
@@ -183,7 +183,7 @@ function problem124(){
 
 	question = {
 		'type': 'single',
-		'id': '124',
+		'id': '1204',
 		'question': 'Suresh bought a cell phone from a shop. If he sells it at Rs. '+sp+' to Mahesh and earns a profit of '+p+'%, find the price at which Suresh bought the cell phone.',
 		'options': {
 			'A': cp- parseInt(Math.random()*10),
@@ -199,7 +199,7 @@ function problem124(){
 	
 }
 
-function problem125(){
+function problem1205(){
 	var inputData = [{
 		'cp': 2000,
 		'p': 25
@@ -226,7 +226,7 @@ function problem125(){
 
 	question = {
 		'type': 'single',
-		'id': '125',
+		'id': '1205',
 		'question': 'Ramesh bought a chai for RS ' + cp + ' and sold it suressh ,if ramesh earned a profit of ' + p + '% profit.what is the sellingprice of chair',
 		'options': {
 			'A': sp - parseInt(Math.random()*10), 
@@ -242,7 +242,7 @@ function problem125(){
 	
 }
 
-function problem126(){
+function problem1206(){
 	var inputData = [{
 		'sp': 2000,
 		'loss': 20
@@ -269,7 +269,7 @@ function problem126(){
 
 	question = {
 		'type': 'single',
-		'id': '126',
+		'id': '1206',
 		'question': 'A shopkeeper purchases a table and sells it for Rs. '+ sp +' . If he incurs a loss of '+ loss +' %, find the cost price of table.',
 		'options': {
 			'A': sp - parseInt(Math.random()*10), 
@@ -285,7 +285,7 @@ function problem126(){
 	
 }
 
-function problem127(){
+function problem1207(){
 	var inputData = [
 		{
 		'distance':20,
@@ -316,7 +316,7 @@ function problem127(){
 		
 	question = {
 		'type': 'single',
-		'id': '127',
+		'id': '1207',
 		'question': 'A jogger is running at a speed of '+ speed +' km/hr. In what time he will cross a track of length '+ distance+' meters?',
 		'options': {
 			'A':  time+parseInt(Math.random()*10),
@@ -332,7 +332,7 @@ function problem127(){
 	
 }
 
-function problem128(){
+function problem1208(){
 	var inputData = [{
 		'time':2,
 		'speed':20
@@ -361,7 +361,7 @@ function problem128(){
 		
 	question = {
 		'type': 'single',
-		'id': '128',
+		'id': '1208',
 		'question': 'A cyclist moving at a speed of '+ speed  +' a crosses bridge in  '+ time +' minitues.what is the length of the bridge?',
 		'options': {
 			'A':  distance,
@@ -377,7 +377,7 @@ function problem128(){
 	
 }
 
-function problem129(){
+function problem1209(){
 	var inputData = [{
 		'distance':68,
 		'speeda': 13,
@@ -413,7 +413,7 @@ function problem129(){
 
 	question = {
 		'type': 'single',
-		'id': '129',
+		'id': '1209',
 		'question': 'A boat can travel with a speed of '+ speeda +' km/hr in still water. If the speed of the stream is '+ speedb +' km/hr, find the time taken by the boat to go '+ distance +' km downstream.',
 		'options': {
 			'A': time,
