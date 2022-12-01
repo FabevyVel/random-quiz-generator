@@ -1,0 +1,23 @@
+.header .wrapper
+{
+width:80%;
+margin:auto;
+}
+.header
+{
+	background-color:white;
+	height:200px;
+}
+.header-fc
+{ 
+	
+	display:flex;
+	justify-content:center;
+}
+.header .header-fc .header-logo
+{
+	background-color:plum;
+	width:15%;
+	height:50px;
+	margin-top:100px;
+}
