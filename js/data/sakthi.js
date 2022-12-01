@@ -1966,3 +1966,314 @@ function problem1535(){
 	
 	return question;	
 }
+
+//36
+
+function problem1536()
+{
+	var inputData = [{
+		'jaimin': 65,
+		'jaimax': 72,
+		'bromin': 60,
+		'bromax': 70,
+		'dad': 68
+		},
+		{
+		'jaimin': 60,
+		'jaimax': 70,
+		'bromin': 44,
+		'bromax': 55,
+		'dad': 65
+		},
+		{
+		'jaimin': 70,
+		'jaimax': 73,
+		'bromin': 40,
+		'bromax': 60,
+		'dad': 67
+		},
+		{
+		'jaimin': 55,
+		'jaimax': 65,
+		'bromin': 44,
+		'bromax': 60,
+		'dad': 57
+		},
+		{
+		'jaimin': 50,
+		'jaimax': 60,
+		'bromin': 48,
+		'bromax': 58,
+		'dad': 54
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		jaimin= inputData[randomIndex]['jaimin'],
+		jaimax= inputData[randomIndex]['jaimax'],
+		bromin= inputData[randomIndex]['bromin'],
+		bromax= inputData[randomIndex]['bromax'],
+		dad=inputData[randomIndex]['dad'],
+		probableweight,
+		question = {};
+
+	probableweight=(jaimin+jaimax+bromin+bromax+dad)/5;
+
+	question = {
+		'type': 'single',
+		'id': '1536',
+		'question': "In jai's opinion, his weight is greater than"+jaimin+"kg but less than"+jaimax+"kg. His brother doest not agree with Arun and he thinks that Arun's weight is greater than"+bromin+"kg but less than"+bromax+"kg. His mother's view is that his weight cannot be greater than"+dad+"kg. If all are them are correct in their estimation, what is the average of different probable weights of Arun?",
+		'options': {
+			'A': probableweight,
+			'B': probableweight - parseInt(Math.random()*10),
+			'C': probableweight + parseInt(Math.random()*10),
+			'D': probableweight - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}
+
+
+
+//37
+
+
+function problem1537()
+{
+	var inputData = [{
+		'p1': 20,
+		'a1': 50.25,
+		'p2': 15,
+		'a2': 45.15
+		},
+		{
+		'p1': 17,
+		'a1': 55.25,
+		'p2': 9,
+		'a2': 56.15
+		},
+		{
+		'p1': 19,
+		'a1': 52.25,
+		'p2': 8,
+		'a2': 44.15
+		},
+		{
+		'p1': 10,
+		'a1': 52.5,
+		'p2': 6,
+		'a2': 23.33
+		},
+		{
+		'p1': 15,
+		'a1': 55.3,
+		'p2': 13,
+		'a2': 44.35
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		p1= inputData[randomIndex]['p1'],
+		a1= inputData[randomIndex]['a1'],
+		p2= inputData[randomIndex]['p2'],
+		a2= inputData[randomIndex]['a2'],
+		avg,
+		question = {};
+
+	avg=(p1*a1+p2*a2)/(p1+p2);
+	avg=parseFloat(avg);
+
+	question = {
+		'type': 'single',
+		'id': '1537',
+		'question': "The average weight of"+p1+"girls in a class is"+a1+"kg and that of the remaining"+p2+"girls is"+a2+"kg. Find the average weights of all the girls in the class.",
+		'options': {
+			'A': avg - parseInt(Math.random()*10),
+			'B': avg,
+			'C': avg + parseInt(Math.random()*10),
+			'D': avg - parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}
+
+
+//38
+
+function problem1538()
+{
+	var inputData = [{
+		's1': 45,
+		's2': 50,
+		's3': 35,
+		'm1': 40,
+		'm2': 45,
+		'm3': 50
+		},
+		{
+		's1': 46,
+		's2': 52,
+		's3': 37,
+		'm1': 42,
+		'm2': 44,
+		'm3': 59
+		},
+		{
+		's1': 44,
+		's2': 56,
+		's3': 32,
+		'm1': 41,
+		'm2': 42,
+		'm3': 59
+		},
+		{
+		's1': 45,
+		's2': 50,
+		's3': 35,
+		'm1': 40,
+		'm2': 45,
+		'm3': 50
+		},
+		{
+		's1': 55,
+		's2': 60,
+		's3': 45,
+		'm1': 30,
+		'm2': 35,
+		'm3': 40
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		s1= inputData[randomIndex]['s1'],
+		s2= inputData[randomIndex]['s2'],
+		s3= inputData[randomIndex]['s3'],
+		m1= inputData[randomIndex]['m1'],
+		m2= inputData[randomIndex]['m2'],
+		m3= inputData[randomIndex]['m3'],
+		a,
+		question = {};
+
+	a=(s1*m1+s2*m2+s3*m3)/(s1+s2+s3);
+	a=parseFloat(a);
+
+	question = {
+		'type': 'single',
+		'id': '1509',
+		'question': "If the average marks of three groups of "+s1+", "+s2+" and "+s3+" students respectively is "+m1+", "+m2+", "+m3+", then the average marks of all the students is:",
+		'options': {
+			'A': a,
+			'B': a- parseInt(Math.random()*10),
+			'C': a+ parseInt(Math.random()*10),
+			'D': a- parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}
+
+
+//39
+
+function problem1539()
+{
+	var inputData = [{
+		's': 2200,
+		'c': 2000
+		},
+		{
+		's': 3000,
+		'c': 2300
+		},
+		{
+		's': 2100,
+		'c': 1300
+		},
+		{
+		's': 3000,
+		'c': 2000
+		},
+		{
+		's': 4000,
+		'c': 3000
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		s= inputData[randomIndex]['s'],
+		c= inputData[randomIndex]['c'],
+		pp=parseFloat(),
+		question = {};
+
+	pp=(s-c)*100/c;
+
+	question = {
+		'type': 'single',
+		'id': '1539',
+		'question': "A shopkeeper sold an books for Rs. "+s+". If the cost price of the books is "+c+", find the profit percent.",
+		'options': {
+			'A': pp- parseInt(Math.random()*10),
+			'B': pp,
+			'C': pp- parseInt(Math.random()*10),
+			'D': pp+ parseInt(Math.random()*10)
+		},
+		'answer': 'B',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}
+
+//40
+
+function problem1540()
+{
+	var inputData = [{
+		'p': 1401,
+		'pp': 25
+		},
+		{
+		'p': 1502,
+		'pp': 27
+		},
+		{
+		'p': 1603,
+		'pp': 29
+		},
+		{
+		'p': 1804,
+		'pp': 30
+		},
+		{
+		'p': 1005,
+		'pp': 20
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		p= inputData[randomIndex]['p'],
+		pp= inputData[randomIndex]['pp'],
+		sp=parseFloat(),
+		question = {};
+
+	sp=(p*pp/100)+p;
+
+	question = {
+		'type': 'single',
+		'id': '1540',
+		'question': "siva purchase a cycle for Rs. "+p+" and sold it to her brother. If siva earned a profit of "+pp+"%, find the selling price of cycle.",
+		'options': {
+			'A': sp- parseInt(Math.random()*10),
+			'B': sp- parseInt(Math.random()*10),
+			'C': sp+ parseInt(Math.random()*10),
+			'D': sp
+		},
+		'answer': 'D',
+		'author-id': '15'
+	}
+	
+	return question;
+	
+}

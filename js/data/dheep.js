@@ -1678,4 +1678,349 @@ function problem0333(){
 	return question;
 	
 }
+function problem0334()
+{
+	var inputData = [{
+		'start':9,
+		'middile':3.5,
+		'end':45
+	},
+	{
+	'start':3,
+	'middile':4.5,
+	'end':85
+    },
+	{
+	'start':8,
+	'middile':2.5,
+	'end':65
+    },	
+	{
+    'start':20,
+	'middile':5.5,
+	'end':95
+ }],
+    randomIndex = getRandomNumber(inputData.length),
+    start= inputData[randomIndex]['start'],
+    middile= inputData[randomIndex]['middile'],
+    end=inputData[randomIndex]['end'],
+    total,
+    question = {};
+	
+	start=parseInt(start);
+	middile=parseFloat(middile);
+	end=parseInt(end);
+	total=(start*middile)+end;
+	
+	question={
+		'type':'single',
+		'id':'0334',
+		'question':' the average weight of the '+ start+'  increased by '+ middile +' kg when a new person comes in place of one of them weighting '+ end +' of the new person.',
+		'option':
+		{
+			'A':total - parseInt(Math.random()*10),
+			'B':total + parseInt(Math.random()*10),
+			'C':total,			
+			'D':total - parseInt(Math.random()*10),
+		},
+		'answer':'C',
+		'author-id':'03'
+		}
+		return question;
+	}
+	function problem0335(){
+	 	var inputData = [{
+			'stream':16,
+			'hours1':2,
+			'hours2':4
+		    },
+			{
+		  'stream':28,
+		  'hours1':4,
+			'hours2':5
+	       },
+		   {
+	      'stream':39,
+	      'hours1':3,
+	      'hours2':4
+          },
+		  {
+	     'stream':50,
+	     'hours1':2,
+	      'hours2':4
+      }],
+	  randomIndex = getRandomNumber(inputData.length),
+	  stream=inputData[randomIndex]['stream'],
+	  hours1=inputData[randomIndex]['hours_1'],
+	  hours2=inputData[randomIndex]['hours_2'],
+	  speed,
+	  speed1,
+	  total,
+	  question={};
+	  stream=parseInt(stream);
+	  hours1=parseInt(hours1);
+	  hours2=parseInt(hours2);
+	  speed=(stream/hours1);
+	  speed_1=(stream/hours2);
+	  total=(1/2*(speed+speed_1));
+	  question=
+	  {
+		  'type':'single',
+		  'id':'0335',
+		  'question':' A boat running downstream covers a distance of '+ stream +' km in '+hours1+' while for covering the same distance upstream it takes '+ hours2 +' what is the speed of the boat in still water',
+		  'option':
+		  {
+			  'A':speed,
+			  'B':speed - parseInt(Math.random()*10),
+			  'C':speed + parseInt(Math.random()*10),
+			  'D':speed - parseInt(Math.random()*10)
+		  },
+		  'answer':'A',
+		  'author-id':'03'
+	  }
+	  return question;
+  }
+  
+  function problem0336(){
+	var inputData = [{
+		'subject1':6,
+		'subject2': 6,
+		'average1':75,
+		'average2':74
+		},
+		{
+		'subject1':8,
+		'subject2': 5,
+		'average1':75,
+		'average2':76
+		},
+		{
+		'subject1':6,
+		'subject2': 5,
+		'average1':75,
+		'average2':93
+		},
+		{
+		'subject1':6,
+		'subject2': 5,
+		'average1':80,
+		'average2':72
+		},
+		{
+		'subject1':6,
+		'subject2': 5,
+		'average1':75,
+		'average2':75
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    subject1= inputData[randomIndex]['subject1'],
+		subject2 = inputData[randomIndex]['subject2'],
+    	average1= inputData[randomIndex]['average1'],
+	    average2= inputData[randomIndex]['average2'],
+	    tomarks1,
+	    tomarks2,
+	    mark,
+		question = {};
+		
+	    subject1=parseInt(subject1);
+		subject2=parseInt(subject2);
+		average1=parseInt(average1);
+		average2=parseInt(average2);
+	    tomarks1=average1*subject1;
+        tomarks2=average2*subject2;
+		mark=tomarks1-tomarks2;
+	question = {
+		'type': 'single',
+		'id': '0336',
+		'question': ' kumar secures average of  '   +   average1 +  'marks in  '  +subject1 + 'subject if the average of amrks in    '+subject2+'is  '+average2+'how many marks did he secure in the 6th subject?',
+		'options': {
+			'A': mark-parseInt(Math.random()*10),
+			'B': mark+parseInt(Math.random()*10),
+			'C': mark-parseInt(Math.random()*10),
+			'D': mark
+		},
+		'answer': 'd',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
+function problem0337(){
+	var inputData = [{
+		'overs':10 ,
+		'runrate': 3.2,
+		'overs1': 42,
+		'target':282
+		},
+		{
+		'overs':10 ,
+		'runrate': 3.2,
+		'overs1': 40,
+		'target':282
+		},
+		{
+		'overs':12 ,
+		'runrate': 3.2,
+		'overs1': 40,
+		'target':282
+		},
+		{
+		'overs':18 ,
+		'runrate': 3.2,
+		'overs1': 40,
+		'target':288
+		},
+		{
+		'overs':10 ,
+		'runrate': 3.8,
+		'overs1': 40,
+		'target':282
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		overs= inputData[randomIndex]['overs'],
+		runrate= inputData[randomIndex]['runrate'],
+		overs1= inputData[randomIndex]['overs1'],
+	 	target= inputData[randomIndex]['target'],
+	    score,
+		question = {};
+		
+		target=parseInt(target);
+		overs1=parseInt(overs1);
+		overs=parseInt(overs);
+		runrate=parseInt(runrate);
+	    score=((target-(runrate*overs))/40);
+	question = {
+		'type': 'single',
+		'id': '0337',
+		'question': 'in the first  ' + overs + '  of a cricket game.the run rate was only  ' + runrate + 'what should be the run rate in the remaining   ' + overs1 + 'overs to reach the target of   ' + target + 'runs',
+		'options': {
+			'A': score + parseInt(Math.random()*10),
+			'B': score,
+			'C': score+ parseInt(Math.random()*10),
+			'D':score - parseInt(Math.random()*10)
+		},
+		'answer': 'b',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
 
+  function problem0339(){
+	var inputData = [{
+		'pricea':9800,
+		'priceb':12005,
+		'yeara':5,
+		'yearb':8
+		},
+		{
+		'pricea':8800,
+		'priceb':12005,
+		'yeara':5,
+		'yearb':6
+		},
+		{
+		'pricea':6800,
+		'priceb':12005,
+		'yeara':5,
+		'yearb':5
+		},
+		{
+		'pricea':5800,
+		'priceb':12005,
+		'yeara':5,
+		'yearb':4
+		}],
+	randomIndex = getRandomNumber(inputData.length),
+		pricea= inputData[randomIndex]['pricea'],
+		priceb = inputData[randomIndex]['priceb'],
+		yeara= inputData[randomIndex]['yeara'],
+		yearb= inputData[randomIndex]['yearb'],
+		siyear3,
+		siyear5,
+		principal,
+		rate,
+		question = {};
+		
+		siyear3=(priceb-pricea);
+		siyear5=((siyear3/3)*yeara);
+		principal=(pricea-siyear5);
+		rate=((100*siyear5)/(principal*yeara));
+		
+
+
+
+	question = {
+		'type': 'single',
+		'id': '0339',
+		'question': 'A sum of money amounts to Rs. '+pricea+' after '+yeara+' years and Rs. '+priceb+' after '+yearb+' years at the same rate of simple interest. The rate of interest per annum is:',
+		'options': {
+			'A': rate,
+			'B': rate- parseInt(Math.random()*10),
+			'C': rate+ parseInt(Math.random()*10),
+			'D': rate- parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+}
+
+
+
+
+function problem0340(){
+	var inputData = [{
+		'speedboat':20,
+		'speedstream':5,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':6,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':8,
+		'distance':75
+		},
+		{
+		'speedboat':20,
+		'speedstream':10,
+		'distance':75
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		speedboat= inputData[randomIndex]['speedboat'],
+		speedstream = inputData[randomIndex]['speedstream'],
+		distance = inputData[randomIndex]['distance'],
+		speed,
+		time,
+		question = {};
+		
+	    speed=(speedboat+speedstream);
+		time=distance/speed;
+
+	question = {
+		'type': 'single',
+		'id': '0340',
+		'question': 'A man can row a boat at speed of ' + speedboat + 'km/hr in still water.if the speed of the stream is ' + speedstream + ' km/hr in what time he distance ' + distance + '  km downstream',
+		'options': {
+			'A': time,
+			'B': time - parseInt(Math.random()*10),
+			'C': time + parseInt(Math.random()*10),
+			'D': time - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '03'
+	}
+	
+	return question;
+	
+	
+}

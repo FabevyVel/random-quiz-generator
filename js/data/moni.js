@@ -1576,3 +1576,458 @@ function problem0631(){
 	return question;
 	
 }
+function problem0632(){
+	var inputData = [{
+		'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1660
+		},
+		{
+		'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1760
+		},
+		{
+	    'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1960
+		},
+		{
+		'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1560
+		},
+		{
+		'A': 3,
+		'B': 2,
+		'C': 5,
+		'total':1260
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		A= inputData[randomIndex]['A'],
+		B= inputData[randomIndex]['B'],
+		C = inputData[randomIndex]['C'],
+		total = inputData[randomIndex]['total'],
+		add,
+		cshare,
+		question = {};
+		
+	    add=C/(A+B+C)
+        cshare=add*total
+	question = {
+		'type': 'single',
+		'id': '0632',
+		'question': 'A:B:C is in ratio of ' + A + ':' + B + ':' + C + ' ,how much money will c get out of ' + total + '.',
+		'options': {
+			'A': cshare + parseInt(Math.random()*10),
+			'B': cshare- parseInt(Math.random()*10),
+			'C': cshare - parseInt(Math.random()*10),
+			'D': cshare 
+		},
+		'answer': 'D',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+function problem0633(){
+	var inputData = [{
+		'price': 6000,
+		'interest': 720,
+		'rate': 6
+		},
+		{
+		'price': 5000,
+		'interest': 720,
+		'rate': 6
+		},
+		{
+	    'price': 2000,
+		'interest': 720,
+		'rate': 6
+		},
+		{
+		'price': 6000,
+		'interest': 720,
+		'rate': 6
+		},
+		{
+		'price': 3000,
+		'interest': 420,
+		'rate': 6
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		price= inputData[randomIndex]['price'],
+		interest = inputData[randomIndex]['interest'],
+		rate = inputData[randomIndex]['rate'],
+		time,
+		question = {};
+		
+	    time=(interest*100)/(price*rate)
+
+	question = {
+		'type': 'single',
+		'id': '0633',
+		'question': 'In what time RS' + price + ' will give interest ofRS ' + interest + ' at rate of ' + rate + ' time?',
+		'options': {
+			'A': time + parseInt(Math.random()*10),
+			'B': time - parseInt(Math.random()*10),
+			'C': time,
+			'D': time - parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+
+function problem0634(){
+	var inputData = [{
+		'length': 70,
+		'breadth': 25,
+		'height': 25
+		},
+		{
+		'length': 50,
+		'breadth': 25,
+		'height': 25
+		},
+		{
+		'length': 90,
+		'breadth': 25,
+		'height': 25
+		},
+		{
+		'length': 30,
+		'breadth': 24,
+		'height': 18
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		length= inputData[randomIndex]['length'],
+		breadth= inputData[randomIndex]['breadth'],
+		height = inputData[randomIndex]['height'],
+		x,
+		y,
+		question = {};
+		x=(length**2)+(breadth**2)+(height**2);
+        y=Math.sqrt(x);
+
+	question = {
+		'type': 'single',
+		'id': '0634',
+		'question': 'The length of the largest rod than can be placed in a room that can be placed in a room ' + length + 'm long ' + breadth + 'm broad ' + height + 'm height',
+		'options': {
+			'A': y - parseInt(Math.random()*10),
+			'B': y - parseInt(Math.random()*10),
+			'C': y + parseInt(Math.random()*10),
+			'D': y
+		},
+		'answer': 'D',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+function problem0635(){
+	var inputData = [{
+		'speed1':11,
+		'speed2': 5,
+		},
+		{
+		'speed1':11,
+		'speed2': 10,
+		},
+		{
+		'speed1':11,
+		'speed2': 12,
+		},
+		{
+		'speed1':11,
+		'speed2': 9,
+		},
+		{
+		'speed1':11,
+			'speed2':6
+		}
+	],
+		randomIndex = getRandomNumber(inputData.length),
+	    speed1= inputData[randomIndex]['speed1'],
+		speed2 = inputData[randomIndex]['speed2'],
+	    speed,
+		question = {};
+	
+		speed=(1/2*(speed1+speed2));
+
+	question = {
+		'type': 'single',
+		'id': '0635',
+		'question': ' in one hour a boat goes  '  +  speed1   + 'km/hr  along the stream and  '    +speed2   +   'km/hr  against the stream . the speed of the boat in still water is',
+		'options': {
+			'A': speed-parseInt(Math.random()*10),
+			'B': speed,
+			'C': speed+parseInt(Math.random()*10),
+			'D': speed+parseInt(Math.random()*10)
+		},
+		'answer': 'b',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+function problem0636(){
+	var inputData = [{
+		'score':100,
+		'boundaries':4,
+		'six':4
+	},
+	{
+	'score':200,
+	'boundaries':4,
+	'six':6
+    },
+	{
+	'score':110,
+	'boundaries':3,
+	'six':8
+    },
+	{
+	'score':150,
+	'boundaries':7,
+	'six':3
+    }],
+   randomIndex = getRandomNumber(inputData.length),
+   score=inputData[randomIndex]['score'],
+   boundaries=inputData[randomIndex]['boundaries'],
+   six=inputData[randomIndex]['six'],
+	total,
+	running,
+	question={};
+	
+	score=parseInt(score);
+	boundaries=parseInt(boundaries*4);
+	six=parseInt(six*6);
+	total=score-(boundaries+six);
+	running=(total/score)*100;
+	
+	question={
+		'type':'single',
+		'id':'0636',
+		'question':' A batsman scored '+ score +' runs which included '+ boundaries+' and '+ six+'. What present of his total score did he make by running between the wickets',
+		'optins':{
+			'A':running - parseInt(Math.random()*10),
+			'B':running + parseInt(Math.random()*10),
+			'C':running,
+			'D':running - parseInt(Math.random()*10),
+		},
+		'amswer':'C',
+		'author-id':'06'
+	}
+	return question;
+}
+
+function problem0637(){
+	var inputData = [{
+		'us': 8,
+		'ds': 4
+		},
+		{
+		'us': 10,
+		'ds': 4
+		},
+		{
+		'us': 12,
+		'ds': 6
+		},
+		{
+		'us': 16,
+		'ds': 4
+		},
+		{
+		'us': 14,
+		'ds': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+	    us = inputData[randomIndex]['us'],
+		ds = inputData[randomIndex]['ds'],
+		ss,
+		question = {};
+
+	us = parseInt(us);
+    ds = parseInt(ds);
+    ss = (us+ds)/2;
+
+	question = {
+		'type': 'single',
+		'id': '0637',
+		'question': 'In one hour a boat goes  ' + us + ' km/hr along stream and ' + ds + ' km/hr against the stream . The speed of boat in ' + ss +' in km/hr is.',
+		'options': {
+			'A': ss - parseInt(Math.random()*10),
+			'B': ss + parseInt(Math.random()*10),
+			'C': ss,
+			'D': ss * parseInt(Math.random()*10)
+		},
+		'answer': 'C',
+		'author-id': '06'
+    }
+	return question;
+}
+function problem0638(){
+	var inputData = [{
+		's1': 815,
+		's2': 854,
+		'y1': 3,
+		'y2': 4
+		},
+		{
+		's1': 815,
+		's2': 854,
+		'y1': 8,
+		'y2': 5
+		},
+		{
+		's1': 815,
+		's2': 859,
+		'y1': 5,
+		'y2': 9
+		},
+		{
+		's1': 815,
+		's2': 853,
+		'y1': 8,
+		'y2': 2
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		s1= inputData[randomIndex]['s1'],
+		s2= inputData[randomIndex]['s2'],
+		y1= inputData[randomIndex]['y1'],
+		y2= inputData[randomIndex]['y2'],
+		a,
+		b,
+		principal,
+		question = {};
+		
+		a=s2-s1;
+		b=a*y1;
+		principal=s1-b;
+
+	question = {
+		'type': 'single',
+		'id': '0638',
+		'question': 'A sum of money at simple interest amounts to Rs. ' + s1 + ' in ' + y1 + '  years and to Rs.' + s2 + ' in ' + y2 + ' years. The sum is:',
+		'options': {
+			'A': principal, 
+			'B': principal - parseInt(Math.random()*10),
+			'C': principal + parseInt(Math.random()*10),
+			'D': principal - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '06'
+	}
+	
+	return question;
+	
+}
+function problem0639(){
+	var inputData = [{
+		'dist': 100,
+		'time': 5
+		},
+		{
+		'dist': 50,
+		'time': 4
+		},
+		{
+		'dist': 72,
+		'time': 4
+		},
+		{
+		'dist': 180,
+		'time': 8
+		},
+		{
+		'dist': 220,
+		'time': 12
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		dist = inputData[randomIndex]['dist'],
+		time = inputData[randomIndex]['time'],
+		speed,
+		question = {};
+		
+	dist = parseInt(dist*18/5);
+	time = parseInt(time*60);
+	speed = dist/time;
+	
+	question = {
+		'type': 'single',
+		'id': '0639',
+		'question': 'A rider crosses a ' + dist + ' m long street in ' + time + ' minutes. What is speed in km per hour?', 
+		'options': {
+			'A': speed,
+			'B': speed * parseInt(Math.random()*10),
+			'C': speed + parseInt(Math.random()*10),
+			'D': speed - parseInt(Math.random()*10)
+		},
+		'answer': 'A',
+		'author-id': '06',
+	}
+	return question;
+}
+function problem0640(){
+	var inputData = [{
+        'length':20,
+		'breath':34,
+		},
+		{
+        'length':20,
+		'breath':34,
+		},
+		{
+        'length':20,
+		'breath':34,
+		},
+		{
+		'length':20,
+		'breath':34,
+		},
+		{
+		'length':20,
+		'breath':34,
+		}],
+	 randomIndex = getRandomNumber(inputData.length),
+	       length= inputData[randomIndex]['length'],
+         breath= inputData[randomIndex]['breath'],
+		fencing_length,
+		question = {};
+
+	length=parseInt(length);
+	breath=parseInt(breath);
+	area=(length*breath),
+	fencing_length=(length/2*breath),
+
+	question = {
+		'type': 'single',
+		'id': '0640',
+		'question': 'rectangular field to be fenced on' +length+ 'sides leaving side of' +
+		breath+ 'uncovered if the area of the field is' +area+ 'how many feet of fencing will be required', 
+		'options': {
+			'A': fencing_length * parseInt(Math.random()*10),
+			'B': fencing_length - parseInt(Math.random()*10),
+			'C': fencing_length + parseInt(Math.random()*10),
+			'D': fencing_length
+		},
+		'answer': 'D',
+		'author-id': '0640'
+	}
+	
+	return question;
+}
