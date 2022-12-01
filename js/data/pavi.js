@@ -258,23 +258,23 @@ function problem085(){
 function problem086(){
 	var inputData = [{
 		'speed':15,
-		'currentspeed': 2.5,
+		'currentspeed': 2.5
 		},
 		{
 		'speed': 15,
-		'currentspeed': 2.5,
+		'currentspeed': 2.5
 		},
 		{
 		'speed': 15,
-		'currentspeed': 2.5,
+		'currentspeed': 2.5
 		},
 		{
 		'speed': 15,
-		'currentspeed': 2.5,
+		'currentspeed': 2.5
 		},
 		{
 		'speed': 15,
-		'currentspeed': 2.5,
+		'currentspeed': 2.5
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 		speed= inputData[randomIndex]['speed'],
@@ -306,27 +306,27 @@ function problem087(){
 	var inputData = [{
 		'distance':16,
 		'time1': 2,
-		'time2': 4,
+		'time2': 4
 		},
 		{
 		'distance':16,
 		'time1': 2,
-		'time2': 4,
+		'time2': 4
 		},
 		{
 		'distance':16,
 		'time1': 2,
-		'time2': 4,
+		'time2': 4
 		},
 		{
 		'distance':16,
 		'time1': 2,
-		'time2': 4,
+		'time2': 4
 		},
 		{
         'distance':16,
 		'time1': 2,
-		'time2': 4,
+		'time2': 4
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 		distance= inputData[randomIndex]['distance'],
@@ -359,23 +359,23 @@ function problem087(){
 function problem088(){
 	var inputData = [{
 		'area':5,
-		'hectares': 1.5,
+		'hectares': 1.5
 		},
 		{
 		'area':5,
-		'hectares': 1.5,
+		'hectares': 1.5
 		},
 		{
         'area':5,
-		'hectares':1.5,
+		'hectares':1.5
 		},
 		{
         'area':5,
-		'hectares': 1.5,
+		'hectares': 1.5
 		},
 		{
         'area':5,
-		'hectares': 1.5,
+		'hectares': 1.5
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 		area= inputData[randomIndex]['area'],
@@ -407,23 +407,23 @@ function problem088(){
 function problem089(){
 	var inputData = [{
 		'CP':1400,
-		'loss': 15,
+		'loss': 15
 		},
 		{
 		'CP':1400,
-		'loss': 15,
+		'loss': 15
 		},
 		{
         'CP':1400,
-		'loss': 15,
+		'loss': 15
 		},
 		{
         'CP':1400,
-		'loss': 15,
+		'loss': 15
 		},
 		{
         'CP':1400,
-		'loss': 15,
+		'loss': 15
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 		CP= inputData[randomIndex]['CP'],
@@ -454,23 +454,23 @@ function problem089(){
 function problem0810(){
 	var inputData = [{
 		'costprice':20,
-		'sellinprice': 375,
+		'sellinprice': 375
 		},
 		{
 		'costprice':20,
-		'sellinprice': 375,
+		'sellinprice': 375
 		},
 		{
         'costprice':20,
-		'sellinprice': 33,
+		'sellinprice': 33
 		},
 		{
         'costprice':20,
-		'sellinprice': 33,
+		'sellinprice': 33
 		},
 		{
         'costprice':20,
-		'sellinprice': 375,
+		'sellinprice': 375
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 		costprice= inputData[randomIndex]['costprice'],
@@ -501,23 +501,23 @@ function problem0810(){
 function problem0811(){
 	var inputData = [{
 		'base':5,
-		'height':10,
+		'height':10
 		},
 		{
 		'base':5,
-		'height':10,
+		'height':10
 		},
 		{
         'base':5,
-		'height':10,
+		'height':10
 		},
 		{
         'base':5,
-		'height':10,
+		'height':10
 		},
 		{
 		'base':5,
-		'height':10,
+		'height':10
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 		base= inputData[randomIndex]['base'],
@@ -551,31 +551,31 @@ function problem0812(){
 		'length':40,
 		'breath':25,
 		'height':20,
-		'meters':200,
+		'meters':200
 		},
 		{
         'length':40,
 		'breath':25,
 		'height':20,
-		'meters':200,
+		'meters':200
 		},
 		{
         'length':40,
 		'breath':25,
 		'height':20,
-		'meters':200,
+		'meters':200
 		},
 		{
 		 'length':40,
 		'breath':25,
 		'height':20,
-		'meters':200,
+		'meters':200
 		},
 		{
 		'length':40,
 		'breath':25,
 		'height':20,
-		'meters':200,
+		'meters':200
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 		length= inputData[randomIndex]['length'],
@@ -612,23 +612,23 @@ function problem0812(){
 function problem0813(){
 	var inputData = [{
 		'cp':2000,
-		'sp':2500,
+		'sp':2500
 		},
 		{
         'cp':2000,
-		'sp':2500,
+		'sp':2500
 		},
 		{
         'cp':2000,
-		'sp':2500,
+		'sp':2500
 		},
 		{
 		'cp':2000,
-		'sp':2500,
+		'sp':2500
 		},
 		{
 		'cp':2000,
-		'sp':2500,
+		'sp':2500
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       cp= inputData[randomIndex]['cp'],
@@ -661,23 +661,23 @@ function problem0813(){
 function problem0814(){
 	var inputData = [{
         'length':20,
-		'breath':34,
+		'breath':34
 		},
 		{
         'length':20,
-		'breath':34,
+		'breath':34
 		},
 		{
         'length':20,
-		'breath':34,
+		'breath':34
 		},
 		{
 		'length':20,
-		'breath':34,
+		'breath':34
 		},
 		{
 		'length':20,
-		'breath':34,
+		'breath':34
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       length= inputData[randomIndex]['length'],
@@ -710,23 +710,23 @@ function problem0814(){
 function problem0815(){
 	var inputData = [{
         'perimeter':216,
-		'breath':5,
+		'breath':5
 		},
 		{
         'perimeter':216,
-		'breath':5,
+		'breath':5
 		},
 		{
         'perimeter':216,
-		'breath':5,
+		'breath':5
 		},
 		{
 		'perimeter':216,
-		'breath':5,
+		'breath':5
 		},
 		{
 		'perimeter':216,
-		'breath':5,
+		'breath':5
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       perimeter= inputData[randomIndex]['perimeter'],
@@ -758,23 +758,23 @@ function problem0815(){
 function problem0816(){
 	var inputData = [{
         'costprice':2000,
-		'loss':30,
+		'loss':30
 		},
 		{
         'costprice':8000,
-		'loss':5,
+		'loss':5
 		},
 		{
         'costprice':6000,
-		'loss':10,
+		'loss':10
 		},
 		{
 		'costprice':1000,
-		'loss':5,
+		'loss':5
 		},
 		{
 		'costprice':4000,
-		'loss':20,
+		'loss':20
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       costprice= inputData[randomIndex]['costprice'],
@@ -807,23 +807,23 @@ function problem0816(){
 function problem0817(){
 	var inputData = [{
         'upstream':20,
-		'downstream':3.5,
+		'downstream':3.5
 		},
 		{
         'upstream':8,
-		'downstream':2.4,
+		'downstream':2.4
 		},
 		{
         'upstream':60,
-		'downstream':1.6,
+		'downstream':1.6
 		},
 		{
 		'upstream':10,
-		'downstream':1.5,
+		'downstream':1.5
 		},
 		{
 		'upstream':9,
-		'downstream':2.5,
+		'downstream':2.5
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       upstream= inputData[randomIndex]['upstream'],
@@ -859,27 +859,27 @@ function problem0818(){
 	var inputData = [{
         'principle ':6000,
 		'interest':720,
-		'rate':6,
+		'rate':6
 		},
 		{
         'principle ':6000,
 		'interest':720,
-		'rate':6,
+		'rate':6
 		},
 		{
         'principle ':6000,
 		'interest':720,
-		'rate':6,
+		'rate':6
 		},
 		{
 		'principle ':6000,
 		'interest':720,
-		'rate':6,
+		'rate':6
 		},
 		{
 		'principle ':6000,
 		'interest':720,
-		'rate':6,
+		'rate':6
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       principle= inputData[randomIndex]['principle'],
@@ -915,27 +915,27 @@ function problem0819(){
 	var inputData = [{
         'length':10,
 		'breath':4,
-		'height':3,
+		'height':3
 		},
 		{
         'length':10,
 		'breath':4,
-		'height':3,
+		'height':3
 		},
 		{
         'length':10,
 		'breath':4,
-		'height':3,
+		'height':3
 		},
 		{
 		'length':10,
 		'breath':4,
-		'height':3,
+		'height':3
 		},
 		{
 		'length':10,
 		'breath':4,
-		'height':3,
+		'height':3
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       length= inputData[randomIndex]['length'],
@@ -971,27 +971,27 @@ function problem0820(){
 	var inputData = [{
         'facevalue':100,
 		'discount':6,
-		'brokage':2,
+		'brokage':2
 		},
 		{
         'facevalue':100,
 		'discount':6,
-		'brokage':2,
+		'brokage':2
 		},
 		{
         'facevalue':100,
 		'discount':6,
-		'brokage':2,
+		'brokage':2
 		},
 		{
 		'facevalue':100,
 		'discount':6,
-		'brokage':2,
+		'brokage':2
 		},
 		{
 		'facevalue':100,
 		'discount':6,
-		'brokage':2,
+		'brokage':2
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       facevalue= inputData[randomIndex]['facevalue'],
@@ -1267,7 +1267,6 @@ function problem0825(){
 	return question;
 	
 }
-
 function problem0826(){
 	var inputData = [{
 		'trueinput': 60,
@@ -1377,9 +1376,6 @@ function problem0828(){
 		rate=parseInt(rate);
 		percentage=[rate/(100-rate)*100];
 		question = {};
-
-	
-
 	question = {
 		'type': 'single',
 		'id': '0828',
@@ -1395,7 +1391,6 @@ function problem0828(){
 	}
 	
 	return question;
-	
 }
 function problem0829(){
 		var inputData = [{
@@ -1426,10 +1421,10 @@ function problem0829(){
 			quality=sugar*litres;
 		    addedonelitres=litres+1;
 		    percentage=(quality/addedonelitres)*100;
-			question = {};
+			question6 = {};
 			
 			
-	  question= {
+	  question6= {
 			'type': 'single',
 			'id': '0829',
 			'question': 'To a sugar solution of '+ litres+' containing '+sugar+', one litre of water is added.the percentage of sugar in the new solution is',
@@ -1803,6 +1798,8 @@ function problem0836(){
 	return question;
 	
 }
+
+
 function problem0837(){
 	var inputData = [{
 		's1': 700,
@@ -1857,8 +1854,8 @@ function problem0837(){
 	}
 	
 	return question;
+	
 }
-
 function problem0838(){
 	var inputData = [{
 		'sellingPrice': 8634,
@@ -1934,7 +1931,7 @@ function problem0839(){
 		'time2': 7
 		}],
 		randomIndex = getRandomNumber(inputData.length),
-		distance1= inputData[randomIndex]['distance1'],
+		distance1=inputData[randomIndex]['distance1'],
 		time1 = inputData[randomIndex]['time1'],
 		time2 = inputData[randomIndex]['time2'],
 		speedStream,
