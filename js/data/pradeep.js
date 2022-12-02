@@ -3,9 +3,8 @@ function getRandomNumber(max){
 	randomNumber = parseInt(randomNumber);
 	return randomNumber;
 }
-
-
-function problem0901(){
+var pradeep = {
+"problem0901":function problem0901(){
 	var inputData = [{
 		'distance': 35,
 		'time': 50
@@ -52,9 +51,9 @@ function problem0901(){
 	
 	return question;
 	
-}
+},
 
-function problem0902(){
+"problem0902":function problem0902(){
 	var inputData = [{
 		'number': 5,
 		},
@@ -93,9 +92,9 @@ function problem0902(){
 	}
 	
 	return question;
-}
+},
 
-function problem0903(){
+"problem0903":function problem0903(){
 	var inputData = [{
 		'cp': 8000,
 		'lp': 10
@@ -140,8 +139,8 @@ function problem0903(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0904(){
+},
+"problem0904":function problem0904(){
 	var inputData = [{
 		'tankCap': 25,
 		'buckCap': 2/5
@@ -186,8 +185,8 @@ function problem0904(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0905(){
+},
+"problem0905":function problem0905(){
 	var inputData = [{
 		'sp': 8400,
 		'pp': 12
@@ -233,7 +232,7 @@ function problem0905(){
     }
 	return question;
 }
-function problem0906(){
+"problem0906":function problem0906(){
 	var inputData = [{
 		'us': 8,
 		'ds': 4
@@ -278,8 +277,8 @@ function problem0906(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0907(){
+},
+"problem0907":function problem0907(){
 	var inputData = [{
 		'p': 12600,
 		'n': 2,
@@ -333,8 +332,8 @@ function problem0907(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0908(){
+},
+"problem0908":function problem0908(){
 	var inputData = [{
 		'p': 45000,
 		'n': 6,
@@ -386,8 +385,8 @@ function problem0908(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0909(){
+},
+"problem0909":function problem0909(){
 	var inputData = [{
 		'l':8,
 		'b':4
@@ -432,8 +431,8 @@ function problem0909(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0910(){
+},
+"problem0910":function problem0910(){
 	var inputData = [{
 		'a': 5,
 		},
@@ -472,8 +471,8 @@ function problem0910(){
 	}
 	
 	return question;
-}
-function problem0911(){
+},
+"problem0911":function problem0911(){
 	var inputData = [{
 		'h':8,
 		'b':4
@@ -518,8 +517,8 @@ function problem0911(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0912(){
+},
+"problem0912":function problem0912(){
 	var inputData = [{
 		'cp': 45,
 		'sp': 60
@@ -566,8 +565,8 @@ function problem0912(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0913(){
+},
+"problem0913":function problem0913(){
 	var inputData = [{
 		'cp': 31.25,
 		'sp': 33
@@ -614,8 +613,8 @@ function problem0913(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0914(){
+},
+"problem0914":function problem0914(){
 	var inputData = [{
 		'dist1':260,
 		'time1': 21,
@@ -671,8 +670,8 @@ function problem0914(){
 		'author-id': '09'
 	}
 	return question;	
-}
-function problem0915(){
+},
+"problem0915":function problem0915(){
 	var inputData = [{
 		'initial': 46000,
 		'ending': 59000,
@@ -727,8 +726,8 @@ function problem0915(){
 	}
 	
 	return question;
-}
-function problem0916(){
+},
+"problem0916":function problem0916(){
 	var inputData = [{
 		'speed':40,
 		'time': 20
@@ -774,8 +773,8 @@ function problem0916(){
 	}
 	
 	return question;
-}
-function problem0917(){
+},
+"problem0917":function problem0917(){
 	var inputData = [{
 		'dist': 60,
 		'time': 5
@@ -820,8 +819,8 @@ function problem0917(){
 		'author-id': '09',
 	}
 	return question;
-}
-function problem0918(){
+},
+"problem0918":function problem0918(){
 	var inputData = [{
 		'ss':15,
 		'cs': 3,
@@ -879,8 +878,8 @@ function problem0918(){
 	
 	return question;
 	
-}
-function problem0919(){
+},
+"problem0919":function problem0919(){
 	var inputData = [{
 		'speed':20,
 		'time': 4
@@ -930,8 +929,8 @@ function problem0919(){
 	
 	return question;
 	
-}
-function problem0920(){
+},
+"problem0920":function problem0920(){
 	var inputData = [{
 		'sp': 2000,
 		'cp': 1000
@@ -980,8 +979,8 @@ function problem0920(){
 	
 	return question;
 	
-}
-function problem0921(){
+},
+"problem0921":function problem0921(){
 	var inputData = [{
 		'dist': 100,
 		'time': 5
@@ -1026,8 +1025,8 @@ function problem0921(){
 		'author-id': '09',
 	}
 	return question;
-}
-function problem0922(){
+},
+"problem0922":function problem0922(){
 	var inputData = [{
 		'cp': 40,
 		'sp': 120
@@ -1074,8 +1073,8 @@ function problem0922(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0923(){
+},
+"problem0923":function problem0923(){
 	var inputData = [{
 		'h':18,
 		'b':14
@@ -1120,8 +1119,8 @@ function problem0923(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0924(){
+},
+"problem0924":function problem0924(){
 	var inputData = [{
 		'distance': 35,
 		'time': 50
@@ -1166,8 +1165,8 @@ function problem0924(){
 		'author-id': '09'
 	}
 	return question;
-}
-function problem0925(){
+},
+"problem0925":function problem0925(){
 	var inputData = [{
 		'ss':25,
 		'cs': 15,
@@ -1225,8 +1224,8 @@ function problem0925(){
 	
 	return question;
 	
-}
-function problem0926(){
+},
+"problem0926":function problem0926(){
 	var inputData = [{
 		'p': 48000,
 		'n': 12,
@@ -1278,8 +1277,8 @@ function problem0926(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0927(){
+},
+"problem0927":function problem0927(){
 	var inputData = [{
 		'us': 18,
 		'ds': 14
@@ -1324,9 +1323,9 @@ function problem0927(){
 		'author-id': '09'
     }
 	return question;
-}
+},
 
-function problem0928(){
+"problem0928":function problem0928(){
 	var inputData = [{
 		'l':18,
 		'b':14
@@ -1371,8 +1370,8 @@ function problem0928(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0929(){
+},
+"problem0929":function problem0929(){
 	var inputData = [{
 		'p': 24600,
 		'n': 2,
@@ -1426,8 +1425,8 @@ function problem0929(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0930(){
+},
+"problem0930":function problem0930(){
 	var inputData = [{
 		'cp': 40.25,
 		'sp': 32
@@ -1474,8 +1473,8 @@ function problem0930(){
 		'author-id': '09'
     }
 	return question;
-}
-function problem0931(){
+},
+"problem0931":function problem0931(){
 	var inputData = [{
 		'value': 27		
 		},
@@ -1514,8 +1513,8 @@ function problem0931(){
 	}
 	
 	return question;	
-}
-function problem0932(){
+},
+"problem0932":function problem0932(){
 		var inputData = [{
 			'train1':6,
 			'train2':8,
@@ -1570,8 +1569,8 @@ function problem0932(){
 			'author-id': '09'
 		}
 		return question;	
-}
-function problem0933(){
+},
+"problem0933":function problem0933(){
 	var inputData = [{
 		'sum': 550,
 		'rate': 60,
@@ -1624,4 +1623,5 @@ function problem0933(){
 	}
 	
 	return question;
+}
 }
