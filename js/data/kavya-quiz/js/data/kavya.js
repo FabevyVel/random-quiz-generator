@@ -5,7 +5,7 @@ function getRandomNumber(max){
 }
 
 var kavya ={
-    "problem0501":function problem0501(){
+    "problem0501":function (){
 	var inputData = [{
 		'distance': 100,
 		'time': 50
@@ -53,7 +53,7 @@ var kavya ={
 	return question;	
 },
 
-"problem0502":function problem0502(){
+"problem0502":function (){
 
 	var inputData = [{
 		'streamSpeed': 10,
@@ -103,7 +103,7 @@ var kavya ={
 	
 },
 
-"problem0503":function problem0503(){
+"problem0503":function (){
 	var inputData = [{
 		'sellingPrice': 8400,
 		'profit': 12
@@ -152,7 +152,7 @@ var kavya ={
 		
 },
 
-"problem0504":function problem0504(){
+"problem0504":function (){
 	var inputData = [{
 		'principal': 4500,
 		'rateOfInterest': 4,
@@ -206,9 +206,9 @@ var kavya ={
 	
 	return question;
 		
-}
+},
 
-"problem0505":function problem0505(){
+"problem0505":function (){
 	var inputData = [{
 		'principal': 12600,
 		'rateOfInterest': 10,
@@ -263,9 +263,9 @@ var kavya ={
 	
 	return question;
 		
-}
+},
 
-"problem0506":function problem0506(){
+"problem0506":function (){
 	var inputData = [{
 		'boatSpeed': 13,
 		'streamSpeed': 4,
@@ -320,9 +320,9 @@ var kavya ={
 	
 	return question;
 		
-}
+},
 
-"problem0507":function problem0507(){
+"problem0507":function (){
 	var inputData = [{
 		'length': 24,
 		'breadth': 16
@@ -368,9 +368,9 @@ var kavya ={
 	}
 	
 	return question;	
-}
+},
 
-"problem0508":function problem0508(){
+"problem0508":function (){
 	var inputData = [{
 		'sum': 550,
 		'totalNumber': 10
@@ -416,9 +416,9 @@ var kavya ={
 	}
 	
 	return question;	
-}
+},
 
-"problem0509":function problem0509(){
+"problem0509":function (){
 	var inputData = [{
 		'capital1': 35000,
 		'capital2': 25000,
@@ -477,9 +477,9 @@ var kavya ={
 	}
 	
 	return question;	
-}
+},
 
-"problem0510":function problem0510(){
+"problem0510":function (){
 	var inputData = [{
 		'length': 24,
 		'breadth': 16
@@ -525,9 +525,9 @@ var kavya ={
 	}
 	
 	return question;	
-}
+},
 
-"problem0511":function problem0511(){
+"problem0511":function (){
 	var inputData = [{
 		'x': 3000,
 		'y': 2000
@@ -569,13 +569,13 @@ var kavya ={
 			'D': z - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '0511'
+		'author-id': '05'
 	}
 	
 	return question;	
-}
+},
 
-"problem0512":function problem0512(){
+"problem0512":function (){
 	var inputData = [{
 		'side': 5,
 		},
@@ -611,13 +611,13 @@ var kavya ={
 			'D': surfaceArea
 		},
 		'answer': 'D',
-		'author-id': '0512'
+		'author-id': '05'
 	}
 	
 	return question;	
-}
+},
 
-"problem0513":function problem0513(){
+"problem0513":function (){
 	var inputData = [{
 		'population': 12600,
 		'rate': 10,
@@ -666,14 +666,14 @@ var kavya ={
 			'D': presentPopulation - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0513'
+		'author-id': '05'
 	}
 	
 	return question;
 		
-}
+},
 
-"problem0514":function problem0514(){
+"problem0514":function (){
 	var inputData = [{
 		'downstreamStreamSpeed': 20,
 		'upstreamSpeed': 15
@@ -715,14 +715,14 @@ var kavya ={
 			'D': stillWaterSpeed
 		},
 		'answer': 'D',
-		'author-id': '0514'
+		'author-id': '05'
 	}
 	
 	return question;
 		
-}
+},
 
-"problem0515"function problem0515(){
+"problem0515":function (){
 	var inputData = [{
 		'sellingPrice': 8400,
 		'costPrice': 12
@@ -764,14 +764,14 @@ var kavya ={
 			'D': costPrice - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0515'
+		'author-id': '05'
 	}
 	
 	return question;
 		
-}
+},
 
-"problem0516":function problem0516(){
+"problem0516":function (){
 	var inputData = [{
 		'principal': 12600,
 		'rateOfInterest': 10,
@@ -820,14 +820,14 @@ var kavya ={
 			'D': amount - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '0516'
+		'author-id': '05'
 	}
 	
 	return question;
 		
-}
+},
 
-"problem0517":function problem0517(){
+"problem0517":function (){
 	var inputData = [{
 		'length': 40,
 		'breadth': 25,
@@ -884,14 +884,14 @@ var kavya ={
 			'D': noOfPerson - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '0517'
+		'author-id': '05'
 	}
 	
 	return question;
 		
-}
+},
 
-"problem0518":function problem0518(){
+"problem0518":function (){
 	var inputData = [{
 		's1': 815,
 		's2': 854,
@@ -941,14 +941,14 @@ var kavya ={
 			'D': principal - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '0518'
+		'author-id': '05'
 	}
 	
 	return question;
 	
-}
+},
 
-"problem0519":function problem0519(){
+"problem0519":function (){
 	var inputData = [
 		{
 		'distance':200,
@@ -966,7 +966,7 @@ var kavya ={
 		'distance':250,
 		'speed': 18
 		}
-	],
+     	],
 		randomIndex = getRandomNumber(inputData.length),
 		speed = inputData[randomIndex]['speed'],
 		distance = inputData[randomIndex]['distance'],
@@ -988,14 +988,14 @@ var kavya ={
 			'D':  time-parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '0519'
+		'author-id': '05'
 	}
 	
 	return question;
 	
-}
+},
 
-"problem0520":function problem0520(){
+"problem0520":function (){
 	var inputData = [{
 		'tankCap': 25,
 		'buckCap': 2/5
@@ -1032,60 +1032,16 @@ var kavya ={
 		'question': 'To fill a tank ' + tankCap + 'buckets of water is required. How many buckets of water will be required to fill the same tank if the capacity of the bucket is reduced to ' + buckCap + ' two fifth of its present?',
 		'options': {
 			'A': nBuck * parseInt(Math.random()*10),
-			'B': nBuck ,
+			'B': nBuck,
 			'C': nBuck + parseInt(Math.random()*10),
 			'D': nBuck - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0520'
+		'author-id': '05'
     }
 	return question;
   }
 }
-
-var questionBank = [];
-
-questionBank.push (problem051 ());
-questionBank.push (problem052 ());
-questionBank.push (problem053 ());
-questionBank.push (problem054 ());
-questionBank.push (problem055 ());
-questionBank.push (problem056 ());
-questionBank.push (problem057 ());
-questionBank.push (problem058 ());
-questionBank.push (problem059 ());
-questionBank.push (problem0510 ());
-questionBank.push (problem0511 ());
-questionBank.push (problem0512 ());
-questionBank.push (problem0513 ());
-questionBank.push (problem0514 ());
-questionBank.push (problem0515 ());
-questionBank.push (problem0516 ());
-questionBank.push (problem0517 ());
-questionBank.push (problem0518 ());
-questionBank.push (problem0519 ());
-questionBank.push (problem0520 ());
-
-
-function quiz(max)
- {
-	 var ques=max*Math.random();
-	 return ques;
- }
- var genreator=quiz(questionBank.length);
- genreator=parseInt(genreator);
- 
- 
-document.getElementById("btn").onclick =function()
-{
-	document.getElementById("item").innerHTML=questionBank[genreator].question;
-}
-
-
-
-
-
-
 
 
 

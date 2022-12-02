@@ -1,17 +1,43 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet"type="text/css" href="css/style.css">
+	<title>My First Page</title>
+	<style>
+		*{
+			margin: 0;
+		}
+		#wrapper{
+			max-width: 800px;
+			margin: auto;
+		}
+		.d-flex{
+			display: flex;
+			justify-content: space-between;
+		}
+		ul{
+			list-style: none;
+		}
+		.question-wrapper header,
+		.question-wrapper footer,
+		.question-wrapper section{
+			border: solid  3px #ccc;
+			padding: 10px;
+		}
+		.question-wrapper section{
+			border-top: none;
+			border-bottom: none;
+		}
+		.trigger-wrapper{
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
+	<div class="trigger-wrapper">
+		<button id="generate-questions">Generate Questions</button>
+	</div>
+	<div id="wrapper"></div>
 	<script src="js/data/kavya.js"></script>
-		<script src="js/main.js"></script>
-	
-     <div class="header"><button id="head" class="style">GENERATE QUESTIONS</button></div>
-	  <div class="wrapper"></div>
-	  
-
-	  
+	<script src="js/main.js"></script>
 </body>
 </html>
