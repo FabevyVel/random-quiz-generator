@@ -3,9 +3,9 @@
 	randomNumber = parseInt(randomNumber);
 	return randomNumber;
 }
-var dheepi=
+var dheep=
 {
-"problem031":function problem031(){
+"problem031":function(){
 	var inputData = [{
 		'upstream': 5,
 		'boat': 1
@@ -48,7 +48,7 @@ var dheepi=
 	
 },
 
-"problem032": function problem032(){
+"problem032":function(){
 	var inputData = [{
 		'distance': 600,
 		'time': 5
@@ -96,8 +96,7 @@ var dheepi=
 	
 },
 
-"problem033":function problem033()
-{
+"problem033":function(){
 	var inputData = [{
 		'price': 6000,
 		'interest': 720,
@@ -151,7 +150,7 @@ var dheepi=
 },
 
 
-"problem034":function problem034(){
+"problem034":function(){
 	var inputData = [{
 		'A': 3,
 		'B': 2,
@@ -212,7 +211,7 @@ var dheepi=
 },
 
 
-"problem035":function problem035(){
+"problem035":function(){
 	var inputData = [{
 		'costprice': 2000,
 		'loss': 10
@@ -257,7 +256,7 @@ var dheepi=
 	
 },
 
-"problem036":function problem036(){
+"problem036":function(){
 	var inputData = [{
 		'costprice': 1540,
 		'profit': 25
@@ -302,7 +301,7 @@ var dheepi=
 	
 },
 
-"problem037":function problem037(){
+"problem037":function(){
 	var inputData = [{
 		'sellingprice': 140,
 		'profit': 25
@@ -347,7 +346,7 @@ var dheepi=
 	
 },
 
-"problem038":function problem038(){
+"problem038":function(){
 	var inputData = [{
 		'speed1': 20,
 		'speed2': 5,
@@ -397,7 +396,7 @@ var dheepi=
 	
 },
 
-"problem039":function problem039(){
+"problem039":function(){
 	var inputData = [{
 		'length': 70,
 		'breadth': 25,
@@ -446,7 +445,7 @@ var dheepi=
 	
 },
 
-"problem0310":function problem0310(){
+"problem0310":function(){
 	var inputData = [{
 		'hour1': 5,
 		'hour2': 10
@@ -489,7 +488,7 @@ var dheepi=
 	
 },
 
-"problem0311":function problem0311(){
+"problem0311":function(){
 	var inputData = [{
 		'a': 8,
 		'weight1': 2.5,
@@ -539,7 +538,7 @@ var dheepi=
 	
 },
 
-"problem0312":function problem0312(){
+"problem0312":function(){
 	var inputData = [{
 		'principle': 35000,
 		'interest': 9,
@@ -588,7 +587,7 @@ var dheepi=
 	return question;
 	
 },
-"problem0313":function problem0313(){
+"problem0313":function(){
 	var inputData = [{
 		'length': 70,
 		'breadth': 25,
@@ -642,7 +641,7 @@ var dheepi=
 	
 },
 
-"problem0314":function problem0314(){
+"problem0314":function(){
 	var inputData = [{
 		'cp': 100,
 		'p': 23,
@@ -691,7 +690,7 @@ var dheepi=
 	
 },
 
-"problem0315":function problem0315(){
+"problem0315":function(){
 	var inputData = [{
 		'costprice': 1400,
 		'loss': 85
@@ -734,7 +733,7 @@ var dheepi=
 	
 },
 
-"problem0316":function problem0316(){
+"problem0316":function(){
 	var inputData = [{
 		's1': 815,
 		's2': 854,
@@ -792,7 +791,7 @@ var dheepi=
 },
 
 
-"problem0317":function problem0317(){
+"problem0317":function(){
 	var inputData = [{
 		'price1': 500,
 		'price2': 15,
@@ -839,7 +838,7 @@ var dheepi=
 	return question;
 	
 },
-"problem0318":function problem0318(){
+"problem0318":function(){
 		var inputData = [{
 		's1': 15,
 		's2': 4,
@@ -889,7 +888,7 @@ var dheepi=
 	
 },
 
-"problem0319":function problem0319(){
+"problem0319":function(){
 		var inputData = [{
 		'over1': 10,
 		'rr': 3.2,
@@ -944,7 +943,7 @@ var dheepi=
 	
 },
 
-"problem0320":function problem0320(){
+"problem0320":function(){
 		var inputData = [{
 		'manspeed': 15,
 		'currentspeed': 1.5
@@ -988,65 +987,5 @@ var dheepi=
 	return question;
 	
 }
- var questionBank = [];
-
-questionBank.push(problem031());
-questionBank.push(problem032());
-questionBank.push(problem033());
-questionBank.push(problem034());
-questionBank.push(problem035());
-questionBank.push(problem036());
-questionBank.push(problem037());
-questionBank.push(problem038());
-questionBank.push(problem039());
-questionBank.push(problem0310());
-questionBank.push(problem0311());
-questionBank.push(problem0312());
-questionBank.push(problem0313());
-questionBank.push(problem0314());
-questionBank.push(problem0315());
-questionBank.push(problem0316());
-questionBank.push(problem0317());
-questionBank.push(problem0318());
-questionBank.push(problem0319());
-questionBank.push(problem0320());
-questionBank.push(problem0321());
-questionBank.push(problem0322());
-questionBank.push(problem0323());
-questionBank.push(problem0324());
-questionBank.push(problem0325());
-questionBank.push(problem0326());
-questionBank.push(problem0327());
-questionBank.push(problem0328());
-questionBank.push(problem0329());
-questionBank.push(problem0330());
-questionBank.push(problem0331());
-questionBank.push(problem0332());
-questionBank.push(problem0333());
-questionBank.push(problem0334());
-questionBank.push(problem0335());
-questionBank.push(problem0336());
-questionBank.push(problem0337());
-questionBank.push(problem0338());
-questionBank.push(problem0339());
-questionBank.push(problem0340());
-
-
-
-console.log(questionBank);
-
-function quiz(max)
- {
-	 var ques=max*Math.random();
-	 return ques;
- }
- var genreator=quiz(questionBank.length);
- genreator=parseInt(genreator);
- 
- 
-document.getElementById("btn").onclick =function()
-{
-	document.getElementById("item").innerHTML=questionBank[genreator].question;
 }
-
 
