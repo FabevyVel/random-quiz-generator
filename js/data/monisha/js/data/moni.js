@@ -6,7 +6,7 @@ function getRandomNumber(max){
 
 var monisha = 
 {
-	"problem061"=function problem061(){
+"problem061":function(){
 	var inputData = [{
 		'distance': 10,
 		'speed': 60
@@ -53,8 +53,8 @@ var monisha =
 	
 	return question;
 	
-}
-"problem062"=function problem062(){
+},
+"problem062":function(){
 	var inputData = [{
 		'downStream': 60,
 		'upStream': 55
@@ -101,8 +101,8 @@ downStream=parseInt(downStream);
 	
 	return question;
 	
-}
-"problem063"=function problem063(){
+},
+"problem063":function(){
 	var inputData = [{
 		'principal': 36000,
 		'interest': 6,
@@ -155,8 +155,8 @@ downStream=parseInt(downStream);
 	}
 	
 	return question;
-}
-"problem064"=function problem064(){
+},
+"problem064":function(){
 	var inputData = [{
 		'diagonal': 60
 		},
@@ -196,8 +196,8 @@ downStream=parseInt(downStream);
 	
 	return question;
 	
-}
-"problem065"=function problem065(){
+},
+"problem065":function(){
 	var inputData = [{
 		'salaryA': 2000,
 		'salaryB': 6658,
@@ -269,8 +269,8 @@ downStream=parseInt(downStream);
 	}
 	
 	return question;
-}
-"problem066"=function problem066(){
+},
+"problem066":function(){
 	
 	var inputData = [{
 		'initial': 36000,
@@ -326,8 +326,8 @@ downStream=parseInt(downStream);
 	}
 	
 	return question;
-}
-"problem067"=function problem067(){
+},
+"problem067":function(){
 	var inputData = [{
 		'principal': 7500,
 		'interest': 6,
@@ -380,8 +380,8 @@ downStream=parseInt(downStream);
 	}
 	
 	return question;
-}
-"problem068"=function problem068(){
+},
+"problem068":function(){
 	var inputData = [{
 		'sellingPrice': 8634,
 		'gainPercentage': 5
@@ -428,8 +428,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem069"=function problem069(){
+},
+"problem069":function(){
 	var inputData = [{
 		'distance1': 360,
 		'time1': 6,
@@ -484,8 +484,8 @@ sellingPrice=parseInt(sellingPrice);
 	}
 	
 	return question;
-}
-"problem0610"=function problem0610(){
+},
+"problem0610":function(){
 	var inputData = [{
 		'simpleInterest': 5000,
 		'principal': 1650,
@@ -538,8 +538,8 @@ sellingPrice=parseInt(sellingPrice);
 	}
 	
 	return question;
-}
-"problem0611"=function problem0611(){
+},
+"problem0611":function(){
 	var inputData = [{
 		'area': 10,		
 		},
@@ -579,8 +579,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0612"=function problem0612(){
+},
+"problem0612":function(){
 	var inputData = [{
 		'costPrice': 8500,
 		'gainPercentage': 50
@@ -627,8 +627,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0613"=function problem0613(){
+},
+"problem0613":function(){
 	var inputData = [{
 		'perimeter': 34		
 		},
@@ -668,8 +668,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0614"=function problem0614(){
+},
+"problem0614":function(){
 	var inputData = [{
 		'value': 1.5625		
 		},
@@ -709,8 +709,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0615"=function problem0615(){
+},
+"problem0615":function(){
 	var inputData = [{
 		'base': 8500,
 		'height': 50
@@ -757,8 +757,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0616"=function problem0616(){
+},
+"problem0616":function(){
 	var inputData = [{
 		'value': 79507		
 		},
@@ -798,8 +798,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0617"=function problem0617(){
+},
+"problem0617":function(){
 	var inputData = [{
 		'distance': 600,
 		'time': 5
@@ -846,8 +846,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0618"=function problem0618(){
+},
+"problem0618":function(){
 	var inputData = [{
 		'sellingPrice': 2500,
 		'costPrice': 200
@@ -896,8 +896,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0619"=function problem0619(){
+},
+"problem0619":function(){
 	var inputData = [{
 		'lossPercentage': 20,
 		'costPrice': 4000
@@ -944,8 +944,8 @@ sellingPrice=parseInt(sellingPrice);
 	
 	return question;
 	
-}
-"problem0620"=function problem0620(){
+},
+"problem0620":function(){
 	var inputData = [{
 		'lossPercentage': 25,
 		'sellingPrice': 4200

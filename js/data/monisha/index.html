@@ -1,18 +1,56 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Aptitude Quiz</title>
+    <style>
+        *
+        {
+            margin: 0;
+        }
+        #wrapper
+        {
+            max-width: 800px;
+            margin: auto;
+        }
+        .d-flex
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        ul
+        {
+            list-style: none;
+        }
+        .question-wrapper header,
+        .question-wrapper footer,
+        .question-wrapper section
+        {
+            border: solid 1px #ccc;
+            padding: 10px;
+        }
+        .question-wrapper section
+        {
+            border-top: none;
+            border-bottom: none;
+        }
+        .trigger-wrapper
+        {
+         text-align: center;
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-	<div class="wrapper">
-			<div class="header-fc">
-				<div class="header-logo"><button>Generate Question</button></div>
-			</div>	
-	</div>	
-</div>	
-				
+    <div class="trigger-wrapper">
+        <button id="generate-questions">Generate New Set</button>
+    </div>
+    <div id="wrapper"></div>
 
+
+
+
+
+  <script src="js/data/moni.js"></script>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
