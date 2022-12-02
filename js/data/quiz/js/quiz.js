@@ -4,7 +4,7 @@ function getRandomNumber(max){
 	return randomNumber;
 }
 var siva = {
-"problem1101":function problem1101(){
+"problem1101":function(){
 	var inputData = [{
 		'speed1':80,
 		'time': 4,
@@ -59,7 +59,7 @@ var siva = {
 	return question;
 	
 },
-"problem1102":function problem1102(){
+"problem1102":function(){
 	var inputData = [{
 		'upstream':25,
 		'downstream': 5
@@ -103,7 +103,7 @@ var siva = {
 	return question;
 	
 },
-"problem1103":function problem1103(){
+"problem1103":function(){
 	var inputData = [{
 		'speed':6,
 		'time': 3
@@ -149,7 +149,7 @@ var siva = {
 	return question;
 	
 },
-"problem1104":function problem1104(){
+"problem1104":function(){
 	var inputData = [{
 		'percentage':40,
 		'oranges': 20
@@ -198,7 +198,7 @@ var siva = {
 	return question;
 	
 },
-"problem1105":function problem1105(){
+"problem1105":function(){
 	var inputData = [{
 		'sellprofit':60,
 		'costprofit': 10
@@ -244,7 +244,7 @@ var siva = {
 	return question;
 	
 },
-"problem1106":function problem1106(){
+"problem1106":function(){
 	var inputData = [{
 		'children':4,
 		'age': 4,
@@ -299,7 +299,7 @@ var siva = {
 	return question;
 	
 },
-"problem1107":function problem1107(){
+"problem1107":function(){
 	var inputData = [{
 		'average':10,
 		'bijoy': 2,
@@ -353,7 +353,7 @@ var siva = {
 	return question;
 	
 },
-"problem1108":function problem1108(){
+"problem1108":function(){
 	var inputData = [{
 		'average':50,
 		'years': 35,
@@ -419,7 +419,7 @@ var siva = {
 	return question;
 	
 },
-"problem1109":function problem1109(){
+"problem1109":function(){
 	var inputData = [{
 		'male_count':2,
 		'female_count': 2,
@@ -490,7 +490,7 @@ var siva = {
 	return question;
 	
 },
-"problem1110":function problem1110(){
+"problem1110":function(){
 	var inputData = [{
 		'first':4586,
 		'second': 7896,
@@ -570,7 +570,7 @@ var siva = {
 	return question;
 	
 },
-"problem1111":function problem1111(){
+"problem1111":function(){
 	var inputData = [{
 		'rate':15
 		},
@@ -610,7 +610,7 @@ var siva = {
 	return question;
 	
 },
-"problem1112":function problem1112(){
+"problem1112":function(){
 	var inputData = [{
 		'population':50000,
 		'rate1': 35,
@@ -668,7 +668,7 @@ var siva = {
 	return question;
 	
 },
-"problem1113":function problem1113(){
+"problem1113":function(){
 	var inputData = [{
 		'Ajay':1000,
 		'bijoy': 2200,
@@ -720,7 +720,7 @@ var siva = {
 	return question;
 	
 },
-"problem1114":function problem1114(){
+"problem1114":function(){
 	var inputData = [{
 		'group_boy':30,
 		'boys_years': 60,
@@ -781,7 +781,7 @@ var siva = {
 	return question;
 	
 },
-"problem1115":function problem1115(){
+"problem1115":function(){
 	var inputData = [{
 		'electricity_bill':25,
 		'deducted': 130
@@ -826,7 +826,7 @@ var siva = {
 	return question;
 	
 },
-"problem1116":function problem1116(){
+"problem1116":function(){
 	var inputData = [{
 		'typist':80,
 		'pages': 1150,
@@ -879,7 +879,7 @@ var siva = {
 	return question;
 	
 },
-"problem1117":function problem1117(){
+"problem1117":function(){
 	var inputData = [{
 		'village_increased':656000,
 		'decade': 234000
@@ -929,7 +929,7 @@ var siva = {
 	return question;
 	
 },
-"problem1118":function problem1118(){
+"problem1118":function(){
 	var inputData = [{
 		'parallel_line':34,
 		'same_direction': 67,
@@ -987,7 +987,7 @@ var siva = {
 	return question;
 	
 },
-"problem1119":function problem1119(){
+"problem1119":function(){
 	var inputData = [{
 		'downstream_distance':20,
 		'downstream_time': 5,
@@ -1042,7 +1042,7 @@ var siva = {
 	return question;
 	
 },
-"problem1120":function problem1120(){
+"problem1120":function(){
 	var inputData = [{
 		'buys':50,
 		'sell': 35,
@@ -1105,7 +1105,7 @@ var siva = {
 	return question;
 	
 },
-"problem1121":function problem1121(){
+"problem1121":function(){
 	var inputData=[
 		{
 		'fill':85,
@@ -1153,7 +1153,7 @@ var siva = {
 	return question;
 
 },
-"problem1122":function problem1122(){
+"problem1122":function(){
 	var inputData = [{
 		'start':90,
 		'mid':33.5,
@@ -1203,7 +1203,7 @@ var siva = {
 		}
 		return question;
 },
-"problem1123":function problem1123(){
+"problem1123":function(){
 	var inputData = [{
 		'input1': 160,
 		'input2': 100
@@ -1251,7 +1251,7 @@ var siva = {
 	
 	return question;
 },
-"problem1124":function problem1124(){
+"problem1124":function(){
 	var inputData = [{
 		'costprice': 2054,
 		'profit': 65
@@ -1298,7 +1298,7 @@ var siva = {
 	return question;
 	
 },
-"problem1125":function problem1125(){
+"problem1125":function(){
 		var inputData = [{
 			'train1':45,
 			'train2':53,
@@ -1356,7 +1356,7 @@ var siva = {
 		return question;
 	
 },
-"problem1126":function problem1126(){
+"problem1126":function(){
 		var inputData = [{
 			'speed':280
 			},
@@ -1393,7 +1393,7 @@ var siva = {
 		return question;
 	
 },
-"problem1127":function problem1127(){
+"problem1127":function(){
 	var inputData = [{
 		'length': 3042,
 		'breadth': 5604
@@ -1440,7 +1440,7 @@ var siva = {
 	
 	return question;	
 },
-"problem1128":function problem1128(){
+"problem1128":function(){
 	var inputData = [{
 		'costprice': 123,
 		'loss': 45
@@ -1488,7 +1488,7 @@ var siva = {
 	return question;
 	
 },
-"problem1129":function problem1129(){
+"problem1129":function(){
 	var inputData = [{
 		'principal': 600,
 		'interest': 67,
@@ -1543,7 +1543,7 @@ var siva = {
 	
 	return question;
 },
-"problem1130":function problem1130(){
+"problem1130":function(){
 	var inputData = [{
 		'profit': 87,
 		'costprice': 450
@@ -1591,7 +1591,7 @@ var siva = {
 	return question;
 	
 },
-"problem1131":function problem1131(){
+"problem1131":function(){
 	var inputData = [{
 		'sum': 678,
 		'rate': 987,
@@ -1645,7 +1645,7 @@ var siva = {
 	
 	return question;
 },
-"problem1132":function problem1132(){
+"problem1132":function(){
 	var inputData = [{
         'upstream':60,
 		'downstream':35,
@@ -1697,7 +1697,7 @@ var siva = {
 	
 	return question;
 },
-"problem1133":function problem1133(){
+"problem1133":function(){
 	var inputData = [{
 		'cp': 64,
 		'sp': 234
@@ -1745,7 +1745,7 @@ var siva = {
     }
 	return question;
 },
-"problem1134":function problem1134(){
+"problem1134":function(){
 	var inputData = [{
 		'p': 240,
 		'n': 120,
@@ -1798,7 +1798,7 @@ var siva = {
     }
 	return question;
 },
-"problem1135":function problem1135(){
+"problem1135":function(){
 	var inputData = [{
 		'rate':1.8
 		},
@@ -1838,7 +1838,7 @@ var siva = {
 	return question;
 	
 },
-"problem1136":function problem1136(){
+"problem1136":function(){
 	var inputData = [{
 		'electricity_bill':4.5,
 		'deducted': 13
@@ -1883,7 +1883,7 @@ var siva = {
 	return question;
 	
 },
-"problem1137":function problem1137(){
+"problem1137":function(){
 	var inputData = [{
 		'first':456,
 		'second': 796,
@@ -1963,7 +1963,7 @@ var siva = {
 	return question;
 	
 },
-"problem1138":function problem1138(){
+"problem1138":function(){
 	var inputData = [{
 		'children':4,
 		'age': 70,
@@ -2018,7 +2018,7 @@ var siva = {
 	return question;
 	
 },
-"problem1139":function problem1139(){
+"problem1139":function(){
 	var inputData = [{
 		'sellprofit':78,
 		'costprofit': 80
@@ -2064,7 +2064,7 @@ var siva = {
 	return question;
 	
 },
-"problem1140":function problem1140(){
+"problem1140":function(){
 	var inputData = [{
 		'speed':78,
 		'time': 30
@@ -2112,4 +2112,16 @@ var siva = {
 }
 }
 	
+function myFunction() {
+  var x = document.getElementById("myDiv");
+  
+  if (x.style.display !== "none") {
+    x.style.display = "none";
+	
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
 

@@ -1,12 +1,15 @@
 .wrap{
-	display:flex;
-	justify-content:center;
+	display:none;
+	flex-direction:column;
+	align-item:center;
 	background-color:white;
 }
 .button
 {
 	margin:20px;
-	align-item:center;
+	margin-left:40%;
+	height:30px;
+	width:200px;
 }
 .wrap1{
 	display:flex;
@@ -44,4 +47,5 @@
 	margin:20px;
 	align-item:center;
 	height:30px;
+
 }
