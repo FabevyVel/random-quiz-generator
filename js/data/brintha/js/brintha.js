@@ -1,11 +1,15 @@
 // 1st program
-
+function method();
 function getRandomNumber(max)
 {
 	var randomNumber=max *Math.random();
 	randomNumber=parseInt(randomNumber);
 	return randomNumber;
 } 
+function method()
+{
+	document.getElementById("event");
+}
 
 var brintha={
 	
@@ -258,7 +262,7 @@ question={
 return question;
 },
 
-// program 25
+// program 5
  "problem0205":function()
 {
 	var inputData = [{
