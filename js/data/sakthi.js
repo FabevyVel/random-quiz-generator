@@ -4,8 +4,9 @@ function getRandomNumber(max){
 	return randomNumber;
 }
 
-//1
-function problem1501()
+var sakthi=
+{
+"problem1501":function problem1501()
 {
 	var inputData = [{
 		'arunmin': 65,
@@ -69,13 +70,9 @@ function problem1501()
 	
 	return question;
 	
-}
+},
 
-
-//2
-
-
-function problem1502()
+"problem1502":function problem1502()
 {
 	var inputData = [{
 		'person1': 16,
@@ -134,11 +131,9 @@ function problem1502()
 	
 	return question;
 	
-}
+},
 
-
-//3
-function problem1503()
+"problem1503":function problem1503()
 {
 	var inputData = [{
 		'hmp': 8,
@@ -193,12 +188,9 @@ function problem1503()
 	
 	return question;
 	
-}
+},
 
-
-
-//4
-function problem1504()
+"problem1504":function problem1504()
 {
 	var inputData = [{
 		'noo': 10,
@@ -256,12 +248,10 @@ function problem1504()
 	
 	return question;
 	
-}
+},
 
 
-
-//5
-function problem1505()
+"problem1505":function problem1505()
 {
 	var inputData = [{
 		'ngp': 2,
@@ -337,11 +327,10 @@ function problem1505()
 	
 	return question;
 	
-}
+},
 
 
-//6
-function problem1506()
+"problem1506":function problem1506()
 {
 	var inputData = [{
 		'apq': 5050,
@@ -393,11 +382,10 @@ function problem1506()
 	
 	return question;
 	
-}
+},
 
 
-//7
-function problem1507()
+problem1507:function problem1507()
 {
 	var inputData = [{
 		'abc': 45,
@@ -452,11 +440,10 @@ function problem1507()
 	
 	return question;
 	
-}
+},
 
 
-//8
-function problem1508()
+"problem1508":function problem1508()
 {
 	var inputData = [{
 		'ahwc': 27,
@@ -518,12 +505,10 @@ function problem1508()
 	
 	return question;
 	
-}
+},
 
 
-
-//9
-function problem1509()
+"problem1509":function problem1509()
 {
 	var inputData = [{
 		'student1': 55,
@@ -594,11 +579,9 @@ function problem1509()
 	
 	return question;
 	
-}
+},
 
-
-//10
-function problem1510()
+"problem1510":function problem1510()
 {
 	var inputData = [{
 		'crt': 63,
@@ -655,12 +638,9 @@ function problem1510()
 	
 	return question;
 	
-}
+},
 
-
-
-//11
-function problem1511()
+"problem1511":function problem1511()
 {
 	var inputData = [{
 		'total': 110,
@@ -713,11 +693,10 @@ function problem1511()
 	
 	return question;
 	
-}
+},
 
 
-//12
-function problem1512()
+"problem1512":function problem1512()
 {
 	var inputData = [{
 		'sells': 40,
@@ -764,11 +743,10 @@ function problem1512()
 	
 	return question;
 	
-}
+},
 
 
-//13
-function problem1513()
+"problem1513":function problem1513()
 {
 	var inputData = [{
 		'one': 55,
@@ -820,11 +798,10 @@ function problem1513()
 	
 	return question;
 	
-}
+},
 
 
-//14
-function problem1514()
+"problem1514":function problem1514()
 {
 	var inputData = [{
 		'candidate1': 1135,
@@ -897,12 +874,10 @@ function problem1514()
 	
 	return question;
 	
-}
+},
 
 
-
-//15
-function problem1515()
+"problem1515":function problem1515()
 {
 	var inputData = [{
 		'buys': 66500,
@@ -954,11 +929,10 @@ function problem1515()
 	
 	return question;
 	
-}
+},
 
 
-//16
-function problem1516()
+"problem1516":function problem1516()
 {
 	var inputData = [{
 		'buys': 4700,
@@ -1011,11 +985,10 @@ function problem1516()
 	
 	return question;
 	
-}
+},
 
 
-//17
-function problem1517()
+"problem1517":function problem1517()
 {
 	var inputData = [{
 		'buys': 1400,
@@ -1061,11 +1034,10 @@ function problem1517()
 	
 	return question;
 	
-}
+},
 
 
-//18
-function problem1518()
+"problem1518":function problem1518()
 {
 	var inputData = [{
 		'sold': 2500,
@@ -1111,11 +1083,10 @@ function problem1518()
 	
 	return question;
 	
-}
+},
 
 
-//19
-function problem1519()
+"problem1519":function problem1519()
 {
 	var inputData = [{
 		'purchase': 8000,
@@ -1161,12 +1132,10 @@ function problem1519()
 	
 	return question;
 	
-}
+},
 
 
-
-//20
-function problem1520()
+"problem1520":function problem1520()
 {
 	var inputData = [{
 		'purchase': 1540,
@@ -1212,13 +1181,10 @@ function problem1520()
 	
 	return question;
 	
-}
+},
 
 
-
-//21
-
-function problem1521(){
+"problem1521":function problem1521(){
 	var inputData = [{
 		'electricity':45,
 		'deducted': 160
@@ -1261,12 +1227,9 @@ function problem1521(){
 	
 	return question;
 	
-}
+},
 
-
-//22
-
-function problem1522(){
+"problem1522":function problem1522(){
     var inputData = [{
     'overone': 14,
     'runrate': 3.2,
@@ -1319,12 +1282,10 @@ question = {
 
 return question;
 
-}
+},
 
 
-//23
-
-function problem1523(){
+"problem1523":function problem1523(){
     var inputData = [{
     'mspeed': 10,
     'bike': 1.5
@@ -1367,11 +1328,10 @@ question = {
 
 return question;
 
-}
+},
 
 
-//24
-function problem1524(){
+"problem1524":function problem1524(){
 	var inputData = [{
 		'dis':18,
 		't1': 2,
@@ -1424,12 +1384,9 @@ function problem1524(){
 	}
 
 	return question;
-}
+},
 
-
-//25
-
-function problem1525(){
+"problem1525":function problem1525(){
 	var inputData = [{
 		'b':7,
 		'h':15,
@@ -1475,11 +1432,10 @@ function problem1525(){
 	}
 
 	return question;
-}
+},
 
-//26
 
-function problem1526(){
+"problem1526":function problem1526(){
 	var inputData = [{
 		'type':70,
 		'page': 1050,
@@ -1528,12 +1484,11 @@ function problem1526(){
 	
 	return question;
 	
-}
+},
 
 
-//27
 
-function problem1527(){
+"problem1527":function problem1527(){
 	var inputData = [{
 		'A': 1000,
 		'B': 5658,
@@ -1615,12 +1570,10 @@ function problem1527(){
 	}
 	
 	return question;
-}
+},
 
 
-//28
-
-function problem1528(){
+"problem1528":function problem1528(){
 	var inputData = [{
 		'peri': 50	
 		},
@@ -1660,11 +1613,10 @@ function problem1528(){
 	
 	return question;
 	
-}
+},
 
-//29
 
-function problem1529(){
+"problem1529":function problem1529(){
 	var inputData = [{
 		'v': 783		
 		},
@@ -1704,12 +1656,10 @@ function problem1529(){
 	
 	return question;
 	
-}
+},
 
 
-//30
-
-function problem1530(){
+"problem1530":function problem1530(){
     var inputData = [{
         'm': 30,
         'l':6
@@ -1755,12 +1705,10 @@ function problem1530(){
     }
     return question;
 
-}
+},
 
 
-//31
-
-function problem1531(){
+"problem1531":function problem1531(){
 	var inputData = [{
 		'sSpeed': 21,
 		'bSpeed': 25
@@ -1806,11 +1754,10 @@ function problem1531(){
 	}
 	return question;
 		
-}
+},
 
-//32
 
-function problem1532(){
+"problem1532":function problem1532(){
 	var inputData = [{
 		'p': 2500,
 		'r': 6,
@@ -1864,11 +1811,10 @@ function problem1532(){
 	
 	return question;
 		
-}
+},
 
-//33
 
-function problem1533(){
+"problem1533":function problem1533(){
 	var inputData = [{
 		'len': 14,
 		'b': 18
@@ -1914,12 +1860,11 @@ function problem1533(){
 	}
 	
 	return question;	
-}
+},
 
 
-//35
 
-function problem1535(){
+"problem1535":function problem1535(){
 	var inputData = [{
 		'len': 14,
 		'b': 12
@@ -1965,11 +1910,10 @@ function problem1535(){
 	}
 	
 	return question;	
-}
+},
 
-//36
 
-function problem1536()
+"problem1536":function problem1536()
 {
 	var inputData = [{
 		'jaimin': 65,
@@ -2033,14 +1977,9 @@ function problem1536()
 	
 	return question;
 	
-}
+},
 
-
-
-//37
-
-
-function problem1537()
+"problem1537":function problem1537()
 {
 	var inputData = [{
 		'p1': 20,
@@ -2099,12 +2038,10 @@ function problem1537()
 	
 	return question;
 	
-}
+},
 
 
-//38
-
-function problem1538()
+"problem1538":function problem1538()
 {
 	var inputData = [{
 		's1': 45,
@@ -2175,12 +2112,10 @@ function problem1538()
 	
 	return question;
 	
-}
+},
 
 
-//39
-
-function problem1539()
+"problem1539":function problem1539()
 {
 	var inputData = [{
 		's': 2200,
@@ -2226,11 +2161,10 @@ function problem1539()
 	
 	return question;
 	
-}
+},
 
-//40
 
-function problem1540()
+"problem1540":function problem1540()
 {
 	var inputData = [{
 		'p': 1401,
@@ -2276,4 +2210,5 @@ function problem1540()
 	
 	return question;
 	
+}
 }
