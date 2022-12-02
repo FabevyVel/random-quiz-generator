@@ -3,8 +3,9 @@ function getRandomNumber(max){
 	randomNumber = parseInt(randomNumber);
 	return randomNumber;
 }
+
 var sumaiya={
-	"problem1201":function problem1201(){
+	"problem1201":function(){
 	var inputData = [{
 		'd1':240,
 		'ta': 24,
@@ -57,7 +58,7 @@ var sumaiya={
 	return question;
 },
 
-	"problem1202":function problem1202(){
+	"problem1202":function(){
 	var inputData = [{
 		'cp': 5000,
 		'loss': 10
@@ -99,7 +100,7 @@ var sumaiya={
 	
 },
 
-	"problem1203":function problem1203(){
+	"problem1203":function(){
 	var inputData = [{
 	
 		'p': 8000,
@@ -151,7 +152,7 @@ var sumaiya={
 	
 },
 
-	"problem1204":function problem1204(){
+	"problem1204":function(){
 	var inputData = [{
 	
 		'sp': 8500,
@@ -197,7 +198,7 @@ var sumaiya={
 	
 },
 
-	"problem1205":function problem1205(){
+	"problem1205":function(){
 	var inputData = [{
 		'cp': 2000,
 		'p': 25
@@ -240,7 +241,7 @@ var sumaiya={
 	
 },
 
-	"problem1206":function problem1206(){
+	"problem1206":function(){
 	var inputData = [{
 		'sp': 2000,
 		'loss': 20
@@ -283,7 +284,7 @@ var sumaiya={
 	
 },
 
-	"problem1207":function problem1207(){
+	"problem1207":function(){
 	var inputData = [
 		{
 		'distance':20,
@@ -330,7 +331,7 @@ var sumaiya={
 	
 },
 
-	"problem1208":function problem1208(){
+	"problem1208":function(){
 	var inputData = [{
 		'time':2,
 		'speed':20
@@ -375,7 +376,7 @@ var sumaiya={
 	
 },
 
-	"problem1209":function problem1209(){
+	"problem1209":function(){
 	var inputData = [{
 		'distance':68,
 		'speeda': 13,
@@ -427,7 +428,7 @@ var sumaiya={
 	
 },
 
-	"problem1210":function problem1210(){
+	"problem1210":function(){
 	var inputData = [{
 		'speeda':15,
 		'speedb': 5,
@@ -481,7 +482,7 @@ var sumaiya={
 	
 },
 
-	"problem1211":function problem1211(){
+	"problem1211":function(){
 	var inputData = [{
 		'sp': 2500,
 		'cp': 2000
@@ -528,7 +529,7 @@ var sumaiya={
 	
 },
 
-	"problem1212":function problem1212(){
+	"problem1212":function(){
 	var inputData = [{
 		'cp': 1500,
 		'loss': 85
@@ -571,7 +572,7 @@ var sumaiya={
 	
 },
 
-	"problem1213":function problem1213(){
+	"problem1213":function(){
 	var inputData = [{
 		'rate1': 815,
 		'rate2': 854,
@@ -628,7 +629,7 @@ var sumaiya={
 	
 },
 
-	"problem1214":function problem1214(){
+	"problem1214":function(){
 	var inputData = [{
 		'cp':1300,
 		'p': 25
@@ -676,7 +677,7 @@ var sumaiya={
 },
 
 
-	"problem1215":function problem1215(){
+	"problem1215":function(){
 	var inputData = [{
 		'distance': 600,
 		'time': 5
@@ -721,7 +722,7 @@ var sumaiya={
 	
 },
 
-	"problem1216":function problem1216(){
+	"problem1216":function(){
 	var inputData = [{
 		'base': 5,
 		'height': 10
@@ -766,7 +767,7 @@ var sumaiya={
 	
 },
 
-	"problem1217":function problem1217(){
+	"problem1217":function(){
 	var inputData = [{
 		'side': 15
 		},
@@ -804,7 +805,7 @@ var sumaiya={
 
 },
 
-	"problem1218":function problem1218(){
+	"problem1218":function(){
 	var inputData = [{
 		'diagonal': 30
 		},
@@ -842,7 +843,7 @@ var sumaiya={
 
 },
 
-	"problem1219":function problem1219(){
+	"problem1219":function(){
 	var inputData = [{
 		'sum': 220,
 		'number':40
@@ -886,7 +887,7 @@ var sumaiya={
 
 },
 
-	"problem1220":function problem1220(){
+	"problem1220":function(){
 	var inputData = [{
 		'n':2
 		},
@@ -901,7 +902,7 @@ var sumaiya={
 		}],
 	randomIndex = getRandomNumber(inputData.length),
 		n= inputData[randomIndex]['n'],
-		average ,
+		average,
 		question = {};
 		
     n=parseInt(n);
@@ -924,19 +925,4 @@ var sumaiya={
 
 }
 }
-
-function quiz(max)
- {
-	 var question=max*Math.random();
-	 return question;
- }
- var genreator=quiz(questionBank.length);
- genreator=parseInt(genreator);
- 
- 
-document.getElementById("btn").onclick =function()
-{
-	document.getElementById("item").innerHTML=questionBank[genreator].question;
-}
-
 
