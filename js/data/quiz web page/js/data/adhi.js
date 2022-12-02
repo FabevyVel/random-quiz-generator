@@ -4,7 +4,7 @@ function getRandomNumber(max){
        return randomNumber;
 }
 var adhithan ={
-"problem01":funtion problem011(){
+"problem0101":function(){
 	var inputData = [{
 		'distance': 10,
 		'time': 60,
@@ -37,7 +37,7 @@ var adhithan ={
 
 	question = {
 		'type': 'single',
-		'id': '011',
+		'id': '0101',
 		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
 		'options': {
 			'A': speed,
@@ -46,14 +46,14 @@ var adhithan ={
 			'D': speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '011'
+		'author-id': '01'
 	}
 	
 	return question;
 	
 },
 
-"problem02":function problem012(){
+"problem0102":function (){
 	var inputData = [{
 		'distance': 100,
 		'time': 50
@@ -88,7 +88,7 @@ var adhithan ={
 
 	question = {
 		'type': 'single',
-		'id': '012',
+		'id': '0102',
 		'question': 'A car travels a distance of'+" "+ + distance + 'km in'+" "+ + time + 'hours. What is its speed in km/hr?',
 		'options': {
 			'A': speed,
@@ -97,13 +97,13 @@ var adhithan ={
 			'D': speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '012'
+		'author-id': '01'
 	}
 	
 	return question;	
-}
+},
 
-"problem03":function problem013(){
+"problem0103":function (){
 	var inputData = [{
 		'streamSpeed': 10,
 		'boatSpeed': 25
@@ -138,7 +138,7 @@ var adhithan ={
 
 	question = {
 		'type': 'single',
-		'id': '013',
+		'id': '0103',
 		'question': 'The speed of boat in still water is' +" "+ + boatSpeed + 'kmph. The speed of current is'+" "+ + streamSpeed + 'kmph. What is its Up stream speed in kmph?',
 		'options': {
 			'A': upStream + parseInt(Math.random()*10),
@@ -147,14 +147,14 @@ var adhithan ={
 			'D': upStream
 		},
 		'answer': 'D',
-		'author-id': '013'
+		'author-id': '01'
 	}
 	
 	return question;
 		
-}
+},
 
-"problem04":function problem014(){
+"problem0104":function (){
 	var inputData = [{
 		'sellingPrice': 8400,
 		'profit': 12
@@ -189,7 +189,7 @@ var adhithan ={
 
 	question = {
 		'type': 'single',
-		'id': '014',
+		'id': '0104',
 		'question': 'Sam brought cell phone from a shop. If he sells at Rs' +" "+ + sellingPrice +" "+'and earns a profit of'+" "+ + profit  +'%. Find the cost price of the cell phone.?',
 		'options': {
 			'A': costPrice + parseInt(Math.random()*10),
@@ -198,14 +198,14 @@ var adhithan ={
 			'D': costPrice - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '014'
+		'author-id': '01'
 	}
 	
 	return question;
 		
 },
 
-"problem05":function problem015(){
+"problem0105":function (){
 	var inputData = [{
 		'principal': 4500,
 		'rateOfInterest': 4,
@@ -247,7 +247,7 @@ var adhithan ={
 
 	question = {
 		'type': 'single',
-		'id': '015',
+		'id': '0105',
 		'question': 'Find the Simple Interest when Principal is' +" "+ + principal +" "+ ',Rate of Interest is' +" "+ + rateOfInterest  +'% per annum and Time is' +" "+ + noOfYears+ 'years.?',
 		'options': {
 			'A': simpleInterest + parseInt(Math.random()*10),
@@ -256,14 +256,14 @@ var adhithan ={
 			'D': simpleInterest - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '015'
+		'author-id': '01'
 	}
 	
 	return question;
 		
 },
 
-"problem06":function problem016(){
+"problem0106":function (){
 	var inputData = [{
 		'principal': 12600,
 		'rateOfInterest': 10,
@@ -306,7 +306,7 @@ var adhithan ={
 
 	question = {
 		'type': 'single',
-		'id': '016',
+		'id': '0106',
 		'question': 'Find the Compound Interest on Rs' +" "+ + principal +" "+ 'for' +" "+ + noOfYears  +'years at' +" "+ + rateOfInterest+ '% per annum compounded annually.?',
 		'options': {
 			'A': compoundInterest + parseInt(Math.random()*10),
@@ -315,14 +315,14 @@ var adhithan ={
 			'D': compoundInterest - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '016'
+		'author-id': '01'
 	}
 	
 	return question;
 		
 },
 
-"problem07":function problem017(){
+"problem0107":function (){
 	var inputData = [{
 		'distance': 10,
 		'time': 60,
@@ -355,7 +355,7 @@ var adhithan ={
 
 	    question = {
 		'type': 'single',
-		'id': '017',
+		'id': '0107',
 		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time + 'sec. Calculate the speed of the train.',
 		'options': {
 			'A': speed,
@@ -364,14 +364,14 @@ var adhithan ={
 			'D': speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '017',
+		'author-id': '01',
 		}
 	
 	return question;
 	
 },
 
-"problem08":function problem018(){
+"problem0108":function (){
 	var inputData = [{
 		'distance': 60,
 		'speed': 10
@@ -404,7 +404,7 @@ var adhithan ={
 
 	question = {
 		'type': 'single',
-		'id': '018',
+		'id': '0108',
 		'question': 'A train is coming in ' + speed + 'km/hr from north direction at ' + time + 'hr Calculate the time of the train.',
 		'options': {
 			'A': time,
@@ -413,14 +413,14 @@ var adhithan ={
 			'D': Math.abs(time - parseInt(Math.random()*10))
 		},
 		'answer': 'A',
-		'author-id': '018',
+		'author-id': '01',
 	}
 	
 	return question;
 	
 },
 
-"problem09":function problem019(){
+"problem0109":function (){
 	var inputData = [{
 		'time': 60,
 		'speed': 10
@@ -453,7 +453,7 @@ var adhithan ={
 	
 	question = {
 		'type': 'single',
-		'id': '019',
+		'id': '0109',
 		'question': 'A train is coming in ' + distance + 'km from north direction at ' + time  +'sec. Calculate the distance of the train.',
 		'options': {
 			'A': distance,
@@ -462,13 +462,13 @@ var adhithan ={
 			'D': distance - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '019'
+		'author-id': '01'
 	}
 	
 	return question;
 },
 
-"problem10":function problem0110(){
+"problem0110":function (){
 	var inputData = [{
 		'correctinput': 60,
 		'wronginput': 10
@@ -515,7 +515,7 @@ var adhithan ={
 	return question;
 },
 
-"problem11":function problem0111(){
+"problem0111":function (){
 	var inputData = [{
 		'costprice': 2000,
 		'loss': 10
@@ -553,14 +553,14 @@ var adhithan ={
 			'D': sellingprice
 		},
 		'answer': 'D',
-		'author-id': '0111'
+		'author-id': '01'
 	}
 	
 	return question;
 	
 },
 
-"problem12":function problem0112(){
+"problem0112":function (){
 	var inputData = [{
 		'distance': 35,
 		'time': 50
@@ -602,14 +602,14 @@ var adhithan ={
 			'D': speed * parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '0112'
+		'author-id': '01'
 	}
 	
 	return question;
 	
 },
 
-"problem13":function problem0113(){
+"problem0113":function (){
 	var inputData = [{
 		'number': 5,
 		},
@@ -644,13 +644,13 @@ var adhithan ={
 			'D': average * parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '0113'
+		'author-id': '01'
 	}
 	
 	return question;
 },
 
-"problem14":function problem0114(){
+"problem0114":function (){
 	var inputData = [{
 		'cp': 8000,
 		'lp': 10
@@ -692,12 +692,12 @@ var adhithan ={
 			'D': sp 
 		},
 		'answer': 'D',
-		'author-id': '0114'
+		'author-id': '01'
     }
 	return question;
 },
 
-"problem15":function problem0115(){
+"problem0115":function (){
 	var inputData = [{
 		'tankCap': 25,
 		'buckCap': 2/5
@@ -739,12 +739,12 @@ var adhithan ={
 			'D': nBuck - parseFloat(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0115'
+		'author-id': '01'
     }
 	return question;
 },
 
-"problem16":function problem0116(){
+"problem0116":function (){
 	var inputData = [{
 		'sp': 8400,
 		'pp': 12
@@ -786,12 +786,12 @@ var adhithan ={
 			'D': cp - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0116'
+		'author-id': '01'
     }
 	return question;
 },
 
-"problem17":function problem0117(){
+"problem0117":function (){
 	var inputData = [{
         'upstream':20,
 		'downstream':3.5,
@@ -837,37 +837,37 @@ var adhithan ={
 			'D':time * parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '0117'
+		'author-id': '01'
 	}
 	
 	return question;
 },
 
-"problem18":function problem0118(){
+"problem0118":function (){
 	var inputData = [{
-        'principle ':6000,
-		'interest':720,
-		'rate':6,
+        'principle':4500,
+		'interest':4,
+		'rate':6
 		},
 		{
-        'principle ':6000,
-		'interest':720,
-		'rate':6,
+        'principle':5000,
+		'interest':8,
+		'rate':2
 		},
 		{
-        'principle ':6000,
-		'interest':720,
-		'rate':6,
+        'principle':5000,
+		'interest':4,
+		'rate':6
 		},
-	
-		'principle ':6000,
-		'interest':720,
-		'rate':6,
+	    {
+		'principle':8000,
+		'interest':4,
+		'rate':6
 		},
 		{
-		'principle ':6000,
-		'interest':720,
-		'rate':6,
+		'principle':7500,
+		'interest':4,
+		'rate':6
 		}],
 	 randomIndex = getRandomNumber(inputData.length),
 	       principle= inputData[randomIndex]['principle'],
@@ -894,13 +894,13 @@ var adhithan ={
 			'D':time * parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '0118'
+		'author-id': '01'
 	}
 	
 	return question;
-}
+},
 
-"problem19":function problem0119(){
+"problem0119":function (){
 	var inputData = [{
         'length':10,
 		'breath':4,
@@ -951,13 +951,13 @@ var adhithan ={
 			'D':area * parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '0119'
+		'author-id': '01'
 	}
 	
 	return question;
 },
 
-"problem20":function problem0120(){
+"problem0120":function (){
 	var inputData = [{
         'facevalue':100,
 		'discount':6,
@@ -1007,8 +1007,9 @@ var adhithan ={
 			'D': costprice * parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '0120'
+		'author-id': '01'
 	}
 	
 	return question;
+  }
 }
