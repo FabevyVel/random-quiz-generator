@@ -4,7 +4,7 @@ function getRandomNumber(max){
 	return randomNumber;
 }
 var pavi={
-	"problem081"=function problem081(){
+"problem081":function(){
 	var inputData = [{
 		'distance': 10,
 		'time': 60
@@ -51,8 +51,8 @@ var pavi={
 	
 	return question;
 	
-}
-"problem082"=function problem082(){
+},
+"problem082":function(){
 	var inputData = [{
 		'speed': 60,
 		'time': 9
@@ -98,8 +98,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem083"=function problem083(){
+},
+"problem083":function(){
 	var inputData = [{
 		'amount': 815,
 		'time': 3
@@ -145,9 +145,8 @@ var pavi={
 	}
 	
 	return question;
-}
-
-"problem084"=function problem084(){
+},
+"problem084":function(){
 	var inputData = [{
 		'sum': 450,
 		'rate': 81,
@@ -200,8 +199,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem085"=function problem085(){
+},
+"problem085":function(){
 	var inputData = [{
 		'principle': 30000,
 		'amount': 7,
@@ -254,8 +253,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem086"=function problem086(){
+},
+"problem086":function(){
 	var inputData = [{
 		'speed':15,
 		'currentspeed': 2.5,
@@ -301,8 +300,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem087"=function problem087(){
+},
+"problem087":function(){
 	var inputData = [{
 		'distance':16,
 		'time1': 2,
@@ -355,8 +354,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem088"=function problem088(){
+},
+"problem088":function(){
 	var inputData = [{
 		'area':5,
 		'hectares': 1.5,
@@ -403,8 +402,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem089"=function problem089(){
+},
+"problem089":function(){
 	var inputData = [{
 		'CP':1400,
 		'loss': 15,
@@ -450,8 +449,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0810"=function problem0810(){
+},
+"problem0810":function(){
 	var inputData = [{
 		'costprice':20,
 		'sellinprice': 375,
@@ -497,8 +496,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0811"=function problem0811(){
+},
+"problem0811":function(){
 	var inputData = [{
 		'base':5,
 		'height':10,
@@ -544,9 +543,8 @@ var pavi={
 	}
 	
 	return question;
-}
-
-"problem0812"=function problem0812(){
+},
+"problem0812":function(){
 	var inputData = [{
 		'length':40,
 		'breath':25,
@@ -605,11 +603,9 @@ var pavi={
 		'answer': 'D',
 		'author-id': '0812'
 	}
-	
 	return question;
-}
-
-"problem0813"=function problem0813(){
+},
+"problem0813":function(){
 	var inputData = [{
 		'cp':2000,
 		'sp':2500,
@@ -657,8 +653,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0814"=function problem0814(){
+},
+"problem0814":function(){
 	var inputData = [{
         'length':20,
 		'breath':34,
@@ -706,8 +702,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0815"=function problem0815(){
+},
+"problem0815":function(){
 	var inputData = [{
         'perimeter':216,
 		'breath':5,
@@ -754,8 +750,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0816"=function problem0816(){
+},
+"problem0816":function(){
 	var inputData = [{
         'costprice':2000,
 		'loss':30,
@@ -803,8 +799,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0817"=function problem0817(){
+},
+"problem0817":function(){
 	var inputData = [{
         'upstream':20,
 		'downstream':3.5,
@@ -854,8 +850,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0818"=function problem0818(){
+},
+"problem0818":function(){
 	var inputData = [{
         'principle ':6000,
 		'interest':720,
@@ -910,8 +906,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0819"=function problem0819(){
+},
+"problem0819":function(){
 	var inputData = [{
         'length':10,
 		'breath':4,
@@ -966,8 +962,8 @@ var pavi={
 	}
 	
 	return question;
-}
-"problem0820"=function problem0820(){
+},
+"problem0820":function(){
 	var inputData = [{
         'facevalue':100,
 		'discount':6,
@@ -1022,5 +1018,5 @@ var pavi={
 	
 	return question;
 }
-
+}
 

@@ -1,0 +1,19 @@
+.head
+{
+	width:70%;
+	margin:auto;
+}
+.head 
+{
+    display:flex;
+	margin-top:20px;
+	width:20%;
+	height:50px;
+	background-color:lightblue;
+    align-items:center;
+	justify-content:center;
+}
+.button
+{
+	background-color:white;
+}
