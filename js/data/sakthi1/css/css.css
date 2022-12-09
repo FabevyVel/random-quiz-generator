@@ -36,7 +36,7 @@
 	height:100%;
 	width:100%;
 }
-.quiz .question .text
+.quiz .question .tex
 {
 	margin:10px;
 }
@@ -56,7 +56,7 @@
 {
 	margin:10px;
 }
-.quiz .options .wrap .text
+.quiz .options .wrap .tex
 {
 	margin:10px;
 }
@@ -81,7 +81,6 @@
 }
 .quiz .answer .ans .but
 {
-	margin:10px;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -89,7 +88,7 @@
 }
 .quiz .answer .ans .but .b
 {
-	font-size: 15px;
+	font-size: 5px;
 }
 .quiz .answer .profile
 {
@@ -113,7 +112,7 @@
 {
 	display:flex;
 }
-.quiz .answer .profile .wrap .text
+.quiz .answer .profile .wrap .tex
 {
 	margin:10px;
 }

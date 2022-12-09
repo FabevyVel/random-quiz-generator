@@ -1262,15 +1262,131 @@ questionBank.push(problem1519());
 questionBank.push(problem1520());
 
 
-
-
-
-
-
+z=0;
 document.getElementById("mb").onclick = function () 
 {
+	if(z>0)
+	{
+		location.reload();
+	}
 	for(i=0;i<20;i++)
 	{
+		var quiz=document.createElement("div");
+		document.body.appendChild(quiz);
+		quiz.setAttribute("class","quiz");
+		quiz.setAttribute("id",String(i));
+		var question=document.createElement("div");
+		quiz.appendChild(question);
+		question.setAttribute("class","question");
+		var tex=document.createElement("h2");
+		question.appendChild(tex);
+		tex.setAttribute("class","tex");
+		tex.setAttribute("id",String(i)+'1');
+		
+		var options=document.createElement("div");
+		quiz.appendChild(options);
+		options.setAttribute("class","options");
+
+		var wrap=document.createElement("div");
+		options.appendChild(wrap);
+		wrap.setAttribute("class","wrap");
+		var choose=document.createElement("p");
+		wrap.appendChild(choose);
+		choose.setAttribute("class","choose");
+		choose.innerHTML='A';
+		var tex=document.createElement("p");
+		wrap.appendChild(tex);
+		tex.setAttribute("class","tex");
+		tex.setAttribute("id",String(i)+'2');
+
+		var wrap=document.createElement("div");
+		options.appendChild(wrap);
+		wrap.setAttribute("class","wrap");
+		var choose=document.createElement("p");
+		wrap.appendChild(choose);
+		choose.setAttribute("class","choose");
+		choose.innerHTML='B';
+		var tex=document.createElement("p");
+		wrap.appendChild(tex);
+		tex.setAttribute("class","tex");
+		tex.setAttribute("id",String(i)+'3');
+
+		var wrap=document.createElement("div");
+		options.appendChild(wrap);
+		wrap.setAttribute("class","wrap");
+		var choose=document.createElement("p");
+		wrap.appendChild(choose);
+		choose.setAttribute("class","choose");
+		choose.innerHTML='C';
+		var tex=document.createElement("p");
+		wrap.appendChild(tex);
+		tex.setAttribute("class","tex");
+		tex.setAttribute("id",String(i)+'4');
+
+		var wrap=document.createElement("div");
+		options.appendChild(wrap);
+		wrap.setAttribute("class","wrap");
+		var choose=document.createElement("p");
+		wrap.appendChild(choose);
+		choose.setAttribute("class","choose");
+		choose.innerHTML='D';
+		var tex=document.createElement("p");
+		wrap.appendChild(tex);
+		tex.setAttribute("class","tex");
+		tex.setAttribute("id",String(i)+'5');
+		
+		var wrap=document.createElement("div");
+		options.appendChild(wrap);
+		wrap.setAttribute("class","wrap");
+		var choose=document.createElement("p");
+		wrap.appendChild(choose);
+		choose.setAttribute("class","choose");
+		var tex=document.createElement("p");
+		wrap.appendChild(tex);
+		tex.setAttribute("class","tex");
+		tex.setAttribute("id",String(i)+'10');
+		
+		var answer=document.createElement("div");
+		quiz.appendChild(answer);
+		answer.setAttribute("class","answer");
+
+		var ans=document.createElement("div");
+		answer.appendChild(ans);
+		ans.setAttribute("class","ans");
+		var but=document.createElement("button");
+		ans.appendChild(but);
+		but.setAttribute("class","but");
+		but.setAttribute("id","b");
+		but.innerHTML="show answer";
+		var b=document.createElement("p");
+		but.appendChild(b);
+		b.setAttribute("class","b");
+		tex.setAttribute("id",'sa'+String(i));
+		var texp=document.createElement("div");
+		ans.appendChild(texp);
+		texp.setAttribute("class","texp");
+		var tex=document.createElement("p");
+		texp.appendChild(tex);
+		tex.setAttribute("class","tex");
+		tex.setAttribute("id",String(i)+'6');
+		
+		var profile=document.createElement("div");
+		answer.appendChild(profile);
+		profile.setAttribute("class","profile");
+		var wrap=document.createElement("div");
+		profile.appendChild(wrap);
+		wrap.setAttribute("class","wrap");
+		var photo=document.createElement("img");
+		wrap.appendChild(photo);
+		photo.setAttribute("class","photo");
+
+		var wrap=document.createElement("div");
+		profile.appendChild(wrap);
+		wrap.setAttribute("class","wrap");
+		var tex=document.createElement("p");
+		wrap.appendChild(tex);
+		tex.setAttribute("class","tex");
+		tex.setAttribute("id",String(i)+'7');
 		function grn(m)
 		{
 			var rn=m*Math.random();
@@ -1280,425 +1396,13 @@ document.getElementById("mb").onclick = function ()
 		var sm=grn(questionBank.length);
 		sm=parseInt(sm);
 		
-		if(i==0)
-		{
-			document.getElementById("01").innerHTML=questionBank[sm].question;
-			document.getElementById("02").innerHTML=questionBank[sm].options.A;
-			document.getElementById("03").innerHTML=questionBank[sm].options.B;
-			document.getElementById("04").innerHTML=questionBank[sm].options.C;
-			document.getElementById("05").innerHTML=questionBank[sm].options.D;
-			var temp0=questionBank[sm].answer;
-			document.getElementById("sa0").onclick = function ()
-			{
-			document.getElementById("06").innerHTML=temp0;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("06").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("06").innerHTML=" ";
-			document.getElementById("07").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==1)
-		{
-			document.getElementById("11").innerHTML=questionBank[sm].question;
-			document.getElementById("12").innerHTML=questionBank[sm].options.A;
-			document.getElementById("13").innerHTML=questionBank[sm].options.B;
-			document.getElementById("14").innerHTML=questionBank[sm].options.C;
-			document.getElementById("15").innerHTML=questionBank[sm].options.D;
-			var temp1=questionBank[sm].answer;
-			document.getElementById("sa1").onclick = function ()
-			{
-			document.getElementById("16").innerHTML=temp1;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("16").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("16").innerHTML=" ";
-			document.getElementById("17").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==2)
-		{
-			document.getElementById("21").innerHTML=questionBank[sm].question;
-			document.getElementById("22").innerHTML=questionBank[sm].options.A;
-			document.getElementById("23").innerHTML=questionBank[sm].options.B;
-			document.getElementById("24").innerHTML=questionBank[sm].options.C;
-			document.getElementById("25").innerHTML=questionBank[sm].options.D;
-			var temp2=questionBank[sm].answer;
-			document.getElementById("sa2").onclick = function ()
-			{
-			document.getElementById("26").innerHTML=temp2;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("26").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("26").innerHTML=" ";
-			document.getElementById("27").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==3)
-		{
-			document.getElementById("31").innerHTML=questionBank[sm].question;
-			document.getElementById("32").innerHTML=questionBank[sm].options.A;
-			document.getElementById("33").innerHTML=questionBank[sm].options.B;
-			document.getElementById("34").innerHTML=questionBank[sm].options.C;
-			document.getElementById("35").innerHTML=questionBank[sm].options.D;
-			var temp3=questionBank[sm].answer;
-			document.getElementById("sa3").onclick = function ()
-			{
-			document.getElementById("36").innerHTML=temp3;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("36").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("36").innerHTML=" ";
-			document.getElementById("37").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==4)
-		{
-			document.getElementById("41").innerHTML=questionBank[sm].question;
-			document.getElementById("42").innerHTML=questionBank[sm].options.A;
-			document.getElementById("43").innerHTML=questionBank[sm].options.B;
-			document.getElementById("44").innerHTML=questionBank[sm].options.C;
-			document.getElementById("45").innerHTML=questionBank[sm].options.D;
-			var temp4=questionBank[sm].answer;
-			document.getElementById("sa4").onclick = function ()
-			{
-			document.getElementById("46").innerHTML=temp4;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("46").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("46").innerHTML=" ";
-			document.getElementById("47").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==5)
-		{
-			document.getElementById("51").innerHTML=questionBank[sm].question;
-			document.getElementById("52").innerHTML=questionBank[sm].options.A;
-			document.getElementById("53").innerHTML=questionBank[sm].options.B;
-			document.getElementById("54").innerHTML=questionBank[sm].options.C;
-			document.getElementById("55").innerHTML=questionBank[sm].options.D;
-			var temp5=questionBank[sm].answer;
-			document.getElementById("sa5").onclick = function ()
-			{
-			document.getElementById("56").innerHTML=temp5;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("56").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("56").innerHTML=" ";
-			document.getElementById("57").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==6)
-		{
-			document.getElementById("61").innerHTML=questionBank[sm].question;
-			document.getElementById("62").innerHTML=questionBank[sm].options.A;
-			document.getElementById("63").innerHTML=questionBank[sm].options.B;
-			document.getElementById("64").innerHTML=questionBank[sm].options.C;
-			document.getElementById("65").innerHTML=questionBank[sm].options.D;
-			var temp6=questionBank[sm].answer;
-			document.getElementById("sa6").onclick = function ()
-			{
-			document.getElementById("66").innerHTML=temp6;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("66").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("66").innerHTML=" ";
-			document.getElementById("67").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==7)
-		{
-			document.getElementById("71").innerHTML=questionBank[sm].question;
-			document.getElementById("72").innerHTML=questionBank[sm].options.A;
-			document.getElementById("73").innerHTML=questionBank[sm].options.B;
-			document.getElementById("74").innerHTML=questionBank[sm].options.C;
-			document.getElementById("75").innerHTML=questionBank[sm].options.D;
-			var temp7=questionBank[sm].answer;
-			document.getElementById("sa7").onclick = function ()
-			{
-			document.getElementById("76").innerHTML=temp7;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("76").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("76").innerHTML=" ";
-			document.getElementById("77").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==8)
-		{
-			document.getElementById("81").innerHTML=questionBank[sm].question;
-			document.getElementById("82").innerHTML=questionBank[sm].options.A;
-			document.getElementById("83").innerHTML=questionBank[sm].options.B;
-			document.getElementById("84").innerHTML=questionBank[sm].options.C;
-			document.getElementById("85").innerHTML=questionBank[sm].options.D;
-			var temp8=questionBank[sm].answer;
-			document.getElementById("sa8").onclick = function ()
-			{
-			document.getElementById("86").innerHTML=temp8;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("86").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("86").innerHTML=" ";
-			document.getElementById("87").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==9)
-		{
-			document.getElementById("91").innerHTML=questionBank[sm].question;
-			document.getElementById("92").innerHTML=questionBank[sm].options.A;
-			document.getElementById("93").innerHTML=questionBank[sm].options.B;
-			document.getElementById("94").innerHTML=questionBank[sm].options.C;
-			document.getElementById("95").innerHTML=questionBank[sm].options.D;
-			var temp9=questionBank[sm].answer;
-			document.getElementById("sa9").onclick = function ()
-			{
-			document.getElementById("96").innerHTML=temp9;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("96").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("96").innerHTML=" ";
-			document.getElementById("97").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==10)
-		{
-			document.getElementById("101").innerHTML=questionBank[sm].question;
-			document.getElementById("102").innerHTML=questionBank[sm].options.A;
-			document.getElementById("103").innerHTML=questionBank[sm].options.B;
-			document.getElementById("104").innerHTML=questionBank[sm].options.C;
-			document.getElementById("105").innerHTML=questionBank[sm].options.D;
-			var temp10=questionBank[sm].answer;
-			document.getElementById("sa10").onclick = function ()
-			{
-			document.getElementById("106").innerHTML=temp10;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("106").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("106").innerHTML=" ";
-			document.getElementById("107").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==11)
-		{
-			document.getElementById("111").innerHTML=questionBank[sm].question;
-			document.getElementById("112").innerHTML=questionBank[sm].options.A;
-			document.getElementById("113").innerHTML=questionBank[sm].options.B;
-			document.getElementById("114").innerHTML=questionBank[sm].options.C;
-			document.getElementById("115").innerHTML=questionBank[sm].options.D;
-			var temp11=questionBank[sm].answer;
-			document.getElementById("sa11").onclick = function ()
-			{
-			document.getElementById("116").innerHTML=temp11;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("116").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("116").innerHTML=" ";
-			document.getElementById("117").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==12)
-		{
-			document.getElementById("121").innerHTML=questionBank[sm].question;
-			document.getElementById("122").innerHTML=questionBank[sm].options.A;
-			document.getElementById("123").innerHTML=questionBank[sm].options.B;
-			document.getElementById("124").innerHTML=questionBank[sm].options.C;
-			document.getElementById("125").innerHTML=questionBank[sm].options.D;
-			var temp12=questionBank[sm].answer;
-			document.getElementById("sa12").onclick = function ()
-			{
-			document.getElementById("126").innerHTML=temp12;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("126").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("126").innerHTML=" ";
-			document.getElementById("127").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==13)
-		{
-			document.getElementById("131").innerHTML=questionBank[sm].question;
-			document.getElementById("132").innerHTML=questionBank[sm].options.A;
-			document.getElementById("133").innerHTML=questionBank[sm].options.B;
-			document.getElementById("134").innerHTML=questionBank[sm].options.C;
-			document.getElementById("135").innerHTML=questionBank[sm].options.D;
-			var temp13=questionBank[sm].answer;
-			document.getElementById("sa13").onclick = function ()
-			{
-			document.getElementById("136").innerHTML=temp13;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("136").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("136").innerHTML=" ";
-			document.getElementById("137").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==14)
-		{
-			document.getElementById("141").innerHTML=questionBank[sm].question;
-			document.getElementById("142").innerHTML=questionBank[sm].options.A;
-			document.getElementById("143").innerHTML=questionBank[sm].options.B;
-			document.getElementById("144").innerHTML=questionBank[sm].options.C;
-			document.getElementById("145").innerHTML=questionBank[sm].options.D;
-			var temp14=questionBank[sm].answer;
-			document.getElementById("sa14").onclick = function ()
-			{
-			document.getElementById("146").innerHTML=temp14;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("146").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("146").innerHTML=" ";
-			document.getElementById("147").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==15)
-		{
-			document.getElementById("151").innerHTML=questionBank[sm].question;
-			document.getElementById("152").innerHTML=questionBank[sm].options.A;
-			document.getElementById("153").innerHTML=questionBank[sm].options.B;
-			document.getElementById("154").innerHTML=questionBank[sm].options.C;
-			document.getElementById("155").innerHTML=questionBank[sm].options.D;
-			var temp15=questionBank[sm].answer;
-			document.getElementById("sa15").onclick = function ()
-			{
-			document.getElementById("156").innerHTML=temp15;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("156").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("156").innerHTML=" ";
-			document.getElementById("157").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==16)
-		{
-			document.getElementById("161").innerHTML=questionBank[sm].question;
-			document.getElementById("162").innerHTML=questionBank[sm].options.A;
-			document.getElementById("163").innerHTML=questionBank[sm].options.B;
-			document.getElementById("164").innerHTML=questionBank[sm].options.C;
-			document.getElementById("165").innerHTML=questionBank[sm].options.D;
-			var temp16=questionBank[sm].answer;
-			document.getElementById("sa16").onclick = function ()
-			{
-			document.getElementById("166").innerHTML=temp16;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("166").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("166").innerHTML=" ";
-			document.getElementById("167").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==17)
-		{
-			document.getElementById("171").innerHTML=questionBank[sm].question;
-			document.getElementById("172").innerHTML=questionBank[sm].options.A;
-			document.getElementById("173").innerHTML=questionBank[sm].options.B;
-			document.getElementById("174").innerHTML=questionBank[sm].options.C;
-			document.getElementById("175").innerHTML=questionBank[sm].options.D;
-			var temp17=questionBank[sm].answer;
-			document.getElementById("sa17").onclick = function ()
-			{
-			document.getElementById("176").innerHTML=temp17;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("176").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("176").innerHTML=" ";
-			document.getElementById("177").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==18)
-		{
-			document.getElementById("181").innerHTML=questionBank[sm].question;
-			document.getElementById("182").innerHTML=questionBank[sm].options.A;
-			document.getElementById("183").innerHTML=questionBank[sm].options.B;
-			document.getElementById("184").innerHTML=questionBank[sm].options.C;
-			document.getElementById("185").innerHTML=questionBank[sm].options.D;
-			var temp18=questionBank[sm].answer;
-			document.getElementById("sa18").onclick = function ()
-			{
-			document.getElementById("186").innerHTML=temp18;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("186").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("186").innerHTML=" ";
-			document.getElementById("187").innerHTML=questionBank[sm]["author-id"];
-		}
-		else if(i==19)
-		{
-			document.getElementById("191").innerHTML=questionBank[sm].question;
-			document.getElementById("192").innerHTML=questionBank[sm].options.A;
-			document.getElementById("193").innerHTML=questionBank[sm].options.B;
-			document.getElementById("194").innerHTML=questionBank[sm].options.C;
-			document.getElementById("195").innerHTML=questionBank[sm].options.D;
-			var temp19=questionBank[sm].answer;
-			document.getElementById("sa19").onclick = function ()
-			{
-			document.getElementById("196").innerHTML=temp19;
-			this.innerHTML="hide answer";
-			this.onclick=function()
-			{
-				document.getElementById("196").innerHTML=" ";
-				this.innerHTML="show answer";
-			}
-			}
-			document.getElementById("196").innerHTML=" ";
-			document.getElementById("197").innerHTML=questionBank[sm]["author-id"];
-		}
+		document.getElementById(String(i)+"1").innerHTML=questionBank[sm].question;
+		document.getElementById(String(i)+"2").innerHTML=questionBank[sm].options.A;
+		document.getElementById(String(i)+"3").innerHTML=questionBank[sm].options.B;
+		document.getElementById(String(i)+"4").innerHTML=questionBank[sm].options.C;
+		document.getElementById(String(i)+"5").innerHTML=questionBank[sm].options.D;
+		document.getElementById(String(i)+"6").innerHTML=questionBank[sm].answer;
+		document.getElementById(String(i)+"7").innerHTML=questionBank[sm]["author-id"];
 	}
+	z++;
 }
